@@ -9,7 +9,7 @@ import { setTimeout as sleep } from 'node:timers/promises'
 const CHROME = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
 const CDP_PORT = 9230
 const PROFILE = 'C:\\Users\\stdlocal\\AppData\\Local\\Temp\\kilo\\heading-profile'
-const BASE = 'http://[::1]:5173'
+const BASE = 'http://127.0.0.1:5173'
 const LABEL = process.argv.includes('--label')
   ? process.argv[process.argv.indexOf('--label') + 1]
   : 'current'

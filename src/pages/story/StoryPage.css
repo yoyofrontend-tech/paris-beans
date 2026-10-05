@@ -7,12 +7,14 @@
   background-color: var(--color-white);
 }
 
-.ostory-shell {
-  width: 91%;
-  max-width: var(--container-max);
-  margin-inline: auto;
-  padding-inline: 0;
-}
+/* The page's content wrapper. It carried `width: 91%` with its own cap, which
+   is a viewport-proportional inset: it drifted from the header's inset at every
+   width except by coincidence near 1758px, and two bands further down the file
+   tree overrode it again. It is now the shared .container and nothing more —
+   these elements carry that class in the JSX, so the hero, the origin block and
+   the CTA all measure off the same column as the header and the footer. No
+   width rule belongs here, so none is left: .ostory-shell survives only as the
+   hook the component stylesheets hang their own layout off. */
 
 .ostory-eyebrow {
   display: inline-flex;

@@ -9,7 +9,7 @@ import { setTimeout as sleep } from 'node:timers/promises'
 const CHROME = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
 const CDP_PORT = 9229
 const PROFILE = 'C:\\Users\\stdlocal\\AppData\\Local\\Temp\\kilo\\story-profile'
-const BASE = 'http://[::1]:5173'
+const BASE = 'http://127.0.0.1:5173'
 
 const chrome = spawn(
   CHROME,

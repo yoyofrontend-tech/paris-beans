@@ -32,6 +32,9 @@
   user-select: none;
 }
 
+/* A centred message, not a page column: 620px is the measure of the copy and the
+   block is centred on whatever the viewport gives it, so it keeps its own inset
+   from the shared gutter rather than becoming a container of its own. */
 .nf-inner {
   position: relative;
   z-index: 1;

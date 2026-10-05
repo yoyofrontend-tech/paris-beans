@@ -9,7 +9,8 @@ export default function MenuHero() {
   useReveal(ref, { threshold: 0.08 })
 
   return (
-    <section className="menu-hero" ref={ref}>
+    <div className="menu-hero-wrap container">
+      <section className="menu-hero" ref={ref}>
       <div className="menu-hero-media">
         <img
           src={menuImages.background}
@@ -20,12 +21,13 @@ export default function MenuHero() {
       </div>
       <div className="menu-hero-overlay" aria-hidden="true" />
       {/*
+
       <span className="menu-hero-word" aria-hidden="true">
         PARIS
       </span>
       */}
 
-      <div className="menu-hero-content container">
+      <div className="menu-hero-content">
         {/* No `reveal` here on purpose. The hero copy sits above the fold at
             every breakpoint (top=131 at 1440, top=113 at 375), so fading it in
             from opacity 0 only ever delays the LCP element: measured, the copy
@@ -53,6 +55,7 @@ export default function MenuHero() {
           </p>
         </div>
       </div>
-    </section>
+      </section>
+    </div>
   )
 }

@@ -34,7 +34,7 @@ export default function LegalPage({ title, eyebrow, lede, sections, children }) 
         <span className="legal-progress-bar" />
       </div>
 
-      <div className="legal-wrap">
+      <div className="legal-wrap container">
         <aside className="legal-aside">
           <nav className="legal-toc" aria-label="On this page">
             <span className="legal-toc-label">On this page</span>

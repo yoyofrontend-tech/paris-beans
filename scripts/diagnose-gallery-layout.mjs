@@ -9,7 +9,7 @@ const CHROME = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
 const CDP_PORT = 9228
 const PROFILE = 'C:\\Users\\stdlocal\\AppData\\Local\\Temp\\kilo\\gal-diag'
 // `npm run dev` binds IPv6 loopback only, so 127.0.0.1 refuses connections.
-const BASE = 'http://[::1]:5173'
+const BASE = 'http://127.0.0.1:5173'
 
 const chrome = spawn(
   CHROME,

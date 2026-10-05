@@ -35,9 +35,12 @@
 }
 
 /* ── Two-column layout ────────────────────────────────────── */
+/* The container is applied in the JSX. This block used to be
+   `width: min(1180px, 92%)` with its own auto margins, which is a fourth set of
+   horizontal numbers on the site and the reason the legal pages never lined up
+   with the header above them. 1180 was close enough to the container to look
+   deliberate and far enough from it to be visibly wrong at 1920. */
 .legal-wrap {
-  width: min(1180px, 92%);
-  margin-inline: auto;
   padding-block: clamp(56px, 6vw, 104px) clamp(80px, 8vw, 128px);
   display: grid;
   grid-template-columns: 240px minmax(0, 1fr);
@@ -45,6 +48,8 @@
   align-items: start;
 }
 
+/* The prose column's own measure inside the right-hand grid track — 860px of a
+   1280px page, centred in whatever the track gives it. */
 .legal-shell {
   min-width: 0;
   width: min(860px, 100%);

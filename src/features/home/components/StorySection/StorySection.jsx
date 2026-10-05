@@ -35,7 +35,7 @@ export default function StorySection() {
         alt=""
         aria-hidden="true"
       />
-      <div className="story-grid">
+      <div className="story-grid container">
         {/* Left — text */}
         <div className="story-copy">
           <div className="pb-story-eyebrow eyebrow reveal">— OUR STORY</div>

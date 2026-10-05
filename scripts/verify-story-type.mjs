@@ -15,7 +15,7 @@ import { setTimeout as sleep } from 'node:timers/promises'
 const CHROME = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
 const CDP_PORT = 9232
 const PROFILE = 'C:\\Users\\stdlocal\\AppData\\Local\\Temp\\kilo\\story-type-profile'
-const BASE = 'http://[::1]:5173'
+const BASE = 'http://127.0.0.1:5173'
 
 // OurStoryImageRow is deliberately absent: it is a full-bleed picture with no
 // heading, no label and no description, so there is no type scale to hold it to.

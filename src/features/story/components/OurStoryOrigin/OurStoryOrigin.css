@@ -131,13 +131,10 @@
 
 @media (max-width: 599px) {
   /* ── 1. Side padding: exactly 16px ───────────────────────────
-     The section's inset is not padding — it is `.ostory-shell { width: 91% }`,
-     which leaves 17.55px either side at 390. A fixed 32px subtraction gives
-     the 16px the frame calls for at every phone width, and the rule is scoped
-     to this section so the hero and the image row above it keep their 91%. */
-  .ostory-origin .ostory-shell {
-    width: calc(100% - 32px);
-  }
+     Nothing to set. The inset is the container's `--gutter`, which is 16px on
+     every phone width. This block used to subtract a fixed 32px from the shell to
+     reach the same 16px, which is a second place on the page deciding how wide
+     the page is. ────────────────────────────────────────────── */
 
   /* ── 2. Eyebrow ─────────────────────────────────────────────
      Nothing. The label takes `.eyebrow` — the global --fs-eyebrow, --fw-medium
@@ -147,21 +144,24 @@
      nine-word label, and 0.32em is nearly six times the tracking. */
 
   /* ── 3. Photo: 302px, centred ───────────────────────────────
-     The wrap breaks out of the 16px inset to the full 390px, so the photo's
+     The wrap breaks out of the gutter to the full screen width, so the photo's
      width and the two decoration offsets are both measured from the screen
      edge — that is what makes `calc(100% - 88px)` come out at 302 and the
      art's `right: 20px` sit 20px from the edge rather than 36px. The frame
      centres it, so the free space is 44px on each side.
 
+     The break-out is written as the negated gutter rather than as a literal
+     -16px so it cancels whatever inset the container is actually carrying.
+     Stating it as a constant would have been right at this band and wrong the
+     moment the gutter stepped.
+
      52px is the gap from the *title's* box bottom, which is where the frame
-     measures it from, so the title gives up its 1.2rem bottom margin and the
-     wrap carries the whole gap on its own margin. */
-  /* 52px is the gap from the *title's* box bottom, which is where the frame
      measures it from, so the title gives up its 1.2rem bottom margin and the
      wrap carries the whole gap on its own margin. */
   .ostory-emblem-wrap {
     order: 3;
-    margin: 52px -16px 94px;
+    margin-block: 52px 94px;
+    margin-inline: calc(var(--gutter) * -1);
   }
 
   /* The width goes on the emblem, not the photo.
@@ -198,13 +198,13 @@
   }
 
   /* ── 6. Decorations ─────────────────────────────────────────
-     The heading wrapper is full-bleed here: its own 16px padding cancels its
-     -16px margin, so the box runs to both screen edges while the heading text
-     still sits on the shell's 16px inset. It is a positioning context for
+     The heading wrapper is full-bleed here: it gives back the same gutter it
+     cancels, so the box runs to both screen edges while the heading text still
+     sits on the page's inset. It is a positioning context for
      nothing now — the beans hang off the section instead, see below. */
   .ostory-origin-heading {
-    margin-inline: -16px;
-    padding-inline: 16px;
+    margin-inline: calc(var(--gutter) * -1);
+    padding-inline: var(--gutter);
   }
 
   /* Both pieces of art are shown on the phone; the base rule hides them and
@@ -610,37 +610,29 @@
 
   /* Full-bleed anchors.
 
-     Upstream the shell is `width: 91%`, which leaves 4.5% of the viewport at
-     each edge of the section; below this block it is pinned to a 24px inset
-     instead. That is what makes `right: 14px` mean 14px from the screen edge
-     rather than 14px from a 640px column floating in the middle of it. The
-     negative margin that cancels a constant inset has to be a constant too —
-     see the note on it below. */
-  .ostory-origin .ostory-shell {
-    width: calc(100% - 48px);
-  }
-
+     The shell is now the shared container, so these two children cancel its
+     gutter to reach the screen edge — which is what makes `right: 14px` mean
+     14px from the edge rather than from a column floating in the middle of it.
+     Written against the token rather than as a constant: this band's lower edge
+     is 600px but the gutter steps at 641px, and a literal -24px would push the
+     box 8px past the screen through the 600–640 range. */
   .ostory-origin-copy > .ostory-origin-heading,
   .ostory-emblem-wrap {
     align-self: stretch;
     width: auto;
-    /* A fixed length, not a percentage: the shell's inset above is a fixed 24px,
-       but a percentage margin resolves against the shell's own width, and that
-       width is a different number at every viewport — 4.348% of 552 at 600px
-       against 3.448% of 696 at 744px. One percentage cannot cancel a constant. */
-    margin-inline: -24px;
+    margin-inline: calc(var(--gutter) * -1);
   }
 
-  /* The heading wrapper is full-bleed (the -24px margin above), so its text has
-     to be given the 24px back as padding: that is what puts the title's first
-     line on the same 24px inset as the eyebrow and the paragraphs below it,
+  /* The heading wrapper is full-bleed (the negated gutter above), so its text has
+     to be given that same inset back as padding: that is what puts the title's
+     first line on the same inset as the eyebrow and the paragraphs below it,
      rather than flush to the screen edge. The title then needs no auto margin
      to centre itself — the box already fills the inset measure. */
   .ostory-origin-copy > .ostory-origin-heading {
     display: block;
     position: relative;
     order: 2;
-    padding-inline: 24px;
+    padding-inline: var(--gutter);
   }
 
   .ostory-origin-copy > .ostory-origin-heading > .ostory-origin-title {

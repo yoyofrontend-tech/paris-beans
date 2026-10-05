@@ -141,7 +141,11 @@
     display: flex;
     flex-direction: column;
     min-height: 326px;
-    padding: 40px 24px;
+    /* Block padding only. This used to be `40px 24px` with the container's own
+       gutter cancelled below it, which made the section the page's width owner on
+       small phones — the one place on the site where the edge came from
+       something other than the container. */
+    padding-block: 40px;
   }
 
   /* One 84px tile: 56px of pale blue-grey, then 28px of white. Anchored at the
@@ -159,15 +163,13 @@
     opacity: 1;
   }
 
-  /* The section owns the horizontal inset now, so the container's --gutter
-     padding comes off; otherwise the frame would be inset twice. */
+  /* The container inside carries the inset, so its --gutter padding stays on. */
   .experience-content.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding-inline: 0;
   }
 
   .experience .eyebrow {

@@ -50,7 +50,7 @@ export default function OurStoryOrigin() {
         alt=""
         aria-hidden="true"
       />
-      <div className="ostory-shell ostory-origin-grid">
+      <div className="ostory-shell container ostory-origin-grid">
         <div className="ostory-origin-copy reveal">
           <p className="eyebrow ostory-eyebrow">— From Paris to HAIR RAP BY YOYO</p>
           <div className="ostory-origin-heading">

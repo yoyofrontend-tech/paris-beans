@@ -182,7 +182,7 @@ export default function GalleryMood() {
         </div>
       </div>
 
-      <div className="gallery-meta reveal reveal-delay-2">
+      <div className="gallery-meta container reveal reveal-delay-2">
         <p
           className="gallery-caption"
           key={gallery[carousel.active].key}
@@ -207,7 +207,7 @@ export default function GalleryMood() {
         </div>
       </div>
 
-      <div className="gallery-cta reveal reveal-delay-2">
+      <div className="gallery-cta container reveal reveal-delay-2">
         <Button href="/gallery" variant="primary" arrow>
           See the Gallery
         </Button>

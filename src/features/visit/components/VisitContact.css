@@ -2,23 +2,45 @@
    Visit & Contact — Page body styles
    ============================================================ */
 
+/* The page's own field is the cream the rest of the site sits on, not white.
+   It used to inherit white from `main` and paint a white band above the hero
+   card and a white margin down each side of it, while the contact band below was
+   cream — three colours on one edge. One background for the whole page; the
+   sections that need a different one (the striped CTA) carry their own. */
 .visit-page {
-  background-color: var(--color-white);
+  background-color: var(--color-bg);
 }
 
 /* ── Hero (boxed banner — same structure as Menu hero) ────── */
+/* The card is inset by the shared container, like the Menu hero: the wrapper
+   carries `.container` and the card fills it, so the card is the page's 1280px
+   column and its own padding is the inset for the copy. It used to be
+   `width: min(1920px, 93.5vw)` with a second container inside it — 1795px of
+   card with the copy a further 80px in from that. */
+.visit-hero-wrap {
+  margin-block: clamp(2.75rem, 5vw, 3.5rem) 0;
+}
+
 .visit-hero {
   position: relative;
-  margin: clamp(2.75rem, 5vw, 3.5rem) auto 0;
-  width: min(1920px, 93.5vw);
+  width: 100%;
   min-height: clamp(200px, 22vw, 240px);
-  border-radius: var(--radius-sm);
+  border-radius: 20px;
   overflow: hidden;
   display: flex;
   align-items: center;
   background-color: var(--color-white);
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* The card's own inset for the copy, the same as the Menu hero's. It used to
+     come from a container inside the card; with that gone the padding has to
+     live here or the copy sits flush against the card's edge. */
+  padding: 50px var(--gutter);
+}
+
+/* From 1024px the gutter is the frame's 80px. */
+@media (min-width: 1024px) {
+  .visit-hero {
+    padding-inline: 80px;
+  }
 }
 
 .visit-hero-media {
@@ -153,18 +175,19 @@
 }
 
 /* ── Contact + Location grid ──────────────────────────────── */
+/* The band is full-bleed and the grid inside it is the shared container, so the
+   band's own inset is gone: it used to carry `padding-inline: var(--gutter)` and
+   the grid carried a second cap on top, which is why the two cards came to
+   1745px between them rather than sharing the page's 1280px. */
 .visit-contact {
   background-color: var(--color-bg);
-  padding-inline: var(--gutter);
 }
 
 .visit-contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(1.75rem, 3vw, 2.75rem);
+  gap: 40px;
   align-items: stretch;
-  max-width: 1920px;
-  margin-inline: auto;
 }
 
 .visit-card {
@@ -510,11 +533,16 @@
   pointer-events: none;
 }
 
+/* This block is the shared container (it carries the class in the JSX) and its
+   `max-width: 720px` is gone with it. The cap was written for the block before
+   it was a container: at 1280 it put the whole CTA in a 720px box centred on the
+   page, so its left edge was x=360 where the header, the hero card and the form
+   card all sat at x=80 — the widest gap between two edges on the site. The
+   container's own cap is the cap. */
 .visit-cta-content {
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 720px;
 }
 
 .visit-cta-title {
@@ -537,19 +565,20 @@
 }
 
 @media (min-width: 1100px) {
-  .visit-cta-content {
-    max-width: none;
-  }
-
+  /* `max-width: none` on this block is gone as well. It removed the container's
+     cap outright, so the CTA ran the full viewport minus its own gutter — 1760px
+     at 1920, starting at x=80 where the header and every other section start at
+     320. A container that a later rule can un-cap is not a container. */
   .visit-cta-title {
     white-space: nowrap;
   }
 }
 
 @media (min-width: 1600px) {
-  .visit-cta-content {
-    max-width: 1600px;
-  }
+  /* The 1600px cap on this block is gone. It overrode the container's own cap —
+     same specificity, later file — so from 1600 up the CTA ran 160px wider than
+     every other page edge (at 1920 it started at x=160 where everything else
+     started at 320). The container is the cap. */
 
   .visit-cta-desc {
     max-width: 760px;
@@ -644,9 +673,11 @@
   }
 }
 
+/* Both sides now — the card no longer carries its own outer margin, so the gap
+   under the header and the gap above the contact band come off one wrapper. */
 @media (max-width: 1100px) {
-  .visit-hero {
-    margin: clamp(1.5rem, 3vw, 2.5rem) auto;
+  .visit-hero-wrap {
+    margin-block: clamp(1.5rem, 3vw, 2.5rem);
   }
 }
 
@@ -661,9 +692,12 @@
 @media (max-width: 560px) {
   .visit-hero {
     min-height: 190px;
-    margin: 1.25rem auto;
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+
+  .visit-hero-wrap {
+    margin-block: 1.25rem;
   }
 
   .visit-hero-word {
@@ -753,10 +787,9 @@
    ============================================================ */
 @media (max-width: 640px) {
   .visit-hero {
-    /* 16px of page either side, so the card is the viewport less 32px. */
-    width: auto;
-    max-width: none;
-    margin: 24px 16px;
+    /* The 16px of page either side is the wrapper container's gutter, so the card
+       keeps only the frame's own inner padding. It used to restate the inset as
+       `width: auto; margin: 24px 16px`, which is the same 16px arriving twice. */
     /* 277px in the frame; content-driven above that. */
     min-height: 277px;
     border-radius: 20px;
@@ -790,13 +823,10 @@
     );
   }
 
-  /* The card owns the inset, so the shared container's own gutter padding comes
-     off — otherwise the copy would be inset twice (48px + 20px). */
-  .visit-hero-content.container {
+  /* A plain block: the card's own padding is the inset now, so there is no
+     container here to neutralise. */
+  .visit-hero-content {
     width: 100%;
-    max-width: none;
-    margin: 0;
-    padding-inline: 0;
     display: flex;
     flex-direction: column;
     flex: 1;

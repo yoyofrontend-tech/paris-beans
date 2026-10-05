@@ -112,7 +112,7 @@ export default function Header({ story = false, route }) {
 
   return (
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''} ${story ? 'is-story' : ''}`}>
-      <div className="header-inner">
+      <div className="header-inner container">
         <nav className="nav-left" aria-label="Primary navigation">
           {navLinks.map((link) => (
             <a

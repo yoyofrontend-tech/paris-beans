@@ -9,7 +9,7 @@ import { mkdirSync, writeFileSync } from 'node:fs'
 const CHROME = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
 const CDP_PORT = 9238
 const PROFILE = 'C:\\Users\\stdlocal\\AppData\\Local\\Temp\\kilo\\menu-shot-profile'
-const BASE = 'http://[::1]:5173'
+const BASE = 'http://127.0.0.1:5173'
 const OUT = 'scripts/shots'
 mkdirSync(OUT, { recursive: true })
 

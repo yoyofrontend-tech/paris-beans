@@ -18,11 +18,20 @@
    2. Those three `min-width` queries are the ONLY width queries
       allowed in a shared stylesheet. No `max-width` anywhere, and no
       extra edge at 500, 600, 767, 768, 992, 1024 or anything else.
+      One exception, and only for the two width tokens: --gutter and
+      --container step on 641px and 1024px (see "Responsive tokens").
+      A layout edge is still 744 / 1136 / 1920 and nothing else.
    3. Because every band is `min-width`, there is no dead zone and no
       double-apply: a width belongs to the highest tier it reaches.
    4. To change layout only at 744 / 1136 / 1920, never write a
       `max-width` to undo something. Override the same property in the
       next `min-width` tier instead.
+   5. HORIZONTAL WIDTH IS NOT A COMPONENT DECISION. No stylesheet may set
+      `max-width`, side padding or a self-centring width on a page
+      wrapper. It puts its content in `.container` and lets --gutter and
+      --container place it. A component may still constrain the measure
+      of its OWN text (a 560px paragraph) and may still break out
+      full-bleed, but the outer edge belongs to the container alone.
    ============================================================ */
 
 :root {
@@ -58,7 +67,7 @@
      Fluid tiers are written as clamp(min, <vw> + <rem>, max) instead of
      clamp(min, <vw>, max). The vw-only form froze as soon as the middle term
      hit the viewport where it matched the max, which left the scale flat while
-     --container-max kept the layout growing. The + <rem> form keeps rising
+     the container kept the layout growing. The + <rem> form keeps rising
      until the max lands at or just past the container width, so the last tier
      that matters is still moving when the layout stops.
 
@@ -121,15 +130,18 @@
   --tracking-tagline: 0.06em;
 
   /* Spacing
-     --container-max is the shared content cap: 1440px, centred, at every
-     width from the LAPTOP tier up. --gutter is the shared side inset and
-     steps with the scale â€” phone 20px, tablet 32px, laptop 80px. Header.css
-     reads both tokens so the header tracks the page gutters automatically. */
-  --container-max: 1440px;
+     --container is the shared content column: 1280px of content, centred, with
+     the gutters carried outside it. The container's own box is that column plus
+     one gutter either side, so the two never disagree about where the edge is.
+     --gutter is the shared side inset and steps with the width band: phone 16px,
+     tablet 24px, and 80px from 1024px. Header.css, every page section and every
+     card wrapper read these two tokens, so the page edges and the header edges
+     cannot drift apart. */
+  --container: 1280px;
   --section-pad-desktop: 110px;
   --section-pad-tablet: 84px;
   --section-pad-mobile: 64px;
-  --gutter: 20px;
+  --gutter: 16px;
 
   /* Header height â€” the phone tier. Mirrored by anything that offsets itself
      from the sticky header (scroll-margin-top, sticky tops, 100svh
@@ -168,9 +180,6 @@
   --input-radius: var(--radius-md);
   --input-padding: 0 1.1rem;
   --input-bg: transparent;
-
-  /* Content width for non-full-bleed sections */
-  --content-max: 1280px;
 }
 
 /* ---------- Night mode ---------- */
@@ -199,9 +208,22 @@
    Every token that changes across the scale is stepped here and nowhere
    else, so the ladder can be read top to bottom in a single screen. The
    base tier in :root above is the phone; each query below adds one step.
-   These three min-width queries are the only width queries a shared
-   stylesheet is allowed to contain. */
 
+   Two edges step the WIDTH system and are deliberately not layout edges:
+   --gutter and --container run on 641px and 1024px, because the measure those
+   two produce (full-bleed, then 24px insets, then an 80px inset) is a property
+   of the container rather than of any component's layout. A component that
+   reflows still reflows on 744 / 1136 / 1920. Nothing else may use 641 or
+   1024. */
+
+/* WIDTH band 1 — tablet side insets. */
+@media (min-width: 641px) {
+  :root {
+    --gutter: 24px;
+  }
+}
+
+/* LAYOUT band 1 — tablet. Type ramp and bar height only. */
 @media (min-width: 744px) {
   :root {
     --fs-eyebrow: clamp(0.75rem, 0.13vw + 0.72rem, 0.875rem);
@@ -209,14 +231,21 @@
     --fs-section-phone: var(--fs-section);
     --fs-h1-phone: var(--fs-h1);
 
-    --gutter: 32px;
     --header-h: 72px;
   }
 }
 
-@media (min-width: 1136px) {
+/* WIDTH band 2 — the 80px inset, and from here the container is a fixed
+   1280px column with 1440px of box. */
+@media (min-width: 1024px) {
   :root {
     --gutter: 80px;
+  }
+}
+
+/* LAYOUT band 2 — laptop. Bar height only. */
+@media (min-width: 1136px) {
+  :root {
     --header-h: 80px;
   }
 }
@@ -290,15 +319,19 @@ button {
 }
 
 /* ---------- Layout helpers ---------- */
-/* Container â€” phone tier.
-     Phone: full width, 20px side padding.
-     Tablet: 32px side padding.
-     Laptop and up: capped at 1440px, centred, 80px side padding.
-   --gutter and --container-max already step with the scale, so the page
-   gutters and the header gutters can never drift apart. */
+/* Container â€” the single horizontal measure for the whole site.
+   Phone: full width, 16px side padding.
+   641px+: 24px side padding.
+   1024px+: capped, centred, 80px side padding.
+
+   The cap is the content column plus one gutter either side, so the CONTENT
+   is exactly --container (1280px) wide on any viewport from 1440px up and the
+   box is centred in what is left over. Stating it this way is what keeps the
+   left and right edges identical everywhere: nothing measures the viewport,
+   everything measures the gutter. */
 .container {
   width: 100%;
-  max-width: var(--container-max);
+  max-width: calc(var(--container) + 2 * var(--gutter));
   margin-inline: auto;
   padding-inline: var(--gutter);
 }

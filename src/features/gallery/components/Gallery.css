@@ -342,19 +342,11 @@
    one line at every width, the tightest being the subtext at 1136 (940px of ink
    in a 1010px column). */
 @media (min-width: 1136px) {
-  /* The frame's gutter. The base --gutter is 4vw, which put the text at
-     x=57.6 at 1440 — 22px left of the frame. 5.55vw is 79.92px there and
-     reaches its 80px cap at 1441. */
-  .gal-hero .container {
-    padding-inline: clamp(40px, 5.55vw, 80px);
-  }
-
-  /* 1280px is the frame's text column, and it is also exactly what the padding
-     above leaves inside the container at 1440 (1440 - 2 x 79.92), so the cap is
-     met rather than felt there and is what holds the measure from there up. */
-  .gal-hero-copy {
-    max-width: 1280px;
-  }
+  /* No gutter rule and no measure cap here any more. This block used to override
+     the shared container's padding with its own 5.55vw and then hard-code
+     1280px on the copy to hold the measure — the same 80px the container already
+     supplies, arrived at twice, on one page. `.gal-hero-copy` is left at `none`
+     above, which is the container's own measure. */
 
   .gal-hero {
     /* Clears the 79px header by 24px, which is what puts the label's centre on
@@ -764,17 +756,10 @@
    changes is the per-frame geometry, which is why this block rewrites `--w`,
    `--o` and the two overlap pairs instead of touching a single scale factor. */
 @media (max-width: 767px) {
-  /* The inset the copy above the collage measures from, so the heading's left
-     edge is one value rather than two. The collage no longer shares it: its
-     frames are centred on the screen, not aligned to the text. */
-  .gal-hero {
-    --gal-inset: clamp(16px, 4.5vw, 22px);
-  }
-
-  .gal-hero .container {
-    padding-inline: var(--gal-inset);
-  }
-
+  /* No inset token and no container override: --gutter is 16px through this whole
+     band, which is what the copy's left edge used to be restated as. The
+     collage below does not share it — its frames are centred on the screen,
+     not aligned to the text. */
   .gal-hero-copy {
     max-width: 100%;
   }
@@ -1014,8 +999,6 @@
       this, because it puts no gap at all across the seam. */
 @media (max-width: 480px) {
   .gal-hero {
-    /* Text keeps a 16px inset; the carousel below deliberately does not. */
-    --gal-inset: 16px;
     /* Empty space under the collage, per Figma. */
     padding-bottom: 130px;
   }
@@ -1046,9 +1029,8 @@
   .gal-hero-collage {
     /* Figma's 65px between cards, spent as the right margin the base
        `.gallery-image` rule already takes it from. Card 1 hard against the
-       screen edge: the 767px block insets this box by --gal-inset so the first
-       frame lines up with the copy above it, and Figma wants the opposite, a
-       frame bleeding off the left. */
+       screen edge: Figma wants a frame bleeding off the left, not one aligned
+       to the copy above it. */
     --gal-gap: 65px;
     padding-left: 0;
     /* Space between the paragraph and the top of the row, per Figma. */

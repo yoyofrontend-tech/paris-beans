@@ -540,24 +540,18 @@ a.contact-body:focus-visible,
    Responsive — the three tiers, in scale order
    ========================================================================== */
 
-/* The AI concierge FAB is position:fixed in the bottom-right corner at
-   clamp(18px, 2.4vw, 30px) and is 58px wide. From the tablet tier up the
-   bottom row runs to the container's right edge, which at 1136px puts the
-   copyright under the FAB's left arc, so the whole row gives up the FAB's
-   lane: its own inset plus the FAB's width. On the phone the row is a
-   centred column and never reaches the corner, so the lane is 0.
+/* The bottom bar is the container, like every other row of the footer, so its
+   edges line up with the columns above it and with every other page edge. It
+   used to give up a 100px lane on the right so the AI concierge FAB could never
+   reach the copyright, and that lane is gone.
 
-   The lane is dropped again at 1920px, where the 1440px container centres
-   itself inside the viewport and leaves 240px of clear space on each side. */
-.footer {
-  --fab-lane: 0px;
-}
-
-@media (min-width: 744px) {
-  .footer {
-    --fab-lane: 100px;
-  }
-}
+   The FAB no longer needs it, because the FAB moved rather than the row. It is
+   58px wide and used to rest at clamp(18px, 2.4vw, 30px) from the screen edge,
+   which put its left edge 8px inside the content column from 1024px to 1919px.
+   It is now parked outside the column at every width that can hold it — see
+   AiAssistant.css, where `right` is derived from --container and --gutter.
+   Below 1024px this row hands the FAB a lane in the other axis instead; that
+   rule is at the end of this file. */
 
 /* TABLET — 744px to 1135px.
    Brand (logo, description, social) spans the full width on top; Explore
@@ -589,9 +583,6 @@ a.contact-body:focus-visible,
     align-items: center;
     gap: 16px 24px;
     text-align: left;
-    /* Right edge only: the left inset stays --gutter so the row still
-       lines up with the columns above it. */
-    padding-right: var(--fab-lane);
   }
 
   .footer-bottom-brand {
@@ -643,7 +634,6 @@ a.contact-body:focus-visible,
        lands on the right-hand end, where the laptop spec puts it. */
     grid-template-columns: auto 1fr auto auto;
     gap: 24px;
-    padding-right: var(--fab-lane);
   }
 
   .footer-bottom-brand {
@@ -668,12 +658,29 @@ a.contact-body:focus-visible,
   }
 }
 
-/* DESKTOP — 1920px and up. Same three columns and the same 1440px centred
-   container as LAPTOP, so the only thing to give back is the FAB lane the
-   container no longer reaches into. */
-@media (min-width: 1920px) {
-  .footer {
-    --fab-lane: 0px;
+/* DESKTOP — 1920px and up. Same three columns and the same container as LAPTOP,
+   so nothing is overridden here. */
+
+/* PHONE AND TABLET — the AI launcher gets a lane in the other axis.
+   From 1024px the gutter is 80px, which is more than the 58px button needs, so
+   the button sits outside the content column and this row is clear of it on its
+   own. Below that the gutter is 16-24px: no inset can hold the button outside
+   the column, so it floats over the corner of the column and the bottom bar
+   reserves vertical space for it instead. The lane is the button's own
+   geometry — its 58px height plus the clamp() bottom inset it uses — plus 8px
+   of air, so the last line of text clears the button's top edge by 8px.
+
+   Measured before adding it, at 1024px the tagline sat 20px above the button
+   and "Back to top" sat beside it with 10px of horizontal clearance; on the
+   phone the nearest line had 10px. Nothing was covered at any width, but this
+   row was one wrapped line away from being covered, and it is the only place
+   in the footer where that risk lives. Costs 52px of footer height at 375px.
+
+   This has to come after the tier above it: same specificity, and the tablet
+   tier's `padding-block` would otherwise win the block-end edge. */
+@media (max-width: 1023px) {
+  .footer-bottom {
+    padding-bottom: calc(58px + clamp(18px, 2.4vw, 30px) + 8px);
   }
 }
 

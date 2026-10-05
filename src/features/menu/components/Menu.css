@@ -23,11 +23,6 @@
 .menu-page {
   background-color: var(--color-white);
 
-  /* Page-local side inset. Deliberately NOT var(--gutter): that token steps at
-     744px, which would drop a second jump inside the tablet band (20px at 641,
-     32px at 744). Figma's 24px wins for the whole tablet band. */
-  --menu-inset: 20px;
-
   /* Clip rather than scroll: the doodles and the halo are decorative and
      oversized on purpose, and this is the one place that can guarantee they
      never hand the document a horizontal scrollbar. `clip` does not create a
@@ -35,13 +30,22 @@
   overflow-x: clip;
 }
 
-.menu-page .container {
-  width: 100%;
-  max-width: none;
-  padding-inline: var(--menu-inset);
-}
+/* The page's side inset is the shared container's and nothing else. This file
+   used to carry its own --menu-inset (20px phone / 24px tablet / 80px laptop)
+   and its own `width: 91%; max-width: 1920px` on top of `.container`, which is
+   how the tabs ended up at x=172 and the "Specialty Hot Coffees" heading at
+   x=166 while the header sat at x=80: three numbers for one edge. */
 
 /* ── Menu hero ───────────────────────────────────────────── */
+/* The card is inset by the shared container, not by a width of its own: the
+   wrapper carries `.container`, so the card is exactly the 1280px column the
+   rest of the page uses and the card's own padding is the frame's 100px / 80px.
+   It used to be `width: min(1920px, 93.5vw)` on the section with a second 91%
+   container inside it, which put the card at 1795px and the copy at x=252. */
+.menu-hero-wrap {
+  margin-block: 24px 0;
+}
+
 /* Phone: a rounded card floating 24px under the header, not a full-bleed
    banner. The copy sits at the bottom; the card's own min-height is the only
    thing above it. */
@@ -52,7 +56,7 @@
   --menu-hero-focal-y: 50%;
 
   position: relative;
-  margin: 24px 16px 0;
+  width: 100%;
   min-height: 220px;
   border-radius: 16px;
   overflow: hidden;
@@ -61,7 +65,7 @@
   /* Bottom-aligned copy. This is a COLUMN flex box, so justify-content is the
      main (vertical) axis here — no flex-grow needed on the child. */
   justify-content: flex-end;
-  padding: 24px 20px;
+  padding: 24px var(--gutter);
   background-color: var(--color-espresso);
 }
 
@@ -87,17 +91,15 @@
   background: rgba(60, 35, 20, 0.55);
 }
 
-/* The card owns its padding, so the container must not add a second inset. */
-.menu-hero-content.container {
+/* The card carries the horizontal inset now, so the copy inside it is a plain
+   block. It used to be a `.container` itself, neutralised to `padding-inline: 0`
+   on the phone because the card already had padding — two insets on one edge. */
+.menu-hero-content {
   /* Lifts the copy above .menu-hero-media and .menu-hero-overlay. Both are
      position: absolute, and positioned descendants paint after in-flow
      content, so without this the opaque photo covers the hero text. */
   position: relative;
   z-index: 2;
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  padding-inline: 0;
 }
 
 .menu-hero-copy {
@@ -823,7 +825,7 @@
   display: block;
   /* Starts on the page's left inset and runs to the viewport's right edge, so
      the next card reads as "there is more" instead of stopping at the gutter. */
-  margin-right: calc(var(--menu-inset) * -1);
+  margin-right: calc(var(--gutter) * -1);
   overflow: hidden;
   touch-action: pan-y;
   overscroll-behavior-x: contain;
@@ -977,18 +979,15 @@
    restates what the 744px frame changes.
    ============================================================ */
 @media (min-width: 641px) {
-  .menu-page {
-    /* Figma's tablet inset. Not var(--gutter), which would be 20px here and
-       32px from 744px — a jump in the middle of this very band. */
-    --menu-inset: 24px;
+  /* ── Hero ── */
+  .menu-hero-wrap {
+    margin-block: 32px 0;
   }
 
-  /* ── Hero ── */
   .menu-hero {
-    margin: 32px 24px 0;
     min-height: 270px;
     border-radius: 20px;
-    padding: 36px 32px;
+    padding: 36px var(--gutter);
   }
 
   .menu-hero-copy {
@@ -1150,28 +1149,22 @@
    lives in its own query only because the base is now the phone tier.
    ============================================================ */
 @media (min-width: 1024px) {
-  .menu-page {
-    --menu-inset: var(--gutter);
-  }
-
-  .menu-page .container {
-    width: 91%;
-    max-width: 1920px;
-    padding-inline: var(--gutter);
+  .menu-hero-wrap {
+    /* No top gap from here up: the header bar itself provides the separation,
+       as it did when this was `margin: 0 auto` on the card. */
+    margin-block: 0;
   }
 
   .menu-hero {
     --menu-hero-focal-y: 60%;
-    margin: 0 auto;
-    width: min(1920px, 93.5vw);
+    /* The frame's 100px / 80px. */
     min-height: clamp(240px, 26vw, 640px);
-    border-radius: var(--radius-sm);
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 100px 80px;
     background-color: var(--color-white);
   }
 
@@ -1186,13 +1179,6 @@
       rgba(67, 39, 25, 0.55) 46%,
       rgba(67, 39, 25, 0.35) 100%
     );
-  }
-
-  .menu-hero-content.container {
-    width: 91%;
-    max-width: 1920px;
-    margin-inline: auto;
-    padding-inline: var(--gutter);
   }
 
   .menu-hero-copy {

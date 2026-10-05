@@ -32,7 +32,7 @@ export default function ContactLocation() {
 
   return (
     <section id="visit-contact" className="visit-contact section" ref={ref}>
-      <div className="visit-contact-grid">
+      <div className="visit-contact-grid container">
 
         {/* Left — Contact form */}
         <div className="visit-card visit-form-card reveal">

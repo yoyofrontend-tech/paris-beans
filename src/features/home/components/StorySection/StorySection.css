@@ -4,13 +4,15 @@
   padding: 70px 0 80px;
 }
 
+/* The section is full-bleed white and the grid inside it is the shared
+   container, like every other section on the site. It used to subtract a literal
+   160px from itself on the phone/tablet/base tier and then restate a different
+   inset again at the laptop tier (4.17vw), so the copy's left edge moved four
+   times across the scale. */
 .story-grid {
   position: relative;
   z-index: 2;
-  width: calc(100% - 160px);
-  max-width: 1920px;
   min-height: 700px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 42% 58%;
   align-items: center;
@@ -227,64 +229,27 @@
   }
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 1100px) {
+/* ============================================================
+   PHONE AND TABLET — 1135px and below
+   One stacked layout serves both. The tablet tier used to have two of its own:
+   a stacked grid at 768–1023 and, above it, the full desktop composition from
+   1024px, which meant a tablet at 1100px showed the two-column frame while one
+   at 900px showed a different stacked one. Both are gone: the stacked design
+   below now runs to the laptop tier, so 744–1135 is the phone layout on a wider
+   measure.
+
+   It stacks the copy and the photo stack, flattens .story-copy so its children
+   become flex items, and reorders them — label, heading, description, photo,
+   then the button last, which is where the phone puts it. The 42-64px vertical
+   rhythm and the 20px side inset are the section's own, declared here since the
+   shared Home phone tokens that used to carry them no longer exist.
+   ============================================================ */
+@media (max-width: 1135px) {
   .story {
-    padding: 60px 0 70px;
+    padding-block: clamp(42px, 9vw, 64px);
   }
 
   .story-grid {
-    width: calc(100% - 70px);
-  }
-}
-
-/* ---------- Tablet: 768–1099px ----------
-   The two-column 42% / 58% split used to hold all the way down to 769px, which
-   is inside the band that never had rules. At 769px the copy column worked out
-   to 293px and, after its 25px right padding, 268px of body copy at 15.7px —
-   roughly 28-32 characters a line, with a 30px section heading set in it. Worse,
-   the grid's `min-height: 700px` was only ever released below 768px, so all
-   that 268px column sat centred inside a 700px box with dead space above and
-   below it.
-
-   The split is kept for the landscape tier, where 42% of ~1000px is a
-   comfortable measure, and stacked for portrait, where it is not. Both tiers
-   release the fixed 700px minimum, which was always a desktop value. */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .story-grid {
-    grid-template-columns: 1fr;
-    min-height: auto;
-    row-gap: clamp(2.5rem, 5vw, 3.5rem);
-  }
-
-  .story-copy {
-    max-width: 640px;
-    padding-right: 0;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1099px) {
-  .story-grid {
-    min-height: 560px;
-    grid-template-columns: minmax(0, 46%) minmax(0, 54%);
-  }
-
-  .story-copy {
-    max-width: 560px;
-  }
-}
-
-@media (max-width: 767px) {
-  /* Previous phone design, restored: 20px side inset and the 42-64px vertical
-     rhythm the section used before the mobile-first rewrite. The shared Home
-     phone tokens that carried these lived in global.css and no longer exist,
-     so they are declared here again rather than left to the base rules. */
-  .story {
-    padding: clamp(42px, 9vw, 64px) 20px;
-  }
-
-  .story-grid {
-    width: 100%;
     min-height: auto;
     display: flex;
     flex-direction: column;
@@ -386,29 +351,32 @@
 
 /* ============================================================
    Desktop / laptop — matches Figma frame 1920x1030.
-   Every value is scaled off that frame (factor = viewport / 1920)
-   and only applies at 1024px and up. Tablet and phone keep the
-   layout above untouched.
+   Every value is scaled off that frame (factor = viewport / 1920). It starts at
+   1136px, the laptop tier, so the tablet above keeps the stacked layout all the
+   way up to it — this block used to start at 1024px, which put the two-column
+   frame on tablets.
    ============================================================ */
 .home-story-deco {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1136px) {
   .story {
     overflow: hidden;
     padding: 5.6vw 0 0;
     min-height: 53.6vw;
   }
 
+  /* The two columns and the gap are now percentages of the container rather than
+     viewport units. The frame's own proportions — 39 / 6.53 / 46.1 out of 91.63 —
+     are kept, so the copy sits at 42.56% and the photo stack at 50.31% of a
+     1280px column instead of 39vw and 46.1vw of the screen. Stated as vw they
+     overran the container (91.63vw is 1319px at 1440, and it grew with the
+     screen); as percentages they hold at every width. */
   .story-grid {
-    width: 100%;
-    max-width: none;
     min-height: 0;
-    margin: 0;
-    padding-left: 4.17vw;
-    grid-template-columns: 39vw 46.1vw;
-    column-gap: 6.53vw;
+    grid-template-columns: 42.56% 1fr;
+    column-gap: 7.13%;
     align-items: flex-start;
   }
 
@@ -468,11 +436,13 @@
     font-size: var(--fs-btn);
   }
 
-  /* Right column — photo stack sized off the frame's 885x804 */
+  /* Right column — photo stack sized off the frame's 885x804. The width is the
+     grid column's own (it is a grid item, so 100% is that column); the stack's
+     internals were already percentages of this box. */
   .story-media {
     position: relative;
     z-index: 1;
-    width: 46.1vw;
+    width: 100%;
     aspect-ratio: 885 / 804;
     padding: 0;
   }
@@ -548,7 +518,10 @@
     position: absolute;
     left: 20.2%;
     bottom: 6.8%;
-    width: 25.4vw;
+    /* 25.4vw, expressed as a share of the grid box instead: the art has to shrink
+       with the column it sits beside, or it grows with the screen while the photo
+       stack it points at stops growing. */
+    width: 27.7%;
     height: auto;
     pointer-events: none;
     user-select: none;

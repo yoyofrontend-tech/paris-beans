@@ -4,7 +4,7 @@ import './OurStoryCta.css'
 export default function OurStoryCta() {
   return (
     <section className="ostory-cta">
-      <div className="ostory-shell ostory-cta-inner">
+      <div className="ostory-shell container ostory-cta-inner">
         <p className="eyebrow ostory-eyebrow">
           <span className="ostory-dash" aria-hidden="true" />
           THE PARISBEANS EXPERIENCE
