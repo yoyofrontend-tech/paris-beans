@@ -121,6 +121,13 @@
   margin-bottom: 0.9rem;
 }
 
+/* The label's em dash is its own span so the phone tier can draw it as a 1px
+   hairline. Above that tier it stays a glyph, and this margin stands in for the
+   space that used to sit between the dash and the text in the same string. */
+.visit-hero-dash {
+  margin-right: 0.35em;
+}
+
 .visit-hero-title {
   color: var(--color-white);
   font-family: var(--font-serif);
@@ -730,6 +737,125 @@
   .visit-info-link {
     font-size: clamp(0.95rem, 4.4vw, 1.25rem);
     line-height: 1.3;
+  }
+}
+
+/* ============================================================
+   PHONE — 640px and below
+   The Figma phone frame for the hero card: a 277px rounded card inset 16px from
+   each edge, the label and heading at the top, the paragraph pinned to the
+   bottom, and the café interior legible through a light even wash.
+
+   It is one self-contained block rather than a set of edits to the older
+   max-width bands above, because those bands overlap this range (560, 900,
+   1100) and each of them carries hero declarations; placed last it settles the
+   card in one place and leaves everything above 640px exactly as it was.
+   ============================================================ */
+@media (max-width: 640px) {
+  .visit-hero {
+    /* 16px of page either side, so the card is the viewport less 32px. */
+    width: auto;
+    max-width: none;
+    margin: 24px 16px;
+    /* 277px in the frame; content-driven above that. */
+    min-height: 277px;
+    border-radius: 20px;
+    padding: 36px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Espresso, not white: the photo has not decoded yet on first paint. */
+    background-color: var(--color-espresso);
+  }
+
+  /* Not in the frame. */
+  .visit-hero-word {
+    display: none;
+  }
+
+  /* Centre the café interior so the arched logo, the shelves and the counter
+     are all in frame. */
+  .visit-hero-img {
+    object-position: center;
+  }
+
+  /* Even warm wash instead of the 100deg ramp, which put the paragraph's tail
+     on bare photo. */
+  .visit-hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(70, 40, 25, 0.55) 0%,
+      rgba(70, 40, 25, 0.6) 100%
+    );
+  }
+
+  /* The card owns the inset, so the shared container's own gutter padding comes
+     off — otherwise the copy would be inset twice (48px + 20px). */
+  .visit-hero-content.container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding-inline: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .visit-hero-copy {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Label + heading at the top, paragraph at the bottom of the card. */
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .visit-hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    /* Cream, regular, barely tracked. The shared label is gold 500 at 0.32em,
+       which read as a banner rather than a caption over the photo. */
+    font-weight: var(--fw-regular);
+    letter-spacing: 0.03em;
+    color: rgba(245, 235, 221, 0.9);
+  }
+
+  /* A 16px hairline. The em dash in the markup is retired with font-size 0 so
+     the box paints as a true 1px rule, and the base margin hands over to the
+     eyebrow's own 6px flex gap. */
+  .visit-hero-dash {
+    flex: none;
+    width: 16px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    margin-right: 0;
+    background-color: rgba(245, 235, 221, 0.9);
+  }
+
+  .visit-hero-title {
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: 0;
+    color: #faf3e8;
+    margin-bottom: 0;
+    /* Full measure: the frame breaks it after "Little", not at a narrow cap. */
+    max-width: 100%;
+    text-wrap: wrap;
+  }
+
+  .visit-hero-desc {
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: var(--fw-regular);
+    color: rgba(255, 255, 255, 0.92);
+    /* No cap: the frame runs the paragraph the full inner width, ~310px at
+       390px, which is what makes it three lines instead of five. */
+    max-width: none;
   }
 }
 

@@ -28,10 +28,20 @@ export default function VisitHero() {
 
       <div className="visit-hero-content container">
         <div className="visit-hero-copy reveal">
-          <span className="eyebrow visit-hero-eyebrow">— VISIT PARIS BEANS</span>
-          <h1 className="visit-hero-title">
-            Find Your Little Corner of <em>Paris.</em>
-          </h1>
+          {/* Grouped so the phone tier can hold the label and heading at the top
+              of the card and pin the paragraph to the bottom with one
+              space-between, instead of three independent blocks. */}
+          <div className="visit-hero-lead">
+            <span className="eyebrow visit-hero-eyebrow">
+              <span className="visit-hero-dash" aria-hidden="true">
+                —
+              </span>
+              Visit ParisBeans
+            </span>
+            <h1 className="visit-hero-title">
+              Find Your Little Corner of <em>Paris.</em>
+            </h1>
+          </div>
           <p className="visit-hero-desc">
             Paris Beans is located inside HAIR RAP BY YOYO, bringing a
             Paris-inspired café experience directly into your salon visit.
