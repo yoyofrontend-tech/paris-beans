@@ -3,29 +3,16 @@ import { menuItems } from '@shared/models/siteData'
 import { srcSize } from '@shared/assets/srcSize'
 import { menuDeco } from '@shared/assets/images'
 import { useReveal } from '@shared/hooks/useReveal'
-import { useCarousel } from '@shared/hooks/useCarousel'
 import Button from '@shared/components/Button'
 import './CafeMenu.css'
 
 export default function CafeMenu() {
   const ref = useRef(null)
-  const dragRef = useRef({ x: 0, dragging: false })
   useReveal(ref, { threshold: 0.08 })
 
-  const carousel = useCarousel({ itemCount: menuItems.length, interval: 4000, autoPlay: false })
-
-  const onPointerUp = (e) => {
-    if (!dragRef.current.dragging) return
-    dragRef.current.dragging = false
-    const dx = e.clientX - dragRef.current.x
-    if (Math.abs(dx) > 40) {
-      const dir = dx < 0 ? 1 : -1
-      const maxIndex = Math.max(menuItems.length - 2, 0)
-      carousel.setActive((p) => Math.min(Math.max(p + dir, 0), maxIndex))
-    }
-    carousel.resume()
-  }
-
+  // The card block is a plain CSS grid of 4-up cards (see CafeMenu.css): no
+  // carousel state, no pointer-drag translation and no width-dependent
+  // breakpoint in JavaScript. Eight cards, two rows, at every tier.
   return (
     <section id="menu" className="cafe" ref={ref}>
       {/* Corner art — decorative only. Direct children of the section, before the
@@ -51,13 +38,7 @@ export default function CafeMenu() {
             <div className="cafe-copy-inner">
               <p className="eyebrow reveal">— From the Café</p>
               <h2 className="cafe-title reveal reveal-delay-1">
-                Coffee,
-                <br className="cafe-br-desktop" />{' '}
-                <em>Breakfast</em> &amp;
-                <br className="cafe-br-mobile" />{' '}
-                Little
-                <br className="cafe-br-desktop" />{' '}
-                <em>Indulgences.</em>
+                Coffee, <em>Breakfast</em> &amp; Little <em>Indulgences.</em>
               </h2>
               <p className="lead cafe-paragraph reveal reveal-delay-2">
                 Discover a simple, satisfying café offering curated for the moments
@@ -71,32 +52,10 @@ export default function CafeMenu() {
             </div>
           </div>
 
-          {/* Right — menu image grid / carousel on mobile */}
+          {/* Right — the editorial image grid */}
           <div className="cafe-grid-right">
-            <div
-              className="menu-grid"
-              onMouseEnter={carousel.pause}
-              onMouseLeave={carousel.resume}
-              onFocus={carousel.pause}
-              onBlur={carousel.resume}
-              onPointerDown={(e) => {
-                dragRef.current = { x: e.clientX, y: e.clientY, dragging: true }
-                try {
-                  e.currentTarget.setPointerCapture(e.pointerId)
-                } catch {
-                  /* capture not available */
-                }
-                carousel.pause()
-              }}
-              onPointerUp={onPointerUp}
-              onPointerCancel={onPointerUp}
-            >
-              <div
-                className="cafe-slider-track"
-                style={{
-                  transform: `translateX(calc(var(--cafe-slide-step) * -${carousel.active}))`,
-                }}
-              >
+            <div className="menu-grid">
+              <div className="cafe-slider-track">
                 {menuItems.map((item, i) => (
                   <figure className="menu-item reveal" style={{ '--i': i }} key={item.title}>
                     <span className="menu-accent" aria-hidden="true" />

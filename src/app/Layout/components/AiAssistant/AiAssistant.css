@@ -335,7 +335,7 @@
 }
 
 .ai-suggest button {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: var(--fs-micro);
   font-weight: var(--fw-medium);
   letter-spacing: 0.02em;

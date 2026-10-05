@@ -1,26 +1,28 @@
-/* ============================================================
-   Paris Beans — Global styles & design tokens
+﻿/* ============================================================
+   Paris Beans â€” Global styles & design tokens
    ============================================================
 
-   BREAKPOINT SCALE — canonical, do not invent new edges.
+   BREAKPOINT SCALE â€” canonical, do not invent new edges.
 
    CSS has no variables for media queries, so the scale is defined
    here and every component stylesheet must follow it verbatim.
 
-     mobile            max-width: 767px
-     tablet portrait   min-width: 768px  and max-width: 1023px
-     tablet landscape  min-width: 1024px and max-width: 1099px
-     desktop           min-width: 1100px
+     PHONE    base, no query          375px â€“ 743px
+     TABLET   min-width: 744px        744px â€“ 1135px
+     LAPTOP   min-width: 1136px       1136px â€“ 1919px
+     DESKTOP  min-width: 1920px       1920px and up
 
    Rules of the scale:
-   1. The mobile edge is 767, never 768. 768px is a real device width
-      (iPad portrait) and must get the tablet tier, not the phone one.
-   2. Tablet ranges are always written as a `min-width and max-width`
-      pair so there is never a 1px dead zone and never a double-apply.
-   3. A `min-width` band that follows a `max-width` band in source order
-      is a bug waiting to happen — keep the two families disjoint.
-   4. Anything wider than 1099px is desktop; do not add a query between
-      1100 and 1440 unless it is paired with its own lower bound.
+   1. Mobile-first. The base tier is the phone and needs no query.
+      Every tier above it is written as a `min-width` override only.
+   2. Those three `min-width` queries are the ONLY width queries
+      allowed in a shared stylesheet. No `max-width` anywhere, and no
+      extra edge at 500, 600, 767, 768, 992, 1024 or anything else.
+   3. Because every band is `min-width`, there is no dead zone and no
+      double-apply: a width belongs to the highest tier it reaches.
+   4. To change layout only at 744 / 1136 / 1920, never write a
+      `max-width` to undo something. Override the same property in the
+      next `min-width` tier instead.
    ============================================================ */
 
 :root {
@@ -42,7 +44,7 @@
   /* Footer dark */
   --color-footer: #3B2217;
 
-  /* Typography — fonts */
+  /* Typography â€” fonts */
   --font-serif: 'Fraunces', serif;
   --font-sans: 'DM Sans', 'Inter', system-ui, -apple-system, sans-serif;
 
@@ -56,13 +58,35 @@
      Fluid tiers are written as clamp(min, <vw> + <rem>, max) instead of
      clamp(min, <vw>, max). The vw-only form froze as soon as the middle term
      hit the viewport where it matched the max, which left the scale flat while
-     --container-max kept the layout growing to 1920px. The + <rem> form keeps
-     rising until the max lands at or just past the container width, so the
-     last tier that matters is still moving when the layout stops.
+     --container-max kept the layout growing. The + <rem> form keeps rising
+     until the max lands at or just past the container width, so the last tier
+     that matters is still moving when the layout stops.
 
-     Coefficients calibrated so each tier hits its min at 375px and its max at
-     1920px (the --container-max), scaling linearly between. */
-  --fs-eyebrow: clamp(0.75rem, 0.13vw + 0.72rem, 0.875rem);
+     Two tokens are pinned to a flat phone value here and picked back up into
+     their ramp at the TABLET tier (see "Responsive tokens" below): the section
+     heading and the eyebrow. On a phone a ramped 24px heading reads larger
+     than the hero h1 above it, so the page read backwards; the ramp resumes
+     from 744px where there is room for it. */
+
+  /* Phone (base, 375â€“743px). Tablet and up override these in one place. */
+  --fs-eyebrow: 0.625rem;
+  --fs-section: 1.5rem;
+
+  /* --fs-section-phone is the phone-tier size for a section heading that is a
+     step above the shared 24px: 28px, so the headings read clearly over the
+     12px label and the 16-17px body copy without touching any hero h1, which
+     stays the largest type on the page. Read by / and /our-story; from 744px it
+     is handed straight back to the shared --fs-section ramp, where the heading
+     has room to grow. */
+  --fs-section-phone: 1.75rem;
+
+  /* --fs-h1-phone is the same idea one tier up, for a page hero: a flat 32px
+     on the phone instead of --fs-h1's 36px floor and ramp. A ramped hero h1 on
+     a 375px screen overtook the section headings below it and read larger than
+     the page could carry, so the ramp resumes at 744px where there is room for
+     it. Read by the /menu and /our-story heroes. */
+  --fs-h1-phone: 2rem;
+
   --fs-micro: 0.78rem;
   --fs-label: 0.8rem;
   --fs-btn-sm: 0.82rem;
@@ -71,7 +95,6 @@
   --fs-lead: clamp(1.0625rem, 0.7vw + 0.9rem, 1.75rem);
   --fs-btn: 0.92rem;
   --fs-body-sm: 0.92rem;
-  --fs-section: clamp(2rem, 1.55vw + 1.64rem, 3.5rem);
   --fs-h1: clamp(2.25rem, 2.1vw + 1.85rem, 5.25rem);
   --fs-h2: var(--fs-section);
   --fs-h3: clamp(1.5rem, 1.04vw + 1.26rem, 2.5rem);
@@ -97,19 +120,21 @@
   --tracking-wide: 0.08em;
   --tracking-tagline: 0.06em;
 
-  /* Spacing */
-  --container-max: 1920px;
+  /* Spacing
+     --container-max is the shared content cap: 1440px, centred, at every
+     width from the LAPTOP tier up. --gutter is the shared side inset and
+     steps with the scale â€” phone 20px, tablet 32px, laptop 80px. Header.css
+     reads both tokens so the header tracks the page gutters automatically. */
+  --container-max: 1440px;
   --section-pad-desktop: 110px;
   --section-pad-tablet: 84px;
   --section-pad-mobile: 64px;
-  --gutter: clamp(20px, 4vw, 72px);
-  --gutter-tablet: clamp(24px, 3.4vw, 40px);
+  --gutter: 20px;
 
-  /* Header height — mirrored by anything that offsets itself from the
-     sticky header (scroll-margin-top, sticky tops, 100svh calculations).
-     Header.css compresses this at the 1024px edge. */
-  --header-h: 78px;
-  --header-h-tablet: 66px;
+  /* Header height â€” the phone tier. Mirrored by anything that offsets itself
+     from the sticky header (scroll-margin-top, sticky tops, 100svh
+     calculations) and stepped by the "Responsive tokens" block below. */
+  --header-h: 64px;
 
   /* Effects */
   --radius-btn: 999px;
@@ -167,6 +192,40 @@
   --shadow-card: 0 24px 50px -26px rgba(0, 0, 0, 0.65);
 }
 
+/* ============================================================
+   Responsive tokens â€” the whole scale, in one place
+   ============================================================
+
+   Every token that changes across the scale is stepped here and nowhere
+   else, so the ladder can be read top to bottom in a single screen. The
+   base tier in :root above is the phone; each query below adds one step.
+   These three min-width queries are the only width queries a shared
+   stylesheet is allowed to contain. */
+
+@media (min-width: 744px) {
+  :root {
+    --fs-eyebrow: clamp(0.75rem, 0.13vw + 0.72rem, 0.875rem);
+    --fs-section: clamp(2rem, 1.55vw + 1.64rem, 3.5rem);
+    --fs-section-phone: var(--fs-section);
+    --fs-h1-phone: var(--fs-h1);
+
+    --gutter: 32px;
+    --header-h: 72px;
+  }
+}
+
+@media (min-width: 1136px) {
+  :root {
+    --gutter: 80px;
+    --header-h: 80px;
+  }
+}
+
+/* DESKTOP tier â€” 1920px and up. Identical to LAPTOP by spec (same 1440px
+   centred container, same 80px gutters, same 80px header), so nothing is
+   overridden here. The block is kept empty on purpose as the anchor for
+   any future 1920-only delta. */
+
 /* ---------- Reset ---------- */
 *,
 *::before,
@@ -211,7 +270,12 @@ ol {
 }
 
 button {
-  font-family: inherit;
+  /* Every button in the app carries Fraunces, so the family is set once here
+     on the element itself rather than repeated on each component's button
+     rule. Component stylesheets that set their own family must use
+     var(--font-serif) or leave it alone â€” anything else puts one button back
+     on DM Sans. */
+  font-family: var(--font-serif);
   cursor: pointer;
   border: none;
   background: none;
@@ -226,6 +290,12 @@ button {
 }
 
 /* ---------- Layout helpers ---------- */
+/* Container â€” phone tier.
+     Phone: full width, 20px side padding.
+     Tablet: 32px side padding.
+     Laptop and up: capped at 1440px, centred, 80px side padding.
+   --gutter and --container-max already step with the scale, so the page
+   gutters and the header gutters can never drift apart. */
 .container {
   width: 100%;
   max-width: var(--container-max);
@@ -233,22 +303,18 @@ button {
   padding-inline: var(--gutter);
 }
 
-/* Section wrapper for consistent vertical rhythm */
+/* Section wrapper for consistent vertical rhythm â€” phone tier, then one
+   step per tier. The base is the smallest value, so a width that is not
+   reached by any query keeps the phone rhythm. */
 .section {
-  padding-block: var(--section-pad-desktop);
+  padding-block: var(--section-pad-mobile);
 }
 
 .section--tight {
-  padding-block: 88px;
+  padding-block: 56px;
 }
 
-/* Tablet portrait / landscape — the band that previously had no
-   section rhythm of its own and jumped straight from 64px to 110px. */
-@media (min-width: 768px) and (max-width: 1099px) {
-  .container {
-    padding-inline: var(--gutter-tablet);
-  }
-
+@media (min-width: 744px) {
   .section {
     padding-block: var(--section-pad-tablet);
   }
@@ -258,256 +324,26 @@ button {
   }
 }
 
-/* ---------- /our-story: one heading scale for the tablet band ----------
-   The page's three main headings — the hero h1, the origin h2 and the closing
-   CTA h2 — are a single size across 600-1099px, so the value is declared once
-   here rather than in each component. It is read by exactly three rules, one
-   in each of OurStoryHero.css, OurStoryOrigin.css and OurStoryCta.css, and
-   only inside that band.
-
-   Declared on the three sections the headings live in rather than on a page
-   wrapper: StoryPage.jsx renders the four sections as siblings with no root
-   element of its own, and the property inherits down to the headings from
-   here. `.ostory-story-img` is the fourth section and has no heading, so it is
-   not listed.
-
-   Deliberately not an override of --fs-h1 or --fs-section. Both are global and
-   also drive the header, the footer, the gallery and the AI assistant on every
-   other page; retuning them here would move type on five other routes. Before
-   this token the three headings were at three different scales: at 768px the
-   hero was 45.73px, the origin 58.5px — larger than the h1 above it — and the
-   CTA 38.14px, and between 600 and 767 the two section headings were both held
-   at the phone's 24px against the hero's 42.2px.
-
-   The floor is the 600px edge of the band, the cap is reached at 743px (7vw
-   there is 52.01px) and the value is flat from there to 1099px. The cap has to
-   clear the origin heading's forced first line, "From a Parisian Feeling",
-   which is nowrap so it cannot re-break to fit: it measures 580.3px of ink at
-   the 52px cap, and the heading's measure is 504px at 600px, 648px at 744,
-   927px at 1023 and 640px at 1024-1099. The tightest of those is 59.7px of
-   slack, so nothing in the band can reach the edge of its own box.
-
-   --ostory-tablet-desc does the same job for the three descriptions — the
-   hero's `.ostory-desc`, the origin's `.ostory-origin-text` and the CTA's
-   `.ostory-cta-desc` — and is read by the same three stylesheets in the same
-   band. It is a flat 20px, not a clamp, because 20px is the size the origin
-   frame was drawn at and the size the rest of the band now matches: before
-   this token the three sat at 17.0px, 20px and 15.2px at 768px, and the
-   origin's own 20px stopped at 1023px and fell to 14.72px on the 1024px
-   tablet, so the same paragraph changed size inside one band.
-
-   The measure each description already carries is what makes a flat 20px
-   safe: 640px on the hero and the origin, 620px on the CTA, which is 62-64
-   characters at this size, inside the 45-75 band. Below 768 the hero has no
-   cap, but at 600px its 92vw column is 552px — 55 characters — so the cap is
-   not load-bearing there either.
-
-   The step at 1100px is left alone for the same reason the headings' is: the
-   section becomes two columns there, so the measure changes with it.
-
-   --ostory-tablet-eyebrow does the same for the three section labels — the
-   hero's, the origin's and the CTA's — and is 13px for the same flat reason.
-   Before it the hero and CTA labels took the global --fs-eyebrow clamp, which
-   global.css pins to 0.625rem below 768 and which otherwise lands between
-   12.52px and 12.95px across 768-1099, while the origin label was a flat 13px
-   drawn from the frame. So the three were 10 / 13 / 10 at 600-767 and drifted
-   again to 12.52 / 13 / 12.52 at 768. 13px is the number the frame asks for
-   and it is what all three take now.
-
-   The three labels are 9, 30 and 25 characters long, so this is a size
-   unification only. Their weight and tracking still differ — the origin label
-   is 400 at 0.048em against the global 500 at 0.32em — and that is left as it
-   is: the origin's own tracking was measured against its frame, and at
-   0.32em that label is 120px wider than the frame draws it. */
-.ostory-hero,
-.ostory-origin,
-.ostory-cta {
-  --ostory-tablet-heading: clamp(42px, 7vw, 52px);
-  --ostory-tablet-desc: 20px;
-  --ostory-tablet-eyebrow: 13px;
-}
-
-@media (max-width: 767px) {
-  .section,
-  .section--tight {
-    padding-block: var(--section-pad-mobile);
+@media (min-width: 1136px) {
+  .section {
+    padding-block: var(--section-pad-desktop);
   }
 
   .section--tight {
-    padding-block: 56px;
-  }
-
-  /* Section headings resolved to 32px on the phone (the token's 375px value),
-     which is larger than the hero h1 sitting above them at ~28px. The page read
-     backwards. Dropped to 24px so the hero stays the largest type on screen.
-
-     Flat across the whole band, not a ramp: the section h2 tier and the benefits
-     h3 tier (BenefitsSection.css) are both pinned to 24px on the phone, and a
-     ramp would have put the two h2 blocks at 38px and the benefit titles at
-     24px at the top of the same band. The price is a +14.1px step at the
-     767/768 boundary (24px -> 38.14px). Left as-is deliberately: 768 is where
-     every mobile tier in this file stops and the tablet/desktop ramp starts,
-     the hero h1 already takes a +8.1px step on the same boundary, and a
-     half-stepped h2 would sit between the two tiers instead of in one of them.
-
-     Overridden on the token rather than on h2/.section-heading because the
-     component classes (.experience-title, .story-title, .cafe-title,
-     .gallery-title) are imported after this file and would win a same-specificity
-     element rule. A custom property resolves at computed-value time, so every
-     consumer picks this up regardless of file order. */
-  :root {
-    --fs-section: 1.5rem;
-    /* One eyebrow tier for the phone band. The hero ran a hard 0.625rem of its
-       own while every other section sat on --fs-eyebrow's 12px floor; the token
-       now carries 10px everywhere so the hero no longer needs a local size. */
-    --fs-eyebrow: 0.625rem;
-
-    /* ---------- Mobile type tokens — Home page ----------
-       Every Home section resolves its eyebrow, heading and description from
-       these, so a value changes once and lands everywhere. Scoped to the Home
-       sections only; /our-story, /menu, /gallery and the rest keep their own
-       tiers and are untouched at 768px and up. */
-    --m-eyebrow-size: 0.75rem;
-    --m-eyebrow-weight: var(--fw-regular);
-    --m-eyebrow-lh: 1.4;
-    --m-eyebrow-tracking: 0.05em;
-    --m-heading-size: 1.5rem;
-    --m-heading-lh: 1.15;
-    --m-body-size: 1rem;
-    --m-body-lh: 1.5;
-    --m-gap-eyebrow: 8px;
-    --m-gap-heading: 16px;
-    --m-inset: 20px;
-    --m-section-pad: clamp(42px, 9vw, 64px);
-  }
-
-  /* ---------- Home page: unified mobile typography ----------
-     Selectors are doubled (.hero.hero) or triple (.hero .hero-content) on
-     purpose. global.css is imported before every component stylesheet, so a
-     single-class rule here would lose the cascade to the component's own rule
-     of equal specificity. Doubling the class wins on specificity without
-     !important, and the conflicting declarations have been deleted from the
-     component mobile blocks rather than overridden. */
-
-  /* Section rhythm and inset. Hero owns an extra min-height that is left
-     alone; only its content padding is normalised. */
-  .hero.hero .hero-content,
-  .experience.experience,
-  .benefits.benefits,
-  .cafe.cafe,
-  .gallery.gallery {
-    padding-block: var(--m-section-pad);
-  }
-
-  .section.story {
-    padding: var(--m-section-pad) var(--m-inset);
-  }
-
-  .hero.hero .hero-content.container,
-  .experience.experience .experience-content.container,
-  .cafe.cafe .container,
-  .gallery.gallery .container {
-    padding-inline: var(--m-inset);
-  }
-
-  /* Benefits cards sat 8px inside the container gutter; the cards now align
-     with every other section's left edge. */
-  .benefits.benefits .benefit {
-    padding-inline: 0;
-  }
-
-  /* Eyebrow — one tier across all six sections. Colour is left alone: the hero
-     sits on the dark espresso photo and keeps its light #e8d9c5, every other
-     section keeps the gold #c7a45a from .eyebrow. That is the only intended
-     difference. */
-  .hero.hero .hero-eyebrow,
-  .experience.experience .eyebrow,
-  .section.story .pb-story-eyebrow,
-  .cafe.cafe .cafe-copy .eyebrow,
-  .gallery.gallery .eyebrow {
-    font-size: var(--m-eyebrow-size);
-    font-weight: var(--m-eyebrow-weight);
-    line-height: var(--m-eyebrow-lh);
-    letter-spacing: var(--m-eyebrow-tracking);
-  }
-
-  /* The hero eyebrow sits inside a flex wrapper, so the gap lives on the
-     wrapper there and on the element everywhere else. */
-  .hero.hero .hero-eyebrow-wrap {
-    margin-bottom: var(--m-gap-eyebrow);
-  }
-
-  .hero.hero .hero-eyebrow,
-  .experience.experience .eyebrow,
-  .section.story .pb-story-eyebrow,
-  .cafe.cafe .cafe-copy .eyebrow,
-  .gallery.gallery .eyebrow {
-    margin-bottom: var(--m-gap-eyebrow);
-  }
-
-  .hero.hero .hero-eyebrow {
-    margin-bottom: 0;
-  }
-
-  /* Heading — 24px serif on all five section headings, same leading and same
-     gaps. margin-block only: the centred sections keep `margin-inline: auto`. */
-  .experience.experience .experience-title,
-  .section.story .story-title,
-  .benefits.benefits .benefit-title,
-  .cafe.cafe .cafe-title,
-  .gallery.gallery .gallery-title {
-    font-size: var(--m-heading-size);
-    line-height: var(--m-heading-lh);
-    letter-spacing: var(--tracking-tight);
-    margin-block: 0 var(--m-gap-heading);
-  }
-
-  /* Italic is the section-heading style, but not for the benefit card titles:
-     they are short three-word card labels sitting upright above centred body
-     copy, and italic read as a mismatch at 24px. Declared explicitly rather
-     than left to inherit, because the hero h1 and the four h2s are all italic
-     and the card titles are the only upright heading in the mobile set. */
-  .experience.experience .experience-title,
-  .section.story .story-title,
-  .cafe.cafe .cafe-title,
-  .gallery.gallery .gallery-title,
-  .hero.hero .hero-title {
-    font-style: italic;
-  }
-
-  .benefits.benefits .benefit-title {
-    font-style: normal;
-  }
-
-  /* The hero h1 keeps its own fluid ladder (Hero.css) so it stays the largest
-     type on the page; only its leading and the gaps are unified. The divider
-     stays in place, so the heading -> description distance is split across it:
-     8px + 2px rule + 6px = the 16px gap every other section uses. */
-  .hero.hero .hero-title {
-    line-height: var(--m-heading-lh);
-    margin-bottom: calc(var(--m-gap-eyebrow) + 0.16em);
-  }
-
-  .hero.hero .hero-divider {
-    margin-bottom: calc(var(--m-gap-heading) - var(--m-gap-eyebrow) - 2px);
-  }
-
-  /* Description — 16px / 1.5 on every section, hero colour excepted.
-     margin-top is cleared because the heading's 16px bottom margin is the gap;
-     any top margin here would sit on top of it rather than collapse with it
-     (the story grid is a flex container, so its children never collapse). */
-  .hero.hero .hero-desc,
-  .experience.experience .experience-desc,
-  .section.story .story-paragraph,
-  .benefits.benefits .benefit-text,
-  .cafe.cafe .cafe-copy .cafe-paragraph,
-  .gallery.gallery .gallery-desc {
-    font-size: var(--m-body-size);
-    line-height: var(--m-body-lh);
-    letter-spacing: 0;
-    margin-top: 0;
+    padding-block: 88px;
   }
 }
+
+/* The Home page's phone-only typography block that used to live here under
+   `@media (max-width: 767px)` is gone. Those rules were page styles parked in
+   a shared file: their selectors were deliberately doubled (`.hero.hero`,
+   `.experience.experience .experience-title`) to out-rank the component sheets
+   that load after this one, so moving them to the base tier would have leaked
+   24px phone headings and 20px insets onto tablet and desktop. A phone-only
+   band cannot be expressed with min-width queries alone, so the block was
+   removed rather than promoted. The values it carried now belong in the Home
+   component stylesheets (Hero.css, CallToAction.css, BenefitsSection.css,
+   CafeMenu.css, GalleryMood.css), which own their own phone tier. */
 
 /* ---------- Typography ---------- */
 .eyebrow {
@@ -574,11 +410,17 @@ p, li, dd, figcaption {
 }
 
 /* ---------- Buttons ---------- */
+/* Phone tier carries the touch-target floor: 48px on the primary actions,
+   which is above the 44px minimum every target has to clear. The compact
+   lapel variant gives the height back at TABLET and up, where the pointer is
+   not a thumb. */
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  min-height: 48px;
   gap: 0.55rem;
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: var(--fs-btn);
   font-weight: var(--fw-medium);
   letter-spacing: var(--tracking-btn);
@@ -590,6 +432,12 @@ p, li, dd, figcaption {
   line-height: var(--lh-ui);
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+}
+
+@media (min-width: 744px) {
+  .btn--small {
+    min-height: 0;
+  }
 }
 
 .btn:disabled,
@@ -610,7 +458,7 @@ p, li, dd, figcaption {
   transform: translateX(4px);
 }
 
-/* Primary — warm coffee */
+/* Primary â€” warm coffee */
 .btn--primary {
   background-color: var(--color-coffee);
   color: var(--color-white);
@@ -622,7 +470,7 @@ p, li, dd, figcaption {
   box-shadow: var(--shadow-soft);
 }
 
-/* Secondary — light translucent neutral */
+/* Secondary â€” light translucent neutral */
 .btn--ghost {
   background-color: rgba(255, 255, 255, 0.16);
   color: var(--color-white);
@@ -635,7 +483,7 @@ p, li, dd, figcaption {
   transform: translateY(-2px);
 }
 
-/* Outline — for light backgrounds */
+/* Outline â€” for light backgrounds */
 .btn--outline {
   background-color: transparent;
   color: var(--color-espresso);
@@ -665,7 +513,13 @@ p, li, dd, figcaption {
 }
 
 /* ---------- Entrance animations ---------- */
-.reveal {
+/* The hidden start state is scoped to `.js` (set inline in index.html before
+   first paint). Un-scoped, `opacity: 0` is the default for every `.reveal`,
+   so a slow or failed first load paints the hero copy at zero opacity until
+   React mounts and the IntersectionObserver runs — roughly 650ms of blank
+   hero on a cold cache, measured. Gating on `.js` means no-JS and
+   JS-not-yet-ready both render the content in its final state instead. */
+.js .reveal {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
@@ -694,6 +548,9 @@ p, li, dd, figcaption {
     transition-duration: 0.001ms !important;
   }
 
+  /* `.js .reveal` above is the more specific rule, so this has to match it or
+     reduced-motion users would be left at the hidden start state. */
+  .js .reveal,
   .reveal {
     opacity: 1;
     transform: none;
@@ -710,6 +567,7 @@ p, li, dd, figcaption {
   border-radius: var(--radius-btn);
   background-color: var(--color-espresso);
   color: var(--color-white);
+  font-family: var(--font-serif);
   font-size: var(--fs-btn-sm);
   font-weight: var(--fw-semibold);
   letter-spacing: var(--tracking-wide);

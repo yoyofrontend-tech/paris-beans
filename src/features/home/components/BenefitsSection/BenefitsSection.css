@@ -1,14 +1,26 @@
+/* ============================================================
+   Benefits — Home only, three cards on the cream field.
+
+     PHONE   base (no query)  375–743   ONE column, 40px gaps, 48px section pad,
+                                      icon 40px, title 20px, text 14px
+     TABLET  744px+           744–1135  still ONE column, 72px section pad,
+                                      icon 48px, title 22px, text 16px
+     LAPTOP  1136px+          1136–1919 THREE equal columns, 96px section pad,
+                                      icon 56px, title 24px, text 16px
+     DESKTOP 1920px+          1920+     same as LAPTOP
+   ============================================================ */
+
 .benefits {
   /* Full-width warm cream section */
-  padding-block: var(--section-pad-desktop);
+  padding-block: 48px;
   background-color: var(--color-bg);
   border-block: 1px solid var(--color-border);
 }
 
 .benefits-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(2rem, 5vw, 4.5rem);
+  grid-template-columns: 1fr;
+  gap: 40px;
   text-align: center;
 }
 
@@ -16,80 +28,75 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-inline: 0.5rem;
+  padding-inline: 0;
 }
 
 .benefit-icon {
   display: block;
+  width: 40px;
+  height: 40px;
   color: var(--color-coffee);
   margin-bottom: 1.5rem;
 }
 
 .benefit-title {
   font-family: var(--font-serif);
-  font-size: var(--fs-h3);
+  font-size: 20px;
   font-weight: var(--fw-bold);
+  line-height: var(--lh-heading-sm);
   margin-bottom: 0.8rem;
 }
 
 .benefit-text {
   color: var(--color-muted);
-  font-size: var(--fs-text);
+  font-size: 14px;
   line-height: var(--lh-text);
 }
 
-/* ---------- Tablet: 768–1099px ----------
-   The three benefits stay in one row — that is the intended shape of the
-   section, icon over title over text, three across. What the tablet band needs
-   is more width per column, not a different layout.
-
-   Two things were eating it. The desktop `clamp(2rem, 5vw, 4.5rem)` gap took
-   77–110px of a 716–1024px content box, and `.benefit`'s `padding-inline:
-   0.5rem` took a further 16px out of every column. Both come back here, which
-   widens each column from 210–296px to 226–323px across the band without
-   touching the type sizes or the alignment.
-
-   Deliberately not a type-size change: the phone rule below pins
-   `.benefit-title` to 24px, the same tier the section headings sit on across
-   the phone band, so there is no tablet-sized title to shrink to match. */
-@media (min-width: 768px) and (max-width: 1099px) {
+/* ---------- TABLET ---------- */
+@media (min-width: 744px) {
   .benefits {
-    padding-block: var(--section-pad-tablet);
+    padding-block: 72px;
+  }
+
+  .benefit-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .benefit-title {
+    font-size: 22px;
+  }
+
+  .benefit-text {
+    font-size: 16px;
+  }
+}
+
+/* ---------- LAPTOP ---------- */
+@media (min-width: 1136px) {
+  .benefits {
+    padding-block: 96px;
   }
 
   .benefits-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: clamp(1.5rem, 2.5vw, 2.5rem);
+    gap: 40px;
   }
 
-  .benefit {
-    padding-inline: 0;
+  .benefit-icon {
+    width: 56px;
+    height: 56px;
   }
-}
 
-/* ---------- Responsive ----------
-   Type, section padding and the card inset are shared Home mobile tokens in
-   global.css (--m-heading-size, --m-section-pad, --m-inset), so nothing here
-   restates them. */
-@media (max-width: 767px) {
-  .benefits-grid {
-    grid-template-columns: 1fr;
-    gap: 3.2rem;
-  }
-}
-
-/* ---------- Laptop and desktop (1100px and up): 28px, one line ----------
-   The card titles were on --fs-h3, which is fluid: 24px at 375px rising to the
-   40px cap at 1920px. By 1440px that put "Complimentary Coffee" at 35px, where
-   it wrapped to two lines and pushed the three cards out of line with each
-   other. Pinned to a flat 28px here, which fits the narrowest desktop column
-   (301px at 1100px) on one line, and held there with nowrap so a longer title
-   can never re-wrap at a wide viewport.
-
-   Tablet keeps --fs-h3 and mobile keeps the shared 24px token. */
-@media (min-width: 1100px) {
   .benefit-title {
-    font-size: 28px;
-    white-space: nowrap;
+    font-size: 24px;
+  }
+
+  .benefit-text {
+    font-size: 16px;
   }
 }
+
+/* ---------- DESKTOP ----------
+   Identical to LAPTOP by spec: same three columns, same 96px rhythm. */

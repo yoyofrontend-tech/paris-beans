@@ -1,12 +1,40 @@
+/* ============================================================
+   Hero — mobile-first, four tiers, min-width only
+
+     PHONE   base (no query)  375–743   min-height 440px, copy bottom-anchored,
+                                      H1 32px, stacked buttons, 48px section pad
+     TABLET  744px+           744–1135  min-height 520px, H1 44px,
+                                      buttons in one row, 72px section pad
+     LAPTOP  1136px+          1136–1919 min-height 540px, H1 56px, 96px pad
+     DESKTOP 1920px+          1920+     H1 64px, everything else as LAPTOP
+
+   There are no max-width queries in this file and no doubled selectors:
+   every rule that has to beat a shared class (.eyebrow, .btn) is written as
+   a normal descendant (.hero-eyebrow, .hero-actions .btn) and this file loads
+   after global.css, so equal specificity resolves in its favour on its own.
+   ============================================================ */
+
 .hero {
   position: relative;
-  /* height is intentionally NOT fixed: the copy must never be clipped or
+  /* Height is intentionally NOT fixed: the copy must never be clipped or
      collide with the next section. min-height drives the visual height. */
-  min-height: clamp(740px, 53vw, 900px);
+  min-height: 440px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   overflow: hidden;
   background-color: var(--color-espresso-dark);
+
+  /* Scrim + vignette travel as tokens so they are written once. */
+  --hero-overlay: linear-gradient(
+    180deg,
+    rgba(31, 17, 10, 0.55) 0%,
+    rgba(31, 17, 10, 0.82) 100%
+  );
+  --hero-vignette: radial-gradient(
+    ellipse at center,
+    transparent 40%,
+    rgba(31, 17, 10, 0.5) 100%
+  );
 }
 
 .hero-media {
@@ -14,40 +42,27 @@
   inset: 0;
 }
 
+/* Full-bleed photo: cover, never stretched. */
 .hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
   will-change: transform;
-  animation: heroKenBurns 20s ease-in-out infinite alternate;
-}
-
-@keyframes heroKenBurns {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.08); }
+  transform: scale(1);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    105deg,
-    rgba(40, 22, 14, 0.82) 0%,
-    rgba(53, 29, 19, 0.55) 45%,
-    rgba(62, 37, 25, 0.35) 100%
-  );
+  background: var(--hero-overlay);
   z-index: 1;
 }
 
 .hero-vignette {
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    ellipse at center,
-    transparent 50%,
-    rgba(40, 22, 14, 0.35) 100%
-  );
+  background: var(--hero-vignette);
   z-index: 1;
   pointer-events: none;
 }
@@ -58,12 +73,12 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding-block: 90px;
+  /* Phone section rhythm; steps to 72px / 96px in the tiers below. */
+  padding-block: 48px;
 }
 
-.hero-content.container {
-  padding-inline: 80px;
-}
+/* No padding-inline rule here on purpose: this element also carries
+   `.container`, which supplies --gutter (20 / 32 / 80px). */
 
 .hero-copy {
   width: 100%;
@@ -75,7 +90,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 8px;
 }
 
 .hero-eyebrow-dot {
@@ -90,22 +105,29 @@
 
 .hero-eyebrow {
   color: #e8d9c5;
-  font-size: var(--fs-eyebrow);
-  font-weight: var(--fw-medium);
-  letter-spacing: var(--tracking-eyebrow);
+  /* PHONE 11px; the shared token takes over from the TABLET tier. */
+  font-size: 11px;
+  font-weight: var(--fw-regular);
+  line-height: 1.4;
+  /* 0.32em tracking overflowed the 350px measure below ~400px, so the
+     hero keeps a tighter tracking than the shared .eyebrow token. */
+  letter-spacing: 0.05em;
   margin-bottom: 0;
+  text-wrap: balance;
   min-width: 0;
   overflow-wrap: break-word;
 }
 
 .hero-title {
   color: var(--color-white);
-  font-size: var(--fs-h1);
-  line-height: var(--lh-heading);
+  font-size: 32px;
+  line-height: 1.15;
   font-weight: var(--fw-bold);
   font-style: italic;
   letter-spacing: var(--tracking-tight);
-  margin-bottom: 1.2rem;
+  /* 8px to the divider, plus the 0.16em that .hero-title-line cancels back
+     out, so the gap holds flat instead of tracking the h1. */
+  margin-bottom: calc(8px + 0.16em);
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
   overflow-wrap: break-word;
 }
@@ -114,9 +136,6 @@
 .hero-title-line {
   display: block;
   overflow: hidden;
-  /* Cancelled by .hero .hero-title's mobile margin-bottom, which adds the
-     same 0.16em back. Without that the heading -> divider distance would grow
-     and shrink with the fluid h1 instead of holding at --m-gap-eyebrow. */
   padding-bottom: 0.16em;
   margin-bottom: -0.16em;
 }
@@ -144,10 +163,6 @@
   transition-delay: 0.4s;
 }
 
-.hero-title.is-visible .hero-title-line:nth-child(4) .hero-title-line-inner {
-  transition-delay: 0.52s;
-}
-
 /* Accent — matches the rest of the title (solid white) */
 .hero-title em {
   font-style: italic;
@@ -167,22 +182,32 @@
 
 .hero-desc {
   color: rgba(255, 255, 255, 0.88);
-  max-width: 700px;
-  font-size: var(--fs-text);
+  max-width: 100%;
+  /* 14px at 375 rising to 16px by the end of the phone band. */
+  font-size: clamp(0.875rem, 0.35vw + 0.835rem, 1rem);
   line-height: var(--lh-text);
-  margin-bottom: 1.8rem;
+  margin-bottom: 24px;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* PHONE: stacked, full-width, left-aligned column of buttons. */
 .hero-actions {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
 }
 
 .hero-actions .btn {
-  height: 44px;
-  padding: 0 1.4rem;
+  width: 100%;
+  justify-content: center;
+  min-width: 0;
+  min-height: 48px;
+  height: auto;
+  padding: 0.75rem 1rem;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.3;
   transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease),
     background-color 0.35s var(--ease), border-color 0.35s var(--ease);
 }
@@ -201,134 +226,85 @@
 
 /* Reveal animations — defined in global.css */
 
-/* ---------- Responsive ---------- */
-@media (max-width: 1180px) {
+/* ---------- TABLET ---------- */
+@media (min-width: 744px) {
   .hero {
-    min-height: clamp(600px, 62vw, 740px);
+    min-height: 520px;
+    align-items: center;
   }
-}
 
-@media (max-width: 1024px) {
   .hero-content {
     padding-block: 72px;
   }
 
-  .hero-content.container {
-    padding-inline: clamp(24px, 5vw, 80px);
-  }
-}
-
-@media (max-width: 767px) {
-  .hero {
-    /* Auto height + min-height: content grows the section instead of being
-       clipped by a fixed height, so nothing overlaps the next section. */
-    min-height: clamp(560px, 92svh, 720px);
-    align-items: flex-end;
-  }
-
-  .hero-image {
-    animation: none;
-    transform: scale(1);
-  }
-
-  .hero-overlay {
-    background: linear-gradient(
-      180deg,
-      rgba(31, 17, 10, 0.55) 0%,
-      rgba(31, 17, 10, 0.82) 100%
-    );
-  }
-
-  .hero-vignette {
-    background: radial-gradient(
-      ellipse at center,
-      transparent 40%,
-      rgba(31, 17, 10, 0.5) 100%
-    );
-  }
-
-  /* The header is sticky (in-flow), so no large top offset is needed here.
-     Section padding and the 20px inset live in global.css's Home mobile block
-     (--m-section-pad / --m-inset) so all six Home sections share them. */
-
-  /* Eyebrow: 0.32em tracking overflowed below ~400px, which is why this block
-     existed. The phone tier now sets 0.05em, so the whole local override is
-     gone and the element inherits the shared token like every other section. */
   .hero-eyebrow {
-    text-wrap: balance;
+    font-size: var(--fs-eyebrow);
   }
 
   .hero-title {
-    /* Longest line is "Appointment, With A" (~20 glyphs). 7.6vw keeps it
-       inside the gutters at 320px and up without wrapping.
-
-       One clamp for the whole 320–767 band. The <=480 block used to redeclare
-       this with a different min, max and coefficient, which put a +5.4px step
-       at the 480/481 boundary and a +4.3px step at 360/361; its own max also
-       froze the h1 flat across a 272px band. Floor 1.45rem covers the 20px
-       inset at 320px, cap 2.35rem is the desktop-facing ceiling.
-
-       Size and leading only — line-height, the gaps and the description live
-       in the shared Home mobile block. */
-    font-size: clamp(1.45rem, 7.6vw, 2.35rem);
+    font-size: 44px;
   }
 
   .hero-divider {
-    width: 36px;
+    width: 40px;
   }
 
-  /* max-width only. Size, leading and the top margin are shared tokens — the
-     0.97rem / 1.65 / 1.6 overrides here made the hero the one section whose
-     body copy was smaller than every other section's. */
   .hero-desc {
-    max-width: 100%;
-    margin-bottom: 24px;
+    font-size: 17px;
+    max-width: 620px;
   }
 
+  /* One row, both buttons on it. */
   .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
   }
 
   .hero-actions .btn {
-    width: 100%;
-    justify-content: center;
-    min-width: 0;
-    min-height: 48px;
-    height: auto;
-    padding: 0.75rem 1rem;
-    white-space: normal;
-    text-align: center;
-    line-height: 1.3;
+    width: auto;
+    padding: 0.82rem 1.6rem;
+    white-space: nowrap;
   }
 }
 
-@media (max-width: 480px) {
+/* ---------- LAPTOP ---------- */
+@media (min-width: 1136px) {
   .hero {
-    min-height: clamp(520px, 94svh, 640px);
+    min-height: 540px;
   }
 
-  /* Only the bottom gap to the buttons; line-height is a shared token now. */
+  .hero-content {
+    padding-block: 96px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.1;
+    /* "Appointment, With A" is the longest line; 560px holds it at 56px. */
+    max-width: 560px;
+  }
+
   .hero-desc {
-    margin-bottom: 1.25rem;
+    font-size: 20px;
+    max-width: 620px;
+  }
+}
+
+/* ---------- DESKTOP ---------- */
+@media (min-width: 1920px) {
+  .hero-title {
+    font-size: 64px;
+    max-width: 620px;
   }
 
-  .hero-actions {
-    gap: 0.75rem;
-  }
-
-  .hero-actions .btn {
-    min-height: 48px;
+  .hero-desc {
+    max-width: 680px;
   }
 }
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .hero-image {
-    animation: none;
-  }
-
   .hero-title-line-inner {
     transform: none;
   }

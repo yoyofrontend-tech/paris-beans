@@ -1,4 +1,4 @@
-.footer {
+﻿.footer {
   position: relative;
   overflow: hidden;
   background-color: var(--color-footer);
@@ -71,14 +71,30 @@
 .footer.revealed .footer-reveal--1 { transition-delay: 0.12s; opacity: 1; transform: none; }
 .footer.revealed .footer-reveal--2 { transition-delay: 0.24s; opacity: 1; transform: none; }
 
+/* ============================================================
+   Footer â€” mobile-first, three tiers
+
+     PHONE   base          375â€“743   one column, stacked, 48/20, gap 16
+     TABLET  744px+        744â€“1135  brand across the top, Explore and
+                                         Visit & Contact in 2 columns,
+                                         bottom row below. 72/32
+     LAPTOP  1136px+       1136+     3 columns, bottom row brand left
+                                         and copyright right. 96/80
+     DESKTOP 1920px+                 identical to LAPTOP by spec
+
+   The side padding is not set here: .footer-grid also carries .container,
+   so its inline padding comes from --gutter (20 / 32 / 80) and can never
+   drift away from the page gutters. This file only owns padding-block.
+   ============================================================ */
+
 .footer-grid {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1.4fr 0.8fr 1.1fr;
-  gap: clamp(2.5rem, 5vw, 5rem);
-  padding-top: clamp(4.5rem, 7vw, 7rem);
-  padding-bottom: clamp(3.5rem, 6vw, 5.5rem);
+  /* Phone: everything in one column. */
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding-block: 48px;
 }
 
 /* Brand */
@@ -300,7 +316,7 @@
   /* This is a flex child of `.contact-item` (an icon beside a text column), and
      a flex item defaults to `min-width: auto`, so it refuses to shrink below
      its longest unbreakable run. The footer's email address and the legal line
-     are the culprits: at 768–1099px the contact column is ~200–280px wide, and
+     are the culprits: at 768â€“1099px the contact column is ~200â€“280px wide, and
      a 240px email set in the body size pushed the whole grid past the
      viewport rather than wrapping. `min-width: 0` lets the column shrink and the
      text wrap, which is what the layout wants. */
@@ -339,7 +355,7 @@ a.contact-body:focus-visible,
   z-index: 1;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(28, 15, 9, 0.35);
-  padding-block: 1.6rem;
+  padding-block: 32px;
 }
 
 .footer-bottom::before {
@@ -356,11 +372,12 @@ a.contact-body:focus-visible,
 }
 
 .footer-bottom-inner {
+  /* Phone: one stacked column, everything centred. */
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center;
+  gap: 16px;
   text-align: center;
 }
 
@@ -371,7 +388,7 @@ a.contact-body:focus-visible,
   color: var(--color-white);
 }
 
-/* HAIR RAP BY YOYO — golden shimmer sweep with a breathing glow */
+/* HAIR RAP BY YOYO â€” golden shimmer sweep with a breathing glow */
 .footer-bottom-brand span {
   display: inline-block;
   color: var(--color-coffee-light);
@@ -424,7 +441,7 @@ a.contact-body:focus-visible,
 .footer-legal {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 8px;
   font-size: var(--fs-btn-sm);
   color: rgba(255, 255, 255, 0.6);
   flex-wrap: wrap;
@@ -467,6 +484,10 @@ a.contact-body:focus-visible,
 .back-to-top {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  /* Touch-target floor on the phone, matching the 44px minimum every
+     footer control (social links) already clears. */
+  min-height: 44px;
   gap: 0.5rem;
   font-size: var(--fs-micro);
   font-weight: var(--fw-semibold);
@@ -515,7 +536,148 @@ a.contact-body:focus-visible,
   outline-offset: 3px;
 }
 
-/* ---------- Responsive ---------- */
+/* ==========================================================================
+   Responsive — the three tiers, in scale order
+   ========================================================================== */
+
+/* The AI concierge FAB is position:fixed in the bottom-right corner at
+   clamp(18px, 2.4vw, 30px) and is 58px wide. From the tablet tier up the
+   bottom row runs to the container's right edge, which at 1136px puts the
+   copyright under the FAB's left arc, so the whole row gives up the FAB's
+   lane: its own inset plus the FAB's width. On the phone the row is a
+   centred column and never reaches the corner, so the lane is 0.
+
+   The lane is dropped again at 1920px, where the 1440px container centres
+   itself inside the viewport and leaves 240px of clear space on each side. */
+.footer {
+  --fab-lane: 0px;
+}
+
+@media (min-width: 744px) {
+  .footer {
+    --fab-lane: 100px;
+  }
+}
+
+/* TABLET — 744px to 1135px.
+   Brand (logo, description, social) spans the full width on top; Explore
+   and Visit & Contact sit side by side underneath; the bottom row spans
+   below both. */
+@media (min-width: 744px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 32px;
+    padding-block: 72px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    padding-block: 40px;
+  }
+
+  .footer-bottom-inner {
+    /* Two rows of two, not one wrapping row: at 744px the four items are
+       ~700px of content against 680px of track, so flex-wrap split them
+       over three lines and left the back-to-top stranded on its own.
+       Explicit columns keep brand over copyright and tagline over the
+       back-to-top, at every tablet width. */
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 16px 24px;
+    text-align: left;
+    /* Right edge only: the left inset stays --gutter so the row still
+       lines up with the columns above it. */
+    padding-right: var(--fab-lane);
+  }
+
+  .footer-bottom-brand {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .footer-tagline {
+    grid-column: 2;
+    justify-self: end;
+  }
+
+  .footer-legal {
+    grid-column: 1;
+    justify-self: stretch;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .back-to-top {
+    grid-column: 2;
+    justify-self: end;
+  }
+}
+
+/* LAPTOP — 1136px and up.
+   Three columns: brand | Explore | Visit & Contact. The bottom row becomes
+   a four-track grid so the brand line lands hard left and the copyright
+   lands hard right, with the tagline centred in the slack between them. */
+@media (min-width: 1136px) {
+  .footer-grid {
+    grid-template-columns: 1.4fr 0.8fr 1.1fr;
+    gap: 80px;
+    padding-block: 96px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    padding-block: 48px;
+  }
+
+  .footer-bottom-inner {
+    /* One row of four: brand hard left, tagline centred in the slack,
+       back-to-top next in, copyright hard right. The tagline and the
+       back-to-top are swapped relative to source order so the copyright
+       lands on the right-hand end, where the laptop spec puts it. */
+    grid-template-columns: auto 1fr auto auto;
+    gap: 24px;
+    padding-right: var(--fab-lane);
+  }
+
+  .footer-bottom-brand {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .footer-tagline {
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .back-to-top {
+    grid-column: 3;
+    justify-self: end;
+  }
+
+  .footer-legal {
+    grid-column: 4;
+    justify-self: end;
+    flex-wrap: nowrap;
+  }
+}
+
+/* DESKTOP — 1920px and up. Same three columns and the same 1440px centred
+   container as LAPTOP, so the only thing to give back is the FAB lane the
+   container no longer reaches into. */
+@media (min-width: 1920px) {
+  .footer {
+    --fab-lane: 0px;
+  }
+}
+
+/* Reduced motion — a user preference, not a width tier, so it stays. */
 @media (prefers-reduced-motion: reduce) {
   .footer::before,
   .footer::after,
@@ -537,52 +699,3 @@ a.contact-body:focus-visible,
   }
 }
 
-@media (max-width: 900px) {
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .footer-brand {
-    grid-column: 1 / -1;
-  }
-}
-
-@media (max-width: 560px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-bottom-inner {
-    flex-direction: column;
-  }
-
-  .footer-legal {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
-/* Tablet landscape: 1024–1099px. The `max-width: 900px` rule drops the footer to
-   two columns, so 901–1099px was the one band still running the desktop
-   1.4fr / 0.8fr / 1.1fr three-column split. At 1024px that leaves the contact
-   column around 250px and the 5vw gap another 51px per gutter, which is a lot
-   of gutter for a 900px content box. Two columns with the brand still spanning
-   both reads better there and matches what 900px already does one step lower. */
-@media (min-width: 1024px) and (max-width: 1099px) {
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(2.5rem, 4vw, 3.5rem);
-  }
-
-  .footer-brand {
-    grid-column: 1 / -1;
-  }
-}
-
-/* Keep the back-to-top clear of the fixed AI concierge FAB
-   (bottom-right) wherever the footer edges reach into that corner. */
-@media (min-width: 561px) and (max-width: 1400px) {
-  .back-to-top {
-    margin-right: 92px;
-  }
-}

@@ -1,4 +1,4 @@
-.site-header {
+﻿.site-header {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -16,23 +16,47 @@
   box-shadow: 0 10px 30px -24px rgba(0, 0, 0, 0.1);
 }
 
+/* ============================================================
+   Header — mobile-first, three tiers
+
+     PHONE   base          375–743   logo left, hamburger right,
+                                          links live in the toggle menu
+     TABLET  744px+        744–1135  links left, logo centred,
+                                          "Book Appointment" right
+     LAPTOP  1136px+       1136+     same layout as TABLET, taller bar,
+                                          larger logo and links
+     DESKTOP 1920px+                 identical to LAPTOP by spec
+
+   Layout changes at 744, 1136 and 1920 only. Every tier is a min-width
+   override, so nothing here needs a max-width to take an effect back.
+
+   From 744px up the bar is a three-track grid, `1fr auto 1fr`, so the
+   logo sits dead centre whatever the nav and the CTA do. The cost of
+   that symmetry is that the nav gets exactly half the bar minus the
+   logo: at 744px that is ~304px for five links, which is why the tablet
+   links are one step smaller than the laptop ones.
+   ============================================================ */
+
 .header-inner {
   max-width: var(--container-max);
   margin-inline: auto;
   padding-inline: var(--gutter);
-  height: 78px;
+  height: var(--header-h);
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  /* Phone: logo, then everything else pushed to the right edge. */
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: 1rem;
 }
 
-/* Left navigation */
+/* Left navigation â€” off on the phone, where the drawer carries the links. */
 .nav-left {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: flex-start;
-  gap: clamp(0.6rem, 1.4vw, 1.6rem);
+  grid-column: 2;
+  grid-row: 1;
+  gap: 0.5rem;
 }
 
 .nav-link {
@@ -79,10 +103,15 @@
 .header-logo {
   display: flex;
   align-items: center;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
 }
 
 .header-logo .logo-img {
-  height: 56px;
+  /* Phone: sized to sit inside the 64px bar with 10px of air above and
+     below. Grows with the bar at each tier. */
+  height: 44px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -93,15 +122,19 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  grid-column: 2;
+  grid-row: 1;
   gap: 0.9rem;
 }
 
+/* The header CTA is a phone drawer link, not a phone header control. */
 .header-cta {
+  display: none;
   white-space: nowrap;
 }
 
 .menu-toggle {
-  display: none;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 44px;
@@ -149,7 +182,7 @@
   transform-origin: center;
 }
 
-/* Turn into an ✕ when the drawer is open (instant, no animation) */
+/* Turn into an âœ• when the drawer is open (instant, no animation) */
 .hamburger-box.is-open .hamburger-line:nth-child(1) {
   transform: translateY(6px) rotate(45deg);
 }
@@ -253,7 +286,7 @@
   transform: scale(0.92);
 }
 
-/* Close ✕ — rotated 90deg by framer-motion, so it needs a transform origin. */
+/* Close âœ• â€” rotated 90deg by framer-motion, so it needs a transform origin. */
 .pb-menu-close-x {
   position: relative;
   display: block;
@@ -348,7 +381,7 @@
   border-radius: 4px;
 }
 
-/* 01–05: fixed width so every label starts on the same x. */
+/* 01â€“05: fixed width so every label starts on the same x. */
 .pb-menu-index {
   flex-shrink: 0;
   width: 28px;
@@ -579,53 +612,113 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
   -webkit-backdrop-filter: blur(6px);
 }
 
-/* The @media (min-width: 1441px) block that used to sit here resized .nav-link
-   from --fs-body-sm to --fs-text, a 14.72px -> 16.96px (+15.2%) step at one
-   arbitrary width, for no reason tied to the header's own layout. It is gone:
-   nav links now hold --fs-body-sm at every width. */
+/* ==========================================================================
+   Responsive — the three tiers, in scale order
+   ========================================================================== */
 
-/* Responsive */
-@media (max-width: 1180px) {
+/* TABLET — 744px to 1135px.
+   Same three-track centred layout as the laptop tier, scaled to the
+   72px bar. The drawer stays in the file but is unreachable here: the
+   hamburger that opens it is hidden from this tier up. */
+@media (min-width: 744px) {
+  .header-inner {
+    grid-template-columns: 1fr auto 1fr;
+    height: var(--header-h);
+    gap: 0.75rem;
+  }
+
   .nav-left {
-    gap: 0.6rem;
+    display: flex;
+    grid-column: 1;
+    justify-content: flex-start;
+    /* 6px between links, not 8: the centred logo leaves the nav only
+       half the bar, and at 744px the five labels plus gaps have to fit
+       in ~304px. Verified 13px with 6px gaps clears it by ~13px. */
+    gap: 0.375rem;
   }
 
   .nav-link {
+    /* One step below the laptop size, with padding that still clears the
+       44px minimum target vertically. */
+    font-size: 0.8125rem;
     letter-spacing: 0;
-  }
-}
-
-@media (max-width: 1024px) {
-  .nav-left {
-    display: none;
-  }
-
-  .header-inner {
-    grid-template-columns: auto 1fr;
-    height: 66px;
-  }
-
-  .menu-toggle {
-    display: inline-flex;
+    padding-block: 0.7rem;
+    padding-inline: 0.05rem;
+    white-space: nowrap;
   }
 
   .header-logo {
-    grid-column: 1;
-    justify-self: start;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .header-logo .logo-img {
+    height: 48px;
   }
 
   .header-right {
-    grid-column: 2;
+    grid-column: 3;
   }
 
   .header-cta {
+    display: inline-flex;
+  }
+
+  .menu-toggle {
     display: none;
   }
 }
 
+/* LAPTOP — 1136px and up.
+   Same three-track centred layout, on the taller 80px bar. The logo is
+   sized to sit inside the bar with 8px of air above and below, the same
+   16px inset the phone and tablet tiers use, instead of overhanging it. */
+@media (min-width: 1136px) {
+  .header-inner {
+    grid-template-columns: 1fr auto 1fr;
+    height: var(--header-h);
+    gap: 2rem;
+  }
+
+  .nav-left {
+    grid-column: 1;
+    justify-content: flex-start;
+    gap: clamp(0.75rem, 1.4vw, 1.6rem);
+  }
+
+  .nav-link {
+    font-size: var(--fs-body-sm);
+    letter-spacing: 0.02em;
+    padding-block: 0.7rem;
+    padding-inline: 0.1rem;
+    white-space: nowrap;
+  }
+
+  .header-logo {
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .header-logo .logo-img {
+    height: 64px;
+  }
+
+  .header-right {
+    grid-column: 3;
+  }
+}
+
+/* DESKTOP — 1920px and up. Identical to LAPTOP by spec (same 1440px
+   container, same 80px gutters, same 80px bar), so nothing is overridden.
+   The container centres itself from --container-max, which needs no
+   query at this width. */
+
 /* Reduced motion: framer-motion already drops the slide and the stagger
    (see useReducedMotion in Header.jsx). This only tames the CSS-side
-   hover transforms so nothing slides under a reduced-motion preference. */
+   hover transforms so nothing slides under a reduced-motion preference.
+   Not a width tier — it is a user preference, so it stays. */
 @media (prefers-reduced-motion: reduce) {
   .pb-menu-link .pb-menu-label,
   .pb-menu-link .pb-menu-arrow {
@@ -634,9 +727,11 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
   }
 }
 
-/* Short viewports. The 56px row height and 52px CTA are fixed spec, so the
-   space is reclaimed from padding, gaps and dividers instead. Sized so all
-   five rows plus the pinned footer fit at 360x640 with nothing cut off. */
+/* Short viewports — a height tier, not a width tier. Landscape phones and
+   short laptop windows have under 680px of height, and the drawer's rows
+   are fixed spec (56px rows, 52px CTA), so the space comes back out of
+   padding, gaps and dividers instead. Sized so all five rows plus the
+   pinned footer fit at 390px tall with nothing cut off. */
 @media (max-height: 680px) {
   .pb-menu-drawer {
     padding-top: calc(0.8rem + env(safe-area-inset-top, 0px));
@@ -672,11 +767,3 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
   }
 }
 
-/* Very narrow devices — full-bleed drawer. The index column stays 28px and
-   the label stays 24px so the shared left edge holds at every width. */
-@media (max-width: 360px) {
-  .pb-menu-drawer {
-    width: 100%;
-    padding-inline: 1.25rem;
-  }
-}

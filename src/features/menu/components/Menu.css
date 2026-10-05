@@ -1,40 +1,68 @@
 /* ============================================================
    Menu page — body styles (between Header and Footer)
    Shared by: MenuHero, MenuCategories, MenuSpecialty, MenuCafe
+
+   WIDTH TIERS on this page, and only these:
+     base (no query) ..... PHONE, 375–640
+     min-width: 641px .... TABLET, 641–1023
+     min-width: 1024px ... LAPTOP and up, the old desktop baseline verbatim
+     min-width: 1100px / 1600px ... untouched
+
+   There is no max-width query left in this file. The old 1100 / 900 / 767 /
+   768–1023 / 640 / 560 / 480 blocks each re-stated the same rules at a
+   different width, so one phone changed shape five times between 375 and 640:
+   the hero went banner → card at 480, the copy column jumped 60% → 78% →
+   none, and the café cards went 3-up → 2-up → carousel. Now the only jump
+   inside the phone/tablet range is 640 → 641.
+
+   The desktop values moved from the base into min-width: 1024px because the
+   base is now the phone. Nothing about the laptop rendering changed; the
+   declarations are the same values in the same order.
    ============================================================ */
 
 .menu-page {
   background-color: var(--color-white);
+
+  /* Page-local side inset. Deliberately NOT var(--gutter): that token steps at
+     744px, which would drop a second jump inside the tablet band (20px at 641,
+     32px at 744). Figma's 24px wins for the whole tablet band. */
+  --menu-inset: 20px;
+
+  /* Clip rather than scroll: the doodles and the halo are decorative and
+     oversized on purpose, and this is the one place that can guarantee they
+     never hand the document a horizontal scrollbar. `clip` does not create a
+     scroll container, so the sticky header is unaffected. */
+  overflow-x: clip;
 }
 
-/* Body content container — ~91% viewport, max 1920px, centered */
 .menu-page .container {
-  width: 91%;
-  max-width: 1920px;
+  width: 100%;
+  max-width: none;
+  padding-inline: var(--menu-inset);
 }
 
 /* ── Menu hero ───────────────────────────────────────────── */
+/* Phone: a rounded card floating 24px under the header, not a full-bleed
+   banner. The copy sits at the bottom; the card's own min-height is the only
+   thing above it. */
 .menu-hero {
-  /* Vertical focal point of the background photo. The subject (the glass)
-     sits at ~60% of menu_background.jpg's height, so the crop window is
-     anchored there instead of the default centre — otherwise a wide, short
-     banner slices the bottom off the glass. */
-  --menu-hero-focal-y: 60%;
+  /* object-position anchor for the photo. The old file pinned this to 60% of
+     menu_background.jpg's height to keep the glass in frame on a wide banner;
+     the card is nearly square and crops its sides instead, so it centres. */
+  --menu-hero-focal-y: 50%;
+
   position: relative;
-  margin: 0 auto;
-  width: min(1920px, 93.5vw);
-  /* The photo is 3:2. Because the hero is far wider than it is tall, the
-     visible slice of the photo is only ~45% of its height; scaling the
-     banner with the viewport keeps that slice (and the margins around the
-     subject) constant from laptop to ultrawide. */
-  min-height: clamp(240px, 26vw, 640px);
-  border-radius: var(--radius-sm);
+  margin: 24px 16px 0;
+  min-height: 220px;
+  border-radius: 16px;
   overflow: hidden;
   display: flex;
-  align-items: center;
-  background-color: var(--color-white);
-  padding-top: 50px;
-  padding-bottom: 50px;
+  flex-direction: column;
+  /* Bottom-aligned copy. This is a COLUMN flex box, so justify-content is the
+     main (vertical) axis here — no flex-grow needed on the child. */
+  justify-content: flex-end;
+  padding: 24px 20px;
+  background-color: var(--color-espresso);
 }
 
 .menu-hero-media {
@@ -45,71 +73,128 @@
 .menu-hero-img {
   width: 100%;
   height: 100%;
+  /* cover + a real focal point: the photo is never stretched to fit. */
   object-fit: cover;
-  object-position: 50% var(--menu-hero-focal-y);
+  object-position: center var(--menu-hero-focal-y);
   display: block;
 }
 
 .menu-hero-overlay {
   position: absolute;
   inset: 0;
-  /* Dark enough under the copy on the left, light enough on the right that
-     the subject stays legible. Strengthened right-side opacity to prevent
-     background bleed on some screens. */
-  background: linear-gradient(
-    100deg,
-    rgba(53, 29, 19, 0.7) 0%,
-    rgba(67, 39, 25, 0.55) 46%,
-    rgba(67, 39, 25, 0.35) 100%
-  );
+  /* Flat 55% espresso. The old left-to-right ramp went 70% → 35%, which on a
+     card this narrow put the paragraph's tail end on bare photo. */
+  background: rgba(60, 35, 20, 0.55);
 }
 
-.menu-hero-content {
+/* The card owns its padding, so the container must not add a second inset. */
+.menu-hero-content.container {
+  /* Lifts the copy above .menu-hero-media and .menu-hero-overlay. Both are
+     position: absolute, and positioned descendants paint after in-flow
+     content, so without this the opaque photo covers the hero text. */
   position: relative;
   z-index: 2;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-inline: 0;
 }
 
 .menu-hero-copy {
-  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
+}
+
+/* Keeps the label glued to the heading: the only gap in the lead group is the
+   label's own margin-bottom. */
+.menu-hero-lead {
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-hero-eyebrow {
-  color: #c7a45a;
-  margin-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: rgba(245, 235, 221, 0.9);
+}
+
+/* The dash is an em dash glyph in the markup; font-size 0 retires the glyph so
+   the box paints as a true 1px hairline instead of a text run. */
+.menu-hero-dash {
+  flex: none;
+  width: 14px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  background-color: rgba(245, 235, 221, 0.9);
 }
 
 .menu-hero-title {
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: var(--fw-bold);
-  font-size: var(--fs-h1);
-  line-height: var(--lh-heading);
-  letter-spacing: var(--tracking-tight);
-  color: var(--color-white);
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: 0;
+  color: #faf3e8;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.25);
-  margin-bottom: 0.9rem;
+  margin: 0;
+  /* 330px holds the heading to THREE lines across the whole band. The string
+     inks 698px at 28px, so any measure from 349px up collapses it to two —
+     which is what happened between 430 and 500. A 28px heading in three lines
+     is a narrow measure by nature; that is the frame, not a bug. */
+  max-width: 330px;
+  /* Greedy fill, not the global `text-wrap: balance` every h1–h6 carries:
+     balance evens the lines out and would break after "Good,". */
+  text-wrap: wrap;
 }
 
 .menu-hero-desc {
-  max-width: 520px;
-  font-size: var(--fs-text);
-  line-height: var(--lh-text);
-  color: rgba(255, 255, 255, 0.88);
+  margin: 0;
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(250, 243, 232, 0.92);
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* ── Category navigation ─────────────────────────────────── */
+/* Styling only. The tabs, the dropdown, the sliding indicator and every bit of
+   the switch logic in MenuCategories.jsx are untouched; this section only
+   measures the row. */
 .menu-cats {
-  padding-top: clamp(1.5rem, 2.5vw, 2rem);
+  padding-top: 0;
 }
 
 .menu-cats-tabs {
   position: relative;
   display: flex;
   align-items: center;
-  gap: clamp(1rem, 2vw, 1.75rem);
-  margin-bottom: 0.7rem;
-  padding: 0.4rem;
+  gap: 16px;
+  /* 2px of block padding over a 44px tab makes the nav 48px tall, and the
+     indicator's `height: calc(100% - 8px)` then resolves to exactly the 40px
+     pill the frame wants. The JS measures the active button, so the pill and
+     the text can never drift apart. */
+  padding: 2px 0;
+  margin-top: 28px;
+  /* Three tabs do not fit a 375px row at these metrics, so the row scrolls
+     inside itself and the page never does. */
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.menu-cats-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 /* Sliding active pill */
@@ -119,7 +204,7 @@
   left: 0;
   width: var(--ind-w, 0px);
   height: calc(100% - 8px);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-btn);
   background: var(--color-espresso);
   transform-origin: left center;
   transform: translateX(var(--ind-x, 0px));
@@ -134,13 +219,17 @@
   z-index: 1;
   display: inline-flex;
   align-items: center;
-  font-family: var(--font-sans);
-  font-size: var(--fs-text);
-  font-weight: var(--fw-medium);
-  padding: 0.45rem 1.15rem;
-  border-radius: var(--radius-sm);
-  background: transparent;
+  /* flex: none so a long label scrolls the row instead of being squeezed. */
+  flex: none;
+  /* 44px touch target on a 40px pill. */
+  min-height: 44px;
+  padding: 0 16px;
   border: 0;
+  border-radius: var(--radius-btn);
+  background: transparent;
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-weight: var(--fw-medium);
   color: var(--color-espresso);
   cursor: pointer;
   white-space: nowrap;
@@ -148,6 +237,7 @@
 }
 
 .menu-tab.is-active {
+  font-size: 15px;
   color: var(--color-white);
 }
 
@@ -161,12 +251,16 @@
   outline-offset: 2px;
 }
 
+/* The 1px rule under the whole row. margin-bottom is on the rule, not on the
+   row, so the line stays welded to the tabs and the 28px sits below it. */
 .menu-cats-divider {
   height: 1px;
+  margin-bottom: 28px;
   background: var(--color-border);
 }
 
-/* Mobile category dropdown — hidden on tablet/desktop */
+/* The dropdown markup and its script stay exactly as they are; the tab row is
+   the phone affordance now, so the trigger is not shown in either band. */
 .menu-cats-dropdown {
   display: none;
   position: relative;
@@ -179,7 +273,7 @@
   align-items: center;
   gap: 0.7rem;
   width: 100%;
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   /* 16px keeps iOS/iPadOS from zooming into the control on focus */
   font-size: 16px;
   font-weight: var(--fw-medium);
@@ -271,7 +365,7 @@
   gap: 0.7rem;
   padding: 0.7rem 0.75rem;
   border-radius: var(--radius-sm);
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: 16px;
   font-weight: var(--fw-medium);
   color: var(--color-espresso);
@@ -306,42 +400,52 @@
 /* ── Specialty hot coffees ───────────────────────────────── */
 .menu-special {
   background-color: var(--color-white);
-  padding-top: clamp(26px, 2.4vw, 34px);
-  padding-bottom: clamp(2.5rem, 4vw, 3.5rem);
+  padding-bottom: 40px;
 }
 
+/* One column on the phone: the list first, the drink stage under it. */
 .menu-special-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr);
-  gap: clamp(2rem, 3.5vw, 3.5rem);
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
 }
 
 .menu-special-title {
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: var(--fw-bold);
-  font-size: var(--fs-section);
-  line-height: var(--lh-heading);
+  font-size: 28px;
+  line-height: 1.15;
   letter-spacing: var(--tracking-tight);
+  /* Greedy fill, not the inherited balance: balance would split the heading
+     into two even lines at every width instead of letting it fill. */
+  text-wrap: wrap;
   color: #a96e3f;
-  margin-bottom: clamp(1.5rem, 2.2vw, 2.2rem);
+  margin: 0 0 20px;
+  /* Heading + pill ink ~428px at 28px. Without a cap the pill rejoins the
+     heading as soon as the card passes ~430px and the row silently drops from
+     two lines to one; 340px keeps it broken in two across 375–640. */
+  max-width: 340px;
   animation: menuTitleIn 0.7s var(--ease) both;
 }
 
 .menu-special-size {
-  font-family: var(--font-sans);
-  font-style: normal;
-  font-weight: var(--fw-medium);
-  font-size: var(--fs-label);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: var(--fw-regular);
+  font-size: 20px;
   color: var(--color-coffee);
   background: rgba(169, 110, 63, 0.1);
   border: 1px solid rgba(169, 110, 63, 0.32);
   border-radius: var(--radius-btn);
-  padding: 0.22em 0.75em;
-  margin-left: 0.5rem;
-  vertical-align: 0.55em;
+  padding: 0.1em 0.6em;
+  vertical-align: 0.5em;
   white-space: nowrap;
+  /* inline-block so the pill is one atomic box: as a padded inline span it
+     was a break opportunity and "(240 ml)" split after the bracket. Atomic,
+     the break falls before the pill, which is what puts it on its own line
+     on the phone. */
+  display: inline-block;
 }
 
 /* Echo cup ghosted behind the heading */
@@ -357,9 +461,11 @@
 
 .menu-special-ghost {
   position: absolute;
-  top: -6%;
-  right: 2%;
-  width: clamp(76px, 11vw, 140px);
+  top: 0;
+  /* right: 0 keeps the doodle inside the list box, so an oversized one can
+     never widen the page. `clip` on .menu-page is the belt to this braces. */
+  right: 0;
+  width: 84px;
   z-index: 0;
   opacity: 0.08;
   transform: rotate(8deg);
@@ -377,6 +483,7 @@
 .menu-list {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   animation: menuSwapIn 0.5s var(--ease);
 }
 
@@ -393,7 +500,6 @@
 
 .menu-row {
   position: relative;
-  padding: 0.55rem 0;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
@@ -405,80 +511,57 @@
   transform: none;
 }
 
+/* No hover dot on a touch band — it has nothing to trigger on. */
 .menu-row::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -0.85rem;
-  width: 5px;
-  height: 5px;
-  margin-top: -2.5px;
-  border-radius: 50%;
-  background: var(--color-coffee);
-  opacity: 0;
-  transform: scale(0);
-  transition: opacity 0.35s var(--ease), transform 0.35s var(--ease);
-}
-
-.menu-row:hover::before {
-  opacity: 1;
-  transform: scale(1);
+  display: none;
 }
 
 .menu-item-name {
   transition: color 0.35s var(--ease), transform 0.35s var(--ease);
 }
 
-.menu-row:hover .menu-item-name {
-  color: var(--color-coffee);
-  transform: translateX(3px);
-}
-
 .menu-row-top {
   display: flex;
   align-items: baseline;
-  gap: 0.65rem;
+  gap: 8px;
 }
 
 .menu-item-name {
   font-family: var(--font-serif);
   font-weight: var(--fw-semibold);
-  font-size: var(--fs-sub);
+  font-size: 15px;
   color: var(--color-espresso);
-  white-space: nowrap;
+  /* Wraps on the phone rather than pushing the price off the row. */
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .menu-item-leader {
   flex: 1 1 auto;
+  /* align the dots to the text baseline, not the row's centre */
+  align-self: baseline;
   transform: translateY(-0.28em);
-  border-bottom: 2px dotted var(--color-border);
+  border-bottom: 1px dotted var(--color-border);
 }
 
 .menu-item-price {
+  /* flex: none + nowrap: a price is never wrapped and never squeezed. */
   flex: 0 0 auto;
   font-family: var(--font-serif);
   font-weight: var(--fw-semibold);
-  font-size: var(--fs-sub);
+  font-size: 15px;
   color: var(--color-coffee);
   white-space: nowrap;
   transition: color 0.35s var(--ease);
 }
 
-.menu-row:hover .menu-item-price {
-  color: var(--color-espresso);
-}
-
 .menu-item-desc {
-  margin-top: 0.3rem;
-  font-size: var(--fs-text);
-  line-height: var(--lh-text);
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.4;
   color: var(--color-muted);
-  max-width: 44ch;
+  max-width: none;
   transition: color 0.35s var(--ease);
-}
-
-.menu-row:hover .menu-item-desc {
-  color: var(--color-espresso);
 }
 
 /* ── Large coffee visual ─────────────────────────────────── */
@@ -499,7 +582,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: clamp(300px, 36vw, 540px);
+  height: clamp(200px, 56vw, 260px);
   --tilt-x: 0;
   --tilt-y: 0;
   --shift-x: 0px;
@@ -515,8 +598,8 @@
   height: 100%;
 }
 
-/* Soft breathing glow behind the cup, concentric with the stage so it reads as
-   a halo around the subject rather than a shape sitting off to one side.
+/* Soft breathing glow behind the cup, concentric with the stage so it reads as a
+   halo around the subject rather than a shape sitting off to one side.
    Centring uses the independent `translate` property and the pulse only uses
    `transform`, so the halo stays centred even when the animation is off
    (prefers-reduced-motion) instead of collapsing to its top-left corner.
@@ -527,7 +610,7 @@
   top: 50%;
   left: 50%;
   z-index: 0;
-  width: min(122%, 600px);
+  width: min(108%, 320px);
   aspect-ratio: 1;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(169, 110, 63, 0.18), rgba(196, 166, 74, 0.07) 45%, transparent 62%);
@@ -701,19 +784,21 @@
 
 /* ── From the café ───────────────────────────────────────── */
 .menu-cafe {
-  background-color: var(--color-surface);
-  padding-block: clamp(4rem, 7vw, 6.5rem);
+  background-color: #f8f4ec;
+  padding-block: 48px;
 }
 
 .menu-cafe-eyebrow {
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
+  font-size: 12px;
 }
 
 .menu-cafe-title {
   font-style: italic;
-  font-size: var(--fs-section);
-  margin: 0 0 1.6rem;
-  max-width: 640px;
+  font-size: 28px;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  max-width: 100%;
 }
 
 .menu-cafe-title em {
@@ -722,62 +807,72 @@
 }
 
 .menu-cafe-desc {
-  max-width: 620px;
-  font-size: var(--fs-text);
-  line-height: var(--lh-text);
+  max-width: 100%;
+  font-size: 15px;
+  line-height: 1.5;
   color: var(--color-muted);
-  margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 28px;
 }
 
-@media (min-width: 1100px) {
-  .menu-cafe-desc {
-    white-space: nowrap;
-    max-width: none;
-  }
-}
-
-/* Compact café cards */
+/* Café cards — a user-dragged peek row on the phone.
+   `--menu-slide-step` is what MenuCafe.jsx multiplies by the active index to
+   translate the track, so it has to stay exactly one card plus one gap or a
+   drag lands between cards. */
 .menu-cards {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: clamp(1rem, 1.6vw, 1.6rem);
+  --menu-slide-step: calc(72% + 12px);
+  display: block;
+  /* Starts on the page's left inset and runs to the viewport's right edge, so
+     the next card reads as "there is more" instead of stopping at the gutter. */
+  margin-right: calc(var(--menu-inset) * -1);
+  overflow: hidden;
+  touch-action: pan-y;
+  overscroll-behavior-x: contain;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
-/* Desktop: the slider track is transparent so cards stay direct grid items */
+.menu-cards img {
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
 .menu-slider-track {
-  display: contents;
+  display: flex;
+  gap: 12px;
+  transition: transform 0.6s var(--ease);
 }
 
 .menu-card {
   position: relative;
+  flex: 0 0 72%;
+  width: auto;
+  /* No block padding: the photo and the caption are flush with the card edges
+     and the card's own radius + overflow do the clipping, so there is no white
+     band above the photo and the white caption blends into the card instead of
+     hanging off it. This is also what the 1024px tier below runs. */
+  padding-block: 0;
   background: var(--color-white);
-  border-radius: var(--radius-sm);
-  overflow: visible;
+  border-radius: var(--radius-md);
+  overflow: hidden;
   transition: transform 0.45s var(--ease);
 }
 
-.menu-card:hover {
-  transform: translateY(-8px);
+/* No hover lift or zoom on a touch row. */
+.menu-card:hover,
+.menu-card:hover .menu-card-thumb img {
+  transform: none;
 }
 
 .menu-card-accent {
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: var(--color-gold);
-  border: 3px solid var(--color-surface);
-  z-index: 3;
+  display: none;
 }
 
 .menu-card-thumb {
   width: 100%;
   aspect-ratio: 3 / 4;
   overflow: hidden;
-  border-radius: var(--radius-sm) 6px 0 0;
+  border-radius: 12px 12px 0 0;
   background: var(--color-white);
 }
 
@@ -786,23 +881,26 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.9s var(--ease);
-}
-
-.menu-card:hover .menu-card-thumb img {
-  transform: scale(1.05);
 }
 
 .menu-card-caption {
-  padding: 0.7rem 0.5rem 0.8rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.65rem 0.8rem;
+  background: var(--color-white);
+  border-radius: 0 0 12px 12px;
   font-family: var(--font-serif);
   font-weight: var(--fw-medium);
-  font-size: var(--fs-text);
+  font-size: 20px;
+  line-height: var(--lh-heading-sm);
   color: var(--color-espresso);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  text-align: center;
+  /* "Sundowner Mocktail" wraps instead of truncating. */
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 /* ── Final CTA ───────────────────────────────────────────── */
@@ -810,12 +908,14 @@
   position: relative;
   overflow: hidden;
   background-color: var(--color-white);
-  padding-block: clamp(4rem, 6vw, 5.5rem) clamp(4.5rem, 7vw, 6.5rem);
+  padding-block: 56px;
 }
 
 .menu-cta-stripes {
   position: absolute;
   inset: 0;
+  /* A repeating gradient is its own repeat: the stripe pitch is fixed at 124px
+     and never scales with the section. */
   background: repeating-linear-gradient(
     90deg,
     var(--color-soft-green) 0,
@@ -833,11 +933,16 @@
   text-align: center;
 }
 
+.menu-cta .eyebrow {
+  font-size: 12px;
+}
+
 .menu-cta-title {
   font-style: italic;
-  font-size: var(--fs-section);
-  margin: 1rem auto 1.2rem;
-  max-width: 640px;
+  font-size: 24px;
+  line-height: 1.15;
+  margin: 12px auto 14px;
+  max-width: 100%;
 }
 
 .menu-cta-title em {
@@ -846,15 +951,567 @@
 }
 
 .menu-cta-desc {
-  max-width: 800px;
-  margin: 0 auto 2.2rem;
-  font-size: var(--fs-text);
-  line-height: var(--lh-text);
+  /* The string inks 425px at 13px, so past ~430px of column it fits on one
+     line. Capping just under that keeps it on two across the phone band. */
+  max-width: 400px;
+  margin: 0 auto 24px;
+  font-size: 13px;
+  line-height: 1.5;
   color: var(--color-muted);
 }
 
-@media (min-width: 1100px) {
+.menu-cta .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-height: 48px;
+  padding: 0 28px;
+  border-radius: var(--radius-btn);
+  white-space: nowrap;
+}
+
+/* ============================================================
+   TABLET — 641px and up to 1023px
+   The single tablet step. Everything above is the phone; this block only
+   restates what the 744px frame changes.
+   ============================================================ */
+@media (min-width: 641px) {
+  .menu-page {
+    /* Figma's tablet inset. Not var(--gutter), which would be 20px here and
+       32px from 744px — a jump in the middle of this very band. */
+    --menu-inset: 24px;
+  }
+
+  /* ── Hero ── */
+  .menu-hero {
+    margin: 32px 24px 0;
+    min-height: 270px;
+    border-radius: 20px;
+    padding: 36px 32px;
+  }
+
+  .menu-hero-copy {
+    gap: 40px;
+  }
+
+  .menu-hero-eyebrow {
+    font-size: 14px;
+  }
+
+  .menu-hero-title {
+    font-size: 44px;
+    line-height: 1.1;
+    /* 520px holds the heading to THREE lines at 744. The string inks 1082px
+       at 44px, so an uncapped measure goes to two lines the moment the card
+       passes ~700px. */
+    max-width: 520px;
+  }
+
+  .menu-hero-desc {
+    font-size: 18px;
+  }
+
+  /* ── Category row ── */
+  .menu-cats-tabs {
+    gap: 28px;
+    margin-top: 36px;
+    /* 2px + a 52px tab = 54px, and the indicator's calc(100% - 8px) becomes
+       the 48px pill. */
+    padding: 2px 0;
+  }
+
+  .menu-tab {
+    min-height: 52px;
+    padding: 0 24px;
+    font-size: 18px;
+  }
+
+  .menu-tab.is-active {
+    font-size: 20px;
+  }
+
+  .menu-cats-divider {
+    margin-bottom: 36px;
+  }
+
+  /* ── Menu list ── */
+  .menu-special {
+    padding-bottom: 56px;
+  }
+
+  .menu-special-grid {
+    gap: 32px;
+  }
+
+  .menu-special-title {
+    font-size: 44px;
+    line-height: 1.1;
+    margin-bottom: 28px;
+    /* Tablet wants heading + pill on ONE line, so the phone 340px measure cap
+       has to go — at 44px it would shred the heading into three lines. */
+    max-width: 100%;
+  }
+
+  .menu-special-size {
+    font-size: 22px;
+  }
+
+  .menu-list {
+    gap: 28px;
+  }
+
+  .menu-item-name,
+  .menu-item-price {
+    font-size: 17px;
+  }
+
+  .menu-item-desc {
+    font-size: 15px;
+  }
+
+  .menu-special-ghost {
+    width: 132px;
+    opacity: 0.09;
+  }
+
+  .menu-special-visual {
+    height: clamp(260px, 40vw, 360px);
+  }
+
+  .menu-glow {
+    width: min(118%, 460px);
+  }
+
+  /* ── From the café ── */
+  .menu-cafe {
+    padding-block: 72px;
+  }
+
+  .menu-cafe-eyebrow {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+
+  .menu-cafe-title {
+    font-size: 44px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .menu-cafe-desc {
+    font-size: 18px;
+    margin-bottom: 36px;
+  }
+
+  .menu-cards {
+    /* 38% shows two cards and 2/4 of a third at every width in the band. */
+    --menu-slide-step: calc(38% + 12px);
+  }
+
+  .menu-card {
+    flex: 0 0 38%;
+  }
+
+  .menu-card-caption {
+    font-size: 24px;
+  }
+
+  /* ── CTA ── */
+  .menu-cta {
+    padding-block: 72px;
+  }
+
+  .menu-cta .eyebrow {
+    font-size: 13px;
+  }
+
   .menu-cta-title {
+    font-size: 32px;
+    margin: 14px auto 16px;
+  }
+
+  .menu-cta-desc {
+    font-size: 14px;
+    margin-bottom: 28px;
+    /* Tablet wants the paragraph on one line, so release the phone 400px cap
+       that keeps it on two. */
+    max-width: none;
+  }
+
+  .menu-cta .btn {
+    height: 48px;
+  }
+}
+
+/* ============================================================
+   LAPTOP AND UP — 1024px and beyond
+   The desktop baseline, unchanged from before this file was restructured. It
+   lives in its own query only because the base is now the phone tier.
+   ============================================================ */
+@media (min-width: 1024px) {
+  .menu-page {
+    --menu-inset: var(--gutter);
+  }
+
+  .menu-page .container {
+    width: 91%;
+    max-width: 1920px;
+    padding-inline: var(--gutter);
+  }
+
+  .menu-hero {
+    --menu-hero-focal-y: 60%;
+    margin: 0 auto;
+    width: min(1920px, 93.5vw);
+    min-height: clamp(240px, 26vw, 640px);
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--color-white);
+  }
+
+  .menu-hero-img {
+    object-position: 50% var(--menu-hero-focal-y);
+  }
+
+  .menu-hero-overlay {
+    background: linear-gradient(
+      100deg,
+      rgba(53, 29, 19, 0.7) 0%,
+      rgba(67, 39, 25, 0.55) 46%,
+      rgba(67, 39, 25, 0.35) 100%
+    );
+  }
+
+  .menu-hero-content.container {
+    width: 91%;
+    max-width: 1920px;
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  .menu-hero-copy {
+    display: block;
+    gap: 0;
+    max-width: 60%;
+  }
+
+  .menu-hero-lead {
+    display: block;
+  }
+
+  .menu-hero-eyebrow {
+    display: block;
+    gap: 0;
+    margin-bottom: 0.9rem;
+    font-size: var(--fs-eyebrow);
+    font-weight: var(--fw-medium);
+    letter-spacing: var(--tracking-eyebrow);
+    color: #c7a45a;
+  }
+
+  .menu-hero-dash {
+    display: inline;
+    width: auto;
+    height: auto;
+    font-size: inherit;
+    line-height: inherit;
+    background: none;
+  }
+
+  .menu-hero-title {
+    font-size: var(--fs-h1);
+    line-height: var(--lh-heading);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-white);
+    margin-bottom: 0.9rem;
+    /* Release the phone/tablet three-line measure cap. */
+    max-width: none;
+    text-wrap: balance;
+  }
+
+  .menu-hero-desc {
+    max-width: 520px;
+    font-size: var(--fs-text);
+    line-height: var(--lh-text);
+    color: rgba(255, 255, 255, 0.88);
+  }
+
+  /* ── Category row ── */
+  .menu-cats {
+    padding-top: clamp(1.5rem, 2.5vw, 2rem);
+  }
+
+  .menu-cats-tabs {
+    gap: clamp(1rem, 2vw, 1.75rem);
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+    padding: 0.4rem;
+    overflow-x: visible;
+  }
+
+  .menu-tab-indicator {
+    border-radius: var(--radius-sm);
+  }
+
+  .menu-tab {
+    min-height: 0;
+    padding: 0.45rem 1.15rem;
+    border-radius: var(--radius-sm);
+    font-size: var(--fs-text);
+  }
+
+  .menu-tab.is-active {
+    font-size: var(--fs-text);
+  }
+
+  .menu-cats-divider {
+    margin-bottom: 0;
+  }
+
+  /* ── Menu list ── */
+  .menu-special {
+    padding-top: clamp(26px, 2.4vw, 34px);
+    padding-bottom: clamp(2.5rem, 4vw, 3.5rem);
+  }
+
+  .menu-special-grid {
+    grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr);
+    gap: clamp(2rem, 3.5vw, 3.5rem);
+    align-items: center;
+  }
+
+  .menu-special-title {
+    font-size: var(--fs-section);
+    line-height: var(--lh-heading);
+    margin-bottom: clamp(1.5rem, 2.2vw, 2.2rem);
+    /* Release the phone two-line measure cap. */
+    max-width: none;
+    text-wrap: balance;
+  }
+
+  .menu-special-size {
+    font-family: var(--font-sans);
+    font-style: normal;
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-label);
+    padding: 0.22em 0.75em;
+    margin-left: 0.5rem;
+  }
+
+  .menu-special-ghost {
+    top: -6%;
+    right: 2%;
+    width: clamp(76px, 11vw, 140px);
+    opacity: 0.08;
+  }
+
+  .menu-list {
+    gap: 0;
+  }
+
+  .menu-row {
+    padding: 0.55rem 0;
+  }
+
+  .menu-row::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -0.85rem;
+    width: 5px;
+    height: 5px;
+    margin-top: -2.5px;
+    border-radius: 50%;
+    background: var(--color-coffee);
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.35s var(--ease), transform 0.35s var(--ease);
+  }
+
+  .menu-row:hover::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .menu-row:hover .menu-item-name {
+    color: var(--color-coffee);
+    transform: translateX(3px);
+  }
+
+  .menu-row-top {
+    gap: 0.65rem;
+  }
+
+  .menu-item-name {
+    font-size: var(--fs-sub);
+    white-space: nowrap;
+  }
+
+  .menu-item-leader {
+    border-bottom-width: 2px;
+  }
+
+  .menu-item-price {
+    font-size: var(--fs-sub);
+  }
+
+  .menu-row:hover .menu-item-price {
+    color: var(--color-espresso);
+  }
+
+  .menu-item-desc {
+    margin-top: 0.3rem;
+    font-size: var(--fs-text);
+    line-height: var(--lh-text);
+    max-width: 44ch;
+  }
+
+  .menu-row:hover .menu-item-desc {
+    color: var(--color-espresso);
+  }
+
+  .menu-special-visual {
+    height: clamp(300px, 36vw, 540px);
+  }
+
+  .menu-glow {
+    width: min(122%, 600px);
+  }
+
+  /* ── From the café: a real grid, no carousel ── */
+  .menu-cafe {
+    padding-block: clamp(4rem, 7vw, 6.5rem);
+  }
+
+  .menu-cafe-eyebrow {
+    margin-bottom: 1rem;
+    font-size: inherit;
+  }
+
+  .menu-cafe-title {
+    font-size: var(--fs-section);
+    line-height: var(--lh-heading);
+    margin: 0 0 1.6rem;
+    max-width: 640px;
+  }
+
+  .menu-cafe-desc {
+    max-width: 620px;
+    font-size: var(--fs-text);
+    line-height: var(--lh-text);
+    margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
+  }
+
+  .menu-cards {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: clamp(1rem, 1.6vw, 1.6rem);
+    margin-right: 0;
+    overflow: visible;
+    touch-action: auto;
+    overscroll-behavior-x: auto;
+    -webkit-user-select: auto;
+    user-select: auto;
+    -webkit-touch-callout: auto;
+  }
+
+  /* The track is transparent here so the cards stay direct grid items. */
+  .menu-slider-track {
+    display: contents;
+  }
+
+  .menu-card {
+    flex: none;
+    width: auto;
+    padding-block: 0;
+    background: var(--color-white);
+    border-radius: var(--radius-sm);
+    overflow: visible;
+  }
+
+  .menu-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .menu-card:hover .menu-card-thumb img {
+    transform: scale(1.05);
+  }
+
+  .menu-card-accent {
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-gold);
+    border: 3px solid var(--color-surface);
+    z-index: 3;
+  }
+
+  .menu-card-thumb {
+    aspect-ratio: 3 / 4;
+    border-radius: var(--radius-sm) 6px 0 0;
+  }
+
+  .menu-card-caption {
+    display: block;
+    min-height: 0;
+    padding: 0.7rem 0.5rem 0.8rem;
+    background: transparent;
+    border-radius: 0;
+    font-size: var(--fs-text);
+    line-height: var(--lh-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ── CTA ── */
+  .menu-cta {
+    padding-block: clamp(4rem, 6vw, 5.5rem) clamp(4.5rem, 7vw, 6.5rem);
+  }
+
+  .menu-cta .eyebrow {
+    font-size: var(--fs-eyebrow);
+  }
+
+  .menu-cta-title {
+    font-size: var(--fs-section);
+    line-height: var(--lh-heading);
+    margin: 1rem auto 1.2rem;
+    max-width: 640px;
+  }
+
+  .menu-cta-desc {
+    max-width: 800px;
+    font-size: var(--fs-text);
+    line-height: var(--lh-text);
+    margin: 0 auto 2.2rem;
+  }
+
+  .menu-cta .btn {
+    /* Nothing to override: the base `.menu-cta .btn` already gives the 48px
+       pill and its 0 28px padding. This block used to reset them
+       (`min-height: 0; height: auto; padding: 0`), which collapsed the pill to
+       the 17.7px line box with the label flush against both edges from 1024 up
+       while every tier below it kept the full pill. */
+    border-radius: var(--radius-btn);
+  }
+}
+
+/* Untouched desktop queries, exactly as they were. */
+@media (min-width: 1100px) {
+  .menu-cafe-desc {
     white-space: nowrap;
     max-width: none;
   }
@@ -863,225 +1520,6 @@
 @media (min-width: 1600px) {
   .menu-cta-desc {
     max-width: 800px;
-  }
-}
-
-/* ── Responsive ──────────────────────────────────────────── */
-@media (max-width: 1100px) {
-  .menu-hero {
-    margin: clamp(1.5rem, 3vw, 2.5rem) auto;
-  }
-
-  .menu-special-grid {
-    gap: 2.5rem;
-  }
-
-  .menu-special-visual {
-    height: clamp(280px, 40vw, 400px);
-  }
-
-  .menu-special-ghost {
-    right: 5%;
-    width: clamp(70px, 10vw, 120px);
-  }
-
-  .menu-bean--1 {
-    right: 8%;
-  }
-
-  .menu-beans {
-    inset: 0;
-  }
-
-  .menu-cards {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-/* Tablet portrait: 768–1023px. Three cards across a 707–941px content box is
-   210–279px per card, which leaves the price/name row on one line only just.
-   Two columns gives a 330–445px card and keeps the three-card row intact. */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .menu-cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 900px) {
-  .menu-hero {
-    min-height: 200px;
-    padding-top: 44px;
-    padding-bottom: 44px;
-  }
-
-  .menu-special-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .menu-special-ghost {
-    top: -10px;
-    right: 4%;
-    width: clamp(84px, 12vw, 130px);
-    opacity: 0.1;
-  }
-
-  .menu-special-list {
-    padding-right: 0;
-  }
-
-  .menu-special-visual {
-    order: 2;
-    justify-content: center;
-    height: clamp(260px, 56vw, 440px);
-    margin-top: 1.75rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .menu-hero-copy {
-    max-width: 78%;
-  }
-
-  /* Cards become a user-dragged, swipeable carousel on phones */
-  .menu-cards {
-    --menu-slide-step: calc(50% + 0.6rem);
-    display: block;
-    overflow: hidden;
-    gap: 0;
-    touch-action: pan-y;
-    overscroll-behavior-x: contain;
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-  }
-
-  .menu-cards img {
-    -webkit-user-drag: none;
-    pointer-events: none;
-  }
-
-  .menu-slider-track {
-    display: flex;
-    gap: 1.2rem;
-    transition: transform 0.6s var(--ease);
-  }
-
-  /* Card look matches the home page "From the Café" strip */
-  .menu-card {
-    flex: 0 0 calc(50% - 0.6rem);
-    width: auto;
-    background: transparent;
-    border-radius: 0;
-  }
-
-  /* No hover lift/zoom on the touch carousel */
-  .menu-card:hover {
-    transform: none;
-  }
-
-  .menu-card:hover .menu-card-thumb img {
-    transform: none;
-  }
-
-  .menu-card-accent {
-    display: none;
-  }
-
-  .menu-card-thumb {
-    aspect-ratio: 0.82 / 1;
-    border-radius: 4px 4px 0 0;
-  }
-
-  .menu-card-caption {
-    min-height: 48px;
-    padding: 0.65rem 0.8rem;
-    background: var(--color-white);
-    border-radius: 0 0 4px 4px;
-    line-height: var(--lh-heading-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Long names like "Sundowner Mocktail" wrap instead of truncating */
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
-  }
-}
-
-@media (max-width: 560px) {
-  .menu-hero {
-    min-height: 190px;
-    margin: 1.25rem auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-
-  .menu-hero-desc {
-    font-size: var(--fs-text);
-    line-height: 1.65;
-  }
-
-  .menu-cats {
-    padding-top: 2.5rem;
-  }
-
-  /* Swap the tab row for a native dropdown on phones */
-  .menu-cats-tabs {
-    display: none;
-  }
-
-  .menu-cats-dropdown {
-    display: block;
-  }
-
-  .menu-special {
-    padding: 1.75rem 0 2.5rem;
-  }
-
-  .menu-special-ghost {
-    right: 0;
-    width: 70px;
-    opacity: 0.09;
-  }
-
-  .menu-row::before {
-    display: none;
-  }
-
-  .menu-item-name {
-    white-space: normal;
-    overflow-wrap: break-word;
-  }
-
-  .menu-special-visual {
-    height: clamp(260px, 72vw, 340px);
-  }
-
-  .menu-glow {
-    width: min(108%, 320px);
-  }
-}
-
-@media (max-width: 480px) {
-  .menu-cards {
-    --menu-slide-step: calc(50% + 0.55rem);
-  }
-
-  .menu-slider-track {
-    gap: 1.1rem;
-  }
-
-  .menu-card {
-    flex-basis: calc(50% - 0.55rem);
-  }
-
-  .menu-card-thumb {
-    aspect-ratio: 0.9 / 1;
-  }
-
-  .menu-card-caption {
-    min-height: 44px;
-    padding: 0.5rem 0.55rem;
   }
 }
 

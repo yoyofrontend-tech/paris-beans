@@ -26,7 +26,8 @@
 
 .ostory-cta-title {
   font-style: italic;
-  font-size: var(--fs-section);
+  /* 28px on the phone, the shared --fs-section ramp from 744px up. */
+  font-size: var(--fs-section-phone);
   margin: 0.7rem auto 0.9rem;
   max-width: 640px;
 }
@@ -45,14 +46,17 @@
 
 .ostory-cta-desc {
   font-family: var(--font-sans);
-  font-size: var(--fs-small);
+  /* --fs-text, the token every description on /gallery takes. --fs-small was
+     0.95rem — 15.2px flat, the narrowest description on the page at every width
+     above 600px. */
+  font-size: var(--fs-text);
   line-height: var(--lh-text);
   color: var(--color-muted);
   margin-top: 0.5rem;
   /* One line on laptop and desktop. The measure is 74 characters, which at
-     --ostory-tablet-desc's 20px is 651px of ink (canvas measureText with the
-     webfont loaded). The old 620px cap sat 31px under that and wrapped the
-     line in two from 600px all the way to 1920px.
+     --fs-text's 17.04-18.1px across that band is 651px of ink at most (canvas
+     measureText with the webfont loaded). The old 620px cap sat 31px under that
+     and wrapped the line in two from 600px all the way to 1920px.
 
      680px rather than 651px: the slack absorbs a wider fallback face on a
      machine without the webfont, so the line cannot re-break. It stays a cap
@@ -79,70 +83,34 @@
    RESPONSIVE
    ============================================================ */
 
-/* The 768-1099px block that used to sit here pinned .ostory-cta-title to 56px
-   and .ostory-cta-desc to 20px, matching a scale that only /our-story used. It
-   is gone, and so is the assumption that this title belongs to whatever
-   --fs-section happens to be: the page's three main headings now share one
-   token, so the closing CTA reads at the same size as the hero above it and
-   the origin section between them. The description is the same story one band
-   down — it was 15.2px here while the hero's was 17.0px and the origin's 20px,
-   and it now takes --ostory-tablet-desc with them. Its own 620px measure is
-   62 characters at 20px, so the size needed no cap to go with it. The
-   min-width:1100px nowrap above is unaffected — desktop is out of the band, and
-   the two lines this page forces on the origin heading are not this element's
-   business. */
+/* No tablet band, and that is the change. This block used to carry one — a
+   600-1099px band and a 1100px one — pinning the title, the description and the
+   label to --ostory-tablet-heading / -desc / -eyebrow, a scale declared in
+   global.css for this page alone and read by nothing else on the site. All three
+   elements now take the shared tokens instead: --fs-section-phone (which is
+   --fs-section itself from 744px up), --fs-text and --fs-eyebrow, which is what
+   /gallery's four section heads and five descriptions take, so the closing CTA
+   reads at the same size as the gallery's at every width rather than at a size
+   only this page had.
 
-/* ── The shared heading scale, 600–1099px ────────────────────────
-   --ostory-tablet-heading is declared once in global.css and scoped to this
-   page; the same band in OurStoryHero.css and OurStoryOrigin.css takes it, so
-   the three cannot drift apart. It starts at 600 rather than 768 because below
-   768 global.css holds --fs-section at the phone's 1.5rem, which is what left
-   this title at 24px while the hero above it sat at 42.2px.
-
-   1.1 is --lh-heading, restated so all three headings share one leading.
-
-   --ostory-tablet-desc is the same arrangement for the three descriptions, and
-   for the same reason: this one was the only description on the page with no
-   tablet size at all, so it read at --fs-small on every width from 600 to
-   1099.
-
-   --ostory-tablet-eyebrow does the same for the three section labels. This one
-   took the global --fs-eyebrow, which global.css holds at the phone's 10px
-   across all of 600-767, against the origin label's flat 13px. */
+   What is left in the tablet band is the leading, and only on the title: 1.1 is
+   --lh-heading restated so the three headings on the page share one pitch. The
+   description needed nothing — --fs-text carries --lh-text itself. The
+   min-width:1100px nowrap above is unaffected, and the two lines this page
+   forces on the origin heading are not this element's business. */
 @media (min-width: 600px) and (max-width: 1099px) {
   .ostory-cta-title {
-    font-size: var(--ostory-tablet-heading);
     line-height: 1.1;
-  }
-
-  .ostory-cta-desc {
-    font-size: var(--ostory-tablet-desc);
-  }
-
-  .ostory-eyebrow {
-    font-size: var(--ostory-tablet-eyebrow);
   }
 }
 
-/* ── Laptop and desktop: the tablet band's three sizes, continued ─────────
-   Same three tokens as the band above. At 1100px this heading fell from the
-   band's 52px to 43.3px and the description from 20px to 15.2px, the narrowest
-   of the three descriptions on the page at every width — and the band it is
-   measured against is the one the origin frame was drawn at. Above 1100 the
-   title is nowrap on a single line (see the 1100px block near the top), which
-   is why only the size is restated here: at 52px that line is 885.1px of ink
-   against a 1001px shell at this edge, so it still clears its own box. */
-@media (min-width: 1100px) {
-  .ostory-cta-title {
-    font-size: var(--ostory-tablet-heading);
-  }
-
+/* The same description ramp /gallery's section paragraphs take above 1100px,
+   for the same reason: --fs-text is the phone and tablet value on both pages,
+   and above this edge they are one size rather than two. 16.76px at the 1136
+   edge, 17.52px at 1440, 18.6px from 1792 up. */
+@media (min-width: 1136px) {
   .ostory-cta-desc {
-    font-size: var(--ostory-tablet-desc);
-  }
-
-  .ostory-eyebrow {
-    font-size: var(--ostory-tablet-eyebrow);
+    font-size: clamp(16px, 0.25vw + 0.87rem, 18.6px);
   }
 }
 

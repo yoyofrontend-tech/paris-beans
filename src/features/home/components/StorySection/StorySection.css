@@ -25,7 +25,8 @@
 
 .story-title {
   font-style: italic;
-  font-size: var(--fs-section);
+  /* 28px on the phone, the shared ramp from 744px up. */
+  font-size: var(--fs-section-phone);
   margin: 1rem 0 1.2rem;
   max-width: 640px;
 }
@@ -274,7 +275,13 @@
 }
 
 @media (max-width: 767px) {
-  /* Section padding and the 20px inset are shared tokens in global.css. */
+  /* Previous phone design, restored: 20px side inset and the 42-64px vertical
+     rhythm the section used before the mobile-first rewrite. The shared Home
+     phone tokens that carried these lived in global.css and no longer exist,
+     so they are declared here again rather than left to the base rules. */
+  .story {
+    padding: clamp(42px, 9vw, 64px) 20px;
+  }
 
   .story-grid {
     width: 100%;
@@ -290,19 +297,31 @@
     display: contents;
   }
 
-  /* Order only. Font size, leading and the gaps come from the shared Home
-     mobile tokens — declaring them here re-created the per-section drift this
-     block used to have (25px heading->description against 19.2px elsewhere). */
+  /* Order plus the phone type and gaps the old shared Home mobile block used
+     to set from global.css: 12px label, 24px heading, 16px body, 8px above the
+     heading and 16px below it. */
   .story-copy > .pb-story-eyebrow {
     order: 1;
+    font-size: 0.75rem;
+    font-weight: var(--fw-regular);
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
   }
 
   .story-copy > .story-title {
     order: 2;
+    font-size: var(--fs-section-phone);
+    line-height: 1.15;
+    margin-block: 0 16px;
   }
 
   .story-copy > .story-paragraph {
     order: 3;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    margin-top: 0;
   }
 
   .story-media {

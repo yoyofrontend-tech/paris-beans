@@ -3,7 +3,14 @@ import { Hero, StorySection, BenefitsSection, CafeMenu, GalleryMood } from '@fea
 import './CallToAction.css'
 
 const CTA_COPY = {
-  eyebrow: '— The Paris Beans Experience',
+  eyebrow: (
+    <>
+      <span className="experience-dash" aria-hidden="true">
+        —
+      </span>
+      The ParisBeans Experience
+    </>
+  ),
   title: (
     <>
       More Than a Coffee. <em>Part of Your Appointment.</em>

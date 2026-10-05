@@ -82,12 +82,14 @@ export default function GalleryHero() {
     <section className="gal-hero" ref={ref}>
       <div className="container">
         <div className="gal-hero-copy reveal">
-          <span className="eyebrow gal-hero-eyebrow">— THE PARIS BEANS EXPERIENCE</span>
-          <h1 className="gal-hero-title">
-            A Parisian Mood. A <em>Salon</em> Experience.
-          </h1>
+          <span className="eyebrow gal-hero-eyebrow">
+            <span className="gal-hero-dash" aria-hidden="true" />
+            PARISIAN ATMOSPHERE
+          </span>
+          <h1 className="gal-hero-title">Moments Worth Slowing Down For.</h1>
           <p className="gal-hero-desc lead">
-            Step inside Paris Beans and discover the details, atmosphere and moments that make HAIR RAP BY YOYO feel different.
+            A little time to pause, enjoy your coffee, and take in the Paris-inspired
+            atmosphere at HAIR RAP BY YOYO.
           </p>
         </div>
       </div>

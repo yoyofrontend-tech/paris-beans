@@ -2,6 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!--
+      Marks the document as script-capable BEFORE the first paint, so the
+      `.reveal { opacity: 0 }` start state is only ever applied when there is
+      JavaScript present to undo it. Without this class the hidden state is the
+      CSS default and a slow first load paints the hero copy at opacity 0 until
+      React mounts — content that must never depend on JS should never be
+      hidden by default. Keep this inline and first: an external or deferred
+      script would land after first paint, which is the bug itself.
+    -->
+    <script>
+      document.documentElement.classList.add('js')
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="manifest" href="/site.webmanifest" />
 

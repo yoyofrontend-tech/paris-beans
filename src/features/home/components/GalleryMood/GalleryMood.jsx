@@ -1,18 +1,53 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useReveal } from '@shared/hooks/useReveal'
 import { useCarousel } from '@shared/hooks/useCarousel'
 import { gallery, galleryImages, galleryDims } from '@shared/models/siteData'
 import Button from '@shared/components/Button'
 import './GalleryMood.css'
 
+// How deep the coverflow arc goes per tier. The same ladder lives in
+// GalleryMood.css as --gallery-visible (3 / 5 / 7), one per media query. CSS
+// owns it; this module reads the value off the DOM so the state classes and the
+// arc geometry can never disagree about a breakpoint. The three edges below are
+// the only width edges in the Home carousel.
+const VISIBLE_BREAKPOINTS = [
+  { edge: 1920, visible: 7 },
+  { edge: 1136, visible: 7 },
+  { edge: 744, visible: 5 },
+]
+
+const visibleForWidth = (width) => {
+  for (const { edge, visible } of VISIBLE_BREAKPOINTS) {
+    if (width >= edge) return visible
+  }
+  return 3
+}
+
 export default function GalleryMood() {
   const ref = useRef(null)
   const stageRef = useRef(null)
   const dragRef = useRef({ x: 0, dragging: false, moved: false })
+  const [visible, setVisible] = useState(3)
   useReveal(ref, { selector: '.reveal', threshold: 0.08 })
   const carousel = useCarousel({ itemCount: gallery.length, interval: 4500 })
 
   const n = gallery.length
+
+  // Read --gallery-visible from the stylesheet instead of duplicating the
+  // breakpoints in JS, and keep it in step on resize.
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const read = () => {
+      const raw = getComputedStyle(el).getPropertyValue('--gallery-visible').trim()
+      const fromCss = Number.parseInt(raw, 10)
+      setVisible(Number.isFinite(fromCss) ? fromCss : visibleForWidth(window.innerWidth))
+    }
+    read()
+    window.addEventListener('resize', read, { passive: true })
+    return () => window.removeEventListener('resize', read)
+  }, [])
+
   const half = Math.floor(n / 2)
 
   const offset = (i) => {
@@ -22,15 +57,17 @@ export default function GalleryMood() {
     return d
   }
 
+  // --gallery-visible counts the whole arc, so the deepest visible slot is
+  // (visible - 1) / 2 steps out. Everything past that is parked as hidden-*.
   const stateClass = (d) => {
+    const depth = Math.floor((visible - 1) / 2)
+    const step = Math.abs(d)
+    const side = d < 0 ? 'left' : 'right'
     if (d === 0) return 'center'
-    if (d === 1) return 'right'
-    if (d === -1) return 'left'
-    if (d === 2) return 'mid-right'
-    if (d === -2) return 'mid-left'
-    if (d === 3) return 'far-right'
-    if (d === -3) return 'far-left'
-    return d > 0 ? 'hidden-right' : 'hidden-left'
+    if (step > depth) return `hidden-${side}`
+    if (step === 1) return side
+    if (step === 2) return `mid-${side}`
+    return `far-${side}`
   }
 
   const advance = (dir) => carousel.go(dir)

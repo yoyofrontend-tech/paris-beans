@@ -245,20 +245,6 @@
   max-width: 640px;
 }
 
-/* Keep gallery headings on a single line on desktop.
-   Descriptions are allowed to wrap — the container max-widths (560/720px)
-   are too narrow for the full strings at 1200px+. */
-@media (min-width: 1200px) {
-  .gal-hero-title {
-    white-space: nowrap;
-  }
-
-  .gal-section-title,
-  .gal-section-desc {
-    max-width: none;
-  }
-}
-
 .gal-section-title em {
   font-style: italic;
   color: var(--color-espresso);
@@ -270,7 +256,202 @@
   line-height: var(--lh-text);
 }
 
+/* ---------- Desktop: every heading and description on one line ----------
+   Laptop and up — the scale's desktop tier, min-width 1100px — holds each
+   heading and each description on a single line. Three things have to give for
+   that, and none of them is optional:
+
+   1. The measure caps come off. `.gal-section-head` is capped at 720px,
+      `.gal-section-title` at 640px, both descriptions at 560px and
+      `.gal-hero-copy` at min(100%, 1100px) — every one of them narrower than the
+      string it has to hold, so all four section headings and all five
+      descriptions wrapped to two lines at every desktop width. The hero title
+      was the other direction: `nowrap` was already on it from 1200px but the
+      copy block was capped at 1180px from 1800px up, and the title inks 1191.6px
+      there, so it overflowed its own box instead of wrapping.
+
+   2. `white-space: nowrap`, so nothing re-breaks even if a string is edited
+      longer later. On its own nowrap overflows the gutter rather than wrapping,
+      which is what makes (3) load-bearing.
+
+   3. The descriptions take a slightly smaller ramp. The longest of them — the
+      "Paris-inspired details…" paragraph, 126 characters — inks 1003.4px at the
+      1100px edge, where the container's inner width is 1012px: 8.6px of slack,
+      under 1%, which is too thin to hang a hard nowrap on. The ramp below pulls
+      that edge to 16.7px (914px of ink, 9.7% clear) and climbs back to 18.6px
+      by 1920px, where the same string inks 1020px inside 1776px.
+
+   The headings need no size change. The widest, "A Corner of Paris, Inside HAIR
+   RAP BY YOYO.", inks 926px at 1100px against 1012px available, and both
+   heading ramps grow more slowly than the container does, so 1100px is the
+   tightest width in the band and every step above it is clearer than the last.
+
+   This block sits after the base rules above on purpose: they carry the same
+   specificity, so a band written earlier in the file would lose to them on
+   source order — which is exactly what the 1200px rule this replaces did, its
+   `max-width: none` on `.gal-section-desc` being overridden by the 560px cap
+   declared after it.
+
+   Widths and ink measured with scripts/measure-gallery-oneline.mjs across
+   1100-1920px. Tablet landscape (1024-1099px) keeps wrapping: at 1024px the
+   longest description inks 1003px against a 942px container, so a single line
+   there is not available at any readable size. */
+@media (min-width: 1100px) {
+  .gal-hero-copy,
+  .gal-section-head {
+    max-width: none;
+  }
+
+  .gal-hero-title,
+  .gal-hero-desc,
+  .gal-section-title,
+  .gal-section-desc {
+    max-width: none;
+    white-space: nowrap;
+  }
+
+  .gal-hero-desc,
+  .gal-section-desc {
+    font-size: clamp(16px, 0.25vw + 0.87rem, 18.6px);
+  }
+}
+
+/* ============================================================
+   LAPTOP — the hero header text block, 1136px and up
+   ============================================================
+   The label, the h1 and the subtext, and nothing else: the collage keeps its own
+   geometry, the four image sections keep the 1100px block above, and phone and
+   tablet are untouched. Every value here is restated rather than inherited,
+   because the base rules are phone rules — a 10px label, a 0.32em track, an
+   860px description cap — and none of them survives this frame.
+
+   Measured at 1440px against the Figma laptop frame:
+
+     text left edge   x=80     (frame 80)
+     label centre     y=115    (frame 115)
+     h1 centre        y=173.5  (frame 175)
+     subtext centre   y=246.3  (frame 250)
+     collage top      y=302    (frame ~305)
+
+   The three gaps are the frame's own: 16px label to h1, 28px h1 to subtext,
+   42px subtext to collage. They are stated once, here, and the label's top
+   padding is derived from the first of them rather than guessed at: the header
+   is 79px tall, so 79 + 24 + (18 x 1.3) / 2 = 115.
+
+   Verified across 1136/1200/1280/1366/1440/1600/1920/2560 — both strings stay on
+   one line at every width, the tightest being the subtext at 1136 (940px of ink
+   in a 1010px column). */
+@media (min-width: 1136px) {
+  /* The frame's gutter. The base --gutter is 4vw, which put the text at
+     x=57.6 at 1440 — 22px left of the frame. 5.55vw is 79.92px there and
+     reaches its 80px cap at 1441. */
+  .gal-hero .container {
+    padding-inline: clamp(40px, 5.55vw, 80px);
+  }
+
+  /* 1280px is the frame's text column, and it is also exactly what the padding
+     above leaves inside the container at 1440 (1440 - 2 x 79.92), so the cap is
+     met rather than felt there and is what holds the measure from there up. */
+  .gal-hero-copy {
+    max-width: 1280px;
+  }
+
+  .gal-hero {
+    /* Clears the 79px header by 24px, which is what puts the label's centre on
+     the frame's y=115. Fluid above 1437 so the block does not sit pinned while
+         the type below it keeps growing. */
+    padding-top: clamp(24px, 1.67vw, 32px);
+  }
+
+  /* Label — 18px regular in the same gold, tracked 0.02em rather than the base
+     --tracking-eyebrow's 0.32em (5.76px a gap at this size, against the frame's
+     ~0.36px) and at weight 400 rather than --fw-medium's 500.
+
+     A block flex box, not the inline-flex the story page's eyebrow uses: as an
+     inline-level box this sits on a line box, and the strut under it would add
+     height below the element, which is where the 115 -> 175 spacing is measured
+     from. Block-level, the element is exactly 18 x 1.3 = 23.4px tall. */
+  .gal-hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+  }
+
+  /* The frame's dash: 16px of 1px rule, centred on the label's line and 4px
+     ahead of it. currentColor rather than the gold again, so it cannot drift
+     from the label it belongs to. */
+  .gal-hero-dash {
+    flex: none;
+    width: 16px;
+    height: 1px;
+    background-color: currentColor;
+  }
+
+  .gal-hero-title {
+    font-size: clamp(40px, 3.9vw, 56px);
+    line-height: 1.1;
+    /* margin-block: 0 is the frame's, so both distances are stated here and
+       nowhere else: 16px down from the label, 28px down to the subtext. The
+       base 1rem/1.2rem is what put 16px above this heading and 19.2px below it. */
+    margin: 16px 0 28px;
+    max-width: none;
+    /* One line at every width in the tier, as the frame draws it. */
+    white-space: nowrap;
+  }
+
+  .gal-hero-desc {
+    font-size: clamp(16px, 1.4vw, 20px);
+    line-height: 1.4;
+    margin: 0;
+    max-width: none;
+    /* The frame's cap is none, so the paragraph is held to one line by the
+       column rather than by a measure of its own. */
+    white-space: nowrap;
+  }
+
+  /* The only collage value this tier touches: the gap above it. The base is
+     clamp(2.2rem, 4.5vw, 3.4rem) — 54.4px at 1440, against the frame's 40-44. */
+  .gal-hero-collage {
+    margin-top: clamp(40px, 2.92vw, 44px);
+  }
+}
+
+/* ============================================================
+   DESKTOP — 1920px and up
+   ============================================================
+   The same block at the frame's fixed sizes. The laptop tier's clamps already
+   resolve to these three numbers here — 3.9vw is 74.9px and 1.4vw is 26.9px at
+   1920, both capped — so the sizes below restate rather than change them, which
+   is what makes this tier independent of the laptop tier's ramps. The column
+   stays 1280px, centred, left aligned.
+
+   Only the top padding moves: the frame opens up a little further here, so the
+   label's centre lands on y=151 instead of y=115. */
+@media (min-width: 1920px) {
+  .gal-hero {
+    padding-top: 60px;
+  }
+
+  .gal-hero-eyebrow {
+    font-size: 18px;
+  }
+
+  .gal-hero-title {
+    font-size: 56px;
+  }
+
+  .gal-hero-desc {
+    font-size: 20px;
+  }
+}
+
 /* ---------- Image grids ---------- */
+
 .gal-grid {
   /* Placeholder until the mobile carousel takes over — keeps the track's inline
      transform inert on the desktop grid. */
@@ -378,9 +559,11 @@
     max-width: min(1720px, 100vw);
   }
 
-  .gal-hero-copy {
-    max-width: 1180px;
-  }
+  /* The copy block is no longer capped: from 1100px up it carries the hero
+     title and description on one line, and at the 1800px edge the title inks
+     1191.6px — wider than the 1180px this used to be capped at, so the cap
+     pushed the nowrap title past its own box. The container's inner width is
+     1656px here, so the block can simply run to it. */
 }
 
 /* ── Tablet portrait: 768–1023px ────────────────────────────────
@@ -596,14 +779,25 @@
     max-width: 100%;
   }
 
-  .gal-hero-title {
-    max-width: 350px;
-  }
+  /* No measure cap on the heading or the description.
 
+     This block used to pin both to 350px, which is a phone measure, and the
+     band it was written for is 481–767px — 115px to 367px wider than the phone
+     it was sized on. The cost was worst at its own lower edge: crossing 480px
+     the h1 went from 32px on the full 448px column (the <=480px block below
+     releases it to `max-width: none`) to 40.1px on 350px, so the heading grew
+     25% and lost 22% of its measure and picked up a third line at the same
+     moment. 481–599px was the worst of it: 3 lines at 10 characters a line
+     with 105px of empty column to the right of it.
+
+     So the cap comes off and the measure grows with the screen again: the base
+     100% on the title, which is what >=768px already uses, and the base 560px
+     on the description, which the copy column reaches at 600px and holds to
+     767px. The <=480px block keeps its own 350px description, which is the
+     phone frame's own value. */
   .gal-hero-desc {
     font-size: var(--fs-text);
     line-height: 1.45;
-    max-width: 350px;
   }
 
   .gal-hero-collage {

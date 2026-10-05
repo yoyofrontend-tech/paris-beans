@@ -1,35 +1,78 @@
+/* ============================================================
+   From the Café — Home only.
+
+   The card block is the previous style: an editorial grid of 4-up cards, image
+   at aspect-ratio 0.82/1 with square top corners, a cream caption strip under
+   it and the gold pin on top.
+
+     PHONE   base (no query)  375–743   copy on top, then the swipe strip —
+                                      two cards at a time, snap-scrolled,
+                                      "View the Menu" under it, 48px pad
+     TABLET  744px+           744–1135  same two-at-a-time swipe strip, 72px pad
+     LAPTOP  1136px+          1136–1919 text column left (~30%), cards become the
+                                      4 x 2 grid showing all 8, pin returns,
+                                      hover affordances return, 96px pad
+     DESKTOP 1920px+          1920+     same 4 x 2 grid, 120px pad
+
+   The strip is a native scroll-snap scroller: the swipe is the browser's, not
+   JavaScript's, so there is no carousel state, no drag translation and no
+   width-dependent number in the component. One `flex-basis` at the base tier
+   sizes the cards, and it never changes with the viewport.
+   ============================================================ */
+
 .cafe {
   position: relative;
-  padding-block: var(--section-pad-desktop);
+  padding-block: 48px;
   background-color: var(--color-white);
   overflow: hidden;
+
+  /* Corner-art placement. The base values are fitted to the 390px frame; the
+     TABLET and LAPTOP tiers re-fit them for their own measure. Every number is
+     a custom property so the art can be tuned without touching the rules that
+     place it. */
+  --deco-tl-w: 45vw;
+  --deco-tl-left: -19vw;
+  --deco-tl-top: -15vw;
+  --deco-br-w: 50vw;
+  --deco-br-right: -4vw;
+  --deco-br-bottom: -6vw;
 }
 
-/* The decorative wave art that used to sit behind this section (phone_menu,
-   tab_menu, from748upto1440, menu — one variant per breakpoint) has been
-   removed; the section is now a flat white field. All five breakpoint rules
-   went with it, so the white background-color above is the only background
-   at every width. The SVGs are still on disk under
-   @shared/assets/images/menu/ if the art is ever wanted back. */
-
-.cafe .container {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
+/* The decorative wave art that used to sit behind this section has been
+   removed; the section is a flat white field and the only decoration left is
+   the two corner squiggles below. */
 
 .cafe-grid {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(280px, 0.7fr) minmax(650px, 1.6fr);
-  gap: clamp(3rem, 5vw, 6rem);
+  grid-template-columns: 1fr;
+  row-gap: 24px;
   align-items: start;
 }
 
+/* PHONE + TABLET: flatten the copy so text, card row and CTA become grid rows
+   in reading order — copy, row, button. */
 .cafe-copy {
-  position: sticky;
-  top: 120px;
+  display: contents;
+}
+
+.cafe-copy-inner {
+  order: 1;
+}
+
+.cafe-grid-right {
+  order: 2;
+  min-width: 0;
+  /* PHONE + TABLET: the strip runs out to the screen edge so the next card is
+     visible coming in, while its left edge stays on the --gutter gridline. */
+  margin-inline-end: calc(-1 * var(--gutter));
+}
+
+.cafe-cta {
+  order: 3;
+  margin-top: 0;
+  text-align: left;
 }
 
 .cafe-copy .eyebrow {
@@ -40,7 +83,8 @@
 .cafe-title {
   margin: 0 0 1.6rem;
   font-style: italic;
-  font-size: var(--fs-section);
+  /* 28px on the phone, the shared ramp from 744px up. */
+  font-size: var(--fs-section-phone);
   line-height: var(--lh-heading);
   letter-spacing: var(--tracking-tight);
 }
@@ -50,50 +94,62 @@
   color: var(--color-espresso);
 }
 
-.cafe-br-mobile {
-  display: none;
-}
-
-.cafe-br-desktop {
-  display: block;
-}
-
 .cafe-paragraph {
   max-width: 440px;
-  margin-bottom: 2.4rem;
+  margin: 0 0 2.4rem;
   font-size: var(--fs-text);
   line-height: var(--lh-text);
 }
 
-.cafe-cta {
-  margin-top: 2.4rem;
-  text-align: left;
+.cafe-cta .btn {
+  min-height: 48px;
 }
 
-.cafe-cta .btn--primary {
-  padding: 1rem 2rem;
-  border: none;
+/* The art must always sit behind the copy. `.menu-item` already carries
+   position: relative + z-index 1 from its own rule, so only the text and the
+   button are lifted here. */
+.cafe-copy .eyebrow,
+.cafe-title,
+.cafe-paragraph,
+.cafe-cta .btn {
+  position: relative;
+  z-index: 1;
 }
 
-/* Menu image grid — deliberate 3-column editorial cards */
-.cafe-grid-right {
-  min-width: 0;
-}
-
+/* ---------- Menu cards ---------- */
+/* PHONE + TABLET: the previous swipe strip. `.menu-grid` is the scroller and
+   `.cafe-slider-track` is the flex row inside it, so the swipe is the browser's
+   native scroll-snap — no drag handler, no translate, no per-width maths.
+   LAPTOP turns both back into plain grid pieces (see the 1136px tier). */
 .menu-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(1.6rem, 2.5vw, 2.5rem);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  /* The scrollbar itself is hidden: the dots-free strip must not show one on
+     Windows or Android, and the padding gives the last card its end inset. */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-inline-end: var(--gutter);
 }
 
-/* Desktop: the slider track stays transparent so cards remain grid items */
+.menu-grid::-webkit-scrollbar {
+  display: none;
+}
+
 .cafe-slider-track {
-  display: contents;
+  display: flex;
+  gap: 1.2rem;
 }
 
 .menu-item {
   position: relative;
   text-align: center;
+  /* Two cards at a time, exactly as before: 2 x (50% - 0.6rem) + 1.2rem gap
+     fills the row, so the swipe always has somewhere to go. */
+  flex: 0 0 calc(50% - 0.6rem);
+  scroll-snap-align: start;
   transform-origin: center center;
   transform: translateZ(0);
   transition:
@@ -106,13 +162,26 @@
   contain: layout style;
 }
 
+/* No hover lift/sheen/zoom on the touch strip. */
 .menu-item:hover {
-  transform:
-    translate3d(0, -7px, 0)
-    rotate(3deg)
-    scale(1.025);
-  filter: drop-shadow(0 14px 22px rgba(66, 39, 25, 0.12));
-  z-index: 10;
+  transform: none;
+  filter: none;
+  z-index: auto;
+}
+
+.menu-item:hover .menu-thumb::after {
+  animation: none;
+}
+
+.menu-item:hover .menu-thumb img {
+  transform: none;
+}
+
+/* Keep the swipe gesture with the scroller: the photos must not be draggable
+   targets. Restored from LAPTOP up, where there is no swipe at all. */
+.menu-grid img {
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 /* Image fills the card top — no white frame, no padding */
@@ -135,8 +204,7 @@
   display: block;
   border-radius: 0;
   transform: scale(1) translateZ(0);
-  transition:
-    transform 380ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 380ms cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform;
   backface-visibility: hidden;
 }
@@ -157,23 +225,19 @@
   transform: translateX(-140%) skewX(-8deg);
 }
 
-.menu-item:hover .menu-thumb::after {
-  animation: menuSheen 0.9s ease;
-}
-
 @keyframes menuSheen {
   to {
     transform: translateX(140%) skewX(-8deg);
   }
 }
 
-/* Simultaneous premium zoom with the card lift */
-.menu-item:hover .menu-thumb img {
-  transform: scale(1.1) translateZ(0);
-}
+/* The sheen and the simultaneous premium zoom are declared in the 1136px tier
+   with the rest of the pointer affordances: the strip is a touch surface, so
+   the base tier leaves them off (see the "no hover" block above). */
 
 /* Gold circular pin pinned to the top-center of the card */
 .menu-accent {
+  display: none;
   position: absolute;
   top: -12px;
   left: 50%;
@@ -208,14 +272,9 @@
 
 /* ---------- Corner art ----------
    Two squiggles shown at roughly their natural size and pushed off the section
-   edge, so only a large curve shows in each corner and the strokes stay bold —
-   the Figma treatment. `.cafe` is already position: relative with
-   overflow: hidden, so the negative offsets below are clipped by the section
-   rather than by the art itself.
-
-   Every number lives in a custom property on `.cafe` so the art can be tuned
-   without touching the rules that place it. */
-
+   edge, so only a large curve shows in each corner. `.cafe` is already
+   position: relative with overflow: hidden, so the negative offsets are
+   clipped by the section rather than by the art itself. */
 .home-menu-deco {
   position: absolute;
   height: auto;
@@ -237,44 +296,12 @@
   bottom: var(--deco-br-bottom);
 }
 
-/* The art must always sit behind the copy. `.menu-item` already carries
-   position: relative + z-index 1 from its own rule, so only the text and the
-   button are lifted here. position: relative on an inline-flex button and on
-   block text is inert for layout — nothing inside them is absolutely positioned
-   against them. */
-.cafe-copy .eyebrow,
-.cafe-title,
-.cafe-paragraph,
-.cafe-cta .btn {
-  position: relative;
-  z-index: 1;
-}
-
-/* The six offsets are the values that could not be kept exactly as designed, and
-   they were measured rather than guessed. Each drawing is a diagonal — the
-   top-left runs top-right to bottom-left, the bottom-right the other way — so
-   where the piece sits decides whether the stroke lands on the copy. For every
-   band these are the offsets that show the most ink while holding at least
-   ~4.5px of clearance from the eyebrow, heading, description, button and first
-   and last card, at every width in that band, and while keeping the piece cut by
-   the section's own edge. The widths are unchanged from the Figma frames.
-
-   Visible ink: 56x57px at 320 up to 271x327px for the top-left piece, and
-   137x105px up to 267x223px for the bottom-right one. */
-
-/* Phone — fitted to the 390px frame. Defaults, so they are declared on `.cafe`
-   and overridden per band below. */
-.cafe {
-  --deco-tl-w: 45vw;
-  --deco-tl-left: -19vw;
-  --deco-tl-top: -15vw;
-  --deco-br-w: 50vw;
-  --deco-br-right: -4vw;
-  --deco-br-bottom: -6vw;
-}
-
-@media (min-width: 600px) and (max-width: 1023px) {
+/* ---------- TABLET ---------- */
+@media (min-width: 744px) {
   .cafe {
+    padding-block: 72px;
+
+    /* Corner art re-fitted for the tablet measure. */
     --deco-tl-w: 31vw;
     --deco-tl-left: -13vw;
     --deco-tl-top: -7.5vw;
@@ -282,12 +309,18 @@
     --deco-br-right: -3.5vw;
     --deco-br-bottom: -4.5vw;
   }
+
+  .cafe-grid {
+    row-gap: 32px;
+  }
 }
 
-/* Desktop and laptop — fitted to the 1920px frame. 110px of section padding
-   here, so both pieces stay large and bold. */
-@media (min-width: 1024px) {
+/* ---------- LAPTOP ---------- */
+@media (min-width: 1136px) {
   .cafe {
+    padding-block: 96px;
+
+    /* Corner art, re-fitted for the 1440px container. */
     --deco-tl-w: 24.3vw;
     --deco-tl-left: -8vw;
     --deco-tl-top: -3.5vw;
@@ -295,125 +328,94 @@
     --deco-br-right: -8.5vw;
     --deco-br-bottom: -7vw;
   }
-}
 
-/* ---------- Responsive ---------- */
-
-/* This edge is 1100px, not the canonical 1099px, and that one pixel is load
-   bearing: global.css treats 1100px as the first desktop width, but here 1100px
-   still gets the stacked layout, because the edge is written as `max-width`.
-   Rewriting it to `max-width: 1099px` would align it with the documented scale
-   and would flip exactly the 1100px viewport to the two-column desktop layout.
-   Left as-is pending a decision on which of the two is intended. */
-@media (max-width: 1100px) {
   .cafe-grid {
-    grid-template-columns: 1fr;
-    gap: 3.5rem;
+    /* Text column ~30%, cards column the rest. */
+    grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+    column-gap: 64px;
+    row-gap: 0;
   }
 
-  /* Flatten the copy so text, carousel and CTA become grid rows in order */
+  /* Real column again: the copy and its CTA are one left-hand block. */
   .cafe-copy {
-    display: contents;
+    display: block;
+    position: sticky;
+    top: calc(var(--header-h) + 40px);
   }
 
   .cafe-copy-inner {
-    order: 1;
+    order: 0;
+  }
+
+  .cafe-cta {
+    order: 0;
+    margin-top: 2.4rem;
   }
 
   .cafe-grid-right {
-    order: 2;
+    order: 0;
+    margin-inline-end: 0;
   }
 
-  .cafe-cta {
-    order: 3;
-    margin-top: 0;
-  }
-
-  .cafe-copy .cafe-paragraph {
-    margin-inline: 0;
-  }
-
-  .cafe-copy .cafe-title {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .cafe-cta {
-    text-align: left;
-  }
-
-  .menu-accent {
-    display: none;
-  }
-
+  /* The strip becomes the previous 4 x 2 editorial grid: all eight cards, two
+     rows, no horizontal scrolling, no snapping. */
   .menu-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 767px) {
-  .cafe {
-    padding-block: var(--section-pad-mobile);
-  }
-
-  .cafe-grid {
-    gap: 1.25rem;
-  }
-
-  .cafe-copy-inner {
-    display: flow-root;
-  }
-
-  .cafe-copy .cafe-paragraph {
-    margin-bottom: 0;
-  }
-
-  .cafe-cta {
-    margin-top: 0;
-  }
-
-  .cafe-br-mobile {
-    display: block;
-  }
-
-  .cafe-br-desktop {
-    display: none;
-  }
-
-  /* Cards become a user-dragged, swipeable carousel on phones */
-  .menu-grid {
-    --cafe-slide-step: calc(50% + 0.6rem);
-    display: block;
-    overflow: hidden;
-    gap: 0;
-    touch-action: pan-y;
-    overscroll-behavior-x: contain;
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-  }
-
-  .menu-grid img {
-    -webkit-user-drag: none;
-    pointer-events: none;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(1.6rem, 2.5vw, 2.5rem);
+    overflow: visible;
+    scroll-snap-type: none;
+    padding-inline-end: 0;
   }
 
   .cafe-slider-track {
-    display: flex;
-    gap: 1.2rem;
-    transition: transform 0.6s var(--ease);
+    display: contents;
   }
 
   .menu-item {
-    flex: 0 0 calc(50% - 0.6rem);
+    flex: none;
     width: auto;
+    scroll-snap-align: none;
   }
 
-  /* No hover lift/sheen/zoom on touch carousel */
+  /* Pointer affordances and the pin come back with the grid. */
+  .menu-item:hover {
+    transform:
+      translate3d(0, -7px, 0)
+      rotate(3deg)
+      scale(1.025);
+    filter: drop-shadow(0 14px 22px rgba(66, 39, 25, 0.12));
+    z-index: 10;
+  }
+
+  .menu-item:hover .menu-thumb::after {
+    animation: menuSheen 0.9s ease;
+  }
+
+  .menu-item:hover .menu-thumb img {
+    transform: scale(1.1) translateZ(0);
+  }
+
+  .menu-grid img {
+    pointer-events: auto;
+  }
+
+  .menu-accent {
+    display: block;
+  }
+}
+
+/* ---------- DESKTOP ---------- */
+@media (min-width: 1920px) {
+  .cafe {
+    padding-block: 120px;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
   .menu-item:hover {
     transform: none;
-    filter: none;
-    z-index: auto;
   }
 
   .menu-item:hover .menu-thumb::after {
@@ -422,34 +424,5 @@
 
   .menu-item:hover .menu-thumb img {
     transform: none;
-  }
-
-  .menu-caption {
-    min-height: 48px;
-    font-size: var(--fs-text);
-  }
-}
-
-@media (max-width: 480px) {
-  .menu-grid {
-    --cafe-slide-step: calc(50% + 0.55rem);
-  }
-
-  .cafe-slider-track {
-    gap: 1.1rem;
-  }
-
-  .menu-item {
-    flex-basis: calc(50% - 0.55rem);
-  }
-
-  .menu-thumb {
-    aspect-ratio: 0.9 / 1;
-  }
-
-  .menu-caption {
-    min-height: 44px;
-    font-size: var(--fs-text);
-    padding: 0.5rem 0.55rem;
   }
 }
