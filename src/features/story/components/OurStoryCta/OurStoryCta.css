@@ -3,12 +3,15 @@
    ============================================================ */
 .ostory-cta {
   background-color: var(--color-white);
+  /* The stripes are twice as wide above the phone: the
+     phone reads them as a finer texture beside the
+     smaller type. */
   background-image: repeating-linear-gradient(
     90deg,
     var(--color-white) 0px,
-    var(--color-white) 72px,
-    var(--color-bg) 72px,
-    var(--color-bg) 144px
+    var(--color-white) 40px,
+    var(--color-bg) 40px,
+    var(--color-bg) 80px
   );
   padding: clamp(72px, 7vw, 100px) 0;
 }
@@ -26,17 +29,18 @@
 
 .ostory-cta-title {
   font-style: italic;
-  /* 28px on the phone, the shared --fs-section ramp from 744px up. */
-  font-size: var(--fs-section-phone);
+  /* The page scale's h2: 28px on the phone, 36px from
+     641px, 48px from 1024px and 52px from 1920px, with
+     --lh-h2 stepping 1.2 → 1.15 on the same edges, so the
+     title carries no line-height of its own. The title
+     wraps where it lands — two balanced lines at every
+     tier — so it needs no nowrap and no measure cap;
+     text-wrap: balance (on h2 globally) evens the lines
+     out. */
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
   margin: 0.7rem auto 0.9rem;
   max-width: 640px;
-}
-
-@media (min-width: 1100px) {
-  .ostory-cta-title {
-    white-space: nowrap;
-    max-width: none;
-  }
 }
 
 .ostory-cta-title em {
@@ -46,24 +50,17 @@
 
 .ostory-cta-desc {
   font-family: var(--font-sans);
-  /* --fs-text, the token every description on /gallery takes. --fs-small was
-     0.95rem — 15.2px flat, the narrowest description on the page at every width
-     above 600px. */
-  font-size: var(--fs-text);
-  line-height: var(--lh-text);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
   color: var(--color-muted);
   margin-top: 0.5rem;
-  /* One line on laptop and desktop. The measure is 74 characters, which at
-     --fs-text's 17.04-18.1px across that band is 651px of ink at most (canvas
-     measureText with the webfont loaded). The old 620px cap sat 31px under that
-     and wrapped the line in two from 600px all the way to 1920px.
-
-     680px rather than 651px: the slack absorbs a wider fallback face on a
-     machine without the webfont, so the line cannot re-break. It stays a cap
-     rather than nowrap because .ostory-cta-inner is a centred flex column —
-     the paragraph is sized fit-content, so below ~730px the shell is the
-     binding constraint, the text wraps normally, and nothing can overflow. */
-  max-width: 680px;
+  /* No measure cap. `.ostory-cta-inner` is a centred
+     flex column, so the paragraph shrink-wraps to its
+     content: one line wherever the line fits (from the
+     phone's wide end up), and the shell is the binding
+     constraint below that, where the text wraps normally
+     and nothing can overflow. A cap would only re-break
+     a line that already fits. */
 }
 
 .ostory-cta-btn {
@@ -80,48 +77,22 @@
 }
 
 /* ============================================================
-   RESPONSIVE
+   RESPONSIVE — 641px and 1024px, the canonical edges
    ============================================================ */
 
-/* No tablet band, and that is the change. This block used to carry one — a
-   600-1099px band and a 1100px one — pinning the title, the description and the
-   label to --ostory-tablet-heading / -desc / -eyebrow, a scale declared in
-   global.css for this page alone and read by nothing else on the site. All three
-   elements now take the shared tokens instead: --fs-section-phone (which is
-   --fs-section itself from 744px up), --fs-text and --fs-eyebrow, which is what
-   /gallery's four section heads and five descriptions take, so the closing CTA
-   reads at the same size as the gallery's at every width rather than at a size
-   only this page had.
-
-   What is left in the tablet band is the leading, and only on the title: 1.1 is
-   --lh-heading restated so the three headings on the page share one pitch. The
-   description needed nothing — --fs-text carries --lh-text itself. The
-   min-width:1100px nowrap above is unaffected, and the two lines this page
-   forces on the origin heading are not this element's business. */
-@media (min-width: 600px) and (max-width: 1099px) {
-  .ostory-cta-title {
-    line-height: 1.1;
-  }
-}
-
-/* The same description ramp /gallery's section paragraphs take above 1100px,
-   for the same reason: --fs-text is the phone and tablet value on both pages,
-   and above this edge they are one size rather than two. 16.76px at the 1136
-   edge, 17.52px at 1440, 18.6px from 1792 up. */
-@media (min-width: 1136px) {
-  .ostory-cta-desc {
-    font-size: clamp(16px, 0.25vw + 0.87rem, 18.6px);
-  }
-}
-
-@media (max-width: 640px) {
+/* TABLET — 641px to 1023px.
+   The stripes step to the shared 72px pair. The title keeps
+   the h2 token's own leading (1.2 here, 1.15 from 1024px),
+   which is what the origin heading runs at too, so both h2s
+   on the page share one pitch inside this band. */
+@media (min-width: 641px) {
   .ostory-cta {
     background-image: repeating-linear-gradient(
       90deg,
       var(--color-white) 0px,
-      var(--color-white) 40px,
-      var(--color-bg) 40px,
-      var(--color-bg) 80px
+      var(--color-white) 72px,
+      var(--color-bg) 72px,
+      var(--color-bg) 144px
     );
   }
 }

@@ -1,0 +1,1521 @@
+route	width	element	text	font-size	line-height	expected	pass
+home	375	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	32	36.8	32	PASS
+home	375	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	28	33.6	28	PASS
+home	375	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	28	33.6	28	PASS
+home	375	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	28	33.6	28	PASS
+home	375	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	28	33.6	28	PASS
+home	375	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	14	21	14	PASS
+home	375	desc:experience-desc reveal reveal-delay-2 is-visible	Whether you arrive early, take a break during yo	14	21	14	PASS
+home	375	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	14	21	14	PASS
+home	375	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	14	21	14	PASS
+home	375	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	14	21	14	PASS
+home	375	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	12	16.8	12	PASS
+home	375	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	12	18	12	PASS
+home	375	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	12	16.8	12	PASS
+home	375	eyebrow:eyebrow reveal	— From the Café	12	18	12	PASS
+home	375	eyebrow:eyebrow	— The ParisBeans Mood	12	18	12	PASS
+home	390	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	32	36.8	32	PASS
+home	390	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	28	33.6	28	PASS
+home	390	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	28	33.6	28	PASS
+home	390	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	28	33.6	28	PASS
+home	390	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	28	33.6	28	PASS
+home	390	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	14	21	14	PASS
+home	390	desc:experience-desc reveal reveal-delay-2 is-visible	Whether you arrive early, take a break during yo	14	21	14	PASS
+home	390	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	14	21	14	PASS
+home	390	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	14	21	14	PASS
+home	390	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	14	21	14	PASS
+home	390	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	12	16.8	12	PASS
+home	390	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	12	18	12	PASS
+home	390	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	12	16.8	12	PASS
+home	390	eyebrow:eyebrow reveal	— From the Café	12	18	12	PASS
+home	390	eyebrow:eyebrow	— The ParisBeans Mood	12	18	12	PASS
+home	430	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	32	36.8	32	PASS
+home	430	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	28	33.6	28	PASS
+home	430	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	28	33.6	28	PASS
+home	430	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	28	33.6	28	PASS
+home	430	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	28	33.6	28	PASS
+home	430	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	14	21	14	PASS
+home	430	desc:experience-desc reveal reveal-delay-2 is-visible	Whether you arrive early, take a break during yo	14	21	14	PASS
+home	430	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	14	21	14	PASS
+home	430	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	14	21	14	PASS
+home	430	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	14	21	14	PASS
+home	430	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	12	16.8	12	PASS
+home	430	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	12	18	12	PASS
+home	430	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	12	16.8	12	PASS
+home	430	eyebrow:eyebrow reveal	— From the Café	12	18	12	PASS
+home	430	eyebrow:eyebrow	— The ParisBeans Mood	12	18	12	PASS
+home	500	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	32	36.8	32	PASS
+home	500	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	28	33.6	28	PASS
+home	500	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	28	33.6	28	PASS
+home	500	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	28	33.6	28	PASS
+home	500	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	28	33.6	28	PASS
+home	500	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	14	21	14	PASS
+home	500	desc:experience-desc reveal reveal-delay-2 is-visible	Whether you arrive early, take a break during yo	14	21	14	PASS
+home	500	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	14	21	14	PASS
+home	500	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	14	21	14	PASS
+home	500	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	14	21	14	PASS
+home	500	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	12	16.8	12	PASS
+home	500	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	12	18	12	PASS
+home	500	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	12	16.8	12	PASS
+home	500	eyebrow:eyebrow reveal	— From the Café	12	18	12	PASS
+home	500	eyebrow:eyebrow	— The ParisBeans Mood	12	18	12	PASS
+home	640	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	32	36.8	32	PASS
+home	640	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	28	33.6	28	PASS
+home	640	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	28	33.6	28	PASS
+home	640	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	28	33.6	28	PASS
+home	640	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	28	33.6	28	PASS
+home	640	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	14	21	14	PASS
+home	640	desc:experience-desc reveal reveal-delay-2 is-visible	Whether you arrive early, take a break during yo	14	21	14	PASS
+home	640	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	14	21	14	PASS
+home	640	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	14	21	14	PASS
+home	640	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	14	21	14	PASS
+home	640	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	12	16.8	12	PASS
+home	640	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	12	18	12	PASS
+home	640	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	12	16.8	12	PASS
+home	640	eyebrow:eyebrow reveal	— From the Café	12	18	12	PASS
+home	640	eyebrow:eyebrow	— The ParisBeans Mood	12	18	12	PASS
+home	641	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	44	50.6	44	PASS
+home	641	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	36	43.2	36	PASS
+home	641	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	36	43.2	36	PASS
+home	641	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	36	43.2	36	PASS
+home	641	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	36	43.2	36	PASS
+home	641	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	16	24	16	PASS
+home	641	desc:experience-desc reveal reveal-delay-2 is-visible	Whether you arrive early, take a break during yo	16	24	16	PASS
+home	641	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	16	24	16	PASS
+home	641	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	16	24	16	PASS
+home	641	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	16	24	16	PASS
+home	641	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	14	19.6	14	PASS
+home	641	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	14	21	14	PASS
+home	641	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	14	19.6	14	PASS
+home	641	eyebrow:eyebrow reveal	— From the Café	14	21	14	PASS
+home	641	eyebrow:eyebrow	— The ParisBeans Mood	14	21	14	PASS
+home	744	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	44	50.6	44	PASS
+home	744	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	36	43.2	36	PASS
+home	744	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	36	43.2	36	PASS
+home	744	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	36	43.2	36	PASS
+home	744	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	36	43.2	36	PASS
+home	744	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	16	24	16	PASS
+home	744	desc:experience-desc reveal reveal-delay-2 is-visible	Whether you arrive early, take a break during yo	16	24	16	PASS
+home	744	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	16	24	16	PASS
+home	744	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	16	24	16	PASS
+home	744	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	16	24	16	PASS
+home	744	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	14	19.6	14	PASS
+home	744	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	14	21	14	PASS
+home	744	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	14	19.6	14	PASS
+home	744	eyebrow:eyebrow reveal	— From the Café	14	21	14	PASS
+home	744	eyebrow:eyebrow	— The ParisBeans Mood	14	21	14	PASS
+home	900	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	44	50.6	44	PASS
+home	900	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	36	43.2	36	PASS
+home	900	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	36	43.2	36	PASS
+home	900	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	36	43.2	36	PASS
+home	900	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	36	43.2	36	PASS
+home	900	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	16	24	16	PASS
+home	900	desc:experience-desc reveal reveal-delay-2 is-visible	Whether you arrive early, take a break during yo	16	24	16	PASS
+home	900	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	16	24	16	PASS
+home	900	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	16	24	16	PASS
+home	900	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	16	24	16	PASS
+home	900	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	14	19.6	14	PASS
+home	900	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	14	21	14	PASS
+home	900	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	14	19.6	14	PASS
+home	900	eyebrow:eyebrow reveal	— From the Café	14	21	14	PASS
+home	900	eyebrow:eyebrow	— The ParisBeans Mood	14	21	14	PASS
+home	1023	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	44	50.6	44	PASS
+home	1023	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	36	43.2	36	PASS
+home	1023	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	36	43.2	36	PASS
+home	1023	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	36	43.2	36	PASS
+home	1023	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	36	43.2	36	PASS
+home	1023	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	16	24	16	PASS
+home	1023	desc:experience-desc reveal reveal-delay-2 is-visible	Whether you arrive early, take a break during yo	16	24	16	PASS
+home	1023	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	16	24	16	PASS
+home	1023	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	16	24	16	PASS
+home	1023	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	16	24	16	PASS
+home	1023	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	14	19.6	14	PASS
+home	1023	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	14	21	14	PASS
+home	1023	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	14	19.6	14	PASS
+home	1023	eyebrow:eyebrow reveal	— From the Café	14	21	14	PASS
+home	1023	eyebrow:eyebrow	— The ParisBeans Mood	14	21	14	PASS
+home	1024	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	56	61.6	56	PASS
+home	1024	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	48	55.2	48	PASS
+home	1024	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	48	55.2	48	PASS
+home	1024	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	48	55.2	48	PASS
+home	1024	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	48	55.2	48	PASS
+home	1024	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	20	30	20	PASS
+home	1024	desc:experience-desc reveal reveal-delay-2	Whether you arrive early, take a break during yo	20	30	20	PASS
+home	1024	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	20	30	20	PASS
+home	1024	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+home	1024	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+home	1024	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	16	22.4	16	PASS
+home	1024	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	16	24	16	PASS
+home	1024	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	16	22.4	16	PASS
+home	1024	eyebrow:eyebrow reveal	— From the Café	16	24	16	PASS
+home	1024	eyebrow:eyebrow	— The ParisBeans Mood	16	24	16	PASS
+home	1136	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	56	61.6	56	PASS
+home	1136	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	48	55.2	48	PASS
+home	1136	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	48	55.2	48	PASS
+home	1136	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	48	55.2	48	PASS
+home	1136	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	48	55.2	48	PASS
+home	1136	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	20	30	20	PASS
+home	1136	desc:experience-desc reveal reveal-delay-2	Whether you arrive early, take a break during yo	20	30	20	PASS
+home	1136	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	20	30	20	PASS
+home	1136	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+home	1136	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+home	1136	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	16	22.4	16	PASS
+home	1136	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	16	24	16	PASS
+home	1136	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	16	22.4	16	PASS
+home	1136	eyebrow:eyebrow reveal	— From the Café	16	24	16	PASS
+home	1136	eyebrow:eyebrow	— The ParisBeans Mood	16	24	16	PASS
+home	1280	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	56	61.6	56	PASS
+home	1280	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	48	55.2	48	PASS
+home	1280	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	48	55.2	48	PASS
+home	1280	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	48	55.2	48	PASS
+home	1280	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	48	55.2	48	PASS
+home	1280	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	20	30	20	PASS
+home	1280	desc:experience-desc reveal reveal-delay-2	Whether you arrive early, take a break during yo	20	30	20	PASS
+home	1280	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	20	30	20	PASS
+home	1280	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+home	1280	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+home	1280	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	16	22.4	16	PASS
+home	1280	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	16	24	16	PASS
+home	1280	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	16	22.4	16	PASS
+home	1280	eyebrow:eyebrow reveal	— From the Café	16	24	16	PASS
+home	1280	eyebrow:eyebrow	— The ParisBeans Mood	16	24	16	PASS
+home	1440	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	56	61.6	56	PASS
+home	1440	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	48	55.2	48	PASS
+home	1440	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	48	55.2	48	PASS
+home	1440	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	48	55.2	48	PASS
+home	1440	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	48	55.2	48	PASS
+home	1440	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	20	30	20	PASS
+home	1440	desc:experience-desc reveal reveal-delay-2	Whether you arrive early, take a break during yo	20	30	20	PASS
+home	1440	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	20	30	20	PASS
+home	1440	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+home	1440	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+home	1440	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	16	22.4	16	PASS
+home	1440	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	16	24	16	PASS
+home	1440	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	16	22.4	16	PASS
+home	1440	eyebrow:eyebrow reveal	— From the Café	16	24	16	PASS
+home	1440	eyebrow:eyebrow	— The ParisBeans Mood	16	24	16	PASS
+home	1919	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	56	61.6	56	PASS
+home	1919	h2:experience-title reveal reveal-delay-1 is-visible	More Than a Coffee. Part of Your Appointment.	48	55.2	48	PASS
+home	1919	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	48	55.2	48	PASS
+home	1919	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	48	55.2	48	PASS
+home	1919	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	48	55.2	48	PASS
+home	1919	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	20	30	20	PASS
+home	1919	desc:experience-desc reveal reveal-delay-2	Whether you arrive early, take a break during yo	20	30	20	PASS
+home	1919	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	20	30	20	PASS
+home	1919	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+home	1919	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+home	1919	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	16	22.4	16	PASS
+home	1919	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	16	24	16	PASS
+home	1919	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	16	22.4	16	PASS
+home	1919	eyebrow:eyebrow reveal	— From the Café	16	24	16	PASS
+home	1919	eyebrow:eyebrow	— The ParisBeans Mood	16	24	16	PASS
+home	1920	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	64	70.4	64	PASS
+home	1920	h2:experience-title reveal reveal-delay-1	More Than a Coffee. Part of Your Appointment.	52	59.8	52	PASS
+home	1920	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	52	59.8	52	PASS
+home	1920	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	52	59.8	52	PASS
+home	1920	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	52	59.8	52	PASS
+home	1920	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	20	30	20	PASS
+home	1920	desc:experience-desc reveal reveal-delay-2	Whether you arrive early, take a break during yo	20	30	20	PASS
+home	1920	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	20	30	20	PASS
+home	1920	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+home	1920	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+home	1920	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	16	22.4	16	PASS
+home	1920	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	16	24	16	PASS
+home	1920	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	16	22.4	16	PASS
+home	1920	eyebrow:eyebrow reveal	— From the Café	16	24	16	PASS
+home	1920	eyebrow:eyebrow	— The ParisBeans Mood	16	24	16	PASS
+home	2560	h1:hero-title is-visible	Your SalonAppointment, With ATaste Of Paris.	64	70.4	64	PASS
+home	2560	h2:experience-title reveal reveal-delay-1	More Than a Coffee. Part of Your Appointment.	52	59.8	52	PASS
+home	2560	h2:story-title reveal reveal-delay-1	Inspired By ParisStreets. Created ForYour Salon 	52	59.8	52	PASS
+home	2560	h2:cafe-title reveal reveal-delay-1	Coffee, Breakfast & Little Indulgences.	52	59.8	52	PASS
+home	2560	h2:gallery-title	A Corner of Paris, InsideHAIR RAP BY YOYO.	52	59.8	52	PASS
+home	2560	desc:hero-desc reveal reveal-delay-2 is-visible	Step into HAIR RAP BY YOYO and discover Paris Be	20	30	20	PASS
+home	2560	desc:experience-desc reveal reveal-delay-2	Whether you arrive early, take a break during yo	20	30	20	PASS
+home	2560	desc:lead story-paragraph reveal reveal-delay-2	Born from a love for the café culture of Paris, 	20	30	20	PASS
+home	2560	desc:lead cafe-paragraph reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+home	2560	desc:lead gallery-desc	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+home	2560	eyebrow:eyebrow hero-eyebrow	- Paris Beans - HAIR RAP BY YOYO	16	22.4	16	PASS
+home	2560	eyebrow:eyebrow reveal is-visible	—The ParisBeans Experience	16	24	16	PASS
+home	2560	eyebrow:pb-story-eyebrow eyebrow reveal	— OUR STORY	16	22.4	16	PASS
+home	2560	eyebrow:eyebrow reveal	— From the Café	16	24	16	PASS
+home	2560	eyebrow:eyebrow	— The ParisBeans Mood	16	24	16	PASS
+our-story	375	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	32	36.8	32	PASS
+our-story	375	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	28	33.6	28	PASS
+our-story	375	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	28	33.6	28	PASS
+our-story	375	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	14	21	14	PASS
+our-story	375	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	14	21	14	PASS
+our-story	375	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	14	21	14	PASS
+our-story	375	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	12	18	12	PASS
+our-story	375	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	12	18	12	PASS
+our-story	375	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	12	18	12	PASS
+our-story	390	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	32	36.8	32	PASS
+our-story	390	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	28	33.6	28	PASS
+our-story	390	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	28	33.6	28	PASS
+our-story	390	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	14	21	14	PASS
+our-story	390	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	14	21	14	PASS
+our-story	390	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	14	21	14	PASS
+our-story	390	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	12	18	12	PASS
+our-story	390	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	12	18	12	PASS
+our-story	390	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	12	18	12	PASS
+our-story	430	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	32	36.8	32	PASS
+our-story	430	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	28	33.6	28	PASS
+our-story	430	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	28	33.6	28	PASS
+our-story	430	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	14	21	14	PASS
+our-story	430	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	14	21	14	PASS
+our-story	430	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	14	21	14	PASS
+our-story	430	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	12	18	12	PASS
+our-story	430	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	12	18	12	PASS
+our-story	430	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	12	18	12	PASS
+our-story	500	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	32	36.8	32	PASS
+our-story	500	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	28	33.6	28	PASS
+our-story	500	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	28	33.6	28	PASS
+our-story	500	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	14	21	14	PASS
+our-story	500	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	14	21	14	PASS
+our-story	500	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	14	21	14	PASS
+our-story	500	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	12	18	12	PASS
+our-story	500	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	12	18	12	PASS
+our-story	500	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	12	18	12	PASS
+our-story	640	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	32	36.8	32	PASS
+our-story	640	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	28	33.6	28	PASS
+our-story	640	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	28	33.6	28	PASS
+our-story	640	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	14	21	14	PASS
+our-story	640	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	14	21	14	PASS
+our-story	640	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	14	21	14	PASS
+our-story	640	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	12	18	12	PASS
+our-story	640	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	12	18	12	PASS
+our-story	640	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	12	18	12	PASS
+our-story	641	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	44	50.6	44	PASS
+our-story	641	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	36	43.2	36	PASS
+our-story	641	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	36	43.2	36	PASS
+our-story	641	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	16	24	16	PASS
+our-story	641	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	16	24	16	PASS
+our-story	641	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	16	24	16	PASS
+our-story	641	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	14	21	14	PASS
+our-story	641	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	14	21	14	PASS
+our-story	641	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	14	21	14	PASS
+our-story	744	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	44	50.6	44	PASS
+our-story	744	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	36	43.2	36	PASS
+our-story	744	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	36	43.2	36	PASS
+our-story	744	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	16	24	16	PASS
+our-story	744	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	16	24	16	PASS
+our-story	744	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	16	24	16	PASS
+our-story	744	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	14	21	14	PASS
+our-story	744	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	14	21	14	PASS
+our-story	744	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	14	21	14	PASS
+our-story	900	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	44	50.6	44	PASS
+our-story	900	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	36	43.2	36	PASS
+our-story	900	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	36	43.2	36	PASS
+our-story	900	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	16	24	16	PASS
+our-story	900	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	16	24	16	PASS
+our-story	900	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	16	24	16	PASS
+our-story	900	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	14	21	14	PASS
+our-story	900	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	14	21	14	PASS
+our-story	900	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	14	21	14	PASS
+our-story	1023	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	44	50.6	44	PASS
+our-story	1023	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	36	43.2	36	PASS
+our-story	1023	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	36	43.2	36	PASS
+our-story	1023	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	16	24	16	PASS
+our-story	1023	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	16	24	16	PASS
+our-story	1023	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	16	24	16	PASS
+our-story	1023	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	14	21	14	PASS
+our-story	1023	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	14	21	14	PASS
+our-story	1023	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	14	21	14	PASS
+our-story	1024	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	56	61.6	56	PASS
+our-story	1024	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	48	55.2	48	PASS
+our-story	1024	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	48	55.2	48	PASS
+our-story	1024	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	20	30	20	PASS
+our-story	1024	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	20	30	20	PASS
+our-story	1024	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+our-story	1024	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	16	20.8	16	PASS
+our-story	1024	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	16	24	16	PASS
+our-story	1024	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	16	24	16	PASS
+our-story	1136	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	56	61.6	56	PASS
+our-story	1136	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	48	55.2	48	PASS
+our-story	1136	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	48	55.2	48	PASS
+our-story	1136	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	20	30	20	PASS
+our-story	1136	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	20	30	20	PASS
+our-story	1136	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+our-story	1136	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	16	20.8	16	PASS
+our-story	1136	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	16	24	16	PASS
+our-story	1136	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	16	24	16	PASS
+our-story	1280	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	56	61.6	56	PASS
+our-story	1280	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	48	55.2	48	PASS
+our-story	1280	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	48	55.2	48	PASS
+our-story	1280	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	20	30	20	PASS
+our-story	1280	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	20	30	20	PASS
+our-story	1280	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+our-story	1280	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	16	20.8	16	PASS
+our-story	1280	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	16	24	16	PASS
+our-story	1280	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	16	24	16	PASS
+our-story	1440	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	56	61.6	56	PASS
+our-story	1440	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	48	55.2	48	PASS
+our-story	1440	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	48	55.2	48	PASS
+our-story	1440	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	20	30	20	PASS
+our-story	1440	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	20	30	20	PASS
+our-story	1440	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+our-story	1440	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	16	20.8	16	PASS
+our-story	1440	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	16	24	16	PASS
+our-story	1440	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	16	24	16	PASS
+our-story	1919	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	56	61.6	56	PASS
+our-story	1919	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	48	55.2	48	PASS
+our-story	1919	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	48	55.2	48	PASS
+our-story	1919	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	20	30	20	PASS
+our-story	1919	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	20	30	20	PASS
+our-story	1919	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+our-story	1919	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	16	20.8	16	PASS
+our-story	1919	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	16	24	16	PASS
+our-story	1919	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	16	24	16	PASS
+our-story	1920	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	64	70.4	64	PASS
+our-story	1920	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	52	59.8	52	PASS
+our-story	1920	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	52	59.8	52	PASS
+our-story	1920	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	20	30	20	PASS
+our-story	1920	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	20	30	20	PASS
+our-story	1920	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+our-story	1920	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	16	20.8	16	PASS
+our-story	1920	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	16	24	16	PASS
+our-story	1920	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	16	24	16	PASS
+our-story	2560	h1:ostory-title reveal reveal-delay-1 is-visible	A Little Paris, Created for Your Salon Day.	64	70.4	64	PASS
+our-story	2560	h2:ostory-origin-title	From a Parisian Feeling to a Salon Experience.	52	59.8	52	PASS
+our-story	2560	h2:ostory-cta-title	ParisBeans Is Not Just a Café Corner.	52	59.8	52	PASS
+our-story	2560	desc:ostory-desc reveal reveal-delay-2 is-visible	Paris Beans began with a simple idea — what if a	20	30	20	PASS
+our-story	2560	desc:ostory-origin-text	ParisBeans was created inside HAIR RAP BY YOYO a	20	30	20	PASS
+our-story	2560	desc:ostory-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+our-story	2560	eyebrow:eyebrow ostory-eyebrow reveal is-visible	OUR STORY	16	20.8	16	PASS
+our-story	2560	eyebrow:eyebrow ostory-eyebrow	— From Paris to HAIR RAP BY YOYO	16	24	16	PASS
+our-story	2560	eyebrow:eyebrow ostory-eyebrow	THE PARISBEANS EXPERIENCE	16	24	16	PASS
+menu	375	h1:menu-hero-title	Something Good, Before Or After Your Appointment	32	36.8	32	PASS
+menu	375	h2:menu-special-title	Specialty Hot Coffees (240 ml)	28	33.6	28	PASS
+menu	375	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	28	33.6	28	PASS
+menu	375	h2:menu-cta-title	Your Table Is Waiting.	28	33.6	28	PASS
+menu	375	desc:menu-hero-desc	From comforting coffee to simple café favourites	14	21	14	PASS
+menu	375	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	14	21	14	PASS
+menu	375	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	14	21	14	PASS
+menu	375	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	12	18	12	PASS
+menu	375	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	12	18	12	PASS
+menu	375	eyebrow:eyebrow	— The Paris Beans Experience	12	18	12	PASS
+menu	390	h1:menu-hero-title	Something Good, Before Or After Your Appointment	32	36.8	32	PASS
+menu	390	h2:menu-special-title	Specialty Hot Coffees (240 ml)	28	33.6	28	PASS
+menu	390	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	28	33.6	28	PASS
+menu	390	h2:menu-cta-title	Your Table Is Waiting.	28	33.6	28	PASS
+menu	390	desc:menu-hero-desc	From comforting coffee to simple café favourites	14	21	14	PASS
+menu	390	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	14	21	14	PASS
+menu	390	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	14	21	14	PASS
+menu	390	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	12	18	12	PASS
+menu	390	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	12	18	12	PASS
+menu	390	eyebrow:eyebrow	— The Paris Beans Experience	12	18	12	PASS
+menu	430	h1:menu-hero-title	Something Good, Before Or After Your Appointment	32	36.8	32	PASS
+menu	430	h2:menu-special-title	Specialty Hot Coffees (240 ml)	28	33.6	28	PASS
+menu	430	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	28	33.6	28	PASS
+menu	430	h2:menu-cta-title	Your Table Is Waiting.	28	33.6	28	PASS
+menu	430	desc:menu-hero-desc	From comforting coffee to simple café favourites	14	21	14	PASS
+menu	430	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	14	21	14	PASS
+menu	430	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	14	21	14	PASS
+menu	430	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	12	18	12	PASS
+menu	430	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	12	18	12	PASS
+menu	430	eyebrow:eyebrow	— The Paris Beans Experience	12	18	12	PASS
+menu	500	h1:menu-hero-title	Something Good, Before Or After Your Appointment	32	36.8	32	PASS
+menu	500	h2:menu-special-title	Specialty Hot Coffees (240 ml)	28	33.6	28	PASS
+menu	500	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	28	33.6	28	PASS
+menu	500	h2:menu-cta-title	Your Table Is Waiting.	28	33.6	28	PASS
+menu	500	desc:menu-hero-desc	From comforting coffee to simple café favourites	14	21	14	PASS
+menu	500	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	14	21	14	PASS
+menu	500	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	14	21	14	PASS
+menu	500	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	12	18	12	PASS
+menu	500	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	12	18	12	PASS
+menu	500	eyebrow:eyebrow	— The Paris Beans Experience	12	18	12	PASS
+menu	640	h1:menu-hero-title	Something Good, Before Or After Your Appointment	32	36.8	32	PASS
+menu	640	h2:menu-special-title	Specialty Hot Coffees (240 ml)	28	33.6	28	PASS
+menu	640	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	28	33.6	28	PASS
+menu	640	h2:menu-cta-title	Your Table Is Waiting.	28	33.6	28	PASS
+menu	640	desc:menu-hero-desc	From comforting coffee to simple café favourites	14	21	14	PASS
+menu	640	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	14	21	14	PASS
+menu	640	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	14	21	14	PASS
+menu	640	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	12	18	12	PASS
+menu	640	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	12	18	12	PASS
+menu	640	eyebrow:eyebrow	— The Paris Beans Experience	12	18	12	PASS
+menu	641	h1:menu-hero-title	Something Good, Before Or After Your Appointment	44	50.6	44	PASS
+menu	641	h2:menu-special-title	Specialty Hot Coffees (240 ml)	36	43.2	36	PASS
+menu	641	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	36	43.2	36	PASS
+menu	641	h2:menu-cta-title	Your Table Is Waiting.	36	43.2	36	PASS
+menu	641	desc:menu-hero-desc	From comforting coffee to simple café favourites	16	24	16	PASS
+menu	641	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	16	24	16	PASS
+menu	641	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	16	24	16	PASS
+menu	641	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	14	21	14	PASS
+menu	641	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	14	21	14	PASS
+menu	641	eyebrow:eyebrow	— The Paris Beans Experience	14	21	14	PASS
+menu	744	h1:menu-hero-title	Something Good, Before Or After Your Appointment	44	50.6	44	PASS
+menu	744	h2:menu-special-title	Specialty Hot Coffees (240 ml)	36	43.2	36	PASS
+menu	744	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	36	43.2	36	PASS
+menu	744	h2:menu-cta-title	Your Table Is Waiting.	36	43.2	36	PASS
+menu	744	desc:menu-hero-desc	From comforting coffee to simple café favourites	16	24	16	PASS
+menu	744	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	16	24	16	PASS
+menu	744	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	16	24	16	PASS
+menu	744	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	14	21	14	PASS
+menu	744	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	14	21	14	PASS
+menu	744	eyebrow:eyebrow	— The Paris Beans Experience	14	21	14	PASS
+menu	900	h1:menu-hero-title	Something Good, Before Or After Your Appointment	44	50.6	44	PASS
+menu	900	h2:menu-special-title	Specialty Hot Coffees (240 ml)	36	43.2	36	PASS
+menu	900	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	36	43.2	36	PASS
+menu	900	h2:menu-cta-title	Your Table Is Waiting.	36	43.2	36	PASS
+menu	900	desc:menu-hero-desc	From comforting coffee to simple café favourites	16	24	16	PASS
+menu	900	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	16	24	16	PASS
+menu	900	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	16	24	16	PASS
+menu	900	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	14	21	14	PASS
+menu	900	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	14	21	14	PASS
+menu	900	eyebrow:eyebrow	— The Paris Beans Experience	14	21	14	PASS
+menu	1023	h1:menu-hero-title	Something Good, Before Or After Your Appointment	44	50.6	44	PASS
+menu	1023	h2:menu-special-title	Specialty Hot Coffees (240 ml)	36	43.2	36	PASS
+menu	1023	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	36	43.2	36	PASS
+menu	1023	h2:menu-cta-title	Your Table Is Waiting.	36	43.2	36	PASS
+menu	1023	desc:menu-hero-desc	From comforting coffee to simple café favourites	16	24	16	PASS
+menu	1023	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	16	24	16	PASS
+menu	1023	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	16	24	16	PASS
+menu	1023	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	14	21	14	PASS
+menu	1023	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	14	21	14	PASS
+menu	1023	eyebrow:eyebrow	— The Paris Beans Experience	14	21	14	PASS
+menu	1024	h1:menu-hero-title	Something Good, Before Or After Your Appointment	64	70.4	64	PASS
+menu	1024	h2:menu-special-title	Specialty Hot Coffees (240 ml)	48	55.2	48	PASS
+menu	1024	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	48	55.2	48	PASS
+menu	1024	h2:menu-cta-title	Your Table Is Waiting.	48	55.2	48	PASS
+menu	1024	desc:menu-hero-desc	From comforting coffee to simple café favourites	20	30	20	PASS
+menu	1024	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+menu	1024	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+menu	1024	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	16	24	16	PASS
+menu	1024	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	16	24	16	PASS
+menu	1024	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+menu	1136	h1:menu-hero-title	Something Good, Before Or After Your Appointment	64	70.4	64	PASS
+menu	1136	h2:menu-special-title	Specialty Hot Coffees (240 ml)	48	55.2	48	PASS
+menu	1136	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	48	55.2	48	PASS
+menu	1136	h2:menu-cta-title	Your Table Is Waiting.	48	55.2	48	PASS
+menu	1136	desc:menu-hero-desc	From comforting coffee to simple café favourites	20	30	20	PASS
+menu	1136	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+menu	1136	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+menu	1136	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	16	24	16	PASS
+menu	1136	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	16	24	16	PASS
+menu	1136	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+menu	1280	h1:menu-hero-title	Something Good, Before Or After Your Appointment	64	70.4	64	PASS
+menu	1280	h2:menu-special-title	Specialty Hot Coffees (240 ml)	48	55.2	48	PASS
+menu	1280	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	48	55.2	48	PASS
+menu	1280	h2:menu-cta-title	Your Table Is Waiting.	48	55.2	48	PASS
+menu	1280	desc:menu-hero-desc	From comforting coffee to simple café favourites	20	30	20	PASS
+menu	1280	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+menu	1280	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+menu	1280	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	16	24	16	PASS
+menu	1280	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	16	24	16	PASS
+menu	1280	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+menu	1440	h1:menu-hero-title	Something Good, Before Or After Your Appointment	64	70.4	64	PASS
+menu	1440	h2:menu-special-title	Specialty Hot Coffees (240 ml)	48	55.2	48	PASS
+menu	1440	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	48	55.2	48	PASS
+menu	1440	h2:menu-cta-title	Your Table Is Waiting.	48	55.2	48	PASS
+menu	1440	desc:menu-hero-desc	From comforting coffee to simple café favourites	20	30	20	PASS
+menu	1440	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+menu	1440	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+menu	1440	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	16	24	16	PASS
+menu	1440	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	16	24	16	PASS
+menu	1440	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+menu	1919	h1:menu-hero-title	Something Good, Before Or After Your Appointment	64	70.4	64	PASS
+menu	1919	h2:menu-special-title	Specialty Hot Coffees (240 ml)	48	55.2	48	PASS
+menu	1919	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	48	55.2	48	PASS
+menu	1919	h2:menu-cta-title	Your Table Is Waiting.	48	55.2	48	PASS
+menu	1919	desc:menu-hero-desc	From comforting coffee to simple café favourites	20	30	20	PASS
+menu	1919	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+menu	1919	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+menu	1919	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	16	24	16	PASS
+menu	1919	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	16	24	16	PASS
+menu	1919	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+menu	1920	h1:menu-hero-title	Something Good, Before Or After Your Appointment	64	70.4	64	PASS
+menu	1920	h2:menu-special-title	Specialty Hot Coffees (240 ml)	52	59.8	52	PASS
+menu	1920	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	52	59.8	52	PASS
+menu	1920	h2:menu-cta-title	Your Table Is Waiting.	52	59.8	52	PASS
+menu	1920	desc:menu-hero-desc	From comforting coffee to simple café favourites	20	30	20	PASS
+menu	1920	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+menu	1920	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+menu	1920	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	16	24	16	PASS
+menu	1920	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	16	24	16	PASS
+menu	1920	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+menu	2560	h1:menu-hero-title	Something Good, Before Or After Your Appointment	64	70.4	64	PASS
+menu	2560	h2:menu-special-title	Specialty Hot Coffees (240 ml)	52	59.8	52	PASS
+menu	2560	h2:menu-cafe-title reveal reveal-delay-1	A Few Things WorthStaying For.	52	59.8	52	PASS
+menu	2560	h2:menu-cta-title	Your Table Is Waiting.	52	59.8	52	PASS
+menu	2560	desc:menu-hero-desc	From comforting coffee to simple café favourites	20	30	20	PASS
+menu	2560	desc:menu-cafe-desc reveal reveal-delay-2	Discover a simple, satisfying café offering cura	20	30	20	PASS
+menu	2560	desc:menu-cta-desc	It is a small Parisian ritual built into your HA	20	30	20	PASS
+menu	2560	eyebrow:eyebrow menu-hero-eyebrow	—ParisBeans Menu	16	24	16	PASS
+menu	2560	eyebrow:eyebrow menu-cafe-eyebrow reveal	— From the Café	16	24	16	PASS
+menu	2560	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+gallery	375	h1:gal-hero-title	Moments Worth Slowing Down For.	32	36.8	32	PASS
+gallery	375	h2:gal-section-title	Moments Worth Slowing Down For.	28	33.6	28	PASS
+gallery	375	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	28	33.6	28	PASS
+gallery	375	h2:gal-section-title	Made for the Moment.	28	33.6	28	PASS
+gallery	375	h2:gal-section-title	Where Beauty Meets Café Culture.	28	33.6	28	PASS
+gallery	375	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	14	21	14	PASS
+gallery	375	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	14	21	14	PASS
+gallery	375	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	14	21	14	PASS
+gallery	375	desc:gal-section-desc lead	Simple café pleasures designed to complement you	14	21	14	PASS
+gallery	375	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	14	21	14	PASS
+gallery	375	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	12	18	12	PASS
+gallery	375	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	12	18	12	PASS
+gallery	375	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	12	18	12	PASS
+gallery	375	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	12	18	12	PASS
+gallery	375	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	12	18	12	PASS
+gallery	390	h1:gal-hero-title	Moments Worth Slowing Down For.	32	36.8	32	PASS
+gallery	390	h2:gal-section-title	Moments Worth Slowing Down For.	28	33.6	28	PASS
+gallery	390	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	28	33.6	28	PASS
+gallery	390	h2:gal-section-title	Made for the Moment.	28	33.6	28	PASS
+gallery	390	h2:gal-section-title	Where Beauty Meets Café Culture.	28	33.6	28	PASS
+gallery	390	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	14	21	14	PASS
+gallery	390	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	14	21	14	PASS
+gallery	390	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	14	21	14	PASS
+gallery	390	desc:gal-section-desc lead	Simple café pleasures designed to complement you	14	21	14	PASS
+gallery	390	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	14	21	14	PASS
+gallery	390	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	12	18	12	PASS
+gallery	390	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	12	18	12	PASS
+gallery	390	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	12	18	12	PASS
+gallery	390	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	12	18	12	PASS
+gallery	390	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	12	18	12	PASS
+gallery	430	h1:gal-hero-title	Moments Worth Slowing Down For.	32	36.8	32	PASS
+gallery	430	h2:gal-section-title	Moments Worth Slowing Down For.	28	33.6	28	PASS
+gallery	430	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	28	33.6	28	PASS
+gallery	430	h2:gal-section-title	Made for the Moment.	28	33.6	28	PASS
+gallery	430	h2:gal-section-title	Where Beauty Meets Café Culture.	28	33.6	28	PASS
+gallery	430	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	14	21	14	PASS
+gallery	430	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	14	21	14	PASS
+gallery	430	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	14	21	14	PASS
+gallery	430	desc:gal-section-desc lead	Simple café pleasures designed to complement you	14	21	14	PASS
+gallery	430	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	14	21	14	PASS
+gallery	430	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	12	18	12	PASS
+gallery	430	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	12	18	12	PASS
+gallery	430	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	12	18	12	PASS
+gallery	430	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	12	18	12	PASS
+gallery	430	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	12	18	12	PASS
+gallery	500	h1:gal-hero-title	Moments Worth Slowing Down For.	32	36.8	32	PASS
+gallery	500	h2:gal-section-title	Moments Worth Slowing Down For.	28	33.6	28	PASS
+gallery	500	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	28	33.6	28	PASS
+gallery	500	h2:gal-section-title	Made for the Moment.	28	33.6	28	PASS
+gallery	500	h2:gal-section-title	Where Beauty Meets Café Culture.	28	33.6	28	PASS
+gallery	500	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	14	21	14	PASS
+gallery	500	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	14	21	14	PASS
+gallery	500	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	14	21	14	PASS
+gallery	500	desc:gal-section-desc lead	Simple café pleasures designed to complement you	14	21	14	PASS
+gallery	500	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	14	21	14	PASS
+gallery	500	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	12	18	12	PASS
+gallery	500	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	12	18	12	PASS
+gallery	500	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	12	18	12	PASS
+gallery	500	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	12	18	12	PASS
+gallery	500	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	12	18	12	PASS
+gallery	640	h1:gal-hero-title	Moments Worth Slowing Down For.	32	36.8	32	PASS
+gallery	640	h2:gal-section-title	Moments Worth Slowing Down For.	28	33.6	28	PASS
+gallery	640	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	28	33.6	28	PASS
+gallery	640	h2:gal-section-title	Made for the Moment.	28	33.6	28	PASS
+gallery	640	h2:gal-section-title	Where Beauty Meets Café Culture.	28	33.6	28	PASS
+gallery	640	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	14	21	14	PASS
+gallery	640	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	14	21	14	PASS
+gallery	640	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	14	21	14	PASS
+gallery	640	desc:gal-section-desc lead	Simple café pleasures designed to complement you	14	21	14	PASS
+gallery	640	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	14	21	14	PASS
+gallery	640	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	12	18	12	PASS
+gallery	640	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	12	18	12	PASS
+gallery	640	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	12	18	12	PASS
+gallery	640	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	12	18	12	PASS
+gallery	640	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	12	18	12	PASS
+gallery	641	h1:gal-hero-title	Moments Worth Slowing Down For.	44	50.6	44	PASS
+gallery	641	h2:gal-section-title	Moments Worth Slowing Down For.	36	43.2	36	PASS
+gallery	641	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	36	43.2	36	PASS
+gallery	641	h2:gal-section-title	Made for the Moment.	36	43.2	36	PASS
+gallery	641	h2:gal-section-title	Where Beauty Meets Café Culture.	36	43.2	36	PASS
+gallery	641	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	16	24	16	PASS
+gallery	641	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	16	24	16	PASS
+gallery	641	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	16	24	16	PASS
+gallery	641	desc:gal-section-desc lead	Simple café pleasures designed to complement you	16	24	16	PASS
+gallery	641	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	16	24	16	PASS
+gallery	641	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	14	21	14	PASS
+gallery	641	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	14	21	14	PASS
+gallery	641	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	14	21	14	PASS
+gallery	641	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	14	21	14	PASS
+gallery	641	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	14	21	14	PASS
+gallery	744	h1:gal-hero-title	Moments Worth Slowing Down For.	44	50.6	44	PASS
+gallery	744	h2:gal-section-title	Moments Worth Slowing Down For.	36	43.2	36	PASS
+gallery	744	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	36	43.2	36	PASS
+gallery	744	h2:gal-section-title	Made for the Moment.	36	43.2	36	PASS
+gallery	744	h2:gal-section-title	Where Beauty Meets Café Culture.	36	43.2	36	PASS
+gallery	744	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	16	24	16	PASS
+gallery	744	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	16	24	16	PASS
+gallery	744	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	16	24	16	PASS
+gallery	744	desc:gal-section-desc lead	Simple café pleasures designed to complement you	16	24	16	PASS
+gallery	744	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	16	24	16	PASS
+gallery	744	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	14	21	14	PASS
+gallery	744	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	14	21	14	PASS
+gallery	744	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	14	21	14	PASS
+gallery	744	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	14	21	14	PASS
+gallery	744	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	14	21	14	PASS
+gallery	900	h1:gal-hero-title	Moments Worth Slowing Down For.	44	50.6	44	PASS
+gallery	900	h2:gal-section-title	Moments Worth Slowing Down For.	36	43.2	36	PASS
+gallery	900	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	36	43.2	36	PASS
+gallery	900	h2:gal-section-title	Made for the Moment.	36	43.2	36	PASS
+gallery	900	h2:gal-section-title	Where Beauty Meets Café Culture.	36	43.2	36	PASS
+gallery	900	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	16	24	16	PASS
+gallery	900	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	16	24	16	PASS
+gallery	900	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	16	24	16	PASS
+gallery	900	desc:gal-section-desc lead	Simple café pleasures designed to complement you	16	24	16	PASS
+gallery	900	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	16	24	16	PASS
+gallery	900	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	14	21	14	PASS
+gallery	900	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	14	21	14	PASS
+gallery	900	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	14	21	14	PASS
+gallery	900	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	14	21	14	PASS
+gallery	900	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	14	21	14	PASS
+gallery	1023	h1:gal-hero-title	Moments Worth Slowing Down For.	44	50.6	44	PASS
+gallery	1023	h2:gal-section-title	Moments Worth Slowing Down For.	36	43.2	36	PASS
+gallery	1023	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	36	43.2	36	PASS
+gallery	1023	h2:gal-section-title	Made for the Moment.	36	43.2	36	PASS
+gallery	1023	h2:gal-section-title	Where Beauty Meets Café Culture.	36	43.2	36	PASS
+gallery	1023	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	16	24	16	PASS
+gallery	1023	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	16	24	16	PASS
+gallery	1023	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	16	24	16	PASS
+gallery	1023	desc:gal-section-desc lead	Simple café pleasures designed to complement you	16	24	16	PASS
+gallery	1023	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	16	24	16	PASS
+gallery	1023	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	14	21	14	PASS
+gallery	1023	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	14	21	14	PASS
+gallery	1023	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	14	21	14	PASS
+gallery	1023	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	14	21	14	PASS
+gallery	1023	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	14	21	14	PASS
+gallery	1024	h1:gal-hero-title	Moments Worth Slowing Down For.	56	61.6	56	PASS
+gallery	1024	h2:gal-section-title	Moments Worth Slowing Down For.	48	55.2	48	PASS
+gallery	1024	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	48	55.2	48	PASS
+gallery	1024	h2:gal-section-title	Made for the Moment.	48	55.2	48	PASS
+gallery	1024	h2:gal-section-title	Where Beauty Meets Café Culture.	48	55.2	48	PASS
+gallery	1024	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	1024	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	1024	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+gallery	1024	desc:gal-section-desc lead	Simple café pleasures designed to complement you	20	30	20	PASS
+gallery	1024	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	20	30	20	PASS
+gallery	1024	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	1024	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	1024	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	16	24	16	PASS
+gallery	1024	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	16	24	16	PASS
+gallery	1024	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	16	24	16	PASS
+gallery	1136	h1:gal-hero-title	Moments Worth Slowing Down For.	56	61.6	56	PASS
+gallery	1136	h2:gal-section-title	Moments Worth Slowing Down For.	48	55.2	48	PASS
+gallery	1136	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	48	55.2	48	PASS
+gallery	1136	h2:gal-section-title	Made for the Moment.	48	55.2	48	PASS
+gallery	1136	h2:gal-section-title	Where Beauty Meets Café Culture.	48	55.2	48	PASS
+gallery	1136	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	1136	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	1136	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+gallery	1136	desc:gal-section-desc lead	Simple café pleasures designed to complement you	20	30	20	PASS
+gallery	1136	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	20	30	20	PASS
+gallery	1136	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	1136	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	1136	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	16	24	16	PASS
+gallery	1136	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	16	24	16	PASS
+gallery	1136	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	16	24	16	PASS
+gallery	1280	h1:gal-hero-title	Moments Worth Slowing Down For.	56	61.6	56	PASS
+gallery	1280	h2:gal-section-title	Moments Worth Slowing Down For.	48	55.2	48	PASS
+gallery	1280	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	48	55.2	48	PASS
+gallery	1280	h2:gal-section-title	Made for the Moment.	48	55.2	48	PASS
+gallery	1280	h2:gal-section-title	Where Beauty Meets Café Culture.	48	55.2	48	PASS
+gallery	1280	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	1280	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	1280	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+gallery	1280	desc:gal-section-desc lead	Simple café pleasures designed to complement you	20	30	20	PASS
+gallery	1280	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	20	30	20	PASS
+gallery	1280	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	1280	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	1280	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	16	24	16	PASS
+gallery	1280	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	16	24	16	PASS
+gallery	1280	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	16	24	16	PASS
+gallery	1440	h1:gal-hero-title	Moments Worth Slowing Down For.	56	61.6	56	PASS
+gallery	1440	h2:gal-section-title	Moments Worth Slowing Down For.	48	55.2	48	PASS
+gallery	1440	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	48	55.2	48	PASS
+gallery	1440	h2:gal-section-title	Made for the Moment.	48	55.2	48	PASS
+gallery	1440	h2:gal-section-title	Where Beauty Meets Café Culture.	48	55.2	48	PASS
+gallery	1440	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	1440	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	1440	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+gallery	1440	desc:gal-section-desc lead	Simple café pleasures designed to complement you	20	30	20	PASS
+gallery	1440	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	20	30	20	PASS
+gallery	1440	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	1440	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	1440	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	16	24	16	PASS
+gallery	1440	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	16	24	16	PASS
+gallery	1440	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	16	24	16	PASS
+gallery	1919	h1:gal-hero-title	Moments Worth Slowing Down For.	56	61.6	56	PASS
+gallery	1919	h2:gal-section-title	Moments Worth Slowing Down For.	48	55.2	48	PASS
+gallery	1919	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	48	55.2	48	PASS
+gallery	1919	h2:gal-section-title	Made for the Moment.	48	55.2	48	PASS
+gallery	1919	h2:gal-section-title	Where Beauty Meets Café Culture.	48	55.2	48	PASS
+gallery	1919	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	1919	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	1919	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+gallery	1919	desc:gal-section-desc lead	Simple café pleasures designed to complement you	20	30	20	PASS
+gallery	1919	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	20	30	20	PASS
+gallery	1919	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	1919	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	1919	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	16	24	16	PASS
+gallery	1919	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	16	24	16	PASS
+gallery	1919	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	16	24	16	PASS
+gallery	1920	h1:gal-hero-title	Moments Worth Slowing Down For.	64	70.4	64	PASS
+gallery	1920	h2:gal-section-title	Moments Worth Slowing Down For.	52	59.8	52	PASS
+gallery	1920	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	52	59.8	52	PASS
+gallery	1920	h2:gal-section-title	Made for the Moment.	52	59.8	52	PASS
+gallery	1920	h2:gal-section-title	Where Beauty Meets Café Culture.	52	59.8	52	PASS
+gallery	1920	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	1920	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	1920	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+gallery	1920	desc:gal-section-desc lead	Simple café pleasures designed to complement you	20	30	20	PASS
+gallery	1920	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	20	30	20	PASS
+gallery	1920	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	1920	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	1920	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	16	24	16	PASS
+gallery	1920	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	16	24	16	PASS
+gallery	1920	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	16	24	16	PASS
+gallery	2560	h1:gal-hero-title	Moments Worth Slowing Down For.	64	70.4	64	PASS
+gallery	2560	h2:gal-section-title	Moments Worth Slowing Down For.	52	59.8	52	PASS
+gallery	2560	h2:gal-section-title	A Corner of Paris, Inside HAIR RAP BY YOYO.	52	59.8	52	PASS
+gallery	2560	h2:gal-section-title	Made for the Moment.	52	59.8	52	PASS
+gallery	2560	h2:gal-section-title	Where Beauty Meets Café Culture.	52	59.8	52	PASS
+gallery	2560	desc:gal-hero-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	2560	desc:gal-section-desc lead	A little time to pause, enjoy your coffee, and t	20	30	20	PASS
+gallery	2560	desc:gal-section-desc lead	Paris-inspired details, warm coffee, beautiful s	20	30	20	PASS
+gallery	2560	desc:gal-section-desc lead	Simple café pleasures designed to complement you	20	30	20	PASS
+gallery	2560	desc:gal-section-desc lead	A salon appointment, a coffee, and an atmosphere	20	30	20	PASS
+gallery	2560	eyebrow:eyebrow gal-hero-eyebrow	PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	2560	eyebrow:eyebrow gal-section-eyebrow	— PARISIAN ATMOSPHERE	16	24	16	PASS
+gallery	2560	eyebrow:eyebrow gal-section-eyebrow	— Paris Wall Art	16	24	16	PASS
+gallery	2560	eyebrow:eyebrow gal-section-eyebrow	— Coffee & Food	16	24	16	PASS
+gallery	2560	eyebrow:eyebrow gal-section-eyebrow	— Salon + Café	16	24	16	PASS
+visit-contact	375	h1:visit-hero-title	Find Your Little Corner of Paris.	32	36.8	32	PASS
+visit-contact	375	h2:visit-card-title	Get in touch	28	33.6	28	PASS
+visit-contact	375	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	28	33.6	28	PASS
+visit-contact	375	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	14	21	14	PASS
+visit-contact	375	desc:visit-cta-desc	Whether you arrive early, take a break during yo	14	21	14	PASS
+visit-contact	375	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	12	18	12	PASS
+visit-contact	375	eyebrow:eyebrow	— The Paris Beans Experience	12	18	12	PASS
+visit-contact	390	h1:visit-hero-title	Find Your Little Corner of Paris.	32	36.8	32	PASS
+visit-contact	390	h2:visit-card-title	Get in touch	28	33.6	28	PASS
+visit-contact	390	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	28	33.6	28	PASS
+visit-contact	390	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	14	21	14	PASS
+visit-contact	390	desc:visit-cta-desc	Whether you arrive early, take a break during yo	14	21	14	PASS
+visit-contact	390	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	12	18	12	PASS
+visit-contact	390	eyebrow:eyebrow	— The Paris Beans Experience	12	18	12	PASS
+visit-contact	430	h1:visit-hero-title	Find Your Little Corner of Paris.	32	36.8	32	PASS
+visit-contact	430	h2:visit-card-title	Get in touch	28	33.6	28	PASS
+visit-contact	430	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	28	33.6	28	PASS
+visit-contact	430	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	14	21	14	PASS
+visit-contact	430	desc:visit-cta-desc	Whether you arrive early, take a break during yo	14	21	14	PASS
+visit-contact	430	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	12	18	12	PASS
+visit-contact	430	eyebrow:eyebrow	— The Paris Beans Experience	12	18	12	PASS
+visit-contact	500	h1:visit-hero-title	Find Your Little Corner of Paris.	32	36.8	32	PASS
+visit-contact	500	h2:visit-card-title	Get in touch	28	33.6	28	PASS
+visit-contact	500	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	28	33.6	28	PASS
+visit-contact	500	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	14	21	14	PASS
+visit-contact	500	desc:visit-cta-desc	Whether you arrive early, take a break during yo	14	21	14	PASS
+visit-contact	500	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	12	18	12	PASS
+visit-contact	500	eyebrow:eyebrow	— The Paris Beans Experience	12	18	12	PASS
+visit-contact	640	h1:visit-hero-title	Find Your Little Corner of Paris.	32	36.8	32	PASS
+visit-contact	640	h2:visit-card-title	Get in touch	28	33.6	28	PASS
+visit-contact	640	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	28	33.6	28	PASS
+visit-contact	640	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	14	21	14	PASS
+visit-contact	640	desc:visit-cta-desc	Whether you arrive early, take a break during yo	14	21	14	PASS
+visit-contact	640	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	12	18	12	PASS
+visit-contact	640	eyebrow:eyebrow	— The Paris Beans Experience	12	18	12	PASS
+visit-contact	641	h1:visit-hero-title	Find Your Little Corner of Paris.	44	50.6	44	PASS
+visit-contact	641	h2:visit-card-title	Get in touch	36	43.2	36	PASS
+visit-contact	641	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	36	43.2	36	PASS
+visit-contact	641	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	16	24	16	PASS
+visit-contact	641	desc:visit-cta-desc	Whether you arrive early, take a break during yo	16	24	16	PASS
+visit-contact	641	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	14	21	14	PASS
+visit-contact	641	eyebrow:eyebrow	— The Paris Beans Experience	14	21	14	PASS
+visit-contact	744	h1:visit-hero-title	Find Your Little Corner of Paris.	44	50.6	44	PASS
+visit-contact	744	h2:visit-card-title	Get in touch	36	43.2	36	PASS
+visit-contact	744	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	36	43.2	36	PASS
+visit-contact	744	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	16	24	16	PASS
+visit-contact	744	desc:visit-cta-desc	Whether you arrive early, take a break during yo	16	24	16	PASS
+visit-contact	744	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	14	21	14	PASS
+visit-contact	744	eyebrow:eyebrow	— The Paris Beans Experience	14	21	14	PASS
+visit-contact	900	h1:visit-hero-title	Find Your Little Corner of Paris.	44	50.6	44	PASS
+visit-contact	900	h2:visit-card-title	Get in touch	36	43.2	36	PASS
+visit-contact	900	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	36	43.2	36	PASS
+visit-contact	900	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	16	24	16	PASS
+visit-contact	900	desc:visit-cta-desc	Whether you arrive early, take a break during yo	16	24	16	PASS
+visit-contact	900	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	14	21	14	PASS
+visit-contact	900	eyebrow:eyebrow	— The Paris Beans Experience	14	21	14	PASS
+visit-contact	1023	h1:visit-hero-title	Find Your Little Corner of Paris.	44	50.6	44	PASS
+visit-contact	1023	h2:visit-card-title	Get in touch	36	43.2	36	PASS
+visit-contact	1023	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	36	43.2	36	PASS
+visit-contact	1023	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	16	24	16	PASS
+visit-contact	1023	desc:visit-cta-desc	Whether you arrive early, take a break during yo	16	24	16	PASS
+visit-contact	1023	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	14	21	14	PASS
+visit-contact	1023	eyebrow:eyebrow	— The Paris Beans Experience	14	21	14	PASS
+visit-contact	1024	h1:visit-hero-title	Find Your Little Corner of Paris.	56	61.6	56	PASS
+visit-contact	1024	h2:visit-card-title	Get in touch	48	55.2	48	PASS
+visit-contact	1024	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	48	55.2	48	PASS
+visit-contact	1024	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	20	30	20	PASS
+visit-contact	1024	desc:visit-cta-desc	Whether you arrive early, take a break during yo	20	30	20	PASS
+visit-contact	1024	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	16	24	16	PASS
+visit-contact	1024	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+visit-contact	1136	h1:visit-hero-title	Find Your Little Corner of Paris.	56	61.6	56	PASS
+visit-contact	1136	h2:visit-card-title	Get in touch	48	55.2	48	PASS
+visit-contact	1136	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	48	55.2	48	PASS
+visit-contact	1136	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	20	30	20	PASS
+visit-contact	1136	desc:visit-cta-desc	Whether you arrive early, take a break during yo	20	30	20	PASS
+visit-contact	1136	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	16	24	16	PASS
+visit-contact	1136	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+visit-contact	1280	h1:visit-hero-title	Find Your Little Corner of Paris.	56	61.6	56	PASS
+visit-contact	1280	h2:visit-card-title	Get in touch	48	55.2	48	PASS
+visit-contact	1280	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	48	55.2	48	PASS
+visit-contact	1280	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	20	30	20	PASS
+visit-contact	1280	desc:visit-cta-desc	Whether you arrive early, take a break during yo	20	30	20	PASS
+visit-contact	1280	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	16	24	16	PASS
+visit-contact	1280	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+visit-contact	1440	h1:visit-hero-title	Find Your Little Corner of Paris.	56	61.6	56	PASS
+visit-contact	1440	h2:visit-card-title	Get in touch	48	55.2	48	PASS
+visit-contact	1440	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	48	55.2	48	PASS
+visit-contact	1440	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	20	30	20	PASS
+visit-contact	1440	desc:visit-cta-desc	Whether you arrive early, take a break during yo	20	30	20	PASS
+visit-contact	1440	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	16	24	16	PASS
+visit-contact	1440	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+visit-contact	1919	h1:visit-hero-title	Find Your Little Corner of Paris.	56	61.6	56	PASS
+visit-contact	1919	h2:visit-card-title	Get in touch	48	55.2	48	PASS
+visit-contact	1919	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	48	55.2	48	PASS
+visit-contact	1919	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	20	30	20	PASS
+visit-contact	1919	desc:visit-cta-desc	Whether you arrive early, take a break during yo	20	30	20	PASS
+visit-contact	1919	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	16	24	16	PASS
+visit-contact	1919	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+visit-contact	1920	h1:visit-hero-title	Find Your Little Corner of Paris.	64	70.4	64	PASS
+visit-contact	1920	h2:visit-card-title	Get in touch	52	59.8	52	PASS
+visit-contact	1920	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	52	59.8	52	PASS
+visit-contact	1920	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	20	30	20	PASS
+visit-contact	1920	desc:visit-cta-desc	Whether you arrive early, take a break during yo	20	30	20	PASS
+visit-contact	1920	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	16	24	16	PASS
+visit-contact	1920	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+visit-contact	2560	h1:visit-hero-title	Find Your Little Corner of Paris.	64	70.4	64	PASS
+visit-contact	2560	h2:visit-card-title	Get in touch	52	59.8	52	PASS
+visit-contact	2560	h2:visit-cta-title section-heading	More Than a Coffee. Part of Your Appointment.	52	59.8	52	PASS
+visit-contact	2560	desc:visit-hero-desc	Paris Beans is located inside HAIR RAP BY YOYO, 	20	30	20	PASS
+visit-contact	2560	desc:visit-cta-desc	Whether you arrive early, take a break during yo	20	30	20	PASS
+visit-contact	2560	eyebrow:eyebrow visit-hero-eyebrow	—Visit ParisBeans	16	24	16	PASS
+visit-contact	2560	eyebrow:eyebrow	— The Paris Beans Experience	16	24	16	PASS
+privacy-policy	375	h1:legal-title	Your Privacy, Respected.	32	36.8	32	PASS
+privacy-policy	375	h2:legal-h2	Information We Collect	28	33.6	28	PASS
+privacy-policy	375	h2:legal-h2	How We Use Your Information	28	33.6	28	PASS
+privacy-policy	375	h2:legal-h2	Cookies & Local Storage	28	33.6	28	PASS
+privacy-policy	375	h2:legal-h2	Sharing Your Information	28	33.6	28	PASS
+privacy-policy	375	h2:legal-h2	Data Security	28	33.6	28	PASS
+privacy-policy	375	h2:legal-h2	Your Rights	28	33.6	28	PASS
+privacy-policy	375	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	14	21	14	PASS
+privacy-policy	375	desc:p	We collect only what we need to serve you better	14	21	14	PASS
+privacy-policy	375	desc:p	We use your information to respond to your enqui	14	21	14	PASS
+privacy-policy	375	desc:p	Paris Beans uses minimal cookies and local stora	14	21	14	PASS
+privacy-policy	375	desc:p	We only share information with service providers	14	21	14	PASS
+privacy-policy	375	desc:p	We take reasonable and appropriate measures to p	14	21	14	PASS
+privacy-policy	375	desc:p	You may request access to the information we hol	14	21	14	PASS
+privacy-policy	375	eyebrow:legal-eyebrow	— Privacy Policy	12	18	12	PASS
+privacy-policy	390	h1:legal-title	Your Privacy, Respected.	32	36.8	32	PASS
+privacy-policy	390	h2:legal-h2	Information We Collect	28	33.6	28	PASS
+privacy-policy	390	h2:legal-h2	How We Use Your Information	28	33.6	28	PASS
+privacy-policy	390	h2:legal-h2	Cookies & Local Storage	28	33.6	28	PASS
+privacy-policy	390	h2:legal-h2	Sharing Your Information	28	33.6	28	PASS
+privacy-policy	390	h2:legal-h2	Data Security	28	33.6	28	PASS
+privacy-policy	390	h2:legal-h2	Your Rights	28	33.6	28	PASS
+privacy-policy	390	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	14	21	14	PASS
+privacy-policy	390	desc:p	We collect only what we need to serve you better	14	21	14	PASS
+privacy-policy	390	desc:p	We use your information to respond to your enqui	14	21	14	PASS
+privacy-policy	390	desc:p	Paris Beans uses minimal cookies and local stora	14	21	14	PASS
+privacy-policy	390	desc:p	We only share information with service providers	14	21	14	PASS
+privacy-policy	390	desc:p	We take reasonable and appropriate measures to p	14	21	14	PASS
+privacy-policy	390	desc:p	You may request access to the information we hol	14	21	14	PASS
+privacy-policy	390	eyebrow:legal-eyebrow	— Privacy Policy	12	18	12	PASS
+privacy-policy	430	h1:legal-title	Your Privacy, Respected.	32	36.8	32	PASS
+privacy-policy	430	h2:legal-h2	Information We Collect	28	33.6	28	PASS
+privacy-policy	430	h2:legal-h2	How We Use Your Information	28	33.6	28	PASS
+privacy-policy	430	h2:legal-h2	Cookies & Local Storage	28	33.6	28	PASS
+privacy-policy	430	h2:legal-h2	Sharing Your Information	28	33.6	28	PASS
+privacy-policy	430	h2:legal-h2	Data Security	28	33.6	28	PASS
+privacy-policy	430	h2:legal-h2	Your Rights	28	33.6	28	PASS
+privacy-policy	430	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	14	21	14	PASS
+privacy-policy	430	desc:p	We collect only what we need to serve you better	14	21	14	PASS
+privacy-policy	430	desc:p	We use your information to respond to your enqui	14	21	14	PASS
+privacy-policy	430	desc:p	Paris Beans uses minimal cookies and local stora	14	21	14	PASS
+privacy-policy	430	desc:p	We only share information with service providers	14	21	14	PASS
+privacy-policy	430	desc:p	We take reasonable and appropriate measures to p	14	21	14	PASS
+privacy-policy	430	desc:p	You may request access to the information we hol	14	21	14	PASS
+privacy-policy	430	eyebrow:legal-eyebrow	— Privacy Policy	12	18	12	PASS
+privacy-policy	500	h1:legal-title	Your Privacy, Respected.	32	36.8	32	PASS
+privacy-policy	500	h2:legal-h2	Information We Collect	28	33.6	28	PASS
+privacy-policy	500	h2:legal-h2	How We Use Your Information	28	33.6	28	PASS
+privacy-policy	500	h2:legal-h2	Cookies & Local Storage	28	33.6	28	PASS
+privacy-policy	500	h2:legal-h2	Sharing Your Information	28	33.6	28	PASS
+privacy-policy	500	h2:legal-h2	Data Security	28	33.6	28	PASS
+privacy-policy	500	h2:legal-h2	Your Rights	28	33.6	28	PASS
+privacy-policy	500	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	14	21	14	PASS
+privacy-policy	500	desc:p	We collect only what we need to serve you better	14	21	14	PASS
+privacy-policy	500	desc:p	We use your information to respond to your enqui	14	21	14	PASS
+privacy-policy	500	desc:p	Paris Beans uses minimal cookies and local stora	14	21	14	PASS
+privacy-policy	500	desc:p	We only share information with service providers	14	21	14	PASS
+privacy-policy	500	desc:p	We take reasonable and appropriate measures to p	14	21	14	PASS
+privacy-policy	500	desc:p	You may request access to the information we hol	14	21	14	PASS
+privacy-policy	500	eyebrow:legal-eyebrow	— Privacy Policy	12	18	12	PASS
+privacy-policy	640	h1:legal-title	Your Privacy, Respected.	32	36.8	32	PASS
+privacy-policy	640	h2:legal-h2	Information We Collect	28	33.6	28	PASS
+privacy-policy	640	h2:legal-h2	How We Use Your Information	28	33.6	28	PASS
+privacy-policy	640	h2:legal-h2	Cookies & Local Storage	28	33.6	28	PASS
+privacy-policy	640	h2:legal-h2	Sharing Your Information	28	33.6	28	PASS
+privacy-policy	640	h2:legal-h2	Data Security	28	33.6	28	PASS
+privacy-policy	640	h2:legal-h2	Your Rights	28	33.6	28	PASS
+privacy-policy	640	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	14	21	14	PASS
+privacy-policy	640	desc:p	We collect only what we need to serve you better	14	21	14	PASS
+privacy-policy	640	desc:p	We use your information to respond to your enqui	14	21	14	PASS
+privacy-policy	640	desc:p	Paris Beans uses minimal cookies and local stora	14	21	14	PASS
+privacy-policy	640	desc:p	We only share information with service providers	14	21	14	PASS
+privacy-policy	640	desc:p	We take reasonable and appropriate measures to p	14	21	14	PASS
+privacy-policy	640	desc:p	You may request access to the information we hol	14	21	14	PASS
+privacy-policy	640	eyebrow:legal-eyebrow	— Privacy Policy	12	18	12	PASS
+privacy-policy	641	h1:legal-title	Your Privacy, Respected.	44	50.6	44	PASS
+privacy-policy	641	h2:legal-h2	Information We Collect	36	43.2	36	PASS
+privacy-policy	641	h2:legal-h2	How We Use Your Information	36	43.2	36	PASS
+privacy-policy	641	h2:legal-h2	Cookies & Local Storage	36	43.2	36	PASS
+privacy-policy	641	h2:legal-h2	Sharing Your Information	36	43.2	36	PASS
+privacy-policy	641	h2:legal-h2	Data Security	36	43.2	36	PASS
+privacy-policy	641	h2:legal-h2	Your Rights	36	43.2	36	PASS
+privacy-policy	641	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	16	24	16	PASS
+privacy-policy	641	desc:p	We collect only what we need to serve you better	16	24	16	PASS
+privacy-policy	641	desc:p	We use your information to respond to your enqui	16	24	16	PASS
+privacy-policy	641	desc:p	Paris Beans uses minimal cookies and local stora	16	24	16	PASS
+privacy-policy	641	desc:p	We only share information with service providers	16	24	16	PASS
+privacy-policy	641	desc:p	We take reasonable and appropriate measures to p	16	24	16	PASS
+privacy-policy	641	desc:p	You may request access to the information we hol	16	24	16	PASS
+privacy-policy	641	eyebrow:legal-eyebrow	— Privacy Policy	14	21	14	PASS
+privacy-policy	744	h1:legal-title	Your Privacy, Respected.	44	50.6	44	PASS
+privacy-policy	744	h2:legal-h2	Information We Collect	36	43.2	36	PASS
+privacy-policy	744	h2:legal-h2	How We Use Your Information	36	43.2	36	PASS
+privacy-policy	744	h2:legal-h2	Cookies & Local Storage	36	43.2	36	PASS
+privacy-policy	744	h2:legal-h2	Sharing Your Information	36	43.2	36	PASS
+privacy-policy	744	h2:legal-h2	Data Security	36	43.2	36	PASS
+privacy-policy	744	h2:legal-h2	Your Rights	36	43.2	36	PASS
+privacy-policy	744	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	16	24	16	PASS
+privacy-policy	744	desc:p	We collect only what we need to serve you better	16	24	16	PASS
+privacy-policy	744	desc:p	We use your information to respond to your enqui	16	24	16	PASS
+privacy-policy	744	desc:p	Paris Beans uses minimal cookies and local stora	16	24	16	PASS
+privacy-policy	744	desc:p	We only share information with service providers	16	24	16	PASS
+privacy-policy	744	desc:p	We take reasonable and appropriate measures to p	16	24	16	PASS
+privacy-policy	744	desc:p	You may request access to the information we hol	16	24	16	PASS
+privacy-policy	744	eyebrow:legal-eyebrow	— Privacy Policy	14	21	14	PASS
+privacy-policy	900	h1:legal-title	Your Privacy, Respected.	44	50.6	44	PASS
+privacy-policy	900	h2:legal-h2	Information We Collect	36	43.2	36	PASS
+privacy-policy	900	h2:legal-h2	How We Use Your Information	36	43.2	36	PASS
+privacy-policy	900	h2:legal-h2	Cookies & Local Storage	36	43.2	36	PASS
+privacy-policy	900	h2:legal-h2	Sharing Your Information	36	43.2	36	PASS
+privacy-policy	900	h2:legal-h2	Data Security	36	43.2	36	PASS
+privacy-policy	900	h2:legal-h2	Your Rights	36	43.2	36	PASS
+privacy-policy	900	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	16	24	16	PASS
+privacy-policy	900	desc:p	We collect only what we need to serve you better	16	24	16	PASS
+privacy-policy	900	desc:p	We use your information to respond to your enqui	16	24	16	PASS
+privacy-policy	900	desc:p	Paris Beans uses minimal cookies and local stora	16	24	16	PASS
+privacy-policy	900	desc:p	We only share information with service providers	16	24	16	PASS
+privacy-policy	900	desc:p	We take reasonable and appropriate measures to p	16	24	16	PASS
+privacy-policy	900	desc:p	You may request access to the information we hol	16	24	16	PASS
+privacy-policy	900	eyebrow:legal-eyebrow	— Privacy Policy	14	21	14	PASS
+privacy-policy	1023	h1:legal-title	Your Privacy, Respected.	44	50.6	44	PASS
+privacy-policy	1023	h2:legal-h2	Information We Collect	36	43.2	36	PASS
+privacy-policy	1023	h2:legal-h2	How We Use Your Information	36	43.2	36	PASS
+privacy-policy	1023	h2:legal-h2	Cookies & Local Storage	36	43.2	36	PASS
+privacy-policy	1023	h2:legal-h2	Sharing Your Information	36	43.2	36	PASS
+privacy-policy	1023	h2:legal-h2	Data Security	36	43.2	36	PASS
+privacy-policy	1023	h2:legal-h2	Your Rights	36	43.2	36	PASS
+privacy-policy	1023	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	16	24	16	PASS
+privacy-policy	1023	desc:p	We collect only what we need to serve you better	16	24	16	PASS
+privacy-policy	1023	desc:p	We use your information to respond to your enqui	16	24	16	PASS
+privacy-policy	1023	desc:p	Paris Beans uses minimal cookies and local stora	16	24	16	PASS
+privacy-policy	1023	desc:p	We only share information with service providers	16	24	16	PASS
+privacy-policy	1023	desc:p	We take reasonable and appropriate measures to p	16	24	16	PASS
+privacy-policy	1023	desc:p	You may request access to the information we hol	16	24	16	PASS
+privacy-policy	1023	eyebrow:legal-eyebrow	— Privacy Policy	14	21	14	PASS
+privacy-policy	1024	h1:legal-title	Your Privacy, Respected.	56	61.6	56	PASS
+privacy-policy	1024	h2:legal-h2	Information We Collect	48	55.2	48	PASS
+privacy-policy	1024	h2:legal-h2	How We Use Your Information	48	55.2	48	PASS
+privacy-policy	1024	h2:legal-h2	Cookies & Local Storage	48	55.2	48	PASS
+privacy-policy	1024	h2:legal-h2	Sharing Your Information	48	55.2	48	PASS
+privacy-policy	1024	h2:legal-h2	Data Security	48	55.2	48	PASS
+privacy-policy	1024	h2:legal-h2	Your Rights	48	55.2	48	PASS
+privacy-policy	1024	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	20	30	20	PASS
+privacy-policy	1024	desc:p	We collect only what we need to serve you better	20	30	20	PASS
+privacy-policy	1024	desc:p	We use your information to respond to your enqui	20	30	20	PASS
+privacy-policy	1024	desc:p	Paris Beans uses minimal cookies and local stora	20	30	20	PASS
+privacy-policy	1024	desc:p	We only share information with service providers	20	30	20	PASS
+privacy-policy	1024	desc:p	We take reasonable and appropriate measures to p	20	30	20	PASS
+privacy-policy	1024	desc:p	You may request access to the information we hol	20	30	20	PASS
+privacy-policy	1024	eyebrow:legal-eyebrow	— Privacy Policy	16	24	16	PASS
+privacy-policy	1136	h1:legal-title	Your Privacy, Respected.	56	61.6	56	PASS
+privacy-policy	1136	h2:legal-h2	Information We Collect	48	55.2	48	PASS
+privacy-policy	1136	h2:legal-h2	How We Use Your Information	48	55.2	48	PASS
+privacy-policy	1136	h2:legal-h2	Cookies & Local Storage	48	55.2	48	PASS
+privacy-policy	1136	h2:legal-h2	Sharing Your Information	48	55.2	48	PASS
+privacy-policy	1136	h2:legal-h2	Data Security	48	55.2	48	PASS
+privacy-policy	1136	h2:legal-h2	Your Rights	48	55.2	48	PASS
+privacy-policy	1136	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	20	30	20	PASS
+privacy-policy	1136	desc:p	We collect only what we need to serve you better	20	30	20	PASS
+privacy-policy	1136	desc:p	We use your information to respond to your enqui	20	30	20	PASS
+privacy-policy	1136	desc:p	Paris Beans uses minimal cookies and local stora	20	30	20	PASS
+privacy-policy	1136	desc:p	We only share information with service providers	20	30	20	PASS
+privacy-policy	1136	desc:p	We take reasonable and appropriate measures to p	20	30	20	PASS
+privacy-policy	1136	desc:p	You may request access to the information we hol	20	30	20	PASS
+privacy-policy	1136	eyebrow:legal-eyebrow	— Privacy Policy	16	24	16	PASS
+privacy-policy	1280	h1:legal-title	Your Privacy, Respected.	56	61.6	56	PASS
+privacy-policy	1280	h2:legal-h2	Information We Collect	48	55.2	48	PASS
+privacy-policy	1280	h2:legal-h2	How We Use Your Information	48	55.2	48	PASS
+privacy-policy	1280	h2:legal-h2	Cookies & Local Storage	48	55.2	48	PASS
+privacy-policy	1280	h2:legal-h2	Sharing Your Information	48	55.2	48	PASS
+privacy-policy	1280	h2:legal-h2	Data Security	48	55.2	48	PASS
+privacy-policy	1280	h2:legal-h2	Your Rights	48	55.2	48	PASS
+privacy-policy	1280	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	20	30	20	PASS
+privacy-policy	1280	desc:p	We collect only what we need to serve you better	20	30	20	PASS
+privacy-policy	1280	desc:p	We use your information to respond to your enqui	20	30	20	PASS
+privacy-policy	1280	desc:p	Paris Beans uses minimal cookies and local stora	20	30	20	PASS
+privacy-policy	1280	desc:p	We only share information with service providers	20	30	20	PASS
+privacy-policy	1280	desc:p	We take reasonable and appropriate measures to p	20	30	20	PASS
+privacy-policy	1280	desc:p	You may request access to the information we hol	20	30	20	PASS
+privacy-policy	1280	eyebrow:legal-eyebrow	— Privacy Policy	16	24	16	PASS
+privacy-policy	1440	h1:legal-title	Your Privacy, Respected.	56	61.6	56	PASS
+privacy-policy	1440	h2:legal-h2	Information We Collect	48	55.2	48	PASS
+privacy-policy	1440	h2:legal-h2	How We Use Your Information	48	55.2	48	PASS
+privacy-policy	1440	h2:legal-h2	Cookies & Local Storage	48	55.2	48	PASS
+privacy-policy	1440	h2:legal-h2	Sharing Your Information	48	55.2	48	PASS
+privacy-policy	1440	h2:legal-h2	Data Security	48	55.2	48	PASS
+privacy-policy	1440	h2:legal-h2	Your Rights	48	55.2	48	PASS
+privacy-policy	1440	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	20	30	20	PASS
+privacy-policy	1440	desc:p	We collect only what we need to serve you better	20	30	20	PASS
+privacy-policy	1440	desc:p	We use your information to respond to your enqui	20	30	20	PASS
+privacy-policy	1440	desc:p	Paris Beans uses minimal cookies and local stora	20	30	20	PASS
+privacy-policy	1440	desc:p	We only share information with service providers	20	30	20	PASS
+privacy-policy	1440	desc:p	We take reasonable and appropriate measures to p	20	30	20	PASS
+privacy-policy	1440	desc:p	You may request access to the information we hol	20	30	20	PASS
+privacy-policy	1440	eyebrow:legal-eyebrow	— Privacy Policy	16	24	16	PASS
+privacy-policy	1919	h1:legal-title	Your Privacy, Respected.	56	61.6	56	PASS
+privacy-policy	1919	h2:legal-h2	Information We Collect	48	55.2	48	PASS
+privacy-policy	1919	h2:legal-h2	How We Use Your Information	48	55.2	48	PASS
+privacy-policy	1919	h2:legal-h2	Cookies & Local Storage	48	55.2	48	PASS
+privacy-policy	1919	h2:legal-h2	Sharing Your Information	48	55.2	48	PASS
+privacy-policy	1919	h2:legal-h2	Data Security	48	55.2	48	PASS
+privacy-policy	1919	h2:legal-h2	Your Rights	48	55.2	48	PASS
+privacy-policy	1919	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	20	30	20	PASS
+privacy-policy	1919	desc:p	We collect only what we need to serve you better	20	30	20	PASS
+privacy-policy	1919	desc:p	We use your information to respond to your enqui	20	30	20	PASS
+privacy-policy	1919	desc:p	Paris Beans uses minimal cookies and local stora	20	30	20	PASS
+privacy-policy	1919	desc:p	We only share information with service providers	20	30	20	PASS
+privacy-policy	1919	desc:p	We take reasonable and appropriate measures to p	20	30	20	PASS
+privacy-policy	1919	desc:p	You may request access to the information we hol	20	30	20	PASS
+privacy-policy	1919	eyebrow:legal-eyebrow	— Privacy Policy	16	24	16	PASS
+privacy-policy	1920	h1:legal-title	Your Privacy, Respected.	64	70.4	64	PASS
+privacy-policy	1920	h2:legal-h2	Information We Collect	52	59.8	52	PASS
+privacy-policy	1920	h2:legal-h2	How We Use Your Information	52	59.8	52	PASS
+privacy-policy	1920	h2:legal-h2	Cookies & Local Storage	52	59.8	52	PASS
+privacy-policy	1920	h2:legal-h2	Sharing Your Information	52	59.8	52	PASS
+privacy-policy	1920	h2:legal-h2	Data Security	52	59.8	52	PASS
+privacy-policy	1920	h2:legal-h2	Your Rights	52	59.8	52	PASS
+privacy-policy	1920	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	20	30	20	PASS
+privacy-policy	1920	desc:p	We collect only what we need to serve you better	20	30	20	PASS
+privacy-policy	1920	desc:p	We use your information to respond to your enqui	20	30	20	PASS
+privacy-policy	1920	desc:p	Paris Beans uses minimal cookies and local stora	20	30	20	PASS
+privacy-policy	1920	desc:p	We only share information with service providers	20	30	20	PASS
+privacy-policy	1920	desc:p	We take reasonable and appropriate measures to p	20	30	20	PASS
+privacy-policy	1920	desc:p	You may request access to the information we hol	20	30	20	PASS
+privacy-policy	1920	eyebrow:legal-eyebrow	— Privacy Policy	16	24	16	PASS
+privacy-policy	2560	h1:legal-title	Your Privacy, Respected.	64	70.4	64	PASS
+privacy-policy	2560	h2:legal-h2	Information We Collect	52	59.8	52	PASS
+privacy-policy	2560	h2:legal-h2	How We Use Your Information	52	59.8	52	PASS
+privacy-policy	2560	h2:legal-h2	Cookies & Local Storage	52	59.8	52	PASS
+privacy-policy	2560	h2:legal-h2	Sharing Your Information	52	59.8	52	PASS
+privacy-policy	2560	h2:legal-h2	Data Security	52	59.8	52	PASS
+privacy-policy	2560	h2:legal-h2	Your Rights	52	59.8	52	PASS
+privacy-policy	2560	desc:legal-lede	At Paris Beans — the café corner inside HAIR RAP	20	30	20	PASS
+privacy-policy	2560	desc:p	We collect only what we need to serve you better	20	30	20	PASS
+privacy-policy	2560	desc:p	We use your information to respond to your enqui	20	30	20	PASS
+privacy-policy	2560	desc:p	Paris Beans uses minimal cookies and local stora	20	30	20	PASS
+privacy-policy	2560	desc:p	We only share information with service providers	20	30	20	PASS
+privacy-policy	2560	desc:p	We take reasonable and appropriate measures to p	20	30	20	PASS
+privacy-policy	2560	desc:p	You may request access to the information we hol	20	30	20	PASS
+privacy-policy	2560	eyebrow:legal-eyebrow	— Privacy Policy	16	24	16	PASS
+terms-and-conditions	375	h1:legal-title	The Fine Print, Made Friendly.	32	36.8	32	PASS
+terms-and-conditions	375	h2:legal-h2	Acceptance of Terms	28	33.6	28	PASS
+terms-and-conditions	375	h2:legal-h2	Our Services	28	33.6	28	PASS
+terms-and-conditions	375	h2:legal-h2	Ordering & Payment	28	33.6	28	PASS
+terms-and-conditions	375	h2:legal-h2	Allergies & Dietary Needs	28	33.6	28	PASS
+terms-and-conditions	375	h2:legal-h2	Café & Salon Etiquette	28	33.6	28	PASS
+terms-and-conditions	375	h2:legal-h2	Gift Cards & Promotions	28	33.6	28	PASS
+terms-and-conditions	375	h2:legal-h2	Liability	28	33.6	28	PASS
+terms-and-conditions	375	h2:legal-h2	Intellectual Property	28	33.6	28	PASS
+terms-and-conditions	375	h2:legal-h2	Changes to These Terms	28	33.6	28	PASS
+terms-and-conditions	375	desc:legal-lede	These terms outline the simple ground rules for 	14	21	14	PASS
+terms-and-conditions	375	desc:p	By accessing the Paris Beans website or visiting	14	21	14	PASS
+terms-and-conditions	375	desc:p	Paris Beans offers a curated café experience — s	14	21	14	PASS
+terms-and-conditions	375	desc:p	All prices are listed in Indian Rupees (₹) and i	14	21	14	PASS
+terms-and-conditions	375	desc:p	Please tell our team about any allergies or diet	14	21	14	PASS
+terms-and-conditions	375	desc:p	We want every visit to feel calming and special 	14	21	14	PASS
+terms-and-conditions	375	desc:p	Gift cards and promotional offers are valid for 	14	21	14	PASS
+terms-and-conditions	375	desc:p	To the fullest extent permitted by law, Paris Be	14	21	14	PASS
+terms-and-conditions	375	desc:p	All content on this site — including the Paris B	14	21	14	PASS
+terms-and-conditions	375	desc:p	We may update these Terms & Conditions from time	14	21	14	PASS
+terms-and-conditions	375	eyebrow:legal-eyebrow	— Terms & Conditions	12	18	12	PASS
+terms-and-conditions	390	h1:legal-title	The Fine Print, Made Friendly.	32	36.8	32	PASS
+terms-and-conditions	390	h2:legal-h2	Acceptance of Terms	28	33.6	28	PASS
+terms-and-conditions	390	h2:legal-h2	Our Services	28	33.6	28	PASS
+terms-and-conditions	390	h2:legal-h2	Ordering & Payment	28	33.6	28	PASS
+terms-and-conditions	390	h2:legal-h2	Allergies & Dietary Needs	28	33.6	28	PASS
+terms-and-conditions	390	h2:legal-h2	Café & Salon Etiquette	28	33.6	28	PASS
+terms-and-conditions	390	h2:legal-h2	Gift Cards & Promotions	28	33.6	28	PASS
+terms-and-conditions	390	h2:legal-h2	Liability	28	33.6	28	PASS
+terms-and-conditions	390	h2:legal-h2	Intellectual Property	28	33.6	28	PASS
+terms-and-conditions	390	h2:legal-h2	Changes to These Terms	28	33.6	28	PASS
+terms-and-conditions	390	desc:legal-lede	These terms outline the simple ground rules for 	14	21	14	PASS
+terms-and-conditions	390	desc:p	By accessing the Paris Beans website or visiting	14	21	14	PASS
+terms-and-conditions	390	desc:p	Paris Beans offers a curated café experience — s	14	21	14	PASS
+terms-and-conditions	390	desc:p	All prices are listed in Indian Rupees (₹) and i	14	21	14	PASS
+terms-and-conditions	390	desc:p	Please tell our team about any allergies or diet	14	21	14	PASS
+terms-and-conditions	390	desc:p	We want every visit to feel calming and special 	14	21	14	PASS
+terms-and-conditions	390	desc:p	Gift cards and promotional offers are valid for 	14	21	14	PASS
+terms-and-conditions	390	desc:p	To the fullest extent permitted by law, Paris Be	14	21	14	PASS
+terms-and-conditions	390	desc:p	All content on this site — including the Paris B	14	21	14	PASS
+terms-and-conditions	390	desc:p	We may update these Terms & Conditions from time	14	21	14	PASS
+terms-and-conditions	390	eyebrow:legal-eyebrow	— Terms & Conditions	12	18	12	PASS
+terms-and-conditions	430	h1:legal-title	The Fine Print, Made Friendly.	32	36.8	32	PASS
+terms-and-conditions	430	h2:legal-h2	Acceptance of Terms	28	33.6	28	PASS
+terms-and-conditions	430	h2:legal-h2	Our Services	28	33.6	28	PASS
+terms-and-conditions	430	h2:legal-h2	Ordering & Payment	28	33.6	28	PASS
+terms-and-conditions	430	h2:legal-h2	Allergies & Dietary Needs	28	33.6	28	PASS
+terms-and-conditions	430	h2:legal-h2	Café & Salon Etiquette	28	33.6	28	PASS
+terms-and-conditions	430	h2:legal-h2	Gift Cards & Promotions	28	33.6	28	PASS
+terms-and-conditions	430	h2:legal-h2	Liability	28	33.6	28	PASS
+terms-and-conditions	430	h2:legal-h2	Intellectual Property	28	33.6	28	PASS
+terms-and-conditions	430	h2:legal-h2	Changes to These Terms	28	33.6	28	PASS
+terms-and-conditions	430	desc:legal-lede	These terms outline the simple ground rules for 	14	21	14	PASS
+terms-and-conditions	430	desc:p	By accessing the Paris Beans website or visiting	14	21	14	PASS
+terms-and-conditions	430	desc:p	Paris Beans offers a curated café experience — s	14	21	14	PASS
+terms-and-conditions	430	desc:p	All prices are listed in Indian Rupees (₹) and i	14	21	14	PASS
+terms-and-conditions	430	desc:p	Please tell our team about any allergies or diet	14	21	14	PASS
+terms-and-conditions	430	desc:p	We want every visit to feel calming and special 	14	21	14	PASS
+terms-and-conditions	430	desc:p	Gift cards and promotional offers are valid for 	14	21	14	PASS
+terms-and-conditions	430	desc:p	To the fullest extent permitted by law, Paris Be	14	21	14	PASS
+terms-and-conditions	430	desc:p	All content on this site — including the Paris B	14	21	14	PASS
+terms-and-conditions	430	desc:p	We may update these Terms & Conditions from time	14	21	14	PASS
+terms-and-conditions	430	eyebrow:legal-eyebrow	— Terms & Conditions	12	18	12	PASS
+terms-and-conditions	500	h1:legal-title	The Fine Print, Made Friendly.	32	36.8	32	PASS
+terms-and-conditions	500	h2:legal-h2	Acceptance of Terms	28	33.6	28	PASS
+terms-and-conditions	500	h2:legal-h2	Our Services	28	33.6	28	PASS
+terms-and-conditions	500	h2:legal-h2	Ordering & Payment	28	33.6	28	PASS
+terms-and-conditions	500	h2:legal-h2	Allergies & Dietary Needs	28	33.6	28	PASS
+terms-and-conditions	500	h2:legal-h2	Café & Salon Etiquette	28	33.6	28	PASS
+terms-and-conditions	500	h2:legal-h2	Gift Cards & Promotions	28	33.6	28	PASS
+terms-and-conditions	500	h2:legal-h2	Liability	28	33.6	28	PASS
+terms-and-conditions	500	h2:legal-h2	Intellectual Property	28	33.6	28	PASS
+terms-and-conditions	500	h2:legal-h2	Changes to These Terms	28	33.6	28	PASS
+terms-and-conditions	500	desc:legal-lede	These terms outline the simple ground rules for 	14	21	14	PASS
+terms-and-conditions	500	desc:p	By accessing the Paris Beans website or visiting	14	21	14	PASS
+terms-and-conditions	500	desc:p	Paris Beans offers a curated café experience — s	14	21	14	PASS
+terms-and-conditions	500	desc:p	All prices are listed in Indian Rupees (₹) and i	14	21	14	PASS
+terms-and-conditions	500	desc:p	Please tell our team about any allergies or diet	14	21	14	PASS
+terms-and-conditions	500	desc:p	We want every visit to feel calming and special 	14	21	14	PASS
+terms-and-conditions	500	desc:p	Gift cards and promotional offers are valid for 	14	21	14	PASS
+terms-and-conditions	500	desc:p	To the fullest extent permitted by law, Paris Be	14	21	14	PASS
+terms-and-conditions	500	desc:p	All content on this site — including the Paris B	14	21	14	PASS
+terms-and-conditions	500	desc:p	We may update these Terms & Conditions from time	14	21	14	PASS
+terms-and-conditions	500	eyebrow:legal-eyebrow	— Terms & Conditions	12	18	12	PASS
+terms-and-conditions	640	h1:legal-title	The Fine Print, Made Friendly.	32	36.8	32	PASS
+terms-and-conditions	640	h2:legal-h2	Acceptance of Terms	28	33.6	28	PASS
+terms-and-conditions	640	h2:legal-h2	Our Services	28	33.6	28	PASS
+terms-and-conditions	640	h2:legal-h2	Ordering & Payment	28	33.6	28	PASS
+terms-and-conditions	640	h2:legal-h2	Allergies & Dietary Needs	28	33.6	28	PASS
+terms-and-conditions	640	h2:legal-h2	Café & Salon Etiquette	28	33.6	28	PASS
+terms-and-conditions	640	h2:legal-h2	Gift Cards & Promotions	28	33.6	28	PASS
+terms-and-conditions	640	h2:legal-h2	Liability	28	33.6	28	PASS
+terms-and-conditions	640	h2:legal-h2	Intellectual Property	28	33.6	28	PASS
+terms-and-conditions	640	h2:legal-h2	Changes to These Terms	28	33.6	28	PASS
+terms-and-conditions	640	desc:legal-lede	These terms outline the simple ground rules for 	14	21	14	PASS
+terms-and-conditions	640	desc:p	By accessing the Paris Beans website or visiting	14	21	14	PASS
+terms-and-conditions	640	desc:p	Paris Beans offers a curated café experience — s	14	21	14	PASS
+terms-and-conditions	640	desc:p	All prices are listed in Indian Rupees (₹) and i	14	21	14	PASS
+terms-and-conditions	640	desc:p	Please tell our team about any allergies or diet	14	21	14	PASS
+terms-and-conditions	640	desc:p	We want every visit to feel calming and special 	14	21	14	PASS
+terms-and-conditions	640	desc:p	Gift cards and promotional offers are valid for 	14	21	14	PASS
+terms-and-conditions	640	desc:p	To the fullest extent permitted by law, Paris Be	14	21	14	PASS
+terms-and-conditions	640	desc:p	All content on this site — including the Paris B	14	21	14	PASS
+terms-and-conditions	640	desc:p	We may update these Terms & Conditions from time	14	21	14	PASS
+terms-and-conditions	640	eyebrow:legal-eyebrow	— Terms & Conditions	12	18	12	PASS
+terms-and-conditions	641	h1:legal-title	The Fine Print, Made Friendly.	44	50.6	44	PASS
+terms-and-conditions	641	h2:legal-h2	Acceptance of Terms	36	43.2	36	PASS
+terms-and-conditions	641	h2:legal-h2	Our Services	36	43.2	36	PASS
+terms-and-conditions	641	h2:legal-h2	Ordering & Payment	36	43.2	36	PASS
+terms-and-conditions	641	h2:legal-h2	Allergies & Dietary Needs	36	43.2	36	PASS
+terms-and-conditions	641	h2:legal-h2	Café & Salon Etiquette	36	43.2	36	PASS
+terms-and-conditions	641	h2:legal-h2	Gift Cards & Promotions	36	43.2	36	PASS
+terms-and-conditions	641	h2:legal-h2	Liability	36	43.2	36	PASS
+terms-and-conditions	641	h2:legal-h2	Intellectual Property	36	43.2	36	PASS
+terms-and-conditions	641	h2:legal-h2	Changes to These Terms	36	43.2	36	PASS
+terms-and-conditions	641	desc:legal-lede	These terms outline the simple ground rules for 	16	24	16	PASS
+terms-and-conditions	641	desc:p	By accessing the Paris Beans website or visiting	16	24	16	PASS
+terms-and-conditions	641	desc:p	Paris Beans offers a curated café experience — s	16	24	16	PASS
+terms-and-conditions	641	desc:p	All prices are listed in Indian Rupees (₹) and i	16	24	16	PASS
+terms-and-conditions	641	desc:p	Please tell our team about any allergies or diet	16	24	16	PASS
+terms-and-conditions	641	desc:p	We want every visit to feel calming and special 	16	24	16	PASS
+terms-and-conditions	641	desc:p	Gift cards and promotional offers are valid for 	16	24	16	PASS
+terms-and-conditions	641	desc:p	To the fullest extent permitted by law, Paris Be	16	24	16	PASS
+terms-and-conditions	641	desc:p	All content on this site — including the Paris B	16	24	16	PASS
+terms-and-conditions	641	desc:p	We may update these Terms & Conditions from time	16	24	16	PASS
+terms-and-conditions	641	eyebrow:legal-eyebrow	— Terms & Conditions	14	21	14	PASS
+terms-and-conditions	744	h1:legal-title	The Fine Print, Made Friendly.	44	50.6	44	PASS
+terms-and-conditions	744	h2:legal-h2	Acceptance of Terms	36	43.2	36	PASS
+terms-and-conditions	744	h2:legal-h2	Our Services	36	43.2	36	PASS
+terms-and-conditions	744	h2:legal-h2	Ordering & Payment	36	43.2	36	PASS
+terms-and-conditions	744	h2:legal-h2	Allergies & Dietary Needs	36	43.2	36	PASS
+terms-and-conditions	744	h2:legal-h2	Café & Salon Etiquette	36	43.2	36	PASS
+terms-and-conditions	744	h2:legal-h2	Gift Cards & Promotions	36	43.2	36	PASS
+terms-and-conditions	744	h2:legal-h2	Liability	36	43.2	36	PASS
+terms-and-conditions	744	h2:legal-h2	Intellectual Property	36	43.2	36	PASS
+terms-and-conditions	744	h2:legal-h2	Changes to These Terms	36	43.2	36	PASS
+terms-and-conditions	744	desc:legal-lede	These terms outline the simple ground rules for 	16	24	16	PASS
+terms-and-conditions	744	desc:p	By accessing the Paris Beans website or visiting	16	24	16	PASS
+terms-and-conditions	744	desc:p	Paris Beans offers a curated café experience — s	16	24	16	PASS
+terms-and-conditions	744	desc:p	All prices are listed in Indian Rupees (₹) and i	16	24	16	PASS
+terms-and-conditions	744	desc:p	Please tell our team about any allergies or diet	16	24	16	PASS
+terms-and-conditions	744	desc:p	We want every visit to feel calming and special 	16	24	16	PASS
+terms-and-conditions	744	desc:p	Gift cards and promotional offers are valid for 	16	24	16	PASS
+terms-and-conditions	744	desc:p	To the fullest extent permitted by law, Paris Be	16	24	16	PASS
+terms-and-conditions	744	desc:p	All content on this site — including the Paris B	16	24	16	PASS
+terms-and-conditions	744	desc:p	We may update these Terms & Conditions from time	16	24	16	PASS
+terms-and-conditions	744	eyebrow:legal-eyebrow	— Terms & Conditions	14	21	14	PASS
+terms-and-conditions	900	h1:legal-title	The Fine Print, Made Friendly.	44	50.6	44	PASS
+terms-and-conditions	900	h2:legal-h2	Acceptance of Terms	36	43.2	36	PASS
+terms-and-conditions	900	h2:legal-h2	Our Services	36	43.2	36	PASS
+terms-and-conditions	900	h2:legal-h2	Ordering & Payment	36	43.2	36	PASS
+terms-and-conditions	900	h2:legal-h2	Allergies & Dietary Needs	36	43.2	36	PASS
+terms-and-conditions	900	h2:legal-h2	Café & Salon Etiquette	36	43.2	36	PASS
+terms-and-conditions	900	h2:legal-h2	Gift Cards & Promotions	36	43.2	36	PASS
+terms-and-conditions	900	h2:legal-h2	Liability	36	43.2	36	PASS
+terms-and-conditions	900	h2:legal-h2	Intellectual Property	36	43.2	36	PASS
+terms-and-conditions	900	h2:legal-h2	Changes to These Terms	36	43.2	36	PASS
+terms-and-conditions	900	desc:legal-lede	These terms outline the simple ground rules for 	16	24	16	PASS
+terms-and-conditions	900	desc:p	By accessing the Paris Beans website or visiting	16	24	16	PASS
+terms-and-conditions	900	desc:p	Paris Beans offers a curated café experience — s	16	24	16	PASS
+terms-and-conditions	900	desc:p	All prices are listed in Indian Rupees (₹) and i	16	24	16	PASS
+terms-and-conditions	900	desc:p	Please tell our team about any allergies or diet	16	24	16	PASS
+terms-and-conditions	900	desc:p	We want every visit to feel calming and special 	16	24	16	PASS
+terms-and-conditions	900	desc:p	Gift cards and promotional offers are valid for 	16	24	16	PASS
+terms-and-conditions	900	desc:p	To the fullest extent permitted by law, Paris Be	16	24	16	PASS
+terms-and-conditions	900	desc:p	All content on this site — including the Paris B	16	24	16	PASS
+terms-and-conditions	900	desc:p	We may update these Terms & Conditions from time	16	24	16	PASS
+terms-and-conditions	900	eyebrow:legal-eyebrow	— Terms & Conditions	14	21	14	PASS
+terms-and-conditions	1023	h1:legal-title	The Fine Print, Made Friendly.	44	50.6	44	PASS
+terms-and-conditions	1023	h2:legal-h2	Acceptance of Terms	36	43.2	36	PASS
+terms-and-conditions	1023	h2:legal-h2	Our Services	36	43.2	36	PASS
+terms-and-conditions	1023	h2:legal-h2	Ordering & Payment	36	43.2	36	PASS
+terms-and-conditions	1023	h2:legal-h2	Allergies & Dietary Needs	36	43.2	36	PASS
+terms-and-conditions	1023	h2:legal-h2	Café & Salon Etiquette	36	43.2	36	PASS
+terms-and-conditions	1023	h2:legal-h2	Gift Cards & Promotions	36	43.2	36	PASS
+terms-and-conditions	1023	h2:legal-h2	Liability	36	43.2	36	PASS
+terms-and-conditions	1023	h2:legal-h2	Intellectual Property	36	43.2	36	PASS
+terms-and-conditions	1023	h2:legal-h2	Changes to These Terms	36	43.2	36	PASS
+terms-and-conditions	1023	desc:legal-lede	These terms outline the simple ground rules for 	16	24	16	PASS
+terms-and-conditions	1023	desc:p	By accessing the Paris Beans website or visiting	16	24	16	PASS
+terms-and-conditions	1023	desc:p	Paris Beans offers a curated café experience — s	16	24	16	PASS
+terms-and-conditions	1023	desc:p	All prices are listed in Indian Rupees (₹) and i	16	24	16	PASS
+terms-and-conditions	1023	desc:p	Please tell our team about any allergies or diet	16	24	16	PASS
+terms-and-conditions	1023	desc:p	We want every visit to feel calming and special 	16	24	16	PASS
+terms-and-conditions	1023	desc:p	Gift cards and promotional offers are valid for 	16	24	16	PASS
+terms-and-conditions	1023	desc:p	To the fullest extent permitted by law, Paris Be	16	24	16	PASS
+terms-and-conditions	1023	desc:p	All content on this site — including the Paris B	16	24	16	PASS
+terms-and-conditions	1023	desc:p	We may update these Terms & Conditions from time	16	24	16	PASS
+terms-and-conditions	1023	eyebrow:legal-eyebrow	— Terms & Conditions	14	21	14	PASS
+terms-and-conditions	1024	h1:legal-title	The Fine Print, Made Friendly.	56	61.6	56	PASS
+terms-and-conditions	1024	h2:legal-h2	Acceptance of Terms	48	55.2	48	PASS
+terms-and-conditions	1024	h2:legal-h2	Our Services	48	55.2	48	PASS
+terms-and-conditions	1024	h2:legal-h2	Ordering & Payment	48	55.2	48	PASS
+terms-and-conditions	1024	h2:legal-h2	Allergies & Dietary Needs	48	55.2	48	PASS
+terms-and-conditions	1024	h2:legal-h2	Café & Salon Etiquette	48	55.2	48	PASS
+terms-and-conditions	1024	h2:legal-h2	Gift Cards & Promotions	48	55.2	48	PASS
+terms-and-conditions	1024	h2:legal-h2	Liability	48	55.2	48	PASS
+terms-and-conditions	1024	h2:legal-h2	Intellectual Property	48	55.2	48	PASS
+terms-and-conditions	1024	h2:legal-h2	Changes to These Terms	48	55.2	48	PASS
+terms-and-conditions	1024	desc:legal-lede	These terms outline the simple ground rules for 	20	30	20	PASS
+terms-and-conditions	1024	desc:p	By accessing the Paris Beans website or visiting	20	30	20	PASS
+terms-and-conditions	1024	desc:p	Paris Beans offers a curated café experience — s	20	30	20	PASS
+terms-and-conditions	1024	desc:p	All prices are listed in Indian Rupees (₹) and i	20	30	20	PASS
+terms-and-conditions	1024	desc:p	Please tell our team about any allergies or diet	20	30	20	PASS
+terms-and-conditions	1024	desc:p	We want every visit to feel calming and special 	20	30	20	PASS
+terms-and-conditions	1024	desc:p	Gift cards and promotional offers are valid for 	20	30	20	PASS
+terms-and-conditions	1024	desc:p	To the fullest extent permitted by law, Paris Be	20	30	20	PASS
+terms-and-conditions	1024	desc:p	All content on this site — including the Paris B	20	30	20	PASS
+terms-and-conditions	1024	desc:p	We may update these Terms & Conditions from time	20	30	20	PASS
+terms-and-conditions	1024	eyebrow:legal-eyebrow	— Terms & Conditions	16	24	16	PASS
+terms-and-conditions	1136	h1:legal-title	The Fine Print, Made Friendly.	56	61.6	56	PASS
+terms-and-conditions	1136	h2:legal-h2	Acceptance of Terms	48	55.2	48	PASS
+terms-and-conditions	1136	h2:legal-h2	Our Services	48	55.2	48	PASS
+terms-and-conditions	1136	h2:legal-h2	Ordering & Payment	48	55.2	48	PASS
+terms-and-conditions	1136	h2:legal-h2	Allergies & Dietary Needs	48	55.2	48	PASS
+terms-and-conditions	1136	h2:legal-h2	Café & Salon Etiquette	48	55.2	48	PASS
+terms-and-conditions	1136	h2:legal-h2	Gift Cards & Promotions	48	55.2	48	PASS
+terms-and-conditions	1136	h2:legal-h2	Liability	48	55.2	48	PASS
+terms-and-conditions	1136	h2:legal-h2	Intellectual Property	48	55.2	48	PASS
+terms-and-conditions	1136	h2:legal-h2	Changes to These Terms	48	55.2	48	PASS
+terms-and-conditions	1136	desc:legal-lede	These terms outline the simple ground rules for 	20	30	20	PASS
+terms-and-conditions	1136	desc:p	By accessing the Paris Beans website or visiting	20	30	20	PASS
+terms-and-conditions	1136	desc:p	Paris Beans offers a curated café experience — s	20	30	20	PASS
+terms-and-conditions	1136	desc:p	All prices are listed in Indian Rupees (₹) and i	20	30	20	PASS
+terms-and-conditions	1136	desc:p	Please tell our team about any allergies or diet	20	30	20	PASS
+terms-and-conditions	1136	desc:p	We want every visit to feel calming and special 	20	30	20	PASS
+terms-and-conditions	1136	desc:p	Gift cards and promotional offers are valid for 	20	30	20	PASS
+terms-and-conditions	1136	desc:p	To the fullest extent permitted by law, Paris Be	20	30	20	PASS
+terms-and-conditions	1136	desc:p	All content on this site — including the Paris B	20	30	20	PASS
+terms-and-conditions	1136	desc:p	We may update these Terms & Conditions from time	20	30	20	PASS
+terms-and-conditions	1136	eyebrow:legal-eyebrow	— Terms & Conditions	16	24	16	PASS
+terms-and-conditions	1280	h1:legal-title	The Fine Print, Made Friendly.	56	61.6	56	PASS
+terms-and-conditions	1280	h2:legal-h2	Acceptance of Terms	48	55.2	48	PASS
+terms-and-conditions	1280	h2:legal-h2	Our Services	48	55.2	48	PASS
+terms-and-conditions	1280	h2:legal-h2	Ordering & Payment	48	55.2	48	PASS
+terms-and-conditions	1280	h2:legal-h2	Allergies & Dietary Needs	48	55.2	48	PASS
+terms-and-conditions	1280	h2:legal-h2	Café & Salon Etiquette	48	55.2	48	PASS
+terms-and-conditions	1280	h2:legal-h2	Gift Cards & Promotions	48	55.2	48	PASS
+terms-and-conditions	1280	h2:legal-h2	Liability	48	55.2	48	PASS
+terms-and-conditions	1280	h2:legal-h2	Intellectual Property	48	55.2	48	PASS
+terms-and-conditions	1280	h2:legal-h2	Changes to These Terms	48	55.2	48	PASS
+terms-and-conditions	1280	desc:legal-lede	These terms outline the simple ground rules for 	20	30	20	PASS
+terms-and-conditions	1280	desc:p	By accessing the Paris Beans website or visiting	20	30	20	PASS
+terms-and-conditions	1280	desc:p	Paris Beans offers a curated café experience — s	20	30	20	PASS
+terms-and-conditions	1280	desc:p	All prices are listed in Indian Rupees (₹) and i	20	30	20	PASS
+terms-and-conditions	1280	desc:p	Please tell our team about any allergies or diet	20	30	20	PASS
+terms-and-conditions	1280	desc:p	We want every visit to feel calming and special 	20	30	20	PASS
+terms-and-conditions	1280	desc:p	Gift cards and promotional offers are valid for 	20	30	20	PASS
+terms-and-conditions	1280	desc:p	To the fullest extent permitted by law, Paris Be	20	30	20	PASS
+terms-and-conditions	1280	desc:p	All content on this site — including the Paris B	20	30	20	PASS
+terms-and-conditions	1280	desc:p	We may update these Terms & Conditions from time	20	30	20	PASS
+terms-and-conditions	1280	eyebrow:legal-eyebrow	— Terms & Conditions	16	24	16	PASS
+terms-and-conditions	1440	h1:legal-title	The Fine Print, Made Friendly.	56	61.6	56	PASS
+terms-and-conditions	1440	h2:legal-h2	Acceptance of Terms	48	55.2	48	PASS
+terms-and-conditions	1440	h2:legal-h2	Our Services	48	55.2	48	PASS
+terms-and-conditions	1440	h2:legal-h2	Ordering & Payment	48	55.2	48	PASS
+terms-and-conditions	1440	h2:legal-h2	Allergies & Dietary Needs	48	55.2	48	PASS
+terms-and-conditions	1440	h2:legal-h2	Café & Salon Etiquette	48	55.2	48	PASS
+terms-and-conditions	1440	h2:legal-h2	Gift Cards & Promotions	48	55.2	48	PASS
+terms-and-conditions	1440	h2:legal-h2	Liability	48	55.2	48	PASS
+terms-and-conditions	1440	h2:legal-h2	Intellectual Property	48	55.2	48	PASS
+terms-and-conditions	1440	h2:legal-h2	Changes to These Terms	48	55.2	48	PASS
+terms-and-conditions	1440	desc:legal-lede	These terms outline the simple ground rules for 	20	30	20	PASS
+terms-and-conditions	1440	desc:p	By accessing the Paris Beans website or visiting	20	30	20	PASS
+terms-and-conditions	1440	desc:p	Paris Beans offers a curated café experience — s	20	30	20	PASS
+terms-and-conditions	1440	desc:p	All prices are listed in Indian Rupees (₹) and i	20	30	20	PASS
+terms-and-conditions	1440	desc:p	Please tell our team about any allergies or diet	20	30	20	PASS
+terms-and-conditions	1440	desc:p	We want every visit to feel calming and special 	20	30	20	PASS
+terms-and-conditions	1440	desc:p	Gift cards and promotional offers are valid for 	20	30	20	PASS
+terms-and-conditions	1440	desc:p	To the fullest extent permitted by law, Paris Be	20	30	20	PASS
+terms-and-conditions	1440	desc:p	All content on this site — including the Paris B	20	30	20	PASS
+terms-and-conditions	1440	desc:p	We may update these Terms & Conditions from time	20	30	20	PASS
+terms-and-conditions	1440	eyebrow:legal-eyebrow	— Terms & Conditions	16	24	16	PASS
+terms-and-conditions	1919	h1:legal-title	The Fine Print, Made Friendly.	56	61.6	56	PASS
+terms-and-conditions	1919	h2:legal-h2	Acceptance of Terms	48	55.2	48	PASS
+terms-and-conditions	1919	h2:legal-h2	Our Services	48	55.2	48	PASS
+terms-and-conditions	1919	h2:legal-h2	Ordering & Payment	48	55.2	48	PASS
+terms-and-conditions	1919	h2:legal-h2	Allergies & Dietary Needs	48	55.2	48	PASS
+terms-and-conditions	1919	h2:legal-h2	Café & Salon Etiquette	48	55.2	48	PASS
+terms-and-conditions	1919	h2:legal-h2	Gift Cards & Promotions	48	55.2	48	PASS
+terms-and-conditions	1919	h2:legal-h2	Liability	48	55.2	48	PASS
+terms-and-conditions	1919	h2:legal-h2	Intellectual Property	48	55.2	48	PASS
+terms-and-conditions	1919	h2:legal-h2	Changes to These Terms	48	55.2	48	PASS
+terms-and-conditions	1919	desc:legal-lede	These terms outline the simple ground rules for 	20	30	20	PASS
+terms-and-conditions	1919	desc:p	By accessing the Paris Beans website or visiting	20	30	20	PASS
+terms-and-conditions	1919	desc:p	Paris Beans offers a curated café experience — s	20	30	20	PASS
+terms-and-conditions	1919	desc:p	All prices are listed in Indian Rupees (₹) and i	20	30	20	PASS
+terms-and-conditions	1919	desc:p	Please tell our team about any allergies or diet	20	30	20	PASS
+terms-and-conditions	1919	desc:p	We want every visit to feel calming and special 	20	30	20	PASS
+terms-and-conditions	1919	desc:p	Gift cards and promotional offers are valid for 	20	30	20	PASS
+terms-and-conditions	1919	desc:p	To the fullest extent permitted by law, Paris Be	20	30	20	PASS
+terms-and-conditions	1919	desc:p	All content on this site — including the Paris B	20	30	20	PASS
+terms-and-conditions	1919	desc:p	We may update these Terms & Conditions from time	20	30	20	PASS
+terms-and-conditions	1919	eyebrow:legal-eyebrow	— Terms & Conditions	16	24	16	PASS
+terms-and-conditions	1920	h1:legal-title	The Fine Print, Made Friendly.	64	70.4	64	PASS
+terms-and-conditions	1920	h2:legal-h2	Acceptance of Terms	52	59.8	52	PASS
+terms-and-conditions	1920	h2:legal-h2	Our Services	52	59.8	52	PASS
+terms-and-conditions	1920	h2:legal-h2	Ordering & Payment	52	59.8	52	PASS
+terms-and-conditions	1920	h2:legal-h2	Allergies & Dietary Needs	52	59.8	52	PASS
+terms-and-conditions	1920	h2:legal-h2	Café & Salon Etiquette	52	59.8	52	PASS
+terms-and-conditions	1920	h2:legal-h2	Gift Cards & Promotions	52	59.8	52	PASS
+terms-and-conditions	1920	h2:legal-h2	Liability	52	59.8	52	PASS
+terms-and-conditions	1920	h2:legal-h2	Intellectual Property	52	59.8	52	PASS
+terms-and-conditions	1920	h2:legal-h2	Changes to These Terms	52	59.8	52	PASS
+terms-and-conditions	1920	desc:legal-lede	These terms outline the simple ground rules for 	20	30	20	PASS
+terms-and-conditions	1920	desc:p	By accessing the Paris Beans website or visiting	20	30	20	PASS
+terms-and-conditions	1920	desc:p	Paris Beans offers a curated café experience — s	20	30	20	PASS
+terms-and-conditions	1920	desc:p	All prices are listed in Indian Rupees (₹) and i	20	30	20	PASS
+terms-and-conditions	1920	desc:p	Please tell our team about any allergies or diet	20	30	20	PASS
+terms-and-conditions	1920	desc:p	We want every visit to feel calming and special 	20	30	20	PASS
+terms-and-conditions	1920	desc:p	Gift cards and promotional offers are valid for 	20	30	20	PASS
+terms-and-conditions	1920	desc:p	To the fullest extent permitted by law, Paris Be	20	30	20	PASS
+terms-and-conditions	1920	desc:p	All content on this site — including the Paris B	20	30	20	PASS
+terms-and-conditions	1920	desc:p	We may update these Terms & Conditions from time	20	30	20	PASS
+terms-and-conditions	1920	eyebrow:legal-eyebrow	— Terms & Conditions	16	24	16	PASS
+terms-and-conditions	2560	h1:legal-title	The Fine Print, Made Friendly.	64	70.4	64	PASS
+terms-and-conditions	2560	h2:legal-h2	Acceptance of Terms	52	59.8	52	PASS
+terms-and-conditions	2560	h2:legal-h2	Our Services	52	59.8	52	PASS
+terms-and-conditions	2560	h2:legal-h2	Ordering & Payment	52	59.8	52	PASS
+terms-and-conditions	2560	h2:legal-h2	Allergies & Dietary Needs	52	59.8	52	PASS
+terms-and-conditions	2560	h2:legal-h2	Café & Salon Etiquette	52	59.8	52	PASS
+terms-and-conditions	2560	h2:legal-h2	Gift Cards & Promotions	52	59.8	52	PASS
+terms-and-conditions	2560	h2:legal-h2	Liability	52	59.8	52	PASS
+terms-and-conditions	2560	h2:legal-h2	Intellectual Property	52	59.8	52	PASS
+terms-and-conditions	2560	h2:legal-h2	Changes to These Terms	52	59.8	52	PASS
+terms-and-conditions	2560	desc:legal-lede	These terms outline the simple ground rules for 	20	30	20	PASS
+terms-and-conditions	2560	desc:p	By accessing the Paris Beans website or visiting	20	30	20	PASS
+terms-and-conditions	2560	desc:p	Paris Beans offers a curated café experience — s	20	30	20	PASS
+terms-and-conditions	2560	desc:p	All prices are listed in Indian Rupees (₹) and i	20	30	20	PASS
+terms-and-conditions	2560	desc:p	Please tell our team about any allergies or diet	20	30	20	PASS
+terms-and-conditions	2560	desc:p	We want every visit to feel calming and special 	20	30	20	PASS
+terms-and-conditions	2560	desc:p	Gift cards and promotional offers are valid for 	20	30	20	PASS
+terms-and-conditions	2560	desc:p	To the fullest extent permitted by law, Paris Be	20	30	20	PASS
+terms-and-conditions	2560	desc:p	All content on this site — including the Paris B	20	30	20	PASS
+terms-and-conditions	2560	desc:p	We may update these Terms & Conditions from time	20	30	20	PASS
+terms-and-conditions	2560	eyebrow:legal-eyebrow	— Terms & Conditions	16	24	16	PASS
+not-found	375	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	32	36.8	32	PASS
+not-found	375	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	14	21	14	PASS
+not-found	375	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	12	18	12	PASS
+not-found	390	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	32	36.8	32	PASS
+not-found	390	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	14	21	14	PASS
+not-found	390	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	12	18	12	PASS
+not-found	430	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	32	36.8	32	PASS
+not-found	430	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	14	21	14	PASS
+not-found	430	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	12	18	12	PASS
+not-found	500	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	32	36.8	32	PASS
+not-found	500	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	14	21	14	PASS
+not-found	500	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	12	18	12	PASS
+not-found	640	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	32	36.8	32	PASS
+not-found	640	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	14	21	14	PASS
+not-found	640	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	12	18	12	PASS
+not-found	641	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	44	50.6	44	PASS
+not-found	641	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	16	24	16	PASS
+not-found	641	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	14	21	14	PASS
+not-found	744	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	44	50.6	44	PASS
+not-found	744	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	16	24	16	PASS
+not-found	744	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	14	21	14	PASS
+not-found	900	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	44	50.6	44	PASS
+not-found	900	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	16	24	16	PASS
+not-found	900	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	14	21	14	PASS
+not-found	1023	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	44	50.6	44	PASS
+not-found	1023	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	16	24	16	PASS
+not-found	1023	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	14	21	14	PASS
+not-found	1024	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	56	61.6	56	PASS
+not-found	1024	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	20	30	20	PASS
+not-found	1024	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	16	24	16	PASS
+not-found	1136	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	56	61.6	56	PASS
+not-found	1136	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	20	30	20	PASS
+not-found	1136	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	16	24	16	PASS
+not-found	1280	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	56	61.6	56	PASS
+not-found	1280	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	20	30	20	PASS
+not-found	1280	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	16	24	16	PASS
+not-found	1440	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	56	61.6	56	PASS
+not-found	1440	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	20	30	20	PASS
+not-found	1440	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	16	24	16	PASS
+not-found	1919	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	56	61.6	56	PASS
+not-found	1919	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	20	30	20	PASS
+not-found	1919	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	16	24	16	PASS
+not-found	1920	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	64	70.4	64	PASS
+not-found	1920	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	20	30	20	PASS
+not-found	1920	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	16	24	16	PASS
+not-found	2560	h1:nf-title reveal reveal-delay-2 is-visible	This Corner of Paris Doesn't Exist.	64	70.4	64	PASS
+not-found	2560	desc:lead nf-desc reveal reveal-delay-2 is-visible	The page you're looking for has moved on, or nev	20	30	20	PASS
+not-found	2560	eyebrow:eyebrow nf-eyebrow reveal is-visible	— Page Not Found	16	24	16	PASS

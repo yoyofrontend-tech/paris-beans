@@ -1,0 +1,208 @@
+{
+  "lineChecks": [
+    {
+      "route": "home",
+      "width": 390,
+      "type": "h1",
+      "cls": "hero-title is-visible",
+      "text": "Your SalonAppointment, With ATaste Of Paris.",
+      "found": 3,
+      "expected": 3,
+      "ok": true,
+      "note": "Figma: Home hero H1 = 3 lines @390"
+    },
+    {
+      "route": "menu",
+      "width": 390,
+      "type": "h1",
+      "cls": "menu-hero-title",
+      "text": "Something Good, Before Or After Your Appointment",
+      "found": 3,
+      "expected": 3,
+      "ok": true,
+      "note": "Figma: Menu hero H1 = 3 lines @390"
+    },
+    {
+      "route": "menu",
+      "width": 1440,
+      "type": "h1",
+      "cls": "menu-hero-title",
+      "text": "Something Good, Before Or After Your Appointment",
+      "found": 2,
+      "expected": 2,
+      "ok": true,
+      "note": "Figma: Menu hero H1 = 2 lines @1440"
+    },
+    {
+      "route": "gallery",
+      "width": 1440,
+      "type": "h1",
+      "cls": "gal-hero-title",
+      "text": "Moments Worth Slowing Down For.",
+      "found": 1,
+      "expected": 1,
+      "ok": true,
+      "note": "Figma: Gallery H1 = 1 line @1440"
+    },
+    {
+      "route": "gallery",
+      "width": 1440,
+      "type": "desc",
+      "cls": "gal-hero-desc lead",
+      "text": "A little time to pause, enjoy your coffee, and t",
+      "found": 1,
+      "expected": 1,
+      "ok": true,
+      "note": "Figma: Gallery description = 1 line @1440"
+    },
+    {
+      "route": "our-story",
+      "width": 1440,
+      "type": "h1",
+      "cls": "ostory-title reveal reveal-delay-1 is-visible",
+      "text": "A Little Paris, Created for Your Salon Day.",
+      "found": 1,
+      "expected": 1,
+      "ok": true,
+      "note": "Figma: Our Story H1 = 1 line @1440"
+    }
+  ],
+  "behaviour": [
+    {
+      "check": "menu-tabs",
+      "width": 390,
+      "control": "clicked .menu-tab",
+      "from": "Hot Coffees",
+      "to": "Cold Frappe",
+      "labelChanged": true,
+      "headingBefore": "Specialty Hot Coffees (240 ml)",
+      "headingAfter": "Cold Frappe (350 ml)",
+      "headingChanged": true,
+      "pass": true
+    },
+    {
+      "check": "menu-tabs",
+      "width": 1280,
+      "control": "clicked .menu-tab",
+      "from": "Hot Coffees",
+      "to": "Cold Frappe",
+      "labelChanged": true,
+      "headingBefore": "Specialty Hot Coffees (240 ml)",
+      "headingAfter": "Cold Frappe (350 ml)",
+      "headingChanged": true,
+      "pass": true
+    },
+    {
+      "check": "background-carousel",
+      "width": 390,
+      "from": {
+        "caption": "Warm Parisian café corner",
+        "dot": 0
+      },
+      "to": {
+        "caption": "Espresso being poured",
+        "dot": 1
+      },
+      "advanced": true,
+      "runningAnims": 36,
+      "moodRunningAnims": 8,
+      "pass": true
+    },
+    {
+      "check": "ambient-animations",
+      "width": 390,
+      "runningAnims": 36,
+      "sample": [
+        "hero-eyebrow-wrap reveal is-visible",
+        "hero-eyebrow-wrap reveal is-visible",
+        "hero-title-line-inner",
+        "hero-title-line-inner",
+        "hero-title-line-inner",
+        "hero-divider reveal reveal-delay-2 is-vi"
+      ],
+      "pass": true
+    },
+    {
+      "check": "background-carousel",
+      "width": 1280,
+      "from": {
+        "caption": "Warm Parisian café corner",
+        "dot": 0
+      },
+      "to": {
+        "caption": "Espresso being poured",
+        "dot": 1
+      },
+      "advanced": true,
+      "runningAnims": 41,
+      "moodRunningAnims": 18,
+      "pass": true
+    },
+    {
+      "check": "ambient-animations",
+      "width": 1280,
+      "runningAnims": 41,
+      "sample": [
+        "hero-eyebrow-wrap reveal is-visible",
+        "hero-eyebrow-wrap reveal is-visible",
+        "hero-title-line-inner",
+        "hero-title-line-inner",
+        "hero-title-line-inner",
+        "hero-divider reveal reveal-delay-2 is-vi"
+      ],
+      "pass": true
+    }
+  ],
+  "bandJumps": [],
+  "shots": [
+    "home-640.png",
+    "home-641.png",
+    "home-1023.png",
+    "home-1024.png",
+    "home-1919.png",
+    "home-1920.png",
+    "our-story-640.png",
+    "our-story-641.png",
+    "our-story-1023.png",
+    "our-story-1024.png",
+    "our-story-1919.png",
+    "our-story-1920.png",
+    "menu-640.png",
+    "menu-641.png",
+    "menu-1023.png",
+    "menu-1024.png",
+    "menu-1919.png",
+    "menu-1920.png",
+    "gallery-640.png",
+    "gallery-641.png",
+    "gallery-1023.png",
+    "gallery-1024.png",
+    "gallery-1919.png",
+    "gallery-1920.png",
+    "visit-contact-640.png",
+    "visit-contact-641.png",
+    "visit-contact-1023.png",
+    "visit-contact-1024.png",
+    "visit-contact-1919.png",
+    "visit-contact-1920.png",
+    "privacy-policy-640.png",
+    "privacy-policy-641.png",
+    "privacy-policy-1023.png",
+    "privacy-policy-1024.png",
+    "privacy-policy-1919.png",
+    "privacy-policy-1920.png",
+    "terms-and-conditions-640.png",
+    "terms-and-conditions-641.png",
+    "terms-and-conditions-1023.png",
+    "terms-and-conditions-1024.png",
+    "terms-and-conditions-1919.png",
+    "terms-and-conditions-1920.png",
+    "not-found-640.png",
+    "not-found-641.png",
+    "not-found-1023.png",
+    "not-found-1024.png",
+    "not-found-1919.png",
+    "not-found-1920.png"
+  ],
+  "consoleErrors": []
+}

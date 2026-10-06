@@ -27,7 +27,7 @@ const PANELS = [
 ]
 
 const CYCLE_INTERVAL_MS = 2600
-const MOBILE_BREAKPOINT = 768
+const TABLET_BREAKPOINT = 641
 const DESKTOP_SLIDE_COUNT = 4
 const MOBILE_SLIDE_COUNT = 3
 
@@ -57,8 +57,8 @@ export default function OurStoryHero() {
   useReveal(ref, { threshold: 0.12 })
 
   useEffect(() => {
-    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`)
-    const update = () => setIsMobile(mql.matches)
+    const mql = window.matchMedia(`(min-width: ${TABLET_BREAKPOINT}px)`)
+    const update = () => setIsMobile(!mql.matches)
     update()
     mql.addEventListener('change', update)
     return () => mql.removeEventListener('change', update)
@@ -91,8 +91,7 @@ export default function OurStoryHero() {
           OUR STORY
         </p>
         <h1 className="ostory-title reveal reveal-delay-1">
-          A Little <em>Paris</em>, Created for
-          <br className="ostory-hero-br-tablet" /> Your Salon Day.
+          A Little <em>Paris</em>, Created for Your Salon Day.
         </h1>
         <p className="ostory-desc reveal reveal-delay-2">
           Paris Beans began with a simple idea — what if a salon appointment

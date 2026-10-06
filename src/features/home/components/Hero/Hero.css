@@ -1,18 +1,25 @@
 /* ============================================================
    Hero — mobile-first, four tiers, min-width only
 
-     PHONE   base (no query)  375–743   min-height 440px, copy bottom-anchored,
-                                      H1 32px, stacked buttons, 48px section pad
-     TABLET  744px+           744–1135  min-height 520px, H1 44px,
-                                      buttons in one row, 72px section pad
-     LAPTOP  1136px+          1136–1919 min-height 540px, H1 56px, 96px pad
-     DESKTOP 1920px+          1920+     H1 64px, everything else as LAPTOP
+      PHONE   base (no query)  375–640   min-height 440px, copy bottom-anchored,
+                                       H1 on the --fs-h1 token (32px), stacked
+                                       buttons, 48px section pad
+      TABLET  641px+           641–1023  min-height 520px, H1 44px via the
+                                       token, buttons in one row, 72px pad
+      LAPTOP  1024px+          1024–1919 min-height 540px, H1 56px via the
+                                       token, 96px pad
+      DESKTOP 1920px+          1920+     H1 64px via the token, everything
+                                       else as LAPTOP
 
-   There are no max-width queries in this file and no doubled selectors:
-   every rule that has to beat a shared class (.eyebrow, .btn) is written as
-   a normal descendant (.hero-eyebrow, .hero-actions .btn) and this file loads
-   after global.css, so equal specificity resolves in its favour on its own.
-   ============================================================ */
+    Type sizes come from the global tokens (--fs-h1 / --lh-h1 /
+    --fs-body / --lh-body / --fs-eyebrow), which step at 641 /
+    1024 / 1920; the tiers below carry layout only.
+
+    There are no max-width queries in this file and no doubled selectors:
+    every rule that has to beat a shared class (.eyebrow, .btn) is written as
+    a normal descendant (.hero-eyebrow, .hero-actions .btn) and this file loads
+    after global.css, so equal specificity resolves in its favour on its own.
+    ============================================================ */
 
 .hero {
   position: relative;
@@ -78,7 +85,7 @@
 }
 
 /* No padding-inline rule here on purpose: this element also carries
-   `.container`, which supplies --gutter (20 / 32 / 80px). */
+   `.container`, which supplies --gutter (16 / 24 / 80px). */
 
 .hero-copy {
   width: 100%;
@@ -105,13 +112,13 @@
 
 .hero-eyebrow {
   color: #e8d9c5;
-  /* PHONE 11px; the shared token takes over from the TABLET tier. */
-  font-size: 11px;
+  /* The shared eyebrow token: 12px on the phone, stepping with
+     the tier. 0.02em tracking keeps the label inside the
+     measure at every width. */
+  font-size: var(--fs-eyebrow);
   font-weight: var(--fw-regular);
   line-height: 1.4;
-  /* 0.32em tracking overflowed the 350px measure below ~400px, so the
-     hero keeps a tighter tracking than the shared .eyebrow token. */
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   margin-bottom: 0;
   text-wrap: balance;
   min-width: 0;
@@ -120,8 +127,8 @@
 
 .hero-title {
   color: var(--color-white);
-  font-size: 32px;
-  line-height: 1.15;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
   font-weight: var(--fw-bold);
   font-style: italic;
   letter-spacing: var(--tracking-tight);
@@ -183,9 +190,8 @@
 .hero-desc {
   color: rgba(255, 255, 255, 0.88);
   max-width: 100%;
-  /* 14px at 375 rising to 16px by the end of the phone band. */
-  font-size: clamp(0.875rem, 0.35vw + 0.835rem, 1rem);
-  line-height: var(--lh-text);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
   margin-bottom: 24px;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
@@ -227,7 +233,7 @@
 /* Reveal animations — defined in global.css */
 
 /* ---------- TABLET ---------- */
-@media (min-width: 744px) {
+@media (min-width: 641px) {
   .hero {
     min-height: 520px;
     align-items: center;
@@ -237,20 +243,11 @@
     padding-block: 72px;
   }
 
-  .hero-eyebrow {
-    font-size: var(--fs-eyebrow);
-  }
-
-  .hero-title {
-    font-size: 44px;
-  }
-
   .hero-divider {
     width: 40px;
   }
 
   .hero-desc {
-    font-size: 17px;
     max-width: 620px;
   }
 
@@ -269,7 +266,7 @@
 }
 
 /* ---------- LAPTOP ---------- */
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   .hero {
     min-height: 540px;
   }
@@ -279,14 +276,11 @@
   }
 
   .hero-title {
-    font-size: 56px;
-    line-height: 1.1;
     /* "Appointment, With A" is the longest line; 560px holds it at 56px. */
     max-width: 560px;
   }
 
   .hero-desc {
-    font-size: 20px;
     max-width: 620px;
   }
 }
@@ -294,7 +288,6 @@
 /* ---------- DESKTOP ---------- */
 @media (min-width: 1920px) {
   .hero-title {
-    font-size: 64px;
     max-width: 620px;
   }
 

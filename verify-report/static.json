@@ -1,0 +1,1561 @@
+{
+  "mediaRows": [
+    {
+      "file": "src/app/global.css",
+      "line": 198,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 214,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 232,
+      "query": "@media (min-width: 1920px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 331,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 341,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 453,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 554,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
+      "line": 544,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
+      "line": 567,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/app/Layout/components/Footer/Footer.css",
+      "line": 571,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/Layout/components/Footer/Footer.css",
+      "line": 630,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/Layout/components/Footer/Footer.css",
+      "line": 680,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/app/Layout/components/Header/Header.css",
+      "line": 635,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/Layout/components/Header/Header.css",
+      "line": 692,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/Layout/components/Header/Header.css",
+      "line": 745,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/app/Layout/components/Header/Header.css",
+      "line": 758,
+      "query": "@media (max-height: 680px) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/app/Layout/components/Preloader/Preloader.css",
+      "line": 327,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/Layout/components/Preloader/Preloader.css",
+      "line": 348,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/app/Layout/components/Preloader/Preloader.css",
+      "line": 387,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 266,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 380,
+      "query": "@media (min-width: 1920px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 703,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 719,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 875,
+      "query": "@media (min-width: 1920px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 882,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
+      "line": 57,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
+      "line": 77,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/CafeMenu/CafeMenu.css",
+      "line": 301,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/CafeMenu/CafeMenu.css",
+      "line": 320,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/CafeMenu/CafeMenu.css",
+      "line": 410,
+      "query": "@media (min-width: 1920px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/CafeMenu/CafeMenu.css",
+      "line": 417,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
+      "line": 325,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
+      "line": 375,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
+      "line": 449,
+      "query": "@media (min-width: 1920px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
+      "line": 456,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 236,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 269,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 289,
+      "query": "@media (min-width: 1920px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 300,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/features/home/components/StorySection/StorySection.css",
+      "line": 311,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/features/home/components/StorySection/StorySection.css",
+      "line": 357,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/legal/components/LegalPage/Legal.css",
+      "line": 440,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/legal/components/LegalPage/Legal.css",
+      "line": 482,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 979,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1153,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1504,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/features/story/components/OurStoryCta/OurStoryCta.css",
+      "line": 88,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 117,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 144,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 164,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 485,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 738,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 879,
+      "query": "@media (min-width: 1920px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 710,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 828,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 855,
+      "query": "@media (min-width: 1920px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 889,
+      "query": "@media (hover: none) and (pointer: coarse) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 917,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 84,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 95,
+      "query": "@media (min-width: 1024px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 107,
+      "query": "@media (min-width: 1920px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/pages/not-found/NotFoundPage.css",
+      "line": 107,
+      "query": "@media (min-width: 641px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/pages/story/StoryPage.css",
+      "line": 74,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    }
+  ],
+  "jsRows": [
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.jsx",
+      "line": 44,
+      "query": "window.innerWidth))",
+      "verdict": "INFO",
+      "why": "reads viewport width (value must land on a band edge)"
+    },
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.jsx",
+      "line": 47,
+      "query": "bleForWidth(window.innerWidth))",
+      "verdict": "INFO",
+      "why": "resize listener"
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.jsx",
+      "line": 60,
+      "query": "(min-width: 641px)",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/story/components/OurStoryImageRow/OurStoryImageRow.jsx",
+      "line": 24,
+      "query": "(min-width: 1024px)",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/story/components/OurStoryImageRow/OurStoryImageRow.jsx",
+      "line": 28,
+      "query": "(min-width: 641px)",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/shared/hooks/useParallaxTilt.js",
+      "line": 65,
+      "query": "tener('scroll', onInvalidate, { passive: true })",
+      "verdict": "INFO",
+      "why": "resize listener"
+    }
+  ],
+  "fsRows": [
+    {
+      "file": "src/app/Layout/components/Header/Header.css",
+      "line": 395,
+      "selector": ".pb-menu-index",
+      "media": "",
+      "value": "12px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/app/Layout/components/Header/Header.css",
+      "line": 404,
+      "selector": ".pb-menu-label",
+      "media": "",
+      "value": "24px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/app/Layout/components/Header/Header.css",
+      "line": 417,
+      "selector": ".pb-menu-arrow",
+      "media": "",
+      "value": "15px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/app/Layout/components/Header/Header.css",
+      "line": 526,
+      "selector": ".pb-menu-meta-label",
+      "media": "",
+      "value": "12px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/app/Layout/components/Header/Header.css",
+      "line": 538,
+      "selector": ".pb-menu-meta-value",
+      "media": "",
+      "value": "16px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/app/Layout/components/Header/Header.css",
+      "line": 558,
+      "selector": ".pb-menu-cta",
+      "media": "",
+      "value": "16px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/app/Layout/components/Header/Header.css",
+      "line": 654,
+      "selector": ".nav-link",
+      "media": "@media (min-width: 641px)",
+      "value": "13px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/app/Layout/components/Preloader/Preloader.css",
+      "line": 153,
+      "selector": ".preloader-wordmark",
+      "media": "",
+      "value": "clamp(1.9rem, 8.4vw, 2.9rem)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/app/Layout/components/Preloader/Preloader.css",
+      "line": 334,
+      "selector": ".preloader-wordmark",
+      "media": "@media (min-width: 641px)",
+      "value": "clamp(2.4rem, 5.4vw, 3.6rem)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
+      "line": 44,
+      "selector": ".benefit-title",
+      "media": "",
+      "value": "20px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
+      "line": 52,
+      "selector": ".benefit-text",
+      "media": "",
+      "value": "14px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
+      "line": 68,
+      "selector": ".benefit-title",
+      "media": "@media (min-width: 641px)",
+      "value": "22px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
+      "line": 72,
+      "selector": ".benefit-text",
+      "media": "@media (min-width: 641px)",
+      "value": "16px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
+      "line": 93,
+      "selector": ".benefit-title",
+      "media": "@media (min-width: 1024px)",
+      "value": "24px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
+      "line": 97,
+      "selector": ".benefit-text",
+      "media": "@media (min-width: 1024px)",
+      "value": "16px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 164,
+      "selector": ".menu-hero-desc",
+      "media": "",
+      "value": "14px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 233,
+      "selector": ".menu-tab",
+      "media": "",
+      "value": "14px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 242,
+      "selector": ".menu-tab.is-active",
+      "media": "",
+      "value": "15px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 280,
+      "selector": ".menu-select-trigger",
+      "media": "",
+      "value": "16px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 371,
+      "selector": ".menu-select-option",
+      "media": "",
+      "value": "16px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 438,
+      "selector": ".menu-special-size",
+      "media": "",
+      "value": "20px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 534,
+      "selector": ".menu-item-name",
+      "media": "",
+      "value": "15px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 554,
+      "selector": ".menu-item-price",
+      "media": "",
+      "value": "15px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 562,
+      "selector": ".menu-item-desc",
+      "media": "",
+      "value": "13px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 897,
+      "selector": ".menu-card-caption",
+      "media": "",
+      "value": "20px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1025,
+      "selector": ".menu-tab",
+      "media": "@media (min-width: 641px)",
+      "value": "18px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1029,
+      "selector": ".menu-tab.is-active",
+      "media": "@media (min-width: 641px)",
+      "value": "20px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1055,
+      "selector": ".menu-special-size",
+      "media": "@media (min-width: 641px)",
+      "value": "22px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1064,
+      "selector": ".menu-item-name, .menu-item-price",
+      "media": "@media (min-width: 641px)",
+      "value": "17px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1068,
+      "selector": ".menu-item-desc",
+      "media": "@media (min-width: 641px)",
+      "value": "15px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1116,
+      "selector": ".menu-card-caption",
+      "media": "@media (min-width: 641px)",
+      "value": "24px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1220,
+      "selector": ".menu-hero-title",
+      "media": "@media (min-width: 1024px)",
+      "value": "64px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 225,
+      "selector": ".pb-story-ring__text",
+      "media": "",
+      "value": "12px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 715,
+      "selector": ".pb-story-ring__text",
+      "media": "@media (min-width: 641px)",
+      "value": "15px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 703,
+      "selector": ".visit-info-value, .visit-info-link",
+      "media": "",
+      "value": "clamp(0.95rem, 4.4vw, 1.25rem)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 905,
+      "selector": ".visit-field input, .visit-field textarea",
+      "media": "@media (hover: none) and (pointer: coarse)",
+      "value": "16px",
+      "hardcoded": true,
+      "important": false
+    }
+  ],
+  "smallFs": [],
+  "doubled": [],
+  "duplicates": [
+    {
+      "file": "src/app/global.css",
+      "first": 372,
+      "second": 403,
+      "selector": "h1, h2, h3, h4, h5, h6, .display",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
+      "first": 4,
+      "second": 522,
+      "selector": ".ai-widget",
+      "media": "",
+      "redeclared": [
+        "right",
+        "bottom"
+      ]
+    },
+    {
+      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
+      "first": 42,
+      "second": 527,
+      "selector": ".ai-float",
+      "media": "",
+      "redeclared": [
+        "width",
+        "height"
+      ]
+    },
+    {
+      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
+      "first": 79,
+      "second": 532,
+      "selector": ".ai-float-icon",
+      "media": "",
+      "redeclared": [
+        "width",
+        "height"
+      ]
+    },
+    {
+      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
+      "first": 104,
+      "second": 537,
+      "selector": ".ai-panel",
+      "media": "",
+      "redeclared": [
+        "width",
+        "height"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 149,
+      "second": 169,
+      "selector": ".image-4",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 152,
+      "second": 173,
+      "selector": ".image-7",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 115,
+      "second": 219,
+      "selector": ".gallery-image",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 320,
+      "second": 364,
+      "selector": ".gal-hero-collage",
+      "media": "@media (min-width: 1024px)",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 13,
+      "second": 499,
+      "selector": ".gal-hero-copy",
+      "media": "",
+      "redeclared": [
+        "max-width"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 63,
+      "second": 507,
+      "selector": ".gal-hero-collage",
+      "media": "",
+      "redeclared": [
+        "--gal-frame-w",
+        "--gal-gap",
+        "-webkit-mask-image",
+        "mask-image"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 147,
+      "second": 562,
+      "selector": ".image-2",
+      "media": "",
+      "redeclared": [
+        "--o"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 161,
+      "second": 571,
+      "selector": ".image-4, .image-7",
+      "media": "",
+      "redeclared": [
+        "margin-left",
+        "z-index"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 82,
+      "second": 586,
+      "selector": ".gallery-track",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 388,
+      "second": 595,
+      "selector": ".gal-grid",
+      "media": "",
+      "redeclared": [
+        "--gal-slide-step",
+        "display",
+        "gap"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 398,
+      "second": 619,
+      "selector": ".gal-track",
+      "media": "",
+      "redeclared": [
+        "display"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 417,
+      "second": 634,
+      "selector": ".gal-tile:hover",
+      "media": "",
+      "redeclared": [
+        "transform",
+        "box-shadow"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 430,
+      "second": 639,
+      "selector": ".gal-tile:hover img",
+      "media": "",
+      "redeclared": [
+        "transform"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 403,
+      "second": 644,
+      "selector": ".gal-dots",
+      "media": "",
+      "redeclared": [
+        "display"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 225,
+      "second": 686,
+      "selector": ".gal-section",
+      "media": "",
+      "redeclared": [
+        "padding-block"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 6,
+      "second": 690,
+      "selector": ".gal-hero",
+      "media": "",
+      "redeclared": [
+        "padding-top",
+        "padding-bottom"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 388,
+      "second": 695,
+      "selector": ".gal-grid",
+      "media": "",
+      "redeclared": [
+        "margin-top"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 320,
+      "second": 726,
+      "selector": ".gal-hero-collage",
+      "media": "@media (min-width: 1024px)",
+      "redeclared": [
+        "margin-top"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 746,
+      "second": 758,
+      "selector": ".image-4",
+      "media": "@media (min-width: 1024px)",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 749,
+      "second": 762,
+      "selector": ".image-7",
+      "media": "@media (min-width: 1024px)",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 282,
+      "second": 780,
+      "selector": ".gal-hero",
+      "media": "@media (min-width: 1024px)",
+      "redeclared": [
+        "padding-top"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 325,
+      "second": 786,
+      "selector": ".gal-grid",
+      "media": "@media (min-width: 1024px)",
+      "redeclared": [
+        "gap"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 812,
+      "second": 833,
+      "selector": ".gal-grid .gal-tile",
+      "media": "@media (min-width: 1024px)",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 330,
+      "second": 844,
+      "selector": ".gal-grid--atmosphere",
+      "media": "@media (min-width: 1024px)",
+      "redeclared": [
+        "grid-template-columns",
+        "grid-template-rows",
+        "aspect-ratio"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 336,
+      "second": 850,
+      "selector": ".gal-grid--wall",
+      "media": "@media (min-width: 1024px)",
+      "redeclared": [
+        "grid-template-columns",
+        "grid-template-rows",
+        "aspect-ratio"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 342,
+      "second": 856,
+      "selector": ".gal-grid--food",
+      "media": "@media (min-width: 1024px)",
+      "redeclared": [
+        "grid-template-columns",
+        "grid-template-rows",
+        "aspect-ratio"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 348,
+      "second": 862,
+      "selector": ".gal-grid--salon",
+      "media": "@media (min-width: 1024px)",
+      "redeclared": [
+        "grid-template-columns",
+        "grid-template-rows",
+        "aspect-ratio"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 359,
+      "second": 869,
+      "selector": ".gal-section",
+      "media": "@media (min-width: 1024px)",
+      "redeclared": [
+        "padding-block"
+      ]
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "first": 381,
+      "second": 876,
+      "selector": ".gal-hero",
+      "media": "@media (min-width: 1920px)",
+      "redeclared": [
+        "padding-top"
+      ]
+    },
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
+      "first": 105,
+      "second": 124,
+      "selector": ".carousel-item",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
+      "first": 158,
+      "second": 197,
+      "selector": ".carousel-item.center .polaroid-photo",
+      "media": "",
+      "redeclared": [
+        "box-shadow"
+      ]
+    },
+    {
+      "file": "src/features/home/components/StorySection/StorySection.css",
+      "first": 1,
+      "second": 255,
+      "selector": ".story",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/home/components/StorySection/StorySection.css",
+      "first": 12,
+      "second": 259,
+      "selector": ".story-grid",
+      "media": "",
+      "redeclared": [
+        "min-height",
+        "display",
+        "gap",
+        "align-items"
+      ]
+    },
+    {
+      "file": "src/features/home/components/StorySection/StorySection.css",
+      "first": 22,
+      "second": 268,
+      "selector": ".story-copy",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/home/components/StorySection/StorySection.css",
+      "first": 62,
+      "second": 299,
+      "selector": ".story-media",
+      "media": "",
+      "redeclared": [
+        "width"
+      ]
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "first": 521,
+      "second": 531,
+      "selector": ".menu-item-name",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "first": 101,
+      "second": 302,
+      "selector": ".ostory-emblem-wrap",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "first": 107,
+      "second": 325,
+      "selector": ".ostory-emblem",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "first": 111,
+      "second": 329,
+      "selector": ".ostory-emblem-photo",
+      "media": "",
+      "redeclared": [
+        "width"
+      ]
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "first": 177,
+      "second": 351,
+      "selector": ".pb-story-deco",
+      "media": "",
+      "redeclared": [
+        "display"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 24,
+      "second": 573,
+      "selector": ".visit-hero",
+      "media": "",
+      "redeclared": [
+        "min-height",
+        "border-radius",
+        "padding",
+        "display",
+        "align-items",
+        "background-color"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 92,
+      "second": 590,
+      "selector": ".visit-hero-word",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 44,
+      "second": 596,
+      "selector": ".visit-hero-img",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 62,
+      "second": 602,
+      "selector": ".visit-hero-overlay",
+      "media": "",
+      "redeclared": [
+        "background"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 109,
+      "second": 612,
+      "selector": ".visit-hero-content",
+      "media": "",
+      "redeclared": []
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 114,
+      "second": 619,
+      "selector": ".visit-hero-copy",
+      "media": "",
+      "redeclared": [
+        "max-width"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 128,
+      "second": 628,
+      "selector": ".visit-hero-eyebrow",
+      "media": "",
+      "redeclared": [
+        "margin-bottom",
+        "color"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 136,
+      "second": 643,
+      "selector": ".visit-hero-dash",
+      "media": "",
+      "redeclared": [
+        "margin-right"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 140,
+      "second": 653,
+      "selector": ".visit-hero-title",
+      "media": "",
+      "redeclared": [
+        "line-height",
+        "letter-spacing",
+        "color",
+        "margin-bottom"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 156,
+      "second": 663,
+      "selector": ".visit-hero-desc",
+      "media": "",
+      "redeclared": [
+        "color",
+        "max-width"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 20,
+      "second": 672,
+      "selector": ".visit-hero-wrap",
+      "media": "",
+      "redeclared": [
+        "margin-block"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 183,
+      "second": 676,
+      "selector": ".visit-card",
+      "media": "",
+      "redeclared": [
+        "padding"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 226,
+      "second": 680,
+      "selector": ".visit-field input",
+      "media": "",
+      "redeclared": [
+        "height"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 230,
+      "second": 684,
+      "selector": ".visit-field textarea",
+      "media": "",
+      "redeclared": [
+        "min-height"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 340,
+      "second": 690,
+      "selector": ".visit-map-wrap",
+      "media": "",
+      "redeclared": [
+        "height"
+      ]
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "first": 417,
+      "second": 694,
+      "selector": ".visit-info-footer",
+      "media": "",
+      "redeclared": [
+        "align-items"
+      ]
+    }
+  ],
+  "tokenDefs": [
+    {
+      "file": "src/app/global.css",
+      "line": 74,
+      "token": "--fs-h1",
+      "value": "32px",
+      "media": "(base)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 75,
+      "token": "--lh-h1",
+      "value": "1.15",
+      "media": "(base)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 76,
+      "token": "--fs-h2",
+      "value": "28px",
+      "media": "(base)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 77,
+      "token": "--lh-h2",
+      "value": "1.2",
+      "media": "(base)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 78,
+      "token": "--fs-body",
+      "value": "14px",
+      "media": "(base)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 79,
+      "token": "--lh-body",
+      "value": "1.5",
+      "media": "(base)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 80,
+      "token": "--fs-eyebrow",
+      "value": "12px",
+      "media": "(base)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 202,
+      "token": "--fs-h1",
+      "value": "44px",
+      "media": "@media (min-width: 641px)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 203,
+      "token": "--fs-h2",
+      "value": "36px",
+      "media": "@media (min-width: 641px)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 204,
+      "token": "--fs-body",
+      "value": "16px",
+      "media": "@media (min-width: 641px)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 205,
+      "token": "--fs-eyebrow",
+      "value": "14px",
+      "media": "@media (min-width: 641px)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 218,
+      "token": "--fs-h1",
+      "value": "56px",
+      "media": "@media (min-width: 1024px)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 219,
+      "token": "--lh-h1",
+      "value": "1.1",
+      "media": "@media (min-width: 1024px)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 220,
+      "token": "--fs-h2",
+      "value": "48px",
+      "media": "@media (min-width: 1024px)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 221,
+      "token": "--lh-h2",
+      "value": "1.15",
+      "media": "@media (min-width: 1024px)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 222,
+      "token": "--fs-body",
+      "value": "20px",
+      "media": "@media (min-width: 1024px)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 223,
+      "token": "--fs-eyebrow",
+      "value": "16px",
+      "media": "@media (min-width: 1024px)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 234,
+      "token": "--fs-h1",
+      "value": "64px",
+      "media": "@media (min-width: 1920px)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 235,
+      "token": "--fs-h2",
+      "value": "52px",
+      "media": "@media (min-width: 1920px)"
+    }
+  ]
+}

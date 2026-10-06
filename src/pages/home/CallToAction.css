@@ -2,19 +2,20 @@
    "Your table is waiting."
    Home-only CTA band on the pale stripe field.
 
- PHONE FRAME  ≤480px        326px band, H2 22px / 1 line, paragraph 12px / 2 lines,
-                                    40px padding, 84px stripe tile
- PHONE   base (no query)  375–743   H2 28px / 2 lines, paragraph 13–14px,
-                                        48px section padding
-     TABLET  744px+           744–1135  H2 36px / 2 lines, paragraph 17px, 72px
-     LAPTOP  1136px+          1136–1919 H2 48px, paragraph 20px / 2 lines, 96px
-     DESKTOP 1920px+          1920+     H2 52px, 120px
+      PHONE   base (no query)  375–640   H2 28px (token), paragraph
+                                         14px (token), 48px section padding
+      TABLET  641px+           641–1023  H2 36px via the token, paragraph
+                                         16px via the token, 72px pad
+      LAPTOP  1024px+          1024–1919 H2 48px via the token, paragraph
+                                         20px via the token, 96px pad
+      DESKTOP 1920px+          1920+     H2 52px via the token, 120px pad
 
-   `.experience-content` also carries `.container`, so it keeps the shared
-   1440px cap and the --gutter inset at every width. The one exception is the
-   PHONE FRAME query, which hands the horizontal inset to the section's own
-   24px padding and adds the fourth width query this file now carries.
-   ============================================================ */
+    `.experience-content` also carries `.container`, so it keeps the shared
+    1440px cap and the --gutter inset at every width. Type sizes come from
+    the global tokens (--fs-h2 / --lh-h2 / --fs-body / --lh-body /
+    --fs-eyebrow), which step at 641 / 1024 / 1920; the tiers below carry
+    layout only.
+    ============================================================ */
 
 .experience {
   position: relative;
@@ -49,23 +50,16 @@
   text-align: center;
 }
 
-/* 12px flat, at every width. The shared --fs-eyebrow ramp runs 10px on the
-   phone base and 12→14px from 744px, so without this the label in this one
-   section would step twice inside the page's own type. */
-.experience .eyebrow {
-  font-size: 12px;
-}
-
 .experience-title {
   font-style: italic;
-  /* PHONE 28px (--fs-section-phone); TABLET and up take the shared ramp. */
-  font-size: var(--fs-section-phone);
+  /* The shared H2 token: 28px on the phone, stepping with the
+     tier. No white-space: nowrap and no max-width anywhere in
+     this section. At 48px the heading is about 1040px wide, so
+     it wraps at the narrow end of the LAPTOP band and sits on a
+     single line from about 1240px up, with no extra edge and
+     nothing to clip. */
+  font-size: var(--fs-h2);
   margin: 1rem auto 1.2rem;
-  /* No white-space:nowrap and no max-width anywhere in this section. At 48px
-     the heading is about 1040px wide, so it wraps at the narrow end of the
-     LAPTOP band and sits on a single line from about 1240px up, with no
-     extra edge and nothing to clip. The ≤480px frame is the one place it
-     wraps as well, onto two lines, because 22px there still inks 497px. */
 }
 
 .experience-title em {
@@ -75,9 +69,8 @@
 
 .experience-desc {
   color: var(--color-muted);
-  /* 13px at 375 rising to 14px by the end of the phone band. */
-  font-size: clamp(13px, 0.28vw + 12.3px, 14px);
-  line-height: var(--lh-lead);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
   max-width: 100%;
   margin: 0 auto 2.2rem;
 }
@@ -88,33 +81,23 @@
 }
 
 /* ---------- TABLET ---------- */
-@media (min-width: 744px) {
+@media (min-width: 641px) {
   .experience {
     padding-block: 72px;
   }
 
-  .experience-title {
-    font-size: 36px;
-  }
-
   .experience-desc {
-    font-size: 17px;
     max-width: 620px;
   }
 }
 
 /* ---------- LAPTOP ---------- */
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   .experience {
     padding-block: 96px;
   }
 
-  .experience-title {
-    font-size: 48px;
-  }
-
   .experience-desc {
-    font-size: 20px;
     /* 176 characters at 20px inside 1000px = two lines, no more. */
     max-width: 1000px;
   }
@@ -124,128 +107,5 @@
 @media (min-width: 1920px) {
   .experience {
     padding-block: 120px;
-  }
-
-  .experience-title {
-    font-size: 52px;
-  }
-}
-
-/* ---------- PHONE FRAME (≤480px) ----------
-   The Figma phone frame: an opaque 84px stripe tile, copy centred on both
-   axes, and a 326px band. min-height is the band's floor; the copy is ~165px,
-   so the frame's remaining air splits evenly above the eyebrow and below the
-   button (see `.experience-content` justify-content below). */
-@media (max-width: 480px) {
-  .experience {
-    display: flex;
-    flex-direction: column;
-    min-height: 326px;
-    /* Block padding only. This used to be `40px 24px` with the container's own
-       gutter cancelled below it, which made the section the page's width owner on
-       small phones — the one place on the site where the edge came from
-       something other than the container. */
-    padding-block: 40px;
-  }
-
-  /* One 84px tile: 56px of pale blue-grey, then 28px of white. Anchored at the
-     section's x=0, so the first white band starts at 56px as in the frame.
-     background-size and the tint are reset because the old rule tiled a
-     124px gradient at 50% opacity, which let the cream surface show between
-     its stripes. */
-  .experience-stripes {
-    background-image: repeating-linear-gradient(
-      90deg,
-      #edf3f3 0 56px,
-      #ffffff 56px 84px
-    );
-    background-size: auto;
-    opacity: 1;
-  }
-
-  /* The container inside carries the inset, so its --gutter padding stays on. */
-  .experience-content.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-
-  .experience .eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    line-height: 1.4;
-    color: #c9a24b;
-    white-space: nowrap;
-  }
-
-  /* The dash is an em dash glyph at every wider tier. font-size 0 retires the
-     glyph here so the box paints as a true 1px hairline instead. */
-  .experience-dash {
-    flex: none;
-    width: 16px;
-    height: 1px;
-    font-size: 0;
-    line-height: 0;
-    background-color: #c9a24b;
-  }
-
-  .experience-title {
-    font-size: 22px;
-    line-height: 1.2;
-    color: #2a1a12;
-    letter-spacing: 0;
-    /* Wraps on two lines inside the 326px band. It cannot be pinned to one
-       line here: the copy inks 497px at 22px, which is wider than the band at
-       every width in this query, so nowrap only clipped it. */
-    white-space: normal;
-    margin: 14px auto 10px;
-  }
-
-  .experience-desc {
-    font-size: 12px;
-    line-height: 1.4;
-    font-weight: 400;
-    color: #8a7f76;
-    max-width: 250px;
-    margin: 0 auto 20px;
-  }
-
-  /* The button is content-sized here, like every other tier, so the pill hugs
-     "Reserve Your Spot" instead of stretching to the frame's 306px and leaving
-     ~52px of dead space on each side of a short label. 306px stays as the cap,
-     so a longer label cannot push past the frame. */
-  .experience-content .btn {
-    max-width: 306px;
-    height: 40px;
-    min-height: 40px;
-    padding: 0 14px;
-    gap: 10px;
-    border-radius: 999px;
-    background-color: #ad6e3e;
-    color: #ffffff;
-    font-family: var(--font-serif);
-    font-size: 17px;
-    font-weight: var(--fw-bold);
-    letter-spacing: 0;
-    white-space: nowrap;
-  }
-
-  /* Diagonal arrow on the phone frame only. The Button component hardcodes
-     "→", and it is shared site-wide, so the glyph is swapped here instead of
-     at the source; desktop keeps the horizontal arrow. */
-  .experience-content .btn .btn-arrow {
-    font-size: 0;
-    line-height: 0;
-  }
-
-  .experience-content .btn .btn-arrow::after {
-    content: '\2197';
-    font-size: 16px;
-    line-height: 1;
   }
 }

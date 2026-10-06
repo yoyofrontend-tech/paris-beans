@@ -72,20 +72,20 @@
 .footer.revealed .footer-reveal--2 { transition-delay: 0.24s; opacity: 1; transform: none; }
 
 /* ============================================================
-   Footer â€” mobile-first, three tiers
+   Footer - mobile-first, three tiers
 
-     PHONE   base          375â€“743   one column, stacked, 48/20, gap 16
-     TABLET  744px+        744â€“1135  brand across the top, Explore and
-                                         Visit & Contact in 2 columns,
-                                         bottom row below. 72/32
-     LAPTOP  1136px+       1136+     3 columns, bottom row brand left
-                                         and copyright right. 96/80
-     DESKTOP 1920px+                 identical to LAPTOP by spec
+      PHONE   base          375-640   one column, stacked, 48/16, gap 16
+      TABLET  641px+        641-1023  brand across the top, Explore and
+                                          Visit & Contact in 2 columns,
+                                          bottom row below. 72/40
+      LAPTOP  1024px+       1024-1919 3 columns, bottom row brand left
+                                          and copyright right. 96/48
+      DESKTOP 1920px+                 identical to LAPTOP by spec
 
-   The side padding is not set here: .footer-grid also carries .container,
-   so its inline padding comes from --gutter (20 / 32 / 80) and can never
-   drift away from the page gutters. This file only owns padding-block.
-   ============================================================ */
+    The side padding is not set here: .footer-grid also carries .container,
+    so its inline padding comes from --gutter (16 / 24 / 80) and can never
+    drift away from the page gutters. This file only owns padding-block.
+    ============================================================ */
 
 .footer-grid {
   position: relative;
@@ -355,7 +355,15 @@ a.contact-body:focus-visible,
   z-index: 1;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(28, 15, 9, 0.35);
-  padding-block: 32px;
+  /* Phone and tablet: the bottom edge carries the AI launcher's lane -
+     the button's 58px height plus its clamp() bottom inset plus 8px of
+     air - because the 16px and 24px gutters cannot hold the 58px button
+     outside the content column, so it floats over the corner of the
+     column and this row reserves vertical space for it. From 1024px the
+     gutter is 80px, the button sits outside the column, and the laptop
+     tier's `padding-block` below resets the bottom edge to 48px. */
+  padding-top: 32px;
+  padding-bottom: calc(58px + clamp(18px, 2.4vw, 30px) + 8px);
 }
 
 .footer-bottom::before {
@@ -550,14 +558,17 @@ a.contact-body:focus-visible,
    which put its left edge 8px inside the content column from 1024px to 1919px.
    It is now parked outside the column at every width that can hold it — see
    AiAssistant.css, where `right` is derived from --container and --gutter.
-   Below 1024px this row hands the FAB a lane in the other axis instead; that
-   rule is at the end of this file. */
+   Below 1024px this row hands the FAB a lane in the other axis instead: the
+   lane is part of the base `.footer-bottom` rule and is restated in the
+   tablet tier below, and the laptop tier's `padding-block` takes the bottom
+   edge back from 1024px. */
 
-/* TABLET — 744px to 1135px.
+/* TABLET — 641px to 1023px.
    Brand (logo, description, social) spans the full width on top; Explore
    and Visit & Contact sit side by side underneath; the bottom row spans
-   below both. */
-@media (min-width: 744px) {
+   below both. The FAB lane is restated here because this tier's
+   `padding-block` would otherwise take the bottom edge back. */
+@media (min-width: 641px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 40px 32px;
@@ -569,12 +580,13 @@ a.contact-body:focus-visible,
   }
 
   .footer-bottom {
-    padding-block: 40px;
+    padding-top: 40px;
+    padding-bottom: calc(58px + clamp(18px, 2.4vw, 30px) + 8px);
   }
 
   .footer-bottom-inner {
-    /* Two rows of two, not one wrapping row: at 744px the four items are
-       ~700px of content against 680px of track, so flex-wrap split them
+    /* Two rows of two, not one wrapping row: at 641px the four items are
+       ~700px of content against 593px of track, so flex-wrap split them
        over three lines and left the back-to-top stranded on its own.
        Explicit columns keep brand over copyright and tagline over the
        back-to-top, at every tablet width. */
@@ -608,11 +620,14 @@ a.contact-body:focus-visible,
   }
 }
 
-/* LAPTOP — 1136px and up.
+/* LAPTOP — 1024px and up.
    Three columns: brand | Explore | Visit & Contact. The bottom row becomes
    a four-track grid so the brand line lands hard left and the copyright
-   lands hard right, with the tagline centred in the slack between them. */
-@media (min-width: 1136px) {
+   lands hard right, with the tagline centred in the slack between them.
+   `padding-block` here also resets the bottom bar's FAB lane: from 1024px
+   the 80px gutter holds the 58px button outside the content column, so
+   the lane is no longer needed. */
+@media (min-width: 1024px) {
   .footer-grid {
     grid-template-columns: 1.4fr 0.8fr 1.1fr;
     gap: 80px;
@@ -660,29 +675,6 @@ a.contact-body:focus-visible,
 
 /* DESKTOP — 1920px and up. Same three columns and the same container as LAPTOP,
    so nothing is overridden here. */
-
-/* PHONE AND TABLET — the AI launcher gets a lane in the other axis.
-   From 1024px the gutter is 80px, which is more than the 58px button needs, so
-   the button sits outside the content column and this row is clear of it on its
-   own. Below that the gutter is 16-24px: no inset can hold the button outside
-   the column, so it floats over the corner of the column and the bottom bar
-   reserves vertical space for it instead. The lane is the button's own
-   geometry — its 58px height plus the clamp() bottom inset it uses — plus 8px
-   of air, so the last line of text clears the button's top edge by 8px.
-
-   Measured before adding it, at 1024px the tagline sat 20px above the button
-   and "Back to top" sat beside it with 10px of horizontal clearance; on the
-   phone the nearest line had 10px. Nothing was covered at any width, but this
-   row was one wrapped line away from being covered, and it is the only place
-   in the footer where that risk lives. Costs 52px of footer height at 375px.
-
-   This has to come after the tier above it: same specificity, and the tablet
-   tier's `padding-block` would otherwise win the block-end edge. */
-@media (max-width: 1023px) {
-  .footer-bottom {
-    padding-bottom: calc(58px + clamp(18px, 2.4vw, 30px) + 8px);
-  }
-}
 
 /* Reduced motion — a user preference, not a width tier, so it stays. */
 @media (prefers-reduced-motion: reduce) {

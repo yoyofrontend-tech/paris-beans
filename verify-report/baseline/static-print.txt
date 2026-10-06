@@ -1,0 +1,172 @@
+=== 1a. MEDIA WIDTH QUERIES (CSS) ===
+file:line                                                     query                                                       verdict
+src/app/global.css:198                                        @media (min-width: 641px) {                                 PASS 
+src/app/global.css:214                                        @media (min-width: 1024px) {                                PASS 
+src/app/global.css:232                                        @media (min-width: 1920px) {                                PASS 
+src/app/global.css:331                                        @media (min-width: 641px) {                                 PASS 
+src/app/global.css:341                                        @media (min-width: 1024px) {                                PASS 
+src/app/global.css:453                                        @media (min-width: 641px) {                                 PASS 
+src/app/global.css:554                                        @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/app/Layout/components/AiAssistant/AiAssistant.css:519     @media (max-width: 560px) {                                 FAIL max-width query (forbidden)
+src/app/Layout/components/AiAssistant/AiAssistant.css:542     @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/app/Layout/components/Footer/Footer.css:571               @media (min-width: 641px) {                                 PASS 
+src/app/Layout/components/Footer/Footer.css:630               @media (min-width: 1024px) {                                PASS 
+src/app/Layout/components/Footer/Footer.css:680               @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/app/Layout/components/Header/Header.css:635               @media (min-width: 641px) {                                 PASS 
+src/app/Layout/components/Header/Header.css:692               @media (min-width: 1024px) {                                PASS 
+src/app/Layout/components/Header/Header.css:745               @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/app/Layout/components/Header/Header.css:758               @media (max-height: 680px) {                                N/A not a width query
+src/app/Layout/components/Preloader/Preloader.css:327         @media (min-width: 641px) {                                 PASS 
+src/app/Layout/components/Preloader/Preloader.css:348         @media (min-width: 1024px) {                                PASS 
+src/app/Layout/components/Preloader/Preloader.css:387         @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/features/gallery/components/Gallery.css:266               @media (min-width: 1024px) {                                PASS 
+src/features/gallery/components/Gallery.css:375               @media (min-width: 1920px) {                                PASS 
+src/features/gallery/components/Gallery.css:485               @media (min-width: 1800px) {                                FAIL min-width 1800px not in {641,1024,1920}
+src/features/gallery/components/Gallery.css:506               @media (min-width: 768px) and (max-width: 1023px) {         FAIL max-width query (forbidden); contains forbidden value 768
+src/features/gallery/components/Gallery.css:570               @media (min-width: 1024px) and (max-width: 1099px) {        FAIL max-width query (forbidden)
+src/features/gallery/components/Gallery.css:624               @media (min-width: 768px) and (max-width: 1099px) {         FAIL max-width query (forbidden); contains forbidden value 768
+src/features/gallery/components/Gallery.css:694               @media (max-width: 767px) {                                 FAIL max-width query (forbidden); contains forbidden value 767
+src/features/gallery/components/Gallery.css:809               @media (max-width: 767px) {                                 FAIL max-width query (forbidden); contains forbidden value 767
+src/features/gallery/components/Gallery.css:902               @media (max-width: 767px) {                                 FAIL max-width query (forbidden); contains forbidden value 767
+src/features/gallery/components/Gallery.css:936               @media (max-width: 480px) {                                 FAIL max-width query (forbidden)
+src/features/gallery/components/Gallery.css:1042              @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/features/home/components/BenefitsSection/BenefitsSection.css:57@media (min-width: 641px) {                                 PASS 
+src/features/home/components/BenefitsSection/BenefitsSection.css:77@media (min-width: 1024px) {                                PASS 
+src/features/home/components/CafeMenu/CafeMenu.css:301        @media (min-width: 641px) {                                 PASS 
+src/features/home/components/CafeMenu/CafeMenu.css:320        @media (min-width: 1024px) {                                PASS 
+src/features/home/components/CafeMenu/CafeMenu.css:410        @media (min-width: 1920px) {                                PASS 
+src/features/home/components/CafeMenu/CafeMenu.css:417        @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/features/home/components/GalleryMood/GalleryMood.css:325  @media (min-width: 641px) {                                 PASS 
+src/features/home/components/GalleryMood/GalleryMood.css:375  @media (min-width: 1024px) {                                PASS 
+src/features/home/components/GalleryMood/GalleryMood.css:449  @media (min-width: 1920px) {                                PASS 
+src/features/home/components/GalleryMood/GalleryMood.css:456  @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/features/home/components/Hero/Hero.css:236                @media (min-width: 641px) {                                 PASS 
+src/features/home/components/Hero/Hero.css:269                @media (min-width: 1024px) {                                PASS 
+src/features/home/components/Hero/Hero.css:289                @media (min-width: 1920px) {                                PASS 
+src/features/home/components/Hero/Hero.css:300                @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/features/home/components/StorySection/StorySection.css:311@media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/features/home/components/StorySection/StorySection.css:357@media (min-width: 1024px) {                                PASS 
+src/features/legal/components/LegalPage/Legal.css:440         @media (min-width: 1024px) {                                PASS 
+src/features/legal/components/LegalPage/Legal.css:482         @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/features/menu/components/Menu.css:979                     @media (min-width: 641px) {                                 PASS 
+src/features/menu/components/Menu.css:1153                    @media (min-width: 1024px) {                                PASS 
+src/features/menu/components/Menu.css:1500                    @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/features/story/components/OurStoryCta/OurStoryCta.css:87  @media (min-width: 641px) {                                 PASS 
+src/features/story/components/OurStoryCta/OurStoryCta.css:107 @media (min-width: 1024px) {                                PASS 
+src/features/story/components/OurStoryHero/OurStoryHero.css:117@media (min-width: 641px) {                                 PASS 
+src/features/story/components/OurStoryHero/OurStoryHero.css:144@media (min-width: 1024px) {                                PASS 
+src/features/story/components/OurStoryHero/OurStoryHero.css:164@media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/features/story/components/OurStoryOrigin/OurStoryOrigin.css:485@media (min-width: 641px) {                                 PASS 
+src/features/story/components/OurStoryOrigin/OurStoryOrigin.css:738@media (min-width: 1024px) {                                PASS 
+src/features/story/components/OurStoryOrigin/OurStoryOrigin.css:879@media (min-width: 1920px) {                                PASS 
+src/features/visit/components/VisitContact.css:40             @media (min-width: 1024px) {                                PASS 
+src/features/visit/components/VisitContact.css:131            @media (min-width: 1100px) {                                FAIL min-width 1100px not in {641,1024,1920}; contains forbidden value 1100
+src/features/visit/components/VisitContact.css:565            @media (min-width: 1100px) {                                FAIL min-width 1100px not in {641,1024,1920}; contains forbidden value 1100
+src/features/visit/components/VisitContact.css:575            @media (min-width: 1600px) {                                FAIL min-width 1600px not in {641,1024,1920}
+src/features/visit/components/VisitContact.css:597            @media (max-width: 767px) {                                 FAIL max-width query (forbidden); contains forbidden value 767
+src/features/visit/components/VisitContact.css:618            @media (min-width: 768px) and (max-width: 1023px) {         FAIL max-width query (forbidden); contains forbidden value 768
+src/features/visit/components/VisitContact.css:645            @media (min-width: 1024px) and (max-width: 1099px) {        FAIL max-width query (forbidden)
+src/features/visit/components/VisitContact.css:666            @media (min-width: 900px) and (max-width: 1099px) {         FAIL max-width query (forbidden); contains forbidden value 900
+src/features/visit/components/VisitContact.css:676            @media (max-width: 1100px) {                                FAIL max-width query (forbidden); contains forbidden value 1100
+src/features/visit/components/VisitContact.css:682            @media (max-width: 900px) {                                 FAIL max-width query (forbidden); contains forbidden value 900
+src/features/visit/components/VisitContact.css:690            @media (max-width: 560px) {                                 FAIL max-width query (forbidden)
+src/features/visit/components/VisitContact.css:739            @media (hover: none) and (pointer: coarse) {                N/A not a width query
+src/features/visit/components/VisitContact.css:763            @media (max-width: 400px) {                                 FAIL max-width query (forbidden)
+src/features/visit/components/VisitContact.css:786            @media (max-width: 640px) {                                 FAIL max-width query (forbidden)
+src/features/visit/components/VisitContact.css:890            @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+src/pages/home/CallToAction.css:84                            @media (min-width: 641px) {                                 PASS 
+src/pages/home/CallToAction.css:95                            @media (min-width: 1024px) {                                PASS 
+src/pages/home/CallToAction.css:107                           @media (min-width: 1920px) {                                PASS 
+src/pages/not-found/NotFoundPage.css:107                      @media (min-width: 641px) {                                 PASS 
+src/pages/story/StoryPage.css:74                              @media (prefers-reduced-motion: reduce) {                   N/A not a width query
+
+=== 1a. JS WIDTH CODE ===
+src/features/home/components/GalleryMood/GalleryMood.jsx:44   window.innerWidth))                                         INFO reads viewport width (value must land on a band edge)
+src/features/home/components/GalleryMood/GalleryMood.jsx:47   bleForWidth(window.innerWidth))                             INFO resize listener
+src/features/story/components/OurStoryHero/OurStoryHero.jsx:60(min-width: 641px)                                          PASS 
+src/features/story/components/OurStoryImageRow/OurStoryImageRow.jsx:18(max-width: 640px)                                          FAIL max-width query (forbidden)
+src/features/story/components/OurStoryImageRow/OurStoryImageRow.jsx:22(min-width: 641px) and (max-width: 1023px)                  FAIL max-width query (forbidden)
+src/shared/hooks/useParallaxTilt.js:65                        tener('scroll', onInvalidate, { passive: true })            INFO resize listener
+
+=== 1b. HARDCODED font-size ===
+src/app/Layout/components/Header/Header.css:395           .pb-menu-index                                  12px                                HARDCODED
+src/app/Layout/components/Header/Header.css:404           .pb-menu-label                                  24px                                HARDCODED
+src/app/Layout/components/Header/Header.css:417           .pb-menu-arrow                                  15px                                HARDCODED
+src/app/Layout/components/Header/Header.css:526           .pb-menu-meta-label                             12px                                HARDCODED
+src/app/Layout/components/Header/Header.css:538           .pb-menu-meta-value                             16px                                HARDCODED
+src/app/Layout/components/Header/Header.css:558           .pb-menu-cta                                    16px                                HARDCODED
+src/app/Layout/components/Header/Header.css:654           .nav-link                                       13px                                [@media (min-width: 641px)] HARDCODED
+src/app/Layout/components/Preloader/Preloader.css:153     .preloader-wordmark                             clamp(1.9rem, 8.4vw, 2.9rem)        HARDCODED
+src/app/Layout/components/Preloader/Preloader.css:334     .preloader-wordmark                             clamp(2.4rem, 5.4vw, 3.6rem)        [@media (min-width: 641px)] HARDCODED
+src/features/home/components/BenefitsSection/BenefitsSection.css:44.benefit-title                                  20px                                HARDCODED
+src/features/home/components/BenefitsSection/BenefitsSection.css:52.benefit-text                                   14px                                HARDCODED
+src/features/home/components/BenefitsSection/BenefitsSection.css:68.benefit-title                                  22px                                [@media (min-width: 641px)] HARDCODED
+src/features/home/components/BenefitsSection/BenefitsSection.css:72.benefit-text                                   16px                                [@media (min-width: 641px)] HARDCODED
+src/features/home/components/BenefitsSection/BenefitsSection.css:93.benefit-title                                  24px                                [@media (min-width: 1024px)] HARDCODED
+src/features/home/components/BenefitsSection/BenefitsSection.css:97.benefit-text                                   16px                                [@media (min-width: 1024px)] HARDCODED
+src/features/menu/components/Menu.css:164                 .menu-hero-desc                                 14px                                HARDCODED
+src/features/menu/components/Menu.css:233                 .menu-tab                                       14px                                HARDCODED
+src/features/menu/components/Menu.css:242                 .menu-tab.is-active                             15px                                HARDCODED
+src/features/menu/components/Menu.css:280                 .menu-select-trigger                            16px                                HARDCODED
+src/features/menu/components/Menu.css:371                 .menu-select-option                             16px                                HARDCODED
+src/features/menu/components/Menu.css:438                 .menu-special-size                              20px                                HARDCODED
+src/features/menu/components/Menu.css:534                 .menu-item-name                                 15px                                HARDCODED
+src/features/menu/components/Menu.css:554                 .menu-item-price                                15px                                HARDCODED
+src/features/menu/components/Menu.css:562                 .menu-item-desc                                 13px                                HARDCODED
+src/features/menu/components/Menu.css:897                 .menu-card-caption                              20px                                HARDCODED
+src/features/menu/components/Menu.css:1025                .menu-tab                                       18px                                [@media (min-width: 641px)] HARDCODED
+src/features/menu/components/Menu.css:1029                .menu-tab.is-active                             20px                                [@media (min-width: 641px)] HARDCODED
+src/features/menu/components/Menu.css:1055                .menu-special-size                              22px                                [@media (min-width: 641px)] HARDCODED
+src/features/menu/components/Menu.css:1064                .menu-item-name, .menu-item-price               17px                                [@media (min-width: 641px)] HARDCODED
+src/features/menu/components/Menu.css:1068                .menu-item-desc                                 15px                                [@media (min-width: 641px)] HARDCODED
+src/features/menu/components/Menu.css:1116                .menu-card-caption                              24px                                [@media (min-width: 641px)] HARDCODED
+src/features/menu/components/Menu.css:1216                .menu-hero-title                                64px                                [@media (min-width: 1024px)] HARDCODED
+src/features/story/components/OurStoryOrigin/OurStoryOrigin.css:225.pb-story-ring__text                            12px                                HARDCODED
+src/features/story/components/OurStoryOrigin/OurStoryOrigin.css:715.pb-story-ring__text                            15px                                [@media (min-width: 641px)] HARDCODED
+src/features/visit/components/VisitContact.css:755        .visit-field input, .visit-field textarea       16px                                [@media (hover: none) and (pointer: coarse)] HARDCODED
+src/features/visit/components/VisitContact.css:765        .visit-info-value                               clamp(0.95rem, 4.4vw, 1.25rem)      [@media (max-width: 400px)] HARDCODED
+src/features/visit/components/VisitContact.css:770        .visit-info-link                                clamp(0.95rem, 4.4vw, 1.25rem)      [@media (max-width: 400px)] HARDCODED
+
+=== 1c. DOUBLED SELECTORS ===
+=== 1c. DUPLICATE DECLARATIONS ===
+src/app/global.css:372 & 403 h1, h2, h3, h4, h5, h6, .display  redeclared: 
+src/features/gallery/components/Gallery.css:149 & 169 .image-4  redeclared: 
+src/features/gallery/components/Gallery.css:152 & 173 .image-7  redeclared: 
+src/features/gallery/components/Gallery.css:115 & 219 .gallery-image  redeclared: 
+src/features/gallery/components/Gallery.css:812 & 912 .gal-grid @media (max-width: 767px) redeclared: 
+src/features/home/components/GalleryMood/GalleryMood.css:105 & 124 .carousel-item  redeclared: 
+src/features/home/components/GalleryMood/GalleryMood.css:158 & 197 .carousel-item.center .polaroid-photo  redeclared: box-shadow
+src/features/home/components/StorySection/StorySection.css:1 & 255 .story  redeclared: 
+src/features/home/components/StorySection/StorySection.css:12 & 259 .story-grid  redeclared: min-height, display, gap, align-items
+src/features/home/components/StorySection/StorySection.css:22 & 268 .story-copy  redeclared: 
+src/features/home/components/StorySection/StorySection.css:62 & 299 .story-media  redeclared: width
+src/features/menu/components/Menu.css:521 & 531 .menu-item-name  redeclared: 
+src/features/story/components/OurStoryOrigin/OurStoryOrigin.css:101 & 302 .ostory-emblem-wrap  redeclared: 
+src/features/story/components/OurStoryOrigin/OurStoryOrigin.css:107 & 325 .ostory-emblem  redeclared: 
+src/features/story/components/OurStoryOrigin/OurStoryOrigin.css:111 & 329 .ostory-emblem-photo  redeclared: width
+src/features/story/components/OurStoryOrigin/OurStoryOrigin.css:177 & 351 .pb-story-deco  redeclared: display
+
+=== 1d. TOKENS ===
+src/app/global.css:74                   --fs-h1       32px      (base)
+src/app/global.css:75                   --lh-h1       1.15      (base)
+src/app/global.css:76                   --fs-h2       28px      (base)
+src/app/global.css:77                   --lh-h2       1.2       (base)
+src/app/global.css:78                   --fs-body     14px      (base)
+src/app/global.css:79                   --lh-body     1.5       (base)
+src/app/global.css:80                   --fs-eyebrow  12px      (base)
+src/app/global.css:202                  --fs-h1       44px      @media (min-width: 641px)
+src/app/global.css:203                  --fs-h2       36px      @media (min-width: 641px)
+src/app/global.css:204                  --fs-body     16px      @media (min-width: 641px)
+src/app/global.css:205                  --fs-eyebrow  14px      @media (min-width: 641px)
+src/app/global.css:218                  --fs-h1       56px      @media (min-width: 1024px)
+src/app/global.css:219                  --lh-h1       1.1       @media (min-width: 1024px)
+src/app/global.css:220                  --fs-h2       48px      @media (min-width: 1024px)
+src/app/global.css:221                  --lh-h2       1.15      @media (min-width: 1024px)
+src/app/global.css:222                  --fs-body     20px      @media (min-width: 1024px)
+src/app/global.css:223                  --fs-eyebrow  16px      @media (min-width: 1024px)
+src/app/global.css:234                  --fs-h1       64px      @media (min-width: 1920px)
+src/app/global.css:235                  --fs-h2       52px      @media (min-width: 1920px)
+
+=== 1e. font-size possibly < 12px ===
+
+Totals: media(css)=79 fail=21 | js=6 fail=2 | hardcoded=37 | doubled=0 | dup=16 | small=0

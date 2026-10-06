@@ -12,8 +12,8 @@ import './GalleryMood.css'
 // the only width edges in the Home carousel.
 const VISIBLE_BREAKPOINTS = [
   { edge: 1920, visible: 7 },
-  { edge: 1136, visible: 7 },
-  { edge: 744, visible: 5 },
+  { edge: 1024, visible: 7 },
+  { edge: 641, visible: 5 },
 ]
 
 const visibleForWidth = (width) => {

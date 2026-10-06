@@ -8,15 +8,15 @@
 
    The four old width bands are folded into the three canonical tiers:
 
-     PHONE   base (no query)  375–743   centre card at 48vw with one peeking
-                                      image on each side, the mid ring parked,
-                                      48px section pad        -> 3 visible
-     TABLET  744px+           744–1135  tighter arc, the mid ring comes in,
-                                      the far ring still parked, 72px pad
-                                                                -> 5 visible
-     LAPTOP  1136px+          1136–1919 full arc: mid ring in, far ring in too,
-                                      96px pad                -> 7 visible
-     DESKTOP 1920px+          1920+     same arc, 120px pad    -> 7 visible
+      PHONE   base (no query)  375–640   centre card at 48vw with one peeking
+                                       image on each side, the mid ring parked,
+                                       48px section pad        -> 3 visible
+      TABLET  641px+           641–1023  tighter arc, the mid ring comes in,
+                                       the far ring still parked, 72px pad
+                                                                 -> 5 visible
+      LAPTOP  1024px+          1024–1919 full arc: mid ring in, far ring in too,
+                                       96px pad                -> 7 visible
+      DESKTOP 1920px+          1920+     same arc, 120px pad    -> 7 visible
 
    --gallery-visible is the single source of truth for how deep the arc goes
    (3 / 5 / 7). It is set here, once per tier, and GalleryMood.jsx reads the
@@ -42,8 +42,9 @@
 .gallery-title {
   margin: 1rem auto 1.2rem;
   font-style: italic;
-  /* 28px on the phone, the shared ramp from 744px up. */
-  font-size: var(--fs-section-phone);
+  /* The shared H2 token: 28px on the phone, stepping
+     with the tier. */
+  font-size: var(--fs-h2);
 }
 
 .gallery-title em {
@@ -54,8 +55,8 @@
 .gallery-desc {
   max-width: 620px;
   margin-inline: auto;
-  font-size: var(--fs-text);
-  line-height: var(--lh-text);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
 }
 
 /* ---------- Carousel stage ---------- */
@@ -321,7 +322,7 @@
 }
 
 /* ---------- TABLET: tighter arc, the mid ring comes in ---------- */
-@media (min-width: 744px) {
+@media (min-width: 641px) {
   .gallery {
     --gallery-visible: 5;
     padding-block: 72px;
@@ -371,7 +372,7 @@
 }
 
 /* ---------- LAPTOP: the full arc, far ring included ---------- */
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   .gallery {
     --gallery-visible: 7;
     padding-block: 96px;
