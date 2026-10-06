@@ -121,9 +121,9 @@
   align-items: center;
   gap: 6px;
   margin: 0 0 12px;
-  font-size: var(--fs-eyebrow);
+  font-size: 12px;
   font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   color: rgba(245, 235, 221, 0.9);
 }
 
@@ -142,9 +142,9 @@
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: var(--fw-bold);
-  font-size: var(--fs-h1);
-  line-height: var(--lh-h1);
-  letter-spacing: var(--tracking-tight);
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: 0;
   color: #faf3e8;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.25);
   margin: 0;
@@ -416,8 +416,8 @@
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: var(--fw-bold);
-  font-size: var(--fs-h2);
-  line-height: var(--lh-h2);
+  font-size: 28px;
+  line-height: 1.15;
   letter-spacing: var(--tracking-tight);
   /* Greedy fill, not the inherited balance: balance would split the heading
      into two even lines at every width instead of letting it fill. */
@@ -792,25 +792,26 @@
 
 .menu-cafe-eyebrow {
   margin-bottom: 12px;
-  font-size: var(--fs-eyebrow);
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #c7a45a;
+  font-size: 12px;
 }
 
 .menu-cafe-title {
   font-style: italic;
-  font-size: var(--fs-h2);
-  line-height: var(--lh-h2);
+  font-size: 28px;
+  line-height: 1.15;
   margin: 0 0 16px;
   max-width: 100%;
 }
 
+.menu-cafe-title em {
+  font-style: italic;
+  color: var(--color-espresso);
+}
+
 .menu-cafe-desc {
   max-width: 100%;
-  font-size: var(--fs-body);
-  line-height: var(--lh-body);
+  font-size: 15px;
+  line-height: 1.5;
   color: var(--color-muted);
   margin-bottom: 28px;
 }
@@ -935,19 +936,20 @@
 }
 
 .menu-cta .eyebrow {
-  font-size: var(--fs-eyebrow);
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #c7a45a;
+  font-size: 12px;
 }
 
 .menu-cta-title {
   font-style: italic;
-  font-size: var(--fs-h2);
-  line-height: var(--lh-h2);
+  font-size: 24px;
+  line-height: 1.15;
   margin: 12px auto 14px;
   max-width: 100%;
+}
+
+.menu-cta-title em {
+  font-style: italic;
+  color: var(--color-espresso);
 }
 
 .menu-cta-desc {
@@ -955,8 +957,8 @@
      line. Capping just under that keeps it on two across the phone band. */
   max-width: 400px;
   margin: 0 auto 24px;
-  font-size: var(--fs-body);
-  line-height: var(--lh-body);
+  font-size: 13px;
+  line-height: 1.5;
   color: var(--color-muted);
 }
 
@@ -993,12 +995,12 @@
   }
 
   .menu-hero-eyebrow {
-    font-size: var(--fs-eyebrow);
+    font-size: 14px;
   }
 
   .menu-hero-title {
-    font-size: var(--fs-h1);
-    line-height: var(--lh-h1);
+    font-size: 44px;
+    line-height: 1.1;
     /* 520px holds the heading to THREE lines at 744. The string inks 1082px
        at 44px, so an uncapped measure goes to two lines the moment the card
        passes ~700px. */
@@ -1006,8 +1008,7 @@
   }
 
   .menu-hero-desc {
-    font-size: var(--fs-body);
-    line-height: var(--lh-body);
+    font-size: 18px;
   }
 
   /* ── Category row ── */
@@ -1043,8 +1044,8 @@
   }
 
   .menu-special-title {
-    font-size: var(--fs-h2);
-    line-height: var(--lh-h2);
+    font-size: 44px;
+    line-height: 1.1;
     margin-bottom: 28px;
     /* Tablet wants heading + pill on ONE line, so the phone 340px measure cap
        has to go — at 44px it would shred the heading into three lines. */
@@ -1088,18 +1089,17 @@
 
   .menu-cafe-eyebrow {
     margin-bottom: 16px;
-    font-size: var(--fs-eyebrow);
+    font-size: 14px;
   }
 
   .menu-cafe-title {
-    font-size: var(--fs-h2);
-    line-height: var(--lh-h2);
+    font-size: 44px;
+    line-height: 1.1;
     margin-bottom: 20px;
   }
 
   .menu-cafe-desc {
-    font-size: var(--fs-body);
-    line-height: var(--lh-body);
+    font-size: 18px;
     margin-bottom: 36px;
   }
 
@@ -1122,18 +1122,16 @@
   }
 
   .menu-cta .eyebrow {
-    font-size: var(--fs-eyebrow);
+    font-size: 13px;
   }
 
   .menu-cta-title {
-    font-size: var(--fs-h2);
-    line-height: var(--lh-h2);
+    font-size: 32px;
     margin: 14px auto 16px;
   }
 
   .menu-cta-desc {
-    font-size: var(--fs-body);
-    line-height: var(--lh-body);
+    font-size: 14px;
     margin-bottom: 28px;
     /* Tablet wants the paragraph on one line, so release the phone 400px cap
        that keeps it on two. */
@@ -1186,11 +1184,7 @@
   .menu-hero-copy {
     display: block;
     gap: 0;
-    /* 70% is the narrowest share that turns the frame's 2-line H1 back on:
-       the string inks ~1471px at 64px, so two balanced lines need a measure
-       of ~735px, which 60% of the 1120px shell (672px) never reaches. 70%
-       yields 784px and the copy's 2-line split holds from 1440px up. */
-    max-width: 70%;
+    max-width: 60%;
   }
 
   .menu-hero-lead {
@@ -1217,8 +1211,8 @@
   }
 
   .menu-hero-title {
-    font-size: 64px;
-    line-height: var(--lh-h1);
+    font-size: var(--fs-h1);
+    line-height: var(--lh-heading);
     letter-spacing: var(--tracking-tight);
     color: var(--color-white);
     margin-bottom: 0.9rem;
@@ -1229,8 +1223,8 @@
 
   .menu-hero-desc {
     max-width: 520px;
-    font-size: var(--fs-body);
-    line-height: var(--lh-body);
+    font-size: var(--fs-text);
+    line-height: var(--lh-text);
     color: rgba(255, 255, 255, 0.88);
   }
 
@@ -1279,8 +1273,8 @@
   }
 
   .menu-special-title {
-    font-size: var(--fs-h2);
-    line-height: var(--lh-h2);
+    font-size: var(--fs-section);
+    line-height: var(--lh-heading);
     margin-bottom: clamp(1.5rem, 2.2vw, 2.2rem);
     /* Release the phone two-line measure cap. */
     max-width: none;
@@ -1384,20 +1378,20 @@
 
   .menu-cafe-eyebrow {
     margin-bottom: 1rem;
-    font-size: var(--fs-eyebrow);
+    font-size: inherit;
   }
 
   .menu-cafe-title {
-    font-size: var(--fs-h2);
-    line-height: var(--lh-h2);
+    font-size: var(--fs-section);
+    line-height: var(--lh-heading);
     margin: 0 0 1.6rem;
     max-width: 640px;
   }
 
   .menu-cafe-desc {
     max-width: 620px;
-    font-size: var(--fs-body);
-    line-height: var(--lh-body);
+    font-size: var(--fs-text);
+    line-height: var(--lh-text);
     margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
   }
 
@@ -1478,16 +1472,16 @@
   }
 
   .menu-cta-title {
-    font-size: var(--fs-h2);
-    line-height: var(--lh-h2);
+    font-size: var(--fs-section);
+    line-height: var(--lh-heading);
     margin: 1rem auto 1.2rem;
     max-width: 640px;
   }
 
   .menu-cta-desc {
     max-width: 800px;
-    font-size: var(--fs-body);
-    line-height: var(--lh-body);
+    font-size: var(--fs-text);
+    line-height: var(--lh-text);
     margin: 0 auto 2.2rem;
   }
 
@@ -1498,6 +1492,20 @@
        the 17.7px line box with the label flush against both edges from 1024 up
        while every tier below it kept the full pill. */
     border-radius: var(--radius-btn);
+  }
+}
+
+/* Untouched desktop queries, exactly as they were. */
+@media (min-width: 1100px) {
+  .menu-cafe-desc {
+    white-space: nowrap;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1600px) {
+  .menu-cta-desc {
+    max-width: 800px;
   }
 }
 

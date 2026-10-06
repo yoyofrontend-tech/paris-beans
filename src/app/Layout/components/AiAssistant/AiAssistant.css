@@ -515,51 +515,26 @@ body.drawer-open .ai-widget {
   30% { transform: translateY(-4px); opacity: 1; }
 }
 
-/* ---------- Phone tier (640px and below) ----------
-   The pocket offsets and the smaller launcher are the base of every tier now.
-   The 560px query is gone: the phone band is 375-640px, so these are plain
-   base rules and the tier above them re-states the larger resting values. */
-.ai-widget {
-  right: 14px;
-  bottom: 14px;
-}
-
-.ai-float {
-  width: 54px;
-  height: 54px;
-}
-
-.ai-float-icon {
-  width: 25px;
-  height: 25px;
-}
-
-.ai-panel {
-  width: calc(100vw - 28px);
-  height: min(560px, 78vh);
-}
-
-/* Tablet and up — restore the roomier resting values (58px launcher, the
-   gutter-derived right inset, and the capped 368x540 panel). */
-@media (min-width: 641px) {
+/* ---------- Small screens ---------- */
+@media (max-width: 560px) {
   .ai-widget {
-    right: max(20px, calc((100vw - var(--container)) / 2 - 72px));
-    bottom: clamp(18px, 2.4vw, 30px);
+    right: 14px;
+    bottom: 14px;
   }
 
   .ai-float {
-    width: 58px;
-    height: 58px;
+    width: 54px;
+    height: 54px;
   }
 
   .ai-float-icon {
-    width: 27px;
-    height: 27px;
+    width: 25px;
+    height: 25px;
   }
 
   .ai-panel {
-    width: min(368px, calc(100vw - 32px));
-    height: min(540px, 74vh);
+    width: calc(100vw - 28px);
+    height: min(560px, 78vh);
   }
 }
 

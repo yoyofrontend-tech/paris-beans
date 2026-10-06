@@ -7,25 +7,25 @@
    CSS has no variables for media queries, so the scale is defined
    here and every component stylesheet must follow it verbatim.
 
-      PHONE    base, no query          375px â€“ 640px
-      TABLET   min-width: 641px        641px â€“ 1023px
-      LAPTOP   min-width: 1024px       1024px â€“ 1919px
-      DESKTOP  min-width: 1920px       1920px and up
+     PHONE    base, no query          375px â€“ 743px
+     TABLET   min-width: 744px        744px â€“ 1135px
+     LAPTOP   min-width: 1136px       1136px â€“ 1919px
+     DESKTOP  min-width: 1920px       1920px and up
 
-    Rules of the scale:
-    1. Mobile-first. The base tier is the phone and needs no query.
-       Every tier above it is written as a `min-width` override only.
-    2. Those three `min-width` queries are the ONLY width queries
-       allowed in a stylesheet. No `max-width` anywhere, and no
-       extra edge at 380, 400, 480, 500, 560, 599, 600, 640, 744,
-       767, 768, 900, 992, 1023, 1099, 1100, 1135, 1136, 1180,
-       1600 or 1800 â€” a rule that does not land on 641 / 1024 / 1920
-       folds into the tier that covers it.
-    3. Because every band is `min-width`, there is no dead zone and no
-       double-apply: a width belongs to the highest tier it reaches.
-    4. To change layout only at 641 / 1024 / 1920, never write a
-       `max-width` to undo something. Override the same property in the
-       next `min-width` tier instead.
+   Rules of the scale:
+   1. Mobile-first. The base tier is the phone and needs no query.
+      Every tier above it is written as a `min-width` override only.
+   2. Those three `min-width` queries are the ONLY width queries
+      allowed in a shared stylesheet. No `max-width` anywhere, and no
+      extra edge at 500, 600, 767, 768, 992, 1024 or anything else.
+      One exception, and only for the two width tokens: --gutter and
+      --container step on 641px and 1024px (see "Responsive tokens").
+      A layout edge is still 744 / 1136 / 1920 and nothing else.
+   3. Because every band is `min-width`, there is no dead zone and no
+      double-apply: a width belongs to the highest tier it reaches.
+   4. To change layout only at 744 / 1136 / 1920, never write a
+      `max-width` to undo something. Override the same property in the
+      next `min-width` tier instead.
    5. HORIZONTAL WIDTH IS NOT A COMPONENT DECISION. No stylesheet may set
       `max-width`, side padding or a self-centring width on a page
       wrapper. It puts its content in `.container` and lets --gutter and
@@ -64,20 +64,37 @@
   --fw-bold: 700;
 
   /* Font sizes
-     The page scale â€” h1 (page hero), h2 (section heading), body
-     (description measure) and eyebrow (small label) â€” is a flat px
-     value per tier, stepped only in the "Responsive tokens" block
-     below. Flat values, not clamps: every width inside a tier reads
-     identically, and the tier edges alone decide when the size moves.
+     Fluid tiers are written as clamp(min, <vw> + <rem>, max) instead of
+     clamp(min, <vw>, max). The vw-only form froze as soon as the middle term
+     hit the viewport where it matched the max, which left the scale flat while
+     the container kept the layout growing. The + <rem> form keeps rising
+     until the max lands at or just past the container width, so the last tier
+     that matters is still moving when the layout stops.
 
-     Phone (base, 375â€“640px). The three tiers above override these. */
-  --fs-h1: 32px;
-  --lh-h1: 1.15;
-  --fs-h2: 28px;
-  --lh-h2: 1.2;
-  --fs-body: 14px;
-  --lh-body: 1.5;
-  --fs-eyebrow: 12px;
+     Two tokens are pinned to a flat phone value here and picked back up into
+     their ramp at the TABLET tier (see "Responsive tokens" below): the section
+     heading and the eyebrow. On a phone a ramped 24px heading reads larger
+     than the hero h1 above it, so the page read backwards; the ramp resumes
+     from 744px where there is room for it. */
+
+  /* Phone (base, 375â€“743px). Tablet and up override these in one place. */
+  --fs-eyebrow: 0.625rem;
+  --fs-section: 1.5rem;
+
+  /* --fs-section-phone is the phone-tier size for a section heading that is a
+     step above the shared 24px: 28px, so the headings read clearly over the
+     12px label and the 16-17px body copy without touching any hero h1, which
+     stays the largest type on the page. Read by / and /our-story; from 744px it
+     is handed straight back to the shared --fs-section ramp, where the heading
+     has room to grow. */
+  --fs-section-phone: 1.75rem;
+
+  /* --fs-h1-phone is the same idea one tier up, for a page hero: a flat 32px
+     on the phone instead of --fs-h1's 36px floor and ramp. A ramped hero h1 on
+     a 375px screen overtook the section headings below it and read larger than
+     the page could carry, so the ramp resumes at 744px where there is room for
+     it. Read by the /menu and /our-story heroes. */
+  --fs-h1-phone: 2rem;
 
   --fs-micro: 0.78rem;
   --fs-label: 0.8rem;
@@ -87,6 +104,8 @@
   --fs-lead: clamp(1.0625rem, 0.7vw + 0.9rem, 1.75rem);
   --fs-btn: 0.92rem;
   --fs-body-sm: 0.92rem;
+  --fs-h1: clamp(2.25rem, 2.1vw + 1.85rem, 5.25rem);
+  --fs-h2: var(--fs-section);
   --fs-h3: clamp(1.5rem, 1.04vw + 1.26rem, 2.5rem);
   --fs-sub: clamp(1.02rem, 1.3vw, 1.2rem);
   --fs-display: clamp(2.4rem, 3.4vw, 3.4rem);
@@ -97,6 +116,7 @@
   /* Line heights */
   --lh-heading: 1.1;
   --lh-heading-sm: 1.2;
+  --lh-body: 1.6;
   --lh-text: 1.7;
   --lh-small: 1.6;
   --lh-lead: 1.8;
@@ -187,54 +207,53 @@
 
    Every token that changes across the scale is stepped here and nowhere
    else, so the ladder can be read top to bottom in a single screen. The
-    base tier in :root above is the phone; each query below adds one step.
+   base tier in :root above is the phone; each query below adds one step.
 
-    --gutter and --container ride the same edges as everything else:
-    24px insets from 641px, then the capped 1280px column with 80px
-    insets from 1024px. */
+   Two edges step the WIDTH system and are deliberately not layout edges:
+   --gutter and --container run on 641px and 1024px, because the measure those
+   two produce (full-bleed, then 24px insets, then an 80px inset) is a property
+   of the container rather than of any component's layout. A component that
+   reflows still reflows on 744 / 1136 / 1920. Nothing else may use 641 or
+   1024. */
 
-/* TABLET â€” 641px to 1023px: the 24px inset, the type ramp's second
-   step and the taller bar. */
+/* WIDTH band 1 — tablet side insets. */
 @media (min-width: 641px) {
   :root {
     --gutter: 24px;
+  }
+}
 
-    --fs-h1: 44px;
-    --fs-h2: 36px;
-    --fs-body: 16px;
-    --fs-eyebrow: 14px;
+/* LAYOUT band 1 — tablet. Type ramp and bar height only. */
+@media (min-width: 744px) {
+  :root {
+    --fs-eyebrow: clamp(0.75rem, 0.13vw + 0.72rem, 0.875rem);
+    --fs-section: clamp(2rem, 1.55vw + 1.64rem, 3.5rem);
+    --fs-section-phone: var(--fs-section);
+    --fs-h1-phone: var(--fs-h1);
 
     --header-h: 72px;
   }
 }
 
-/* LAPTOP â€” 1024px to 1919px: the 80px inset and the capped 1280px
-   column, the type ramp's third step (headings also tighten their
-   leading here) and the tallest bar. */
+/* WIDTH band 2 — the 80px inset, and from here the container is a fixed
+   1280px column with 1440px of box. */
 @media (min-width: 1024px) {
   :root {
     --gutter: 80px;
+  }
+}
 
-    --fs-h1: 56px;
-    --lh-h1: 1.1;
-    --fs-h2: 48px;
-    --lh-h2: 1.15;
-    --fs-body: 20px;
-    --fs-eyebrow: 16px;
-
+/* LAYOUT band 2 — laptop. Bar height only. */
+@media (min-width: 1136px) {
+  :root {
     --header-h: 80px;
   }
 }
 
-/* DESKTOP â€” 1920px and up. Body, eyebrow and every line height hold
-   their laptop values; only the two heading sizes take their final
-   step. */
-@media (min-width: 1920px) {
-  :root {
-    --fs-h1: 64px;
-    --fs-h2: 52px;
-  }
-}
+/* DESKTOP tier â€” 1920px and up. Identical to LAPTOP by spec (same 1440px
+   centred container, same 80px gutters, same 80px header), so nothing is
+   overridden here. The block is kept empty on purpose as the anchor for
+   any future 1920-only delta. */
 
 /* ---------- Reset ---------- */
 *,
@@ -328,7 +347,7 @@ button {
   padding-block: 56px;
 }
 
-@media (min-width: 641px) {
+@media (min-width: 744px) {
   .section {
     padding-block: var(--section-pad-tablet);
   }
@@ -338,7 +357,7 @@ button {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1136px) {
   .section {
     padding-block: var(--section-pad-desktop);
   }
@@ -363,8 +382,8 @@ button {
 .eyebrow {
   font-family: var(--font-sans);
   font-size: var(--fs-eyebrow);
-  font-weight: var(--fw-regular);
-  letter-spacing: 0.02em;
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--tracking-eyebrow);
   text-transform: uppercase;
   color: #c7a45a;
 }
@@ -385,12 +404,10 @@ h1, h2, h3, h4, h5, h6, .display {
    specific and keep winning; this only sets the floor. */
 h1 {
   font-size: var(--fs-h1);
-  line-height: var(--lh-h1);
 }
 
 h2 {
-  font-size: var(--fs-h2);
-  line-height: var(--lh-h2);
+  font-size: var(--fs-section);
 }
 
 h3 {
@@ -409,7 +426,7 @@ p, li, dd, figcaption {
 }
 
 .section-heading {
-  font-size: var(--fs-h2);
+  font-size: var(--fs-section);
 }
 
 .lead {
@@ -450,7 +467,7 @@ p, li, dd, figcaption {
   touch-action: manipulation;
 }
 
-@media (min-width: 641px) {
+@media (min-width: 744px) {
   .btn--small {
     min-height: 0;
   }

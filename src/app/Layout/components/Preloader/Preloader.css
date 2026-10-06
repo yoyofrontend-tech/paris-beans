@@ -16,11 +16,6 @@
      1.50  brand moment complete
      1.65  curtain retracts (clip-path), 0.86s
      2.51  preloader unmounts
-
-   The curtain's own sizes are the one place the brand moment
-   runs on its own scale — but it still steps only at the
-   canonical edges: phone values in the base tier, the
-   tablet's from 641px, the desktop's from 1024px.
    ============================================================ */
 
 .preloader {
@@ -88,7 +83,7 @@
   bottom: max(24px, var(--gutter));
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   animation: pbMetaIn 0.8s var(--ease) 0.34s both;
   transition: opacity 0.3s var(--ease);
 }
@@ -98,12 +93,8 @@
   position: relative;
   display: grid;
   place-items: center;
-  /* Phone: 128px. The tablet steps it to 150px and the
-     desktop to 172px — the seal is the largest thing on
-     the curtain, so it is the one element whose size
-     moves at every edge. */
-  width: 128px;
-  height: 128px;
+  width: 172px;
+  height: 172px;
   animation: pbRise 0.9s var(--ease) both;
 }
 
@@ -147,14 +138,11 @@
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: var(--fw-medium);
-  /* Phone: the tighter of the two ramps, so the wordmark
-     keeps its presence in the phone's column without the
-     desktop's 9vw running away at the narrow end. */
-  font-size: clamp(1.9rem, 8.4vw, 2.9rem);
-  line-height: 1.1;
-  letter-spacing: 0.005em;
+  font-size: var(--fs-wordmark);
+  line-height: 1.08;
+  letter-spacing: 0.01em;
   color: var(--color-espresso);
-  margin-top: 1.25rem;
+  margin-top: 1.8rem;
   overflow: hidden;
 }
 
@@ -172,10 +160,10 @@
 
 /* ---------- Gold rule ---------- */
 .preloader-line {
-  width: 88px;
+  width: 116px;
   height: 1px;
   background-color: var(--color-gold);
-  margin-top: 1.3rem;
+  margin-top: 1.7rem;
   transform: scaleX(0);
   transform-origin: center;
   animation: pbRuleGrow var(--pb-rule-dur) var(--ease) var(--pb-rule-delay) both;
@@ -184,17 +172,13 @@
 /* ---------- Tagline ---------- */
 .preloader-tagline {
   font-family: var(--font-sans);
-  /* The phone tier reads the tagline on the eyebrow token
-     — 12px, the scale's floor — rather than the micro
-     token, so the smallest text on the curtain is never
-     smaller than the smallest text on the page. */
-  font-size: var(--fs-eyebrow);
+  font-size: var(--fs-micro);
   font-weight: var(--fw-medium);
   text-transform: uppercase;
-  letter-spacing: 0.28em;
-  padding-left: 0.28em;
+  letter-spacing: 0.4em;
+  padding-left: 0.4em;
   color: var(--color-coffee);
-  margin-top: 1rem;
+  margin-top: 1.3rem;
   opacity: 0;
   animation: pbFade var(--pb-tagline-dur) var(--ease) var(--pb-tagline-delay) both;
 }
@@ -214,8 +198,8 @@
 
 .preloader-rail {
   display: block;
-  width: 112px;
-  max-width: 42vw;
+  width: 148px;
+  max-width: 38vw;
   height: 1px;
   background-color: var(--color-border);
   overflow: hidden;
@@ -317,14 +301,8 @@ html[data-preloader] body {
   }
 }
 
-/* ============================================================
-   RESPONSIVE — 641px and 1024px, the canonical edges
-   ============================================================ */
-
-/* TABLET — 641px to 1023px: the seal and the wordmark
-   step up to the tablet frame's own numbers, and the
-   progress rail widens with them. */
-@media (min-width: 641px) {
+/* ---------- Tablet portrait + landscape ---------- */
+@media (min-width: 768px) and (max-width: 1099px) {
   .preloader-emblem {
     width: 150px;
     height: 150px;
@@ -340,43 +318,56 @@ html[data-preloader] body {
   }
 }
 
-/* LAPTOP — 1024px and up: the desktop curtain. The
-   wordmark goes back on its own display token, the seal
-   reaches 172px, and the rail, the rule, the tagline and
-   the meta column take the spacing the desktop frame
-   measured. */
-@media (min-width: 1024px) {
+/* ---------- Phone ---------- */
+@media (max-width: 767px) {
   .preloader-emblem {
-    width: 172px;
-    height: 172px;
+    width: 128px;
+    height: 128px;
   }
 
   .preloader-wordmark {
-    font-size: var(--fs-wordmark);
-    line-height: 1.08;
-    letter-spacing: 0.01em;
-    margin-top: 1.8rem;
+    font-size: clamp(1.9rem, 8.4vw, 2.9rem);
+    line-height: 1.1;
+    letter-spacing: 0.005em;
+    margin-top: 1.25rem;
   }
 
   .preloader-line {
-    width: 116px;
-    margin-top: 1.7rem;
-  }
-
-  .preloader-tagline {
-    font-size: var(--fs-micro);
-    letter-spacing: 0.4em;
-    padding-left: 0.4em;
+    width: 88px;
     margin-top: 1.3rem;
   }
 
+  .preloader-tagline {
+    font-size: var(--fs-eyebrow);
+    letter-spacing: 0.28em;
+    padding-left: 0.28em;
+    margin-top: 1rem;
+  }
+
   .preloader-meta {
-    gap: 14px;
+    gap: 12px;
   }
 
   .preloader-rail {
-    width: 148px;
-    max-width: 38vw;
+    width: 112px;
+    max-width: 42vw;
+  }
+}
+
+/* ---------- Small phones (320 / 375) ---------- */
+@media (max-width: 380px) {
+  .preloader-emblem {
+    width: 112px;
+    height: 112px;
+  }
+
+  .preloader-wordmark {
+    font-size: clamp(1.6rem, 8.6vw, 2.2rem);
+    margin-top: 1.05rem;
+  }
+
+  .preloader-rail {
+    width: 96px;
   }
 }
 

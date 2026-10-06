@@ -1,13 +1,13 @@
 /* ============================================================
    Benefits — Home only, three cards on the cream field.
 
-      PHONE   base (no query)  375–640   ONE column, 40px gaps, 48px section pad,
-                                       icon 40px, title 20px, text 14px
-      TABLET  641px+           641–1023  still ONE column, 72px section pad,
-                                       icon 48px, title 22px, text 16px
-      LAPTOP  1024px+          1024–1919 THREE equal columns, 96px section pad,
-                                       icon 56px, title 24px, text 16px
-      DESKTOP 1920px+          1920+     same as LAPTOP
+     PHONE   base (no query)  375–743   ONE column, 40px gaps, 48px section pad,
+                                      icon 40px, title 20px, text 14px
+     TABLET  744px+           744–1135  still ONE column, 72px section pad,
+                                      icon 48px, title 22px, text 16px
+     LAPTOP  1136px+          1136–1919 THREE equal columns, 96px section pad,
+                                      icon 56px, title 24px, text 16px
+     DESKTOP 1920px+          1920+     same as LAPTOP
    ============================================================ */
 
 .benefits {
@@ -54,7 +54,7 @@
 }
 
 /* ---------- TABLET ---------- */
-@media (min-width: 641px) {
+@media (min-width: 744px) {
   .benefits {
     padding-block: 72px;
   }
@@ -74,7 +74,7 @@
 }
 
 /* ---------- LAPTOP ---------- */
-@media (min-width: 1024px) {
+@media (min-width: 1136px) {
   .benefits {
     padding-block: 96px;
   }

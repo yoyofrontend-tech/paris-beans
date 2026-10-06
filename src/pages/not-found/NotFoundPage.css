@@ -6,13 +6,7 @@
   position: relative;
   display: grid;
   place-items: center;
-  /* The header is in flow above this block and its height is
-     the --header-h token — 64px on the phone, 72px from
-     641px, 80px from 1024px — so reserving exactly that
-     much of the viewport keeps the message centred in the
-     space the page actually has, at every tier, with no
-     query of this page's own. */
-  min-height: calc(100svh - var(--header-h));
+  min-height: calc(100svh - 78px);
   padding-block: clamp(4rem, 10vh, 7rem);
   overflow: hidden;
   background-color: var(--color-surface);
@@ -21,10 +15,6 @@
     radial-gradient(640px 360px at 100% 100%, rgba(67, 39, 25, 0.06), transparent 70%);
 }
 
-/* The giant ghost word is a desktop flourish. The phone
-   column is 343px wide and the word is set at --fs-word,
-   so it has no room to sit beside the message without
-   crowding it: hidden on the phone, shown from 641px up. */
 .nf-word {
   position: absolute;
   right: 3%;
@@ -40,7 +30,6 @@
   opacity: 0.05;
   pointer-events: none;
   user-select: none;
-  display: none;
 }
 
 /* A centred message, not a page column: 620px is the measure of the copy and the
@@ -71,28 +60,20 @@
   margin-bottom: 0.5rem;
 }
 
-/* The page's own heading, on the h1 token: 32px on the
-   phone, 44px from 641px, 56px from 1024px and 64px from
-   1920px, with the token's own leading. */
 .nf-title {
-  font-size: var(--fs-h1);
-  line-height: var(--lh-h1);
+  font-size: clamp(1.6rem, 3.5vw, 2.3rem);
   margin: 0.6rem 0 1rem;
 }
 
 .nf-title em {
   font-style: italic;
+  color: var(--color-espresso);
 }
 
-/* The description is body copy on the --fs-body token, with
-   the --lh-body leading — the .lead class it also carries
-   would put it on the old 1.8 leading and a ramp that
-   exists nowhere else on the site. */
 .nf-desc {
   max-width: 520px;
   margin: 0 auto 2.2rem;
-  font-size: var(--fs-body);
-  line-height: var(--lh-body);
+  font-size: var(--fs-text);
 }
 
 .nf-actions {
@@ -102,10 +83,16 @@
   gap: 1rem;
 }
 
-/* TABLET — 641px and up: the ghost word returns, clear of
-   the message column. */
-@media (min-width: 641px) {
+@media (max-width: 1024px) {
+  /* Header collapses to 66px at ≤1024px (Header.css), so the page must
+     reserve the matching viewport offset or the block sits 12px low. */
+  .nf-page {
+    min-height: calc(100svh - 66px);
+  }
+}
+
+@media (max-width: 640px) {
   .nf-word {
-    display: inline;
+    display: none;
   }
 }

@@ -1,12 +1,6 @@
 /* ============================================================
    Paris Beans — Legal pages (Privacy Policy / Terms & Conditions)
    Next-level reading experience: progress bar + sticky TOC
-
-   Layout per canonical tier: phone and tablet stack the
-   contents above the article as a wrapping chip row; the
-   two-column reading layout — the 240px sticky rail
-   beside the prose — starts at 1024px, where the page
-   measure is wide enough for it.
    ============================================================ */
 
 .legal-page {
@@ -49,12 +43,8 @@
 .legal-wrap {
   padding-block: clamp(56px, 6vw, 104px) clamp(80px, 8vw, 128px);
   display: grid;
-  /* Phone and tablet: one column, the contents stacked
-     above the article. The gap is a plain 2rem — the
-     chip row and the article need no proportional air
-     between them. */
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: clamp(2rem, 4vw, 4.5rem);
   align-items: start;
 }
 
@@ -66,18 +56,16 @@
   margin-inline: auto;
 }
 
-/* ── Contents sidebar ──────────────────────────────── */
-/* Phone and tablet: static, ordered ahead of the article,
-   and the TOC itself is the wrapping chip row below. */
+/* ── Sticky contents sidebar ──────────────────────────────── */
 .legal-aside {
-  position: static;
-  order: -1;
+  position: sticky;
+  top: 102px;
   z-index: 5;
 }
 
 .legal-toc {
   position: relative;
-  padding-left: 0;
+  padding-left: 20px;
 }
 
 .legal-toc::before,
@@ -89,8 +77,6 @@
   bottom: 0;
   width: 2px;
   border-radius: var(--radius-btn);
-  /* Hidden until the rail exists, from 1024px up. */
-  display: none;
 }
 
 .legal-toc::before {
@@ -109,15 +95,11 @@
 .legal-toc-label {
   display: block;
   font-size: var(--fs-eyebrow);
-  /* The label is the page's own eyebrow, so it takes
-     the eyebrow's metrics — 400 on 0.02em — rather
-     than the old 500 / 0.32em pair, which no label
-     on the site runs any more. */
-  font-weight: var(--fw-regular);
-  letter-spacing: 0.02em;
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--tracking-eyebrow);
   text-transform: uppercase;
   color: var(--color-muted);
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .legal-toc-list {
@@ -125,19 +107,15 @@
   margin: 0;
   padding: 0;
   display: flex;
-  /* The chip row: links wrap beside each other, each
-     carrying its own border. */
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0.4rem;
+  flex-direction: column;
+  gap: 0.2rem;
 }
 
 .legal-toc-link {
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  padding: 0.45rem 0.9rem;
-  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.7rem;
   border-radius: var(--radius-sm);
   color: var(--color-muted);
   font-size: var(--fs-body-sm);
@@ -163,7 +141,6 @@
   color: var(--color-espresso);
   background: rgba(201, 147, 89, 0.12);
   font-weight: var(--fw-medium);
-  border-color: rgba(201, 147, 89, 0.5);
 }
 
 /* ── Hero ─────────────────────────────────────────────────── */
@@ -188,8 +165,8 @@
   background: rgba(201, 147, 89, 0.08);
   color: #c7a45a;
   font-size: var(--fs-eyebrow);
-  font-weight: var(--fw-regular);
-  letter-spacing: 0.02em;
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--tracking-eyebrow);
   text-transform: uppercase;
   animation-delay: 0.05s;
 }
@@ -199,7 +176,7 @@
   font-style: italic;
   font-weight: var(--fw-bold);
   font-size: var(--fs-h1);
-  line-height: var(--lh-h1);
+  line-height: var(--lh-heading);
   letter-spacing: var(--tracking-tight);
   margin: 1rem 0 1.2rem;
   animation-delay: 0.15s;
@@ -209,13 +186,10 @@
   color: var(--color-espresso);
 }
 
-/* The lede is the page's opening paragraph: body copy on
-   the --fs-body token with the --lh-body leading, so the
-   whole page reads at one size and one pitch. */
 .legal-lede {
   max-width: 640px;
-  font-size: var(--fs-body);
-  line-height: var(--lh-body);
+  font-size: var(--fs-lead);
+  line-height: var(--lh-lead);
   color: var(--color-muted);
   animation-delay: 0.25s;
 }
@@ -241,11 +215,7 @@
 .legal-section {
   padding-block: clamp(1.7rem, 3vw, 2.5rem);
   border-top: 1px solid var(--color-border);
-  /* The sticky rail's height, plus the air that keeps the
-     anchored heading clear of it — both read off the
-     header token, so the offset tracks the bar at every
-     tier. */
-  scroll-margin-top: calc(var(--header-h) + 14px);
+  scroll-margin-top: 92px;
   opacity: 0;
   transform: translateY(26px);
   transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
@@ -275,15 +245,15 @@
   background: rgba(201, 147, 89, 0.1);
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: var(--fs-body);
+  font-size: var(--fs-text);
   color: var(--color-coffee);
 }
 
 .legal-h2 {
   font-family: var(--font-serif);
   font-weight: var(--fw-bold);
-  font-size: var(--fs-h2);
-  line-height: var(--lh-h2);
+  font-size: var(--fs-section);
+  line-height: var(--lh-heading);
   color: var(--color-espresso);
 }
 
@@ -306,8 +276,8 @@
 
 .legal-section p {
   max-width: 680px;
-  font-size: var(--fs-body);
-  line-height: var(--lh-body);
+  font-size: var(--fs-text);
+  line-height: var(--lh-text);
   color: var(--color-muted);
 }
 
@@ -336,8 +306,8 @@
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  font-size: var(--fs-body);
-  line-height: var(--lh-body);
+  font-size: var(--fs-text);
+  line-height: var(--lh-text);
   color: var(--color-muted);
   transition: transform 0.3s var(--ease), border-color 0.3s var(--ease),
     background-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
@@ -395,8 +365,8 @@
 
 .legal-contact p {
   max-width: 680px;
-  font-size: var(--fs-body);
-  line-height: var(--lh-body);
+  font-size: var(--fs-text);
+  line-height: var(--lh-text);
   color: var(--color-muted);
 }
 
@@ -423,62 +393,54 @@
   }
 }
 
-/* ============================================================
-   LAPTOP — 1024px and up: the reading layout. The 240px
-   contents rail goes sticky beside the prose, the TOC
-   becomes the numbered list under its label, and the
-   progress rail — the 2px line with the gradient
-   tracking the read — returns beside it.
-
-   The rail needs the desktop measure: at 1024px the
-   page column is 864px, which leaves 583px of prose
-   beside the 240px rail and its 41px gap — tight, but
-   the legal prose's own 680px cap never binds inside
-   the narrower track, and below this edge the chip row
-   is the better arrangement by a wide margin.
-   ============================================================ */
-@media (min-width: 1024px) {
+/* ── Responsive ───────────────────────────────────────────── */
+/* Held to 1099px, not 960px. The base is a 240px sticky TOC column beside the
+   article, which needs the desktop's 1180px measure to breathe. Between 961px
+   and 1099px the wrap is only 883–1017px wide, so the article body was down to
+   590–723px *and* still fighting a sticky sidebar — the one width band where
+   this page was worst off. Extending the single-column rule over the whole
+   tablet range moves the TOC above the article as a wrapping chip row, which is
+   what this block already does well. */
+@media (max-width: 1099px) {
   .legal-wrap {
-    grid-template-columns: 240px minmax(0, 1fr);
-    gap: clamp(2rem, 4vw, 4.5rem);
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .legal-aside {
-    position: sticky;
-    top: calc(var(--header-h) + 24px);
-    order: 0;
+    position: static;
+    order: -1;
   }
 
   .legal-toc {
-    padding-left: 20px;
+    padding-left: 0;
   }
 
   .legal-toc::before,
   .legal-toc::after {
-    display: block;
+    display: none;
   }
 
   .legal-toc-label {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
   }
 
   .legal-toc-list {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 0.2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.4rem;
   }
 
   .legal-toc-link {
-    padding: 0.5rem 0.7rem;
-    border: none;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--color-border);
   }
 
   .legal-toc-link.is-active {
-    border-color: transparent;
+    border-color: rgba(169, 110, 63, 0.5);
   }
 }
 
-/* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   .legal-hero > *,
   .legal-progress-bar {
