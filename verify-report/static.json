@@ -2,175 +2,238 @@
   "mediaRows": [
     {
       "file": "src/app/global.css",
-      "line": 198,
+      "line": 220,
       "query": "@media (min-width: 641px) {",
       "verdict": "PASS",
       "why": ""
     },
     {
       "file": "src/app/global.css",
-      "line": 214,
+      "line": 227,
+      "query": "@media (min-width: 744px) {",
+      "verdict": "FAIL",
+      "why": "min-width 744px not in {641,1024,1920}; contains forbidden value 744"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 240,
       "query": "@media (min-width: 1024px) {",
       "verdict": "PASS",
       "why": ""
     },
     {
       "file": "src/app/global.css",
-      "line": 232,
-      "query": "@media (min-width: 1920px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 247,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
     },
     {
       "file": "src/app/global.css",
-      "line": 331,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 350,
+      "query": "@media (min-width: 744px) {",
+      "verdict": "FAIL",
+      "why": "min-width 744px not in {641,1024,1920}; contains forbidden value 744"
     },
     {
       "file": "src/app/global.css",
-      "line": 341,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 360,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
     },
     {
       "file": "src/app/global.css",
-      "line": 453,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 470,
+      "query": "@media (min-width: 744px) {",
+      "verdict": "FAIL",
+      "why": "min-width 744px not in {641,1024,1920}; contains forbidden value 744"
     },
     {
       "file": "src/app/global.css",
-      "line": 554,
-      "query": "@media (prefers-reduced-motion: reduce) {",
-      "verdict": "N/A",
-      "why": "not a width query"
-    },
-    {
-      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
-      "line": 544,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
-    },
-    {
-      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
-      "line": 567,
-      "query": "@media (prefers-reduced-motion: reduce) {",
-      "verdict": "N/A",
-      "why": "not a width query"
-    },
-    {
-      "file": "src/app/Layout/components/Footer/Footer.css",
       "line": 571,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
+      "line": 519,
+      "query": "@media (max-width: 560px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
+      "line": 542,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
     },
     {
       "file": "src/app/Layout/components/Footer/Footer.css",
-      "line": 630,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 560,
+      "query": "@media (min-width: 744px) {",
+      "verdict": "FAIL",
+      "why": "min-width 744px not in {641,1024,1920}; contains forbidden value 744"
     },
     {
       "file": "src/app/Layout/components/Footer/Footer.css",
-      "line": 680,
+      "line": 615,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
+    },
+    {
+      "file": "src/app/Layout/components/Footer/Footer.css",
+      "line": 681,
+      "query": "@media (max-width: 1023px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/app/Layout/components/Footer/Footer.css",
+      "line": 688,
       "query": "@media (prefers-reduced-motion: reduce) {",
       "verdict": "N/A",
       "why": "not a width query"
     },
     {
       "file": "src/app/Layout/components/Header/Header.css",
-      "line": 635,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 627,
+      "query": "@media (min-width: 744px) {",
+      "verdict": "FAIL",
+      "why": "min-width 744px not in {641,1024,1920}; contains forbidden value 744"
     },
     {
       "file": "src/app/Layout/components/Header/Header.css",
-      "line": 692,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 682,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
     },
     {
       "file": "src/app/Layout/components/Header/Header.css",
-      "line": 745,
+      "line": 735,
       "query": "@media (prefers-reduced-motion: reduce) {",
       "verdict": "N/A",
       "why": "not a width query"
     },
     {
       "file": "src/app/Layout/components/Header/Header.css",
-      "line": 758,
+      "line": 748,
       "query": "@media (max-height: 680px) {",
       "verdict": "N/A",
       "why": "not a width query"
     },
     {
       "file": "src/app/Layout/components/Preloader/Preloader.css",
-      "line": 327,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 305,
+      "query": "@media (min-width: 768px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 768"
     },
     {
       "file": "src/app/Layout/components/Preloader/Preloader.css",
-      "line": 348,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 322,
+      "query": "@media (max-width: 767px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 767"
     },
     {
       "file": "src/app/Layout/components/Preloader/Preloader.css",
-      "line": 387,
+      "line": 358,
+      "query": "@media (max-width: 380px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/app/Layout/components/Preloader/Preloader.css",
+      "line": 378,
       "query": "@media (prefers-reduced-motion: reduce) {",
       "verdict": "N/A",
       "why": "not a width query"
     },
     {
       "file": "src/features/gallery/components/Gallery.css",
-      "line": 266,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 299,
+      "query": "@media (min-width: 1100px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1100px not in {641,1024,1920}; contains forbidden value 1100"
     },
     {
       "file": "src/features/gallery/components/Gallery.css",
-      "line": 380,
+      "line": 344,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 427,
       "query": "@media (min-width: 1920px) {",
       "verdict": "PASS",
       "why": ""
     },
     {
       "file": "src/features/gallery/components/Gallery.css",
-      "line": 703,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 549,
+      "query": "@media (min-width: 1800px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1800px not in {641,1024,1920}"
     },
     {
       "file": "src/features/gallery/components/Gallery.css",
-      "line": 719,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 570,
+      "query": "@media (min-width: 768px) and (max-width: 1023px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 768"
     },
     {
       "file": "src/features/gallery/components/Gallery.css",
-      "line": 875,
-      "query": "@media (min-width: 1920px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 634,
+      "query": "@media (min-width: 1024px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
     },
     {
       "file": "src/features/gallery/components/Gallery.css",
-      "line": 882,
+      "line": 688,
+      "query": "@media (min-width: 768px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 768"
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 758,
+      "query": "@media (max-width: 767px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 767"
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 873,
+      "query": "@media (max-width: 767px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 767"
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 966,
+      "query": "@media (max-width: 767px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 767"
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 1000,
+      "query": "@media (max-width: 480px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 1105,
       "query": "@media (prefers-reduced-motion: reduce) {",
       "verdict": "N/A",
       "why": "not a width query"
@@ -178,261 +241,548 @@
     {
       "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
       "line": 57,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
+      "query": "@media (min-width: 744px) {",
+      "verdict": "FAIL",
+      "why": "min-width 744px not in {641,1024,1920}; contains forbidden value 744"
     },
     {
       "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
       "line": 77,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
     },
     {
       "file": "src/features/home/components/CafeMenu/CafeMenu.css",
-      "line": 301,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
-    },
-    {
-      "file": "src/features/home/components/CafeMenu/CafeMenu.css",
-      "line": 320,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
-    },
-    {
-      "file": "src/features/home/components/CafeMenu/CafeMenu.css",
-      "line": 410,
-      "query": "@media (min-width: 1920px) {",
-      "verdict": "PASS",
-      "why": ""
-    },
-    {
-      "file": "src/features/home/components/CafeMenu/CafeMenu.css",
-      "line": 417,
-      "query": "@media (prefers-reduced-motion: reduce) {",
-      "verdict": "N/A",
-      "why": "not a width query"
-    },
-    {
-      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
-      "line": 325,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
-    },
-    {
-      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
-      "line": 375,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
-    },
-    {
-      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
-      "line": 449,
-      "query": "@media (min-width: 1920px) {",
-      "verdict": "PASS",
-      "why": ""
-    },
-    {
-      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
-      "line": 456,
-      "query": "@media (prefers-reduced-motion: reduce) {",
-      "verdict": "N/A",
-      "why": "not a width query"
-    },
-    {
-      "file": "src/features/home/components/Hero/Hero.css",
-      "line": 236,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
-    },
-    {
-      "file": "src/features/home/components/Hero/Hero.css",
-      "line": 269,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
-    },
-    {
-      "file": "src/features/home/components/Hero/Hero.css",
-      "line": 289,
-      "query": "@media (min-width: 1920px) {",
-      "verdict": "PASS",
-      "why": ""
-    },
-    {
-      "file": "src/features/home/components/Hero/Hero.css",
       "line": 300,
+      "query": "@media (min-width: 744px) {",
+      "verdict": "FAIL",
+      "why": "min-width 744px not in {641,1024,1920}; contains forbidden value 744"
+    },
+    {
+      "file": "src/features/home/components/CafeMenu/CafeMenu.css",
+      "line": 319,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
+    },
+    {
+      "file": "src/features/home/components/CafeMenu/CafeMenu.css",
+      "line": 409,
+      "query": "@media (min-width: 1920px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/CafeMenu/CafeMenu.css",
+      "line": 416,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
+      "line": 324,
+      "query": "@media (min-width: 744px) {",
+      "verdict": "FAIL",
+      "why": "min-width 744px not in {641,1024,1920}; contains forbidden value 744"
+    },
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
+      "line": 374,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
+    },
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
+      "line": 448,
+      "query": "@media (min-width: 1920px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.css",
+      "line": 455,
+      "query": "@media (prefers-reduced-motion: reduce) {",
+      "verdict": "N/A",
+      "why": "not a width query"
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 230,
+      "query": "@media (min-width: 744px) {",
+      "verdict": "FAIL",
+      "why": "min-width 744px not in {641,1024,1920}; contains forbidden value 744"
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 272,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 295,
+      "query": "@media (min-width: 1920px) {",
+      "verdict": "PASS",
+      "why": ""
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 307,
       "query": "@media (prefers-reduced-motion: reduce) {",
       "verdict": "N/A",
       "why": "not a width query"
     },
     {
       "file": "src/features/home/components/StorySection/StorySection.css",
-      "line": 311,
+      "line": 247,
+      "query": "@media (max-width: 1135px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/home/components/StorySection/StorySection.css",
+      "line": 305,
+      "query": "@media (max-width: 640px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/home/components/StorySection/StorySection.css",
+      "line": 314,
+      "query": "@media (max-width: 480px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/home/components/StorySection/StorySection.css",
+      "line": 323,
       "query": "@media (prefers-reduced-motion: reduce) {",
       "verdict": "N/A",
       "why": "not a width query"
     },
     {
       "file": "src/features/home/components/StorySection/StorySection.css",
-      "line": 357,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 363,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
     },
     {
       "file": "src/features/legal/components/LegalPage/Legal.css",
-      "line": 440,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 404,
+      "query": "@media (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
     },
     {
       "file": "src/features/legal/components/LegalPage/Legal.css",
-      "line": 482,
+      "line": 444,
       "query": "@media (prefers-reduced-motion: reduce) {",
       "verdict": "N/A",
       "why": "not a width query"
     },
     {
       "file": "src/features/menu/components/Menu.css",
-      "line": 979,
+      "line": 981,
       "query": "@media (min-width: 641px) {",
       "verdict": "PASS",
       "why": ""
     },
     {
       "file": "src/features/menu/components/Menu.css",
-      "line": 1153,
+      "line": 1151,
       "query": "@media (min-width: 1024px) {",
       "verdict": "PASS",
       "why": ""
     },
     {
       "file": "src/features/menu/components/Menu.css",
-      "line": 1504,
+      "line": 1499,
+      "query": "@media (min-width: 1100px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1100px not in {641,1024,1920}; contains forbidden value 1100"
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1506,
+      "query": "@media (min-width: 1600px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1600px not in {641,1024,1920}"
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1512,
       "query": "@media (prefers-reduced-motion: reduce) {",
       "verdict": "N/A",
       "why": "not a width query"
     },
     {
       "file": "src/features/story/components/OurStoryCta/OurStoryCta.css",
-      "line": 88,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 35,
+      "query": "@media (min-width: 1100px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1100px not in {641,1024,1920}; contains forbidden value 1100"
     },
     {
-      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "file": "src/features/story/components/OurStoryCta/OurStoryCta.css",
+      "line": 101,
+      "query": "@media (min-width: 600px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 600"
+    },
+    {
+      "file": "src/features/story/components/OurStoryCta/OurStoryCta.css",
+      "line": 111,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
+    },
+    {
+      "file": "src/features/story/components/OurStoryCta/OurStoryCta.css",
       "line": 117,
-      "query": "@media (min-width: 641px) {",
+      "query": "@media (max-width: 640px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 115,
+      "query": "@media (max-width: 1180px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 133,
+      "query": "@media (max-width: 900px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 900"
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 139,
+      "query": "@media (max-width: 767px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 767"
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 158,
+      "query": "@media (max-width: 640px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 187,
+      "query": "@media (min-width: 768px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 768"
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 222,
+      "query": "@media (min-width: 600px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 600"
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 248,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 276,
+      "query": "@media (min-width: 1920px) {",
       "verdict": "PASS",
       "why": ""
     },
     {
       "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
-      "line": 144,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
-    },
-    {
-      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
-      "line": 164,
+      "line": 291,
       "query": "@media (prefers-reduced-motion: reduce) {",
       "verdict": "N/A",
       "why": "not a width query"
     },
     {
-      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
-      "line": 485,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
+      "file": "src/features/story/components/OurStoryImageRow/OurStoryImageRow.css",
+      "line": 39,
+      "query": "@media (min-width: 768px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 768"
     },
     {
       "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
-      "line": 738,
+      "line": 54,
+      "query": "@media (min-width: 600px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 600"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 132,
+      "query": "@media (max-width: 599px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 273,
+      "query": "@media (max-width: 1023px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 318,
+      "query": "@media (min-width: 600px) and (max-width: 1023px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 600"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 324,
       "query": "@media (min-width: 1024px) {",
       "verdict": "PASS",
       "why": ""
     },
     {
       "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
-      "line": 879,
-      "query": "@media (min-width: 1920px) {",
+      "line": 333,
+      "query": "@media (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 364,
+      "query": "@media (min-width: 600px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 600"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 564,
+      "query": "@media (min-width: 600px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 600"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 578,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 606,
+      "query": "@media (min-width: 600px) and (max-width: 1023px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 600"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 800,
+      "query": "@media (max-width: 1023px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 827,
+      "query": "@media (min-width: 1024px) {",
       "verdict": "PASS",
       "why": ""
     },
     {
-      "file": "src/features/visit/components/VisitContact.css",
-      "line": 710,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 883,
+      "query": "@media (min-width: 1024px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 896,
+      "query": "@media (min-width: 1100px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1100px not in {641,1024,1920}; contains forbidden value 1100"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 902,
+      "query": "@media (max-width: 599px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 972,
+      "query": "@media (max-width: 599px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
     },
     {
       "file": "src/features/visit/components/VisitContact.css",
-      "line": 828,
+      "line": 40,
       "query": "@media (min-width: 1024px) {",
       "verdict": "PASS",
       "why": ""
     },
     {
       "file": "src/features/visit/components/VisitContact.css",
-      "line": 855,
-      "query": "@media (min-width: 1920px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 131,
+      "query": "@media (min-width: 1100px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1100px not in {641,1024,1920}; contains forbidden value 1100"
     },
     {
       "file": "src/features/visit/components/VisitContact.css",
-      "line": 889,
+      "line": 205,
+      "query": "@media (max-width: 767px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 767"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 567,
+      "query": "@media (min-width: 1100px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1100px not in {641,1024,1920}; contains forbidden value 1100"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 577,
+      "query": "@media (min-width: 1600px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1600px not in {641,1024,1920}"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 599,
+      "query": "@media (max-width: 767px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 767"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 620,
+      "query": "@media (min-width: 768px) and (max-width: 1023px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 768"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 647,
+      "query": "@media (min-width: 1024px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 668,
+      "query": "@media (min-width: 900px) and (max-width: 1099px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 900"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 678,
+      "query": "@media (max-width: 1100px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 1100"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 684,
+      "query": "@media (max-width: 900px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden); contains forbidden value 900"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 692,
+      "query": "@media (max-width: 560px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 741,
       "query": "@media (hover: none) and (pointer: coarse) {",
       "verdict": "N/A",
       "why": "not a width query"
     },
     {
       "file": "src/features/visit/components/VisitContact.css",
-      "line": 917,
+      "line": 765,
+      "query": "@media (max-width: 400px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 788,
+      "query": "@media (max-width: 640px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 896,
       "query": "@media (prefers-reduced-motion: reduce) {",
       "verdict": "N/A",
       "why": "not a width query"
     },
     {
       "file": "src/pages/home/CallToAction.css",
-      "line": 84,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
-    },
-    {
-      "file": "src/pages/home/CallToAction.css",
-      "line": 95,
-      "query": "@media (min-width: 1024px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 91,
+      "query": "@media (min-width: 744px) {",
+      "verdict": "FAIL",
+      "why": "min-width 744px not in {641,1024,1920}; contains forbidden value 744"
     },
     {
       "file": "src/pages/home/CallToAction.css",
       "line": 107,
+      "query": "@media (min-width: 1136px) {",
+      "verdict": "FAIL",
+      "why": "min-width 1136px not in {641,1024,1920}; contains forbidden value 1136"
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 124,
       "query": "@media (min-width: 1920px) {",
       "verdict": "PASS",
       "why": ""
     },
     {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 139,
+      "query": "@media (max-width: 480px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
       "file": "src/pages/not-found/NotFoundPage.css",
-      "line": 107,
-      "query": "@media (min-width: 641px) {",
-      "verdict": "PASS",
-      "why": ""
+      "line": 86,
+      "query": "@media (max-width: 1024px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/pages/not-found/NotFoundPage.css",
+      "line": 94,
+      "query": "@media (max-width: 640px) {",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
     },
     {
       "file": "src/pages/story/StoryPage.css",
@@ -446,37 +796,58 @@
     {
       "file": "src/features/home/components/GalleryMood/GalleryMood.jsx",
       "line": 44,
-      "query": "window.innerWidth))",
+      "query": "window.innerWidth))\r",
       "verdict": "INFO",
       "why": "reads viewport width (value must land on a band edge)"
     },
     {
       "file": "src/features/home/components/GalleryMood/GalleryMood.jsx",
       "line": 47,
-      "query": "bleForWidth(window.innerWidth))",
+      "query": "ForWidth(window.innerWidth))\r",
       "verdict": "INFO",
       "why": "resize listener"
     },
     {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.jsx",
+      "line": 15,
+      "query": "Mood.css' const VISIBLE_BREAKPOINTS = [ { edge: 1920, visible: 7 }, { edge: 1136, visible: 7 }, { edge: 744, visible: 5 }, ] cons",
+      "verdict": "FAIL",
+      "why": "forbidden breakpoint value 1136"
+    },
+    {
+      "file": "src/features/home/components/GalleryMood/GalleryMood.jsx",
+      "line": 16,
+      "query": "_BREAKPOINTS = [ { edge: 1920, visible: 7 }, { edge: 1136, visible: 7 }, { edge: 744, visible: 5 }, ] const visibleForWidth = (width) =>",
+      "verdict": "FAIL",
+      "why": "forbidden breakpoint value 744"
+    },
+    {
       "file": "src/features/story/components/OurStoryHero/OurStoryHero.jsx",
       "line": 60,
-      "query": "(min-width: 641px)",
-      "verdict": "PASS",
-      "why": ""
+      "query": "(max-width: ${MOBILE_BREAKPOINT - 1}px)",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.jsx",
+      "line": 30,
+      "query": "afé corner detail', }, ] const CYCLE_INTERVAL_MS = 2600 const MOBILE_BREAKPOINT = 768 const DESKTOP_SLIDE_COUNT = 4 const MOBILE_SLIDE_COUNT",
+      "verdict": "FAIL",
+      "why": "forbidden breakpoint value 768"
     },
     {
       "file": "src/features/story/components/OurStoryImageRow/OurStoryImageRow.jsx",
-      "line": 24,
-      "query": "(min-width: 1024px)",
-      "verdict": "PASS",
-      "why": ""
+      "line": 14,
+      "query": "(max-width: 767px)",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
     },
     {
       "file": "src/features/story/components/OurStoryImageRow/OurStoryImageRow.jsx",
-      "line": 28,
-      "query": "(min-width: 641px)",
-      "verdict": "PASS",
-      "why": ""
+      "line": 26,
+      "query": "(min-width: 768px) and (max-width: 1099px)",
+      "verdict": "FAIL",
+      "why": "max-width query (forbidden)"
     },
     {
       "file": "src/shared/hooks/useParallaxTilt.js",
@@ -489,7 +860,7 @@
   "fsRows": [
     {
       "file": "src/app/Layout/components/Header/Header.css",
-      "line": 395,
+      "line": 393,
       "selector": ".pb-menu-index",
       "media": "",
       "value": "12px",
@@ -498,7 +869,7 @@
     },
     {
       "file": "src/app/Layout/components/Header/Header.css",
-      "line": 404,
+      "line": 402,
       "selector": ".pb-menu-label",
       "media": "",
       "value": "24px",
@@ -507,7 +878,7 @@
     },
     {
       "file": "src/app/Layout/components/Header/Header.css",
-      "line": 417,
+      "line": 415,
       "selector": ".pb-menu-arrow",
       "media": "",
       "value": "15px",
@@ -516,7 +887,7 @@
     },
     {
       "file": "src/app/Layout/components/Header/Header.css",
-      "line": 526,
+      "line": 524,
       "selector": ".pb-menu-meta-label",
       "media": "",
       "value": "12px",
@@ -525,7 +896,7 @@
     },
     {
       "file": "src/app/Layout/components/Header/Header.css",
-      "line": 538,
+      "line": 536,
       "selector": ".pb-menu-meta-value",
       "media": "",
       "value": "16px",
@@ -534,7 +905,7 @@
     },
     {
       "file": "src/app/Layout/components/Header/Header.css",
-      "line": 558,
+      "line": 556,
       "selector": ".pb-menu-cta",
       "media": "",
       "value": "16px",
@@ -542,29 +913,110 @@
       "important": false
     },
     {
-      "file": "src/app/Layout/components/Header/Header.css",
-      "line": 654,
-      "selector": ".nav-link",
-      "media": "@media (min-width: 641px)",
-      "value": "13px",
+      "file": "src/app/Layout/components/Preloader/Preloader.css",
+      "line": 312,
+      "selector": ".preloader-wordmark",
+      "media": "@media (min-width: 768px) and (max-width: 1099px)",
+      "value": "clamp(2.4rem, 5.4vw, 3.6rem)",
       "hardcoded": true,
       "important": false
     },
     {
       "file": "src/app/Layout/components/Preloader/Preloader.css",
-      "line": 153,
+      "line": 329,
       "selector": ".preloader-wordmark",
-      "media": "",
+      "media": "@media (max-width: 767px)",
       "value": "clamp(1.9rem, 8.4vw, 2.9rem)",
       "hardcoded": true,
       "important": false
     },
     {
       "file": "src/app/Layout/components/Preloader/Preloader.css",
-      "line": 334,
+      "line": 365,
       "selector": ".preloader-wordmark",
-      "media": "@media (min-width: 641px)",
-      "value": "clamp(2.4rem, 5.4vw, 3.6rem)",
+      "media": "@media (max-width: 380px)",
+      "value": "clamp(1.6rem, 8.6vw, 2.2rem)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 315,
+      "selector": ".gal-hero-desc, .gal-section-desc",
+      "media": "@media (min-width: 1100px)",
+      "value": "clamp(16px, 0.25vw + 0.87rem, 18.6px)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 371,
+      "selector": ".gal-hero-eyebrow",
+      "media": "@media (min-width: 1136px)",
+      "value": "18px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 388,
+      "selector": ".gal-hero-title",
+      "media": "@media (min-width: 1136px)",
+      "value": "clamp(40px, 3.9vw, 56px)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 400,
+      "selector": ".gal-hero-desc",
+      "media": "@media (min-width: 1136px)",
+      "value": "clamp(16px, 1.4vw, 20px)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 433,
+      "selector": ".gal-hero-eyebrow",
+      "media": "@media (min-width: 1920px)",
+      "value": "18px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 437,
+      "selector": ".gal-hero-title",
+      "media": "@media (min-width: 1920px)",
+      "value": "56px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 441,
+      "selector": ".gal-hero-desc",
+      "media": "@media (min-width: 1920px)",
+      "value": "20px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 1015,
+      "selector": ".gal-hero-title",
+      "media": "@media (max-width: 480px)",
+      "value": "32px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/gallery/components/Gallery.css",
+      "line": 1023,
+      "selector": ".gal-hero-desc",
+      "media": "@media (max-width: 480px)",
+      "value": "15px",
       "hardcoded": true,
       "important": false
     },
@@ -590,7 +1042,7 @@
       "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
       "line": 68,
       "selector": ".benefit-title",
-      "media": "@media (min-width: 641px)",
+      "media": "@media (min-width: 744px)",
       "value": "22px",
       "hardcoded": true,
       "important": false
@@ -599,7 +1051,7 @@
       "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
       "line": 72,
       "selector": ".benefit-text",
-      "media": "@media (min-width: 641px)",
+      "media": "@media (min-width: 744px)",
       "value": "16px",
       "hardcoded": true,
       "important": false
@@ -608,7 +1060,7 @@
       "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
       "line": 93,
       "selector": ".benefit-title",
-      "media": "@media (min-width: 1024px)",
+      "media": "@media (min-width: 1136px)",
       "value": "24px",
       "hardcoded": true,
       "important": false
@@ -617,8 +1069,116 @@
       "file": "src/features/home/components/BenefitsSection/BenefitsSection.css",
       "line": 97,
       "selector": ".benefit-text",
-      "media": "@media (min-width: 1024px)",
+      "media": "@media (min-width: 1136px)",
       "value": "16px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 109,
+      "selector": ".hero-eyebrow",
+      "media": "",
+      "value": "11px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 123,
+      "selector": ".hero-title",
+      "media": "",
+      "value": "32px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 187,
+      "selector": ".hero-desc",
+      "media": "",
+      "value": "clamp(0.875rem, 0.35vw + 0.835rem, 1rem)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 245,
+      "selector": ".hero-title",
+      "media": "@media (min-width: 744px)",
+      "value": "44px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 253,
+      "selector": ".hero-desc",
+      "media": "@media (min-width: 744px)",
+      "value": "17px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 282,
+      "selector": ".hero-title",
+      "media": "@media (min-width: 1136px)",
+      "value": "56px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 289,
+      "selector": ".hero-desc",
+      "media": "@media (min-width: 1136px)",
+      "value": "20px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 297,
+      "selector": ".hero-title",
+      "media": "@media (min-width: 1920px)",
+      "value": "64px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/StorySection/StorySection.css",
+      "line": 270,
+      "selector": ".story-copy > .pb-story-eyebrow",
+      "media": "@media (max-width: 1135px)",
+      "value": "0.75rem",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/home/components/StorySection/StorySection.css",
+      "line": 286,
+      "selector": ".story-copy > .story-paragraph",
+      "media": "@media (max-width: 1135px)",
+      "value": "1rem",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 124,
+      "selector": ".menu-hero-eyebrow",
+      "media": "",
+      "value": "12px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 145,
+      "selector": ".menu-hero-title",
+      "media": "",
+      "value": "28px",
       "hardcoded": true,
       "important": false
     },
@@ -669,6 +1229,15 @@
     },
     {
       "file": "src/features/menu/components/Menu.css",
+      "line": 419,
+      "selector": ".menu-special-title",
+      "media": "",
+      "value": "28px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
       "line": 438,
       "selector": ".menu-special-size",
       "media": "",
@@ -705,7 +1274,34 @@
     },
     {
       "file": "src/features/menu/components/Menu.css",
-      "line": 897,
+      "line": 795,
+      "selector": ".menu-cafe-eyebrow",
+      "media": "",
+      "value": "12px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 800,
+      "selector": ".menu-cafe-title",
+      "media": "",
+      "value": "28px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 813,
+      "selector": ".menu-cafe-desc",
+      "media": "",
+      "value": "15px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 898,
       "selector": ".menu-card-caption",
       "media": "",
       "value": "20px",
@@ -714,7 +1310,61 @@
     },
     {
       "file": "src/features/menu/components/Menu.css",
-      "line": 1025,
+      "line": 939,
+      "selector": ".menu-cta .eyebrow",
+      "media": "",
+      "value": "12px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 944,
+      "selector": ".menu-cta-title",
+      "media": "",
+      "value": "24px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 960,
+      "selector": ".menu-cta-desc",
+      "media": "",
+      "value": "13px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 998,
+      "selector": ".menu-hero-eyebrow",
+      "media": "@media (min-width: 641px)",
+      "value": "14px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1002,
+      "selector": ".menu-hero-title",
+      "media": "@media (min-width: 641px)",
+      "value": "44px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1011,
+      "selector": ".menu-hero-desc",
+      "media": "@media (min-width: 641px)",
+      "value": "18px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1026,
       "selector": ".menu-tab",
       "media": "@media (min-width: 641px)",
       "value": "18px",
@@ -723,7 +1373,7 @@
     },
     {
       "file": "src/features/menu/components/Menu.css",
-      "line": 1029,
+      "line": 1030,
       "selector": ".menu-tab.is-active",
       "media": "@media (min-width: 641px)",
       "value": "20px",
@@ -732,7 +1382,16 @@
     },
     {
       "file": "src/features/menu/components/Menu.css",
-      "line": 1055,
+      "line": 1047,
+      "selector": ".menu-special-title",
+      "media": "@media (min-width: 641px)",
+      "value": "44px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1056,
       "selector": ".menu-special-size",
       "media": "@media (min-width: 641px)",
       "value": "22px",
@@ -741,7 +1400,7 @@
     },
     {
       "file": "src/features/menu/components/Menu.css",
-      "line": 1064,
+      "line": 1065,
       "selector": ".menu-item-name, .menu-item-price",
       "media": "@media (min-width: 641px)",
       "value": "17px",
@@ -750,10 +1409,37 @@
     },
     {
       "file": "src/features/menu/components/Menu.css",
-      "line": 1068,
+      "line": 1069,
       "selector": ".menu-item-desc",
       "media": "@media (min-width: 641px)",
       "value": "15px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1092,
+      "selector": ".menu-cafe-eyebrow",
+      "media": "@media (min-width: 641px)",
+      "value": "14px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1096,
+      "selector": ".menu-cafe-title",
+      "media": "@media (min-width: 641px)",
+      "value": "44px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1102,
+      "selector": ".menu-cafe-desc",
+      "media": "@media (min-width: 641px)",
+      "value": "18px",
       "hardcoded": true,
       "important": false
     },
@@ -768,104 +1454,320 @@
     },
     {
       "file": "src/features/menu/components/Menu.css",
-      "line": 1220,
-      "selector": ".menu-hero-title",
-      "media": "@media (min-width: 1024px)",
-      "value": "64px",
+      "line": 1125,
+      "selector": ".menu-cta .eyebrow",
+      "media": "@media (min-width: 641px)",
+      "value": "13px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1129,
+      "selector": ".menu-cta-title",
+      "media": "@media (min-width: 641px)",
+      "value": "32px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/menu/components/Menu.css",
+      "line": 1134,
+      "selector": ".menu-cta-desc",
+      "media": "@media (min-width: 641px)",
+      "value": "14px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/story/components/OurStoryCta/OurStoryCta.css",
+      "line": 113,
+      "selector": ".ostory-cta-desc",
+      "media": "@media (min-width: 1136px)",
+      "value": "clamp(16px, 0.25vw + 0.87rem, 18.6px)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 253,
+      "selector": ".ostory-hero .ostory-eyebrow",
+      "media": "@media (min-width: 1136px)",
+      "value": "18px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 263,
+      "selector": ".ostory-title",
+      "media": "@media (min-width: 1136px)",
+      "value": "clamp(40px, 3.9vw, 56px)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 268,
+      "selector": ".ostory-desc",
+      "media": "@media (min-width: 1136px)",
+      "value": "clamp(16px, 1.4vw, 20px)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 278,
+      "selector": ".ostory-hero .ostory-eyebrow",
+      "media": "@media (min-width: 1920px)",
+      "value": "18px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 282,
+      "selector": ".ostory-title",
+      "media": "@media (min-width: 1920px)",
+      "value": "56px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
+      "line": 286,
+      "selector": ".ostory-desc",
+      "media": "@media (min-width: 1920px)",
+      "value": "20px",
       "hardcoded": true,
       "important": false
     },
     {
       "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
-      "line": 225,
+      "line": 314,
       "selector": ".pb-story-ring__text",
       "media": "",
-      "value": "12px",
+      "value": "11px",
       "hardcoded": true,
       "important": false
     },
     {
       "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
-      "line": 715,
+      "line": 320,
       "selector": ".pb-story-ring__text",
-      "media": "@media (min-width: 641px)",
+      "media": "@media (min-width: 600px) and (max-width: 1023px)",
       "value": "15px",
       "hardcoded": true,
       "important": false
     },
     {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 580,
+      "selector": ".ostory-origin-text",
+      "media": "@media (min-width: 1136px)",
+      "value": "clamp(16px, 0.25vw + 0.87rem, 18.6px)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
       "file": "src/features/visit/components/VisitContact.css",
-      "line": 703,
-      "selector": ".visit-info-value, .visit-info-link",
-      "media": "",
+      "line": 207,
+      "selector": ".visit-card-title",
+      "media": "@media (max-width: 767px)",
+      "value": "clamp(1.75rem, 6vw, 2.4rem)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 757,
+      "selector": ".visit-field input, .visit-field textarea",
+      "media": "@media (hover: none) and (pointer: coarse)",
+      "value": "16px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 767,
+      "selector": ".visit-info-value",
+      "media": "@media (max-width: 400px)",
       "value": "clamp(0.95rem, 4.4vw, 1.25rem)",
       "hardcoded": true,
       "important": false
     },
     {
       "file": "src/features/visit/components/VisitContact.css",
-      "line": 905,
-      "selector": ".visit-field input, .visit-field textarea",
-      "media": "@media (hover: none) and (pointer: coarse)",
+      "line": 772,
+      "selector": ".visit-info-link",
+      "media": "@media (max-width: 400px)",
+      "value": "clamp(0.95rem, 4.4vw, 1.25rem)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 849,
+      "selector": ".visit-hero-eyebrow",
+      "media": "@media (max-width: 640px)",
+      "value": "14px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 871,
+      "selector": ".visit-hero-title",
+      "media": "@media (max-width: 640px)",
+      "value": "28px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/features/visit/components/VisitContact.css",
+      "line": 882,
+      "selector": ".visit-hero-desc",
+      "media": "@media (max-width: 640px)",
+      "value": "14px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 56,
+      "selector": ".experience .eyebrow",
+      "media": "",
+      "value": "12px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 79,
+      "selector": ".experience-desc",
+      "media": "",
+      "value": "clamp(13px, 0.28vw + 12.3px, 14px)",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 97,
+      "selector": ".experience-title",
+      "media": "@media (min-width: 744px)",
+      "value": "36px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 101,
+      "selector": ".experience-desc",
+      "media": "@media (min-width: 744px)",
+      "value": "17px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 113,
+      "selector": ".experience-title",
+      "media": "@media (min-width: 1136px)",
+      "value": "48px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 117,
+      "selector": ".experience-desc",
+      "media": "@media (min-width: 1136px)",
+      "value": "20px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 130,
+      "selector": ".experience-title",
+      "media": "@media (min-width: 1920px)",
+      "value": "52px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 198,
+      "selector": ".experience-title",
+      "media": "@media (max-width: 480px)",
+      "value": "22px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 210,
+      "selector": ".experience-desc",
+      "media": "@media (max-width: 480px)",
+      "value": "12px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 232,
+      "selector": ".experience-content .btn",
+      "media": "@media (max-width: 480px)",
+      "value": "17px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/pages/home/CallToAction.css",
+      "line": 248,
+      "selector": ".experience-content .btn .btn-arrow::after",
+      "media": "@media (max-width: 480px)",
       "value": "16px",
+      "hardcoded": true,
+      "important": false
+    },
+    {
+      "file": "src/pages/not-found/NotFoundPage.css",
+      "line": 64,
+      "selector": ".nf-title",
+      "media": "",
+      "value": "clamp(1.6rem, 3.5vw, 2.3rem)",
       "hardcoded": true,
       "important": false
     }
   ],
-  "smallFs": [],
+  "smallFs": [
+    {
+      "file": "src/features/home/components/Hero/Hero.css",
+      "line": 109,
+      "selector": ".hero-eyebrow",
+      "media": "",
+      "value": "11px",
+      "minPx": 11
+    },
+    {
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "line": 314,
+      "selector": ".pb-story-ring__text",
+      "media": "",
+      "value": "11px",
+      "minPx": 11
+    }
+  ],
   "doubled": [],
   "duplicates": [
     {
       "file": "src/app/global.css",
-      "first": 372,
-      "second": 403,
+      "first": 391,
+      "second": 420,
       "selector": "h1, h2, h3, h4, h5, h6, .display",
       "media": "",
       "redeclared": []
-    },
-    {
-      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
-      "first": 4,
-      "second": 522,
-      "selector": ".ai-widget",
-      "media": "",
-      "redeclared": [
-        "right",
-        "bottom"
-      ]
-    },
-    {
-      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
-      "first": 42,
-      "second": 527,
-      "selector": ".ai-float",
-      "media": "",
-      "redeclared": [
-        "width",
-        "height"
-      ]
-    },
-    {
-      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
-      "first": 79,
-      "second": 532,
-      "selector": ".ai-float-icon",
-      "media": "",
-      "redeclared": [
-        "width",
-        "height"
-      ]
-    },
-    {
-      "file": "src/app/Layout/components/AiAssistant/AiAssistant.css",
-      "first": 104,
-      "second": 537,
-      "selector": ".ai-panel",
-      "media": "",
-      "redeclared": [
-        "width",
-        "height"
-      ]
     },
     {
       "file": "src/features/gallery/components/Gallery.css",
@@ -893,325 +1795,28 @@
     },
     {
       "file": "src/features/gallery/components/Gallery.css",
-      "first": 320,
-      "second": 364,
-      "selector": ".gal-hero-collage",
-      "media": "@media (min-width: 1024px)",
-      "redeclared": []
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 13,
-      "second": 499,
-      "selector": ".gal-hero-copy",
-      "media": "",
-      "redeclared": [
-        "max-width"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 63,
-      "second": 507,
-      "selector": ".gal-hero-collage",
-      "media": "",
-      "redeclared": [
-        "--gal-frame-w",
-        "--gal-gap",
-        "-webkit-mask-image",
-        "mask-image"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 147,
-      "second": 562,
-      "selector": ".image-2",
-      "media": "",
-      "redeclared": [
-        "--o"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 161,
-      "second": 571,
-      "selector": ".image-4, .image-7",
-      "media": "",
-      "redeclared": [
-        "margin-left",
-        "z-index"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 82,
-      "second": 586,
-      "selector": ".gallery-track",
-      "media": "",
-      "redeclared": []
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 388,
-      "second": 595,
+      "first": 876,
+      "second": 976,
       "selector": ".gal-grid",
-      "media": "",
-      "redeclared": [
-        "--gal-slide-step",
-        "display",
-        "gap"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 398,
-      "second": 619,
-      "selector": ".gal-track",
-      "media": "",
-      "redeclared": [
-        "display"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 417,
-      "second": 634,
-      "selector": ".gal-tile:hover",
-      "media": "",
-      "redeclared": [
-        "transform",
-        "box-shadow"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 430,
-      "second": 639,
-      "selector": ".gal-tile:hover img",
-      "media": "",
-      "redeclared": [
-        "transform"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 403,
-      "second": 644,
-      "selector": ".gal-dots",
-      "media": "",
-      "redeclared": [
-        "display"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 225,
-      "second": 686,
-      "selector": ".gal-section",
-      "media": "",
-      "redeclared": [
-        "padding-block"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 6,
-      "second": 690,
-      "selector": ".gal-hero",
-      "media": "",
-      "redeclared": [
-        "padding-top",
-        "padding-bottom"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 388,
-      "second": 695,
-      "selector": ".gal-grid",
-      "media": "",
-      "redeclared": [
-        "margin-top"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 320,
-      "second": 726,
-      "selector": ".gal-hero-collage",
-      "media": "@media (min-width: 1024px)",
-      "redeclared": [
-        "margin-top"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 746,
-      "second": 758,
-      "selector": ".image-4",
-      "media": "@media (min-width: 1024px)",
+      "media": "@media (max-width: 767px)",
       "redeclared": []
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 749,
-      "second": 762,
-      "selector": ".image-7",
-      "media": "@media (min-width: 1024px)",
-      "redeclared": []
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 282,
-      "second": 780,
-      "selector": ".gal-hero",
-      "media": "@media (min-width: 1024px)",
-      "redeclared": [
-        "padding-top"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 325,
-      "second": 786,
-      "selector": ".gal-grid",
-      "media": "@media (min-width: 1024px)",
-      "redeclared": [
-        "gap"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 812,
-      "second": 833,
-      "selector": ".gal-grid .gal-tile",
-      "media": "@media (min-width: 1024px)",
-      "redeclared": []
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 330,
-      "second": 844,
-      "selector": ".gal-grid--atmosphere",
-      "media": "@media (min-width: 1024px)",
-      "redeclared": [
-        "grid-template-columns",
-        "grid-template-rows",
-        "aspect-ratio"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 336,
-      "second": 850,
-      "selector": ".gal-grid--wall",
-      "media": "@media (min-width: 1024px)",
-      "redeclared": [
-        "grid-template-columns",
-        "grid-template-rows",
-        "aspect-ratio"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 342,
-      "second": 856,
-      "selector": ".gal-grid--food",
-      "media": "@media (min-width: 1024px)",
-      "redeclared": [
-        "grid-template-columns",
-        "grid-template-rows",
-        "aspect-ratio"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 348,
-      "second": 862,
-      "selector": ".gal-grid--salon",
-      "media": "@media (min-width: 1024px)",
-      "redeclared": [
-        "grid-template-columns",
-        "grid-template-rows",
-        "aspect-ratio"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 359,
-      "second": 869,
-      "selector": ".gal-section",
-      "media": "@media (min-width: 1024px)",
-      "redeclared": [
-        "padding-block"
-      ]
-    },
-    {
-      "file": "src/features/gallery/components/Gallery.css",
-      "first": 381,
-      "second": 876,
-      "selector": ".gal-hero",
-      "media": "@media (min-width: 1920px)",
-      "redeclared": [
-        "padding-top"
-      ]
     },
     {
       "file": "src/features/home/components/GalleryMood/GalleryMood.css",
-      "first": 105,
-      "second": 124,
+      "first": 104,
+      "second": 123,
       "selector": ".carousel-item",
       "media": "",
       "redeclared": []
     },
     {
       "file": "src/features/home/components/GalleryMood/GalleryMood.css",
-      "first": 158,
-      "second": 197,
+      "first": 157,
+      "second": 196,
       "selector": ".carousel-item.center .polaroid-photo",
       "media": "",
       "redeclared": [
         "box-shadow"
-      ]
-    },
-    {
-      "file": "src/features/home/components/StorySection/StorySection.css",
-      "first": 1,
-      "second": 255,
-      "selector": ".story",
-      "media": "",
-      "redeclared": []
-    },
-    {
-      "file": "src/features/home/components/StorySection/StorySection.css",
-      "first": 12,
-      "second": 259,
-      "selector": ".story-grid",
-      "media": "",
-      "redeclared": [
-        "min-height",
-        "display",
-        "gap",
-        "align-items"
-      ]
-    },
-    {
-      "file": "src/features/home/components/StorySection/StorySection.css",
-      "first": 22,
-      "second": 268,
-      "selector": ".story-copy",
-      "media": "",
-      "redeclared": []
-    },
-    {
-      "file": "src/features/home/components/StorySection/StorySection.css",
-      "first": 62,
-      "second": 299,
-      "selector": ".story-media",
-      "media": "",
-      "redeclared": [
-        "width"
       ]
     },
     {
@@ -1223,339 +1828,75 @@
       "redeclared": []
     },
     {
-      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
-      "first": 101,
-      "second": 302,
-      "selector": ".ostory-emblem-wrap",
-      "media": "",
-      "redeclared": []
-    },
-    {
-      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
-      "first": 107,
-      "second": 325,
-      "selector": ".ostory-emblem",
-      "media": "",
-      "redeclared": []
-    },
-    {
-      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
-      "first": 111,
-      "second": 329,
-      "selector": ".ostory-emblem-photo",
-      "media": "",
-      "redeclared": [
-        "width"
-      ]
-    },
-    {
-      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
-      "first": 177,
-      "second": 351,
-      "selector": ".pb-story-deco",
-      "media": "",
-      "redeclared": [
-        "display"
-      ]
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 24,
-      "second": 573,
-      "selector": ".visit-hero",
-      "media": "",
-      "redeclared": [
-        "min-height",
-        "border-radius",
-        "padding",
-        "display",
-        "align-items",
-        "background-color"
-      ]
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 92,
-      "second": 590,
-      "selector": ".visit-hero-word",
-      "media": "",
-      "redeclared": []
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 44,
-      "second": 596,
-      "selector": ".visit-hero-img",
-      "media": "",
-      "redeclared": []
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
+      "file": "src/features/story/components/OurStoryHero/OurStoryHero.css",
       "first": 62,
-      "second": 602,
-      "selector": ".visit-hero-overlay",
+      "second": 129,
+      "selector": ".ostory-gallery",
       "media": "",
       "redeclared": [
-        "background"
+        "height"
       ]
     },
     {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 109,
-      "second": 612,
-      "selector": ".visit-hero-content",
-      "media": "",
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "first": 205,
+      "second": 238,
+      "selector": ".ostory-origin-heading",
+      "media": "@media (max-width: 599px)",
       "redeclared": []
     },
     {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 114,
-      "second": 619,
-      "selector": ".visit-hero-copy",
-      "media": "",
-      "redeclared": [
-        "max-width"
-      ]
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "first": 374,
+      "second": 396,
+      "selector": ".ostory-origin-grid",
+      "media": "@media (min-width: 600px) and (max-width: 1099px)",
+      "redeclared": []
     },
     {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 128,
-      "second": 628,
-      "selector": ".visit-hero-eyebrow",
-      "media": "",
-      "redeclared": [
-        "margin-bottom",
-        "color"
-      ]
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 136,
-      "second": 643,
-      "selector": ".visit-hero-dash",
-      "media": "",
-      "redeclared": [
-        "margin-right"
-      ]
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 140,
-      "second": 653,
-      "selector": ".visit-hero-title",
-      "media": "",
-      "redeclared": [
-        "line-height",
-        "letter-spacing",
-        "color",
-        "margin-bottom"
-      ]
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 156,
-      "second": 663,
-      "selector": ".visit-hero-desc",
-      "media": "",
-      "redeclared": [
-        "color",
-        "max-width"
-      ]
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 20,
-      "second": 672,
-      "selector": ".visit-hero-wrap",
-      "media": "",
-      "redeclared": [
-        "margin-block"
-      ]
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 183,
-      "second": 676,
-      "selector": ".visit-card",
-      "media": "",
-      "redeclared": [
-        "padding"
-      ]
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 226,
-      "second": 680,
-      "selector": ".visit-field input",
-      "media": "",
-      "redeclared": [
-        "height"
-      ]
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 230,
-      "second": 684,
-      "selector": ".visit-field textarea",
-      "media": "",
-      "redeclared": [
-        "min-height"
-      ]
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 340,
-      "second": 690,
-      "selector": ".visit-map-wrap",
-      "media": "",
-      "redeclared": [
-        "height"
-      ]
-    },
-    {
-      "file": "src/features/visit/components/VisitContact.css",
-      "first": 417,
-      "second": 694,
-      "selector": ".visit-info-footer",
-      "media": "",
-      "redeclared": [
-        "align-items"
-      ]
+      "file": "src/features/story/components/OurStoryOrigin/OurStoryOrigin.css",
+      "first": 638,
+      "second": 698,
+      "selector": ".ostory-origin-copy > .ostory-origin-heading > .ostory-origin-title",
+      "media": "@media (min-width: 600px) and (max-width: 1023px)",
+      "redeclared": []
     }
   ],
   "tokenDefs": [
     {
       "file": "src/app/global.css",
-      "line": 74,
+      "line": 81,
+      "token": "--fs-eyebrow",
+      "value": "0.625rem",
+      "media": "(base)"
+    },
+    {
+      "file": "src/app/global.css",
+      "line": 107,
       "token": "--fs-h1",
-      "value": "32px",
+      "value": "clamp(2.25rem, 2.1vw + 1.85rem, 5.25rem)",
       "media": "(base)"
     },
     {
       "file": "src/app/global.css",
-      "line": 75,
-      "token": "--lh-h1",
-      "value": "1.15",
-      "media": "(base)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 76,
+      "line": 108,
       "token": "--fs-h2",
-      "value": "28px",
+      "value": "var(--fs-section)",
       "media": "(base)"
     },
     {
       "file": "src/app/global.css",
-      "line": 77,
-      "token": "--lh-h2",
-      "value": "1.2",
-      "media": "(base)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 78,
-      "token": "--fs-body",
-      "value": "14px",
-      "media": "(base)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 79,
+      "line": 119,
       "token": "--lh-body",
-      "value": "1.5",
+      "value": "1.6",
       "media": "(base)"
     },
     {
       "file": "src/app/global.css",
-      "line": 80,
+      "line": 229,
       "token": "--fs-eyebrow",
-      "value": "12px",
-      "media": "(base)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 202,
-      "token": "--fs-h1",
-      "value": "44px",
-      "media": "@media (min-width: 641px)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 203,
-      "token": "--fs-h2",
-      "value": "36px",
-      "media": "@media (min-width: 641px)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 204,
-      "token": "--fs-body",
-      "value": "16px",
-      "media": "@media (min-width: 641px)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 205,
-      "token": "--fs-eyebrow",
-      "value": "14px",
-      "media": "@media (min-width: 641px)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 218,
-      "token": "--fs-h1",
-      "value": "56px",
-      "media": "@media (min-width: 1024px)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 219,
-      "token": "--lh-h1",
-      "value": "1.1",
-      "media": "@media (min-width: 1024px)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 220,
-      "token": "--fs-h2",
-      "value": "48px",
-      "media": "@media (min-width: 1024px)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 221,
-      "token": "--lh-h2",
-      "value": "1.15",
-      "media": "@media (min-width: 1024px)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 222,
-      "token": "--fs-body",
-      "value": "20px",
-      "media": "@media (min-width: 1024px)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 223,
-      "token": "--fs-eyebrow",
-      "value": "16px",
-      "media": "@media (min-width: 1024px)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 234,
-      "token": "--fs-h1",
-      "value": "64px",
-      "media": "@media (min-width: 1920px)"
-    },
-    {
-      "file": "src/app/global.css",
-      "line": 235,
-      "token": "--fs-h2",
-      "value": "52px",
-      "media": "@media (min-width: 1920px)"
+      "value": "clamp(0.75rem, 0.13vw + 0.72rem, 0.875rem)",
+      "media": "@media (min-width: 744px)"
     }
   ]
 }

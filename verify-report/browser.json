@@ -28,9 +28,9 @@
       "type": "h1",
       "cls": "menu-hero-title",
       "text": "Something Good, Before Or After Your Appointment",
-      "found": 2,
+      "found": 3,
       "expected": 2,
-      "ok": true,
+      "ok": false,
       "note": "Figma: Menu hero H1 = 2 lines @1440"
     },
     {
@@ -38,7 +38,7 @@
       "width": 1440,
       "type": "h1",
       "cls": "gal-hero-title",
-      "text": "Moments Worth Slowing Down For.",
+      "text": "A Little Paris, Created for Your Salon Day.",
       "found": 1,
       "expected": 1,
       "ok": true,
@@ -153,7 +153,6506 @@
       "pass": true
     }
   ],
-  "bandJumps": [],
+  "bandJumps": [
+    {
+      "key": "home|h1|hero-title is-visible|Your SalonAppointment, With ATaste Of Paris.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 32,
+      "fsNow": 44,
+      "type": "h1",
+      "cls": "hero-title is-visible"
+    },
+    {
+      "key": "home|h1|hero-title is-visible|Your SalonAppointment, With ATaste Of Paris.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 44,
+      "fsNow": 56,
+      "type": "h1",
+      "cls": "hero-title is-visible"
+    },
+    {
+      "key": "home|h2|experience-title reveal reveal-delay-1 is-visible|More Than a Coffee. Part of Your Appointment.",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 22,
+      "fsNow": 28,
+      "type": "h2",
+      "cls": "experience-title reveal reveal-delay-1 is-visible"
+    },
+    {
+      "key": "home|h2|experience-title reveal reveal-delay-1 is-visible|More Than a Coffee. Part of Your Appointment.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 28,
+      "fsNow": 36,
+      "type": "h2",
+      "cls": "experience-title reveal reveal-delay-1 is-visible"
+    },
+    {
+      "key": "home|h2|experience-title reveal reveal-delay-1 is-visible|More Than a Coffee. Part of Your Appointment.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 36,
+      "fsNow": 48,
+      "type": "h2",
+      "cls": "experience-title reveal reveal-delay-1 is-visible"
+    },
+    {
+      "key": "home|h2|story-title reveal reveal-delay-1|Inspired By ParisStreets. Created ForYour Salon ",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 28,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "story-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|story-title reveal reveal-delay-1|Inspired By ParisStreets. Created ForYour Salon ",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "story-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|story-title reveal reveal-delay-1|Inspired By ParisStreets. Created ForYour Salon ",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "story-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|story-title reveal reveal-delay-1|Inspired By ParisStreets. Created ForYour Salon ",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "story-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|story-title reveal reveal-delay-1|Inspired By ParisStreets. Created ForYour Salon ",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "story-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|story-title reveal reveal-delay-1|Inspired By ParisStreets. Created ForYour Salon ",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "story-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|story-title reveal reveal-delay-1|Inspired By ParisStreets. Created ForYour Salon ",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "story-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|cafe-title reveal reveal-delay-1|Coffee, Breakfast & Little Indulgences.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 28,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "cafe-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|cafe-title reveal reveal-delay-1|Coffee, Breakfast & Little Indulgences.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "cafe-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|cafe-title reveal reveal-delay-1|Coffee, Breakfast & Little Indulgences.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "cafe-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|cafe-title reveal reveal-delay-1|Coffee, Breakfast & Little Indulgences.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "cafe-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|cafe-title reveal reveal-delay-1|Coffee, Breakfast & Little Indulgences.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "cafe-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|cafe-title reveal reveal-delay-1|Coffee, Breakfast & Little Indulgences.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "cafe-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|cafe-title reveal reveal-delay-1|Coffee, Breakfast & Little Indulgences.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "cafe-title reveal reveal-delay-1"
+    },
+    {
+      "key": "home|h2|gallery-title|A Corner of Paris, InsideHAIR RAP BY YOYO.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 28,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "gallery-title"
+    },
+    {
+      "key": "home|h2|gallery-title|A Corner of Paris, InsideHAIR RAP BY YOYO.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "gallery-title"
+    },
+    {
+      "key": "home|h2|gallery-title|A Corner of Paris, InsideHAIR RAP BY YOYO.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "gallery-title"
+    },
+    {
+      "key": "home|h2|gallery-title|A Corner of Paris, InsideHAIR RAP BY YOYO.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "gallery-title"
+    },
+    {
+      "key": "home|h2|gallery-title|A Corner of Paris, InsideHAIR RAP BY YOYO.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "gallery-title"
+    },
+    {
+      "key": "home|h2|gallery-title|A Corner of Paris, InsideHAIR RAP BY YOYO.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "gallery-title"
+    },
+    {
+      "key": "home|h2|gallery-title|A Corner of Paris, InsideHAIR RAP BY YOYO.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "gallery-title"
+    },
+    {
+      "key": "home|desc|hero-desc reveal reveal-delay-2 is-visible|Step into HAIR RAP BY YOYO and discover Paris Be",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 14.673,
+      "fsNow": 14.725,
+      "type": "desc",
+      "cls": "hero-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "home|desc|hero-desc reveal reveal-delay-2 is-visible|Step into HAIR RAP BY YOYO and discover Paris Be",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 14.725,
+      "fsNow": 14.865,
+      "type": "desc",
+      "cls": "hero-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "home|desc|hero-desc reveal reveal-delay-2 is-visible|Step into HAIR RAP BY YOYO and discover Paris Be",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 14.865,
+      "fsNow": 15.11,
+      "type": "desc",
+      "cls": "hero-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "home|desc|hero-desc reveal reveal-delay-2 is-visible|Step into HAIR RAP BY YOYO and discover Paris Be",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 15.11,
+      "fsNow": 15.6,
+      "type": "desc",
+      "cls": "hero-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "home|desc|hero-desc reveal reveal-delay-2 is-visible|Step into HAIR RAP BY YOYO and discover Paris Be",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 15.604,
+      "fsNow": 17,
+      "type": "desc",
+      "cls": "hero-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "home|desc|hero-desc reveal reveal-delay-2 is-visible|Step into HAIR RAP BY YOYO and discover Paris Be",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": "hero-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "home|desc|experience-desc reveal reveal-delay-2 is-visible|Whether you arrive early, take a break during yo",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 12,
+      "fsNow": 13.7,
+      "type": "desc",
+      "cls": "experience-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "home|desc|experience-desc reveal reveal-delay-2 is-visible|Whether you arrive early, take a break during yo",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 13.7,
+      "fsNow": 14,
+      "type": "desc",
+      "cls": "experience-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "home|desc|experience-desc reveal reveal-delay-2 is-visible|Whether you arrive early, take a break during yo",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 14,
+      "fsNow": 17,
+      "type": "desc",
+      "cls": "experience-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "home|desc|lead story-paragraph reveal reveal-delay-2|Born from a love for the café culture of Paris, ",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 16,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": "lead story-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead story-paragraph reveal reveal-delay-2|Born from a love for the café culture of Paris, ",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": "lead story-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead story-paragraph reveal reveal-delay-2|Born from a love for the café culture of Paris, ",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": "lead story-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead story-paragraph reveal reveal-delay-2|Born from a love for the café culture of Paris, ",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": "lead story-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead cafe-paragraph reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": "lead cafe-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead cafe-paragraph reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": "lead cafe-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead cafe-paragraph reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": "lead cafe-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead cafe-paragraph reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": "lead cafe-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead cafe-paragraph reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "lead cafe-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead cafe-paragraph reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "lead cafe-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead cafe-paragraph reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "lead cafe-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead cafe-paragraph reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": "lead cafe-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead cafe-paragraph reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": "lead cafe-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead cafe-paragraph reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": "lead cafe-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead cafe-paragraph reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": "lead cafe-paragraph reveal reveal-delay-2"
+    },
+    {
+      "key": "home|desc|lead gallery-desc|Paris-inspired details, warm coffee, beautiful s",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": "lead gallery-desc"
+    },
+    {
+      "key": "home|desc|lead gallery-desc|Paris-inspired details, warm coffee, beautiful s",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": "lead gallery-desc"
+    },
+    {
+      "key": "home|desc|lead gallery-desc|Paris-inspired details, warm coffee, beautiful s",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": "lead gallery-desc"
+    },
+    {
+      "key": "home|desc|lead gallery-desc|Paris-inspired details, warm coffee, beautiful s",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": "lead gallery-desc"
+    },
+    {
+      "key": "home|desc|lead gallery-desc|Paris-inspired details, warm coffee, beautiful s",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "lead gallery-desc"
+    },
+    {
+      "key": "home|desc|lead gallery-desc|Paris-inspired details, warm coffee, beautiful s",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "lead gallery-desc"
+    },
+    {
+      "key": "home|desc|lead gallery-desc|Paris-inspired details, warm coffee, beautiful s",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "lead gallery-desc"
+    },
+    {
+      "key": "home|desc|lead gallery-desc|Paris-inspired details, warm coffee, beautiful s",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": "lead gallery-desc"
+    },
+    {
+      "key": "home|desc|lead gallery-desc|Paris-inspired details, warm coffee, beautiful s",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": "lead gallery-desc"
+    },
+    {
+      "key": "home|desc|lead gallery-desc|Paris-inspired details, warm coffee, beautiful s",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": "lead gallery-desc"
+    },
+    {
+      "key": "home|desc|lead gallery-desc|Paris-inspired details, warm coffee, beautiful s",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": "lead gallery-desc"
+    },
+    {
+      "key": "home|eyebrow|eyebrow hero-eyebrow|- Paris Beans - HAIR RAP BY YOYO",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 11,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow hero-eyebrow"
+    },
+    {
+      "key": "home|eyebrow|eyebrow hero-eyebrow|- Paris Beans - HAIR RAP BY YOYO",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow hero-eyebrow"
+    },
+    {
+      "key": "home|eyebrow|eyebrow hero-eyebrow|- Paris Beans - HAIR RAP BY YOYO",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow hero-eyebrow"
+    },
+    {
+      "key": "home|eyebrow|eyebrow hero-eyebrow|- Paris Beans - HAIR RAP BY YOYO",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow hero-eyebrow"
+    },
+    {
+      "key": "home|eyebrow|eyebrow hero-eyebrow|- Paris Beans - HAIR RAP BY YOYO",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow hero-eyebrow"
+    },
+    {
+      "key": "home|eyebrow|eyebrow hero-eyebrow|- Paris Beans - HAIR RAP BY YOYO",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow hero-eyebrow"
+    },
+    {
+      "key": "home|eyebrow|eyebrow hero-eyebrow|- Paris Beans - HAIR RAP BY YOYO",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow hero-eyebrow"
+    },
+    {
+      "key": "home|eyebrow|pb-story-eyebrow eyebrow reveal|— OUR STORY",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "pb-story-eyebrow eyebrow reveal"
+    },
+    {
+      "key": "home|eyebrow|pb-story-eyebrow eyebrow reveal|— OUR STORY",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "pb-story-eyebrow eyebrow reveal"
+    },
+    {
+      "key": "home|eyebrow|pb-story-eyebrow eyebrow reveal|— OUR STORY",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "pb-story-eyebrow eyebrow reveal"
+    },
+    {
+      "key": "home|eyebrow|pb-story-eyebrow eyebrow reveal|— OUR STORY",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "pb-story-eyebrow eyebrow reveal"
+    },
+    {
+      "key": "home|eyebrow|eyebrow reveal|— From the Café",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow reveal"
+    },
+    {
+      "key": "home|eyebrow|eyebrow reveal|— From the Café",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow reveal"
+    },
+    {
+      "key": "home|eyebrow|eyebrow reveal|— From the Café",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow reveal"
+    },
+    {
+      "key": "home|eyebrow|eyebrow reveal|— From the Café",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow reveal"
+    },
+    {
+      "key": "home|eyebrow|eyebrow reveal|— From the Café",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow reveal"
+    },
+    {
+      "key": "home|eyebrow|eyebrow reveal|— From the Café",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow reveal"
+    },
+    {
+      "key": "home|eyebrow|eyebrow reveal|— From the Café",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow reveal"
+    },
+    {
+      "key": "home|eyebrow|eyebrow|— The ParisBeans Mood",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "home|eyebrow|eyebrow|— The ParisBeans Mood",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "home|eyebrow|eyebrow|— The ParisBeans Mood",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "home|eyebrow|eyebrow|— The ParisBeans Mood",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "home|eyebrow|eyebrow|— The ParisBeans Mood",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "home|eyebrow|eyebrow|— The ParisBeans Mood",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "home|eyebrow|eyebrow|— The ParisBeans Mood",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "our-story|h1|ostory-title reveal reveal-delay-1 is-visible|A Little Paris, Created for Your Salon Day.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 32,
+      "fsNow": 45.224,
+      "type": "h1",
+      "cls": "ostory-title reveal reveal-delay-1 is-visible"
+    },
+    {
+      "key": "our-story|h1|ostory-title reveal reveal-delay-1 is-visible|A Little Paris, Created for Your Salon Day.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 45.224,
+      "fsNow": 48.5,
+      "type": "h1",
+      "cls": "ostory-title reveal reveal-delay-1 is-visible"
+    },
+    {
+      "key": "our-story|h1|ostory-title reveal reveal-delay-1 is-visible|A Little Paris, Created for Your Salon Day.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 48.5,
+      "fsNow": 51.083,
+      "type": "h1",
+      "cls": "ostory-title reveal reveal-delay-1 is-visible"
+    },
+    {
+      "key": "our-story|h1|ostory-title reveal reveal-delay-1 is-visible|A Little Paris, Created for Your Salon Day.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 51.104,
+      "fsNow": 44.304,
+      "type": "h1",
+      "cls": "ostory-title reveal reveal-delay-1 is-visible"
+    },
+    {
+      "key": "our-story|h1|ostory-title reveal reveal-delay-1 is-visible|A Little Paris, Created for Your Salon Day.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 44.304,
+      "fsNow": 49.92,
+      "type": "h1",
+      "cls": "ostory-title reveal reveal-delay-1 is-visible"
+    },
+    {
+      "key": "our-story|h1|ostory-title reveal reveal-delay-1 is-visible|A Little Paris, Created for Your Salon Day.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 49.92,
+      "fsNow": 56,
+      "type": "h1",
+      "cls": "ostory-title reveal reveal-delay-1 is-visible"
+    },
+    {
+      "key": "our-story|h2|ostory-origin-title|From a Parisian Feeling to a Salon Experience.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 28,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "ostory-origin-title"
+    },
+    {
+      "key": "our-story|h2|ostory-origin-title|From a Parisian Feeling to a Salon Experience.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "ostory-origin-title"
+    },
+    {
+      "key": "our-story|h2|ostory-origin-title|From a Parisian Feeling to a Salon Experience.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "ostory-origin-title"
+    },
+    {
+      "key": "our-story|h2|ostory-origin-title|From a Parisian Feeling to a Salon Experience.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "ostory-origin-title"
+    },
+    {
+      "key": "our-story|h2|ostory-origin-title|From a Parisian Feeling to a Salon Experience.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "ostory-origin-title"
+    },
+    {
+      "key": "our-story|h2|ostory-origin-title|From a Parisian Feeling to a Salon Experience.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "ostory-origin-title"
+    },
+    {
+      "key": "our-story|h2|ostory-origin-title|From a Parisian Feeling to a Salon Experience.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "ostory-origin-title"
+    },
+    {
+      "key": "our-story|h2|ostory-cta-title|ParisBeans Is Not Just a Café Corner.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 28,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "ostory-cta-title"
+    },
+    {
+      "key": "our-story|h2|ostory-cta-title|ParisBeans Is Not Just a Café Corner.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "ostory-cta-title"
+    },
+    {
+      "key": "our-story|h2|ostory-cta-title|ParisBeans Is Not Just a Café Corner.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "ostory-cta-title"
+    },
+    {
+      "key": "our-story|h2|ostory-cta-title|ParisBeans Is Not Just a Café Corner.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "ostory-cta-title"
+    },
+    {
+      "key": "our-story|h2|ostory-cta-title|ParisBeans Is Not Just a Café Corner.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "ostory-cta-title"
+    },
+    {
+      "key": "our-story|h2|ostory-cta-title|ParisBeans Is Not Just a Café Corner.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "ostory-cta-title"
+    },
+    {
+      "key": "our-story|h2|ostory-cta-title|ParisBeans Is Not Just a Café Corner.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "ostory-cta-title"
+    },
+    {
+      "key": "our-story|desc|ostory-desc reveal reveal-delay-2 is-visible|Paris Beans began with a simple idea — what if a",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": "ostory-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "our-story|desc|ostory-desc reveal reveal-delay-2 is-visible|Paris Beans began with a simple idea — what if a",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": "ostory-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "our-story|desc|ostory-desc reveal reveal-delay-2 is-visible|Paris Beans began with a simple idea — what if a",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": "ostory-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "our-story|desc|ostory-desc reveal reveal-delay-2 is-visible|Paris Beans began with a simple idea — what if a",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": "ostory-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "our-story|desc|ostory-desc reveal reveal-delay-2 is-visible|Paris Beans began with a simple idea — what if a",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "ostory-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "our-story|desc|ostory-desc reveal reveal-delay-2 is-visible|Paris Beans began with a simple idea — what if a",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "ostory-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "our-story|desc|ostory-desc reveal reveal-delay-2 is-visible|Paris Beans began with a simple idea — what if a",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "ostory-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "our-story|desc|ostory-desc reveal reveal-delay-2 is-visible|Paris Beans began with a simple idea — what if a",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 16,
+      "type": "desc",
+      "cls": "ostory-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "our-story|desc|ostory-desc reveal reveal-delay-2 is-visible|Paris Beans began with a simple idea — what if a",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 16,
+      "fsNow": 17.92,
+      "type": "desc",
+      "cls": "ostory-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "our-story|desc|ostory-desc reveal reveal-delay-2 is-visible|Paris Beans began with a simple idea — what if a",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 17.92,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": "ostory-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "our-story|desc|ostory-origin-text|ParisBeans was created inside HAIR RAP BY YOYO a",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": "ostory-origin-text"
+    },
+    {
+      "key": "our-story|desc|ostory-origin-text|ParisBeans was created inside HAIR RAP BY YOYO a",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": "ostory-origin-text"
+    },
+    {
+      "key": "our-story|desc|ostory-origin-text|ParisBeans was created inside HAIR RAP BY YOYO a",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": "ostory-origin-text"
+    },
+    {
+      "key": "our-story|desc|ostory-origin-text|ParisBeans was created inside HAIR RAP BY YOYO a",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": "ostory-origin-text"
+    },
+    {
+      "key": "our-story|desc|ostory-origin-text|ParisBeans was created inside HAIR RAP BY YOYO a",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "ostory-origin-text"
+    },
+    {
+      "key": "our-story|desc|ostory-origin-text|ParisBeans was created inside HAIR RAP BY YOYO a",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "ostory-origin-text"
+    },
+    {
+      "key": "our-story|desc|ostory-origin-text|ParisBeans was created inside HAIR RAP BY YOYO a",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "ostory-origin-text"
+    },
+    {
+      "key": "our-story|desc|ostory-origin-text|ParisBeans was created inside HAIR RAP BY YOYO a",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 16.76,
+      "type": "desc",
+      "cls": "ostory-origin-text"
+    },
+    {
+      "key": "our-story|desc|ostory-origin-text|ParisBeans was created inside HAIR RAP BY YOYO a",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 16.76,
+      "fsNow": 17.12,
+      "type": "desc",
+      "cls": "ostory-origin-text"
+    },
+    {
+      "key": "our-story|desc|ostory-origin-text|ParisBeans was created inside HAIR RAP BY YOYO a",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 17.12,
+      "fsNow": 17.52,
+      "type": "desc",
+      "cls": "ostory-origin-text"
+    },
+    {
+      "key": "our-story|desc|ostory-origin-text|ParisBeans was created inside HAIR RAP BY YOYO a",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 17.52,
+      "fsNow": 18.6,
+      "type": "desc",
+      "cls": "ostory-origin-text"
+    },
+    {
+      "key": "our-story|desc|ostory-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": "ostory-cta-desc"
+    },
+    {
+      "key": "our-story|desc|ostory-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": "ostory-cta-desc"
+    },
+    {
+      "key": "our-story|desc|ostory-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": "ostory-cta-desc"
+    },
+    {
+      "key": "our-story|desc|ostory-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": "ostory-cta-desc"
+    },
+    {
+      "key": "our-story|desc|ostory-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "ostory-cta-desc"
+    },
+    {
+      "key": "our-story|desc|ostory-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "ostory-cta-desc"
+    },
+    {
+      "key": "our-story|desc|ostory-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "ostory-cta-desc"
+    },
+    {
+      "key": "our-story|desc|ostory-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 16.76,
+      "type": "desc",
+      "cls": "ostory-cta-desc"
+    },
+    {
+      "key": "our-story|desc|ostory-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 16.76,
+      "fsNow": 17.12,
+      "type": "desc",
+      "cls": "ostory-cta-desc"
+    },
+    {
+      "key": "our-story|desc|ostory-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 17.12,
+      "fsNow": 17.52,
+      "type": "desc",
+      "cls": "ostory-cta-desc"
+    },
+    {
+      "key": "our-story|desc|ostory-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 17.52,
+      "fsNow": 18.6,
+      "type": "desc",
+      "cls": "ostory-cta-desc"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow reveal is-visible|OUR STORY",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow reveal is-visible"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow reveal is-visible|OUR STORY",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow reveal is-visible"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow reveal is-visible|OUR STORY",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow reveal is-visible"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow reveal is-visible|OUR STORY",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 18,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow reveal is-visible"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|— From Paris to HAIR RAP BY YOYO",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|— From Paris to HAIR RAP BY YOYO",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|— From Paris to HAIR RAP BY YOYO",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|— From Paris to HAIR RAP BY YOYO",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|— From Paris to HAIR RAP BY YOYO",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|— From Paris to HAIR RAP BY YOYO",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|— From Paris to HAIR RAP BY YOYO",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|THE PARISBEANS EXPERIENCE",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|THE PARISBEANS EXPERIENCE",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|THE PARISBEANS EXPERIENCE",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|THE PARISBEANS EXPERIENCE",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|THE PARISBEANS EXPERIENCE",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|THE PARISBEANS EXPERIENCE",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "our-story|eyebrow|eyebrow ostory-eyebrow|THE PARISBEANS EXPERIENCE",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow ostory-eyebrow"
+    },
+    {
+      "key": "menu|h1|menu-hero-title|Something Good, Before Or After Your Appointment",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 51.104,
+      "fsNow": 53.456,
+      "type": "h1",
+      "cls": "menu-hero-title"
+    },
+    {
+      "key": "menu|h1|menu-hero-title|Something Good, Before Or After Your Appointment",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 53.456,
+      "fsNow": 56.48,
+      "type": "h1",
+      "cls": "menu-hero-title"
+    },
+    {
+      "key": "menu|h1|menu-hero-title|Something Good, Before Or After Your Appointment",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 56.48,
+      "fsNow": 59.84,
+      "type": "h1",
+      "cls": "menu-hero-title"
+    },
+    {
+      "key": "menu|h1|menu-hero-title|Something Good, Before Or After Your Appointment",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 59.84,
+      "fsNow": 69.899,
+      "type": "h1",
+      "cls": "menu-hero-title"
+    },
+    {
+      "key": "menu|h1|menu-hero-title|Something Good, Before Or After Your Appointment",
+      "from": 1920,
+      "to": 2560,
+      "fsPrev": 69.92,
+      "fsNow": 83.36,
+      "type": "h1",
+      "cls": "menu-hero-title"
+    },
+    {
+      "key": "menu|h2|menu-special-title|Specialty Hot Coffees (240 ml)",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "menu-special-title"
+    },
+    {
+      "key": "menu|h2|menu-special-title|Specialty Hot Coffees (240 ml)",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "menu-special-title"
+    },
+    {
+      "key": "menu|h2|menu-special-title|Specialty Hot Coffees (240 ml)",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "menu-special-title"
+    },
+    {
+      "key": "menu|h2|menu-special-title|Specialty Hot Coffees (240 ml)",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "menu-special-title"
+    },
+    {
+      "key": "menu|h2|menu-cafe-title reveal reveal-delay-1|A Few Things WorthStaying For.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "menu-cafe-title reveal reveal-delay-1"
+    },
+    {
+      "key": "menu|h2|menu-cafe-title reveal reveal-delay-1|A Few Things WorthStaying For.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "menu-cafe-title reveal reveal-delay-1"
+    },
+    {
+      "key": "menu|h2|menu-cafe-title reveal reveal-delay-1|A Few Things WorthStaying For.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "menu-cafe-title reveal reveal-delay-1"
+    },
+    {
+      "key": "menu|h2|menu-cafe-title reveal reveal-delay-1|A Few Things WorthStaying For.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "menu-cafe-title reveal reveal-delay-1"
+    },
+    {
+      "key": "menu|h2|menu-cta-title|Your Table Is Waiting.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "menu-cta-title"
+    },
+    {
+      "key": "menu|h2|menu-cta-title|Your Table Is Waiting.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "menu-cta-title"
+    },
+    {
+      "key": "menu|h2|menu-cta-title|Your Table Is Waiting.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "menu-cta-title"
+    },
+    {
+      "key": "menu|h2|menu-cta-title|Your Table Is Waiting.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "menu-cta-title"
+    },
+    {
+      "key": "menu|desc|menu-hero-desc|From comforting coffee to simple café favourites",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": "menu-hero-desc"
+    },
+    {
+      "key": "menu|desc|menu-hero-desc|From comforting coffee to simple café favourites",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": "menu-hero-desc"
+    },
+    {
+      "key": "menu|desc|menu-hero-desc|From comforting coffee to simple café favourites",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": "menu-hero-desc"
+    },
+    {
+      "key": "menu|desc|menu-hero-desc|From comforting coffee to simple café favourites",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": "menu-hero-desc"
+    },
+    {
+      "key": "menu|desc|menu-cafe-desc reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": "menu-cafe-desc reveal reveal-delay-2"
+    },
+    {
+      "key": "menu|desc|menu-cafe-desc reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": "menu-cafe-desc reveal reveal-delay-2"
+    },
+    {
+      "key": "menu|desc|menu-cafe-desc reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": "menu-cafe-desc reveal reveal-delay-2"
+    },
+    {
+      "key": "menu|desc|menu-cafe-desc reveal reveal-delay-2|Discover a simple, satisfying café offering cura",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": "menu-cafe-desc reveal reveal-delay-2"
+    },
+    {
+      "key": "menu|desc|menu-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": "menu-cta-desc"
+    },
+    {
+      "key": "menu|desc|menu-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": "menu-cta-desc"
+    },
+    {
+      "key": "menu|desc|menu-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": "menu-cta-desc"
+    },
+    {
+      "key": "menu|desc|menu-cta-desc|It is a small Parisian ritual built into your HA",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": "menu-cta-desc"
+    },
+    {
+      "key": "menu|eyebrow|eyebrow menu-hero-eyebrow|—ParisBeans Menu",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow menu-hero-eyebrow"
+    },
+    {
+      "key": "menu|eyebrow|eyebrow menu-hero-eyebrow|—ParisBeans Menu",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow menu-hero-eyebrow"
+    },
+    {
+      "key": "menu|eyebrow|eyebrow menu-hero-eyebrow|—ParisBeans Menu",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow menu-hero-eyebrow"
+    },
+    {
+      "key": "menu|eyebrow|eyebrow menu-hero-eyebrow|—ParisBeans Menu",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow menu-hero-eyebrow"
+    },
+    {
+      "key": "menu|eyebrow|eyebrow|— The Paris Beans Experience",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "menu|eyebrow|eyebrow|— The Paris Beans Experience",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "menu|eyebrow|eyebrow|— The Paris Beans Experience",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "menu|eyebrow|eyebrow|— The Paris Beans Experience",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "gallery|h1|gal-hero-title|A Little Paris, Created for Your Salon Day.",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 32,
+      "fsNow": 40.1,
+      "type": "h1",
+      "cls": "gal-hero-title"
+    },
+    {
+      "key": "gallery|h1|gal-hero-title|A Little Paris, Created for Your Salon Day.",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 40.1,
+      "fsNow": 43.04,
+      "type": "h1",
+      "cls": "gal-hero-title"
+    },
+    {
+      "key": "gallery|h1|gal-hero-title|A Little Paris, Created for Your Salon Day.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 43.061,
+      "fsNow": 45.224,
+      "type": "h1",
+      "cls": "gal-hero-title"
+    },
+    {
+      "key": "gallery|h1|gal-hero-title|A Little Paris, Created for Your Salon Day.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 45.224,
+      "fsNow": 48.5,
+      "type": "h1",
+      "cls": "gal-hero-title"
+    },
+    {
+      "key": "gallery|h1|gal-hero-title|A Little Paris, Created for Your Salon Day.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 48.5,
+      "fsNow": 51.083,
+      "type": "h1",
+      "cls": "gal-hero-title"
+    },
+    {
+      "key": "gallery|h1|gal-hero-title|A Little Paris, Created for Your Salon Day.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 51.104,
+      "fsNow": 44.304,
+      "type": "h1",
+      "cls": "gal-hero-title"
+    },
+    {
+      "key": "gallery|h1|gal-hero-title|A Little Paris, Created for Your Salon Day.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 44.304,
+      "fsNow": 49.92,
+      "type": "h1",
+      "cls": "gal-hero-title"
+    },
+    {
+      "key": "gallery|h1|gal-hero-title|A Little Paris, Created for Your Salon Day.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 49.92,
+      "fsNow": 56,
+      "type": "h1",
+      "cls": "gal-hero-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Moments Worth Slowing Down For.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Moments Worth Slowing Down For.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Moments Worth Slowing Down For.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Moments Worth Slowing Down For.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Moments Worth Slowing Down For.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Moments Worth Slowing Down For.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Moments Worth Slowing Down For.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|A Corner of Paris, Inside HAIR RAP BY YOYO.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|A Corner of Paris, Inside HAIR RAP BY YOYO.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|A Corner of Paris, Inside HAIR RAP BY YOYO.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|A Corner of Paris, Inside HAIR RAP BY YOYO.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|A Corner of Paris, Inside HAIR RAP BY YOYO.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|A Corner of Paris, Inside HAIR RAP BY YOYO.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|A Corner of Paris, Inside HAIR RAP BY YOYO.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Made for the Moment.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Made for the Moment.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Made for the Moment.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Made for the Moment.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Made for the Moment.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Made for the Moment.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Made for the Moment.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Where Beauty Meets Café Culture.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Where Beauty Meets Café Culture.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Where Beauty Meets Café Culture.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Where Beauty Meets Café Culture.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Where Beauty Meets Café Culture.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Where Beauty Meets Café Culture.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|h2|gal-section-title|Where Beauty Meets Café Culture.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "gal-section-title"
+    },
+    {
+      "key": "gallery|desc|gal-hero-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 15,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": "gal-hero-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-hero-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": "gal-hero-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-hero-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "gal-hero-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-hero-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "gal-hero-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-hero-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "gal-hero-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-hero-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 16,
+      "type": "desc",
+      "cls": "gal-hero-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-hero-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 16,
+      "fsNow": 17.92,
+      "type": "desc",
+      "cls": "gal-hero-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-hero-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 17.92,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": "gal-hero-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 16.76,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 16.76,
+      "fsNow": 17.12,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 17.12,
+      "fsNow": 17.52,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A little time to pause, enjoy your coffee, and t",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 17.52,
+      "fsNow": 18.6,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Paris-inspired details, warm coffee, beautiful s",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Paris-inspired details, warm coffee, beautiful s",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Paris-inspired details, warm coffee, beautiful s",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Paris-inspired details, warm coffee, beautiful s",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Paris-inspired details, warm coffee, beautiful s",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Paris-inspired details, warm coffee, beautiful s",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Paris-inspired details, warm coffee, beautiful s",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Paris-inspired details, warm coffee, beautiful s",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 16.76,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Paris-inspired details, warm coffee, beautiful s",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 16.76,
+      "fsNow": 17.12,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Paris-inspired details, warm coffee, beautiful s",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 17.12,
+      "fsNow": 17.52,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Paris-inspired details, warm coffee, beautiful s",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 17.52,
+      "fsNow": 18.6,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Simple café pleasures designed to complement you",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Simple café pleasures designed to complement you",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Simple café pleasures designed to complement you",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Simple café pleasures designed to complement you",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Simple café pleasures designed to complement you",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Simple café pleasures designed to complement you",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Simple café pleasures designed to complement you",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Simple café pleasures designed to complement you",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 16.76,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Simple café pleasures designed to complement you",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 16.76,
+      "fsNow": 17.12,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Simple café pleasures designed to complement you",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 17.12,
+      "fsNow": 17.52,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|Simple café pleasures designed to complement you",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 17.52,
+      "fsNow": 18.6,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A salon appointment, a coffee, and an atmosphere",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A salon appointment, a coffee, and an atmosphere",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A salon appointment, a coffee, and an atmosphere",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A salon appointment, a coffee, and an atmosphere",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A salon appointment, a coffee, and an atmosphere",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A salon appointment, a coffee, and an atmosphere",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A salon appointment, a coffee, and an atmosphere",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A salon appointment, a coffee, and an atmosphere",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 16.76,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A salon appointment, a coffee, and an atmosphere",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 16.76,
+      "fsNow": 17.12,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A salon appointment, a coffee, and an atmosphere",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 17.12,
+      "fsNow": 17.52,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|desc|gal-section-desc lead|A salon appointment, a coffee, and an atmosphere",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 17.52,
+      "fsNow": 18.6,
+      "type": "desc",
+      "cls": "gal-section-desc lead"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-hero-eyebrow|PARISIAN ATMOSPHERE",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-hero-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-hero-eyebrow|PARISIAN ATMOSPHERE",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-hero-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-hero-eyebrow|PARISIAN ATMOSPHERE",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-hero-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-hero-eyebrow|PARISIAN ATMOSPHERE",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 18,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-hero-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— PARISIAN ATMOSPHERE",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— PARISIAN ATMOSPHERE",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— PARISIAN ATMOSPHERE",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— PARISIAN ATMOSPHERE",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— PARISIAN ATMOSPHERE",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— PARISIAN ATMOSPHERE",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— PARISIAN ATMOSPHERE",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Paris Wall Art",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Paris Wall Art",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Paris Wall Art",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Paris Wall Art",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Paris Wall Art",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Paris Wall Art",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Paris Wall Art",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Coffee & Food",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Coffee & Food",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Coffee & Food",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Coffee & Food",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Coffee & Food",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Coffee & Food",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Coffee & Food",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Salon + Café",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Salon + Café",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Salon + Café",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Salon + Café",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Salon + Café",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Salon + Café",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "gallery|eyebrow|eyebrow gal-section-eyebrow|— Salon + Café",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow gal-section-eyebrow"
+    },
+    {
+      "key": "visit-contact|h1|visit-hero-title|Find Your Little Corner of Paris.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 43.061,
+      "fsNow": 45.224,
+      "type": "h1",
+      "cls": "visit-hero-title"
+    },
+    {
+      "key": "visit-contact|h1|visit-hero-title|Find Your Little Corner of Paris.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 45.224,
+      "fsNow": 48.5,
+      "type": "h1",
+      "cls": "visit-hero-title"
+    },
+    {
+      "key": "visit-contact|h1|visit-hero-title|Find Your Little Corner of Paris.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 48.5,
+      "fsNow": 51.083,
+      "type": "h1",
+      "cls": "visit-hero-title"
+    },
+    {
+      "key": "visit-contact|h1|visit-hero-title|Find Your Little Corner of Paris.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 51.104,
+      "fsNow": 53.456,
+      "type": "h1",
+      "cls": "visit-hero-title"
+    },
+    {
+      "key": "visit-contact|h1|visit-hero-title|Find Your Little Corner of Paris.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 53.456,
+      "fsNow": 56.48,
+      "type": "h1",
+      "cls": "visit-hero-title"
+    },
+    {
+      "key": "visit-contact|h1|visit-hero-title|Find Your Little Corner of Paris.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 56.48,
+      "fsNow": 59.84,
+      "type": "h1",
+      "cls": "visit-hero-title"
+    },
+    {
+      "key": "visit-contact|h1|visit-hero-title|Find Your Little Corner of Paris.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 59.84,
+      "fsNow": 69.899,
+      "type": "h1",
+      "cls": "visit-hero-title"
+    },
+    {
+      "key": "visit-contact|h1|visit-hero-title|Find Your Little Corner of Paris.",
+      "from": 1920,
+      "to": 2560,
+      "fsPrev": 69.92,
+      "fsNow": 83.36,
+      "type": "h1",
+      "cls": "visit-hero-title"
+    },
+    {
+      "key": "visit-contact|h2|visit-card-title|Get in touch",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 28,
+      "fsNow": 30,
+      "type": "h2",
+      "cls": "visit-card-title"
+    },
+    {
+      "key": "visit-contact|h2|visit-card-title|Get in touch",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 30,
+      "fsNow": 38.4,
+      "type": "h2",
+      "cls": "visit-card-title"
+    },
+    {
+      "key": "visit-contact|h2|visit-card-title|Get in touch",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 38.4,
+      "fsNow": 29.52,
+      "type": "h2",
+      "cls": "visit-card-title"
+    },
+    {
+      "key": "visit-contact|h2|visit-card-title|Get in touch",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 29.52,
+      "fsNow": 30.799,
+      "type": "h2",
+      "cls": "visit-card-title"
+    },
+    {
+      "key": "visit-contact|h2|visit-card-title|Get in touch",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 30.81,
+      "fsNow": 31.974,
+      "type": "h2",
+      "cls": "visit-card-title"
+    },
+    {
+      "key": "visit-contact|h2|visit-card-title|Get in touch",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 31.974,
+      "fsNow": 33.472,
+      "type": "h2",
+      "cls": "visit-card-title"
+    },
+    {
+      "key": "visit-contact|h2|visit-card-title|Get in touch",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 33.472,
+      "fsNow": 35.136,
+      "type": "h2",
+      "cls": "visit-card-title"
+    },
+    {
+      "key": "visit-contact|h2|visit-card-title|Get in touch",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 35.136,
+      "fsNow": 40,
+      "type": "h2",
+      "cls": "visit-card-title"
+    },
+    {
+      "key": "visit-contact|h2|visit-cta-title section-heading|More Than a Coffee. Part of Your Appointment.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "visit-cta-title section-heading"
+    },
+    {
+      "key": "visit-contact|h2|visit-cta-title section-heading|More Than a Coffee. Part of Your Appointment.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "visit-cta-title section-heading"
+    },
+    {
+      "key": "visit-contact|h2|visit-cta-title section-heading|More Than a Coffee. Part of Your Appointment.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "visit-cta-title section-heading"
+    },
+    {
+      "key": "visit-contact|h2|visit-cta-title section-heading|More Than a Coffee. Part of Your Appointment.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "visit-cta-title section-heading"
+    },
+    {
+      "key": "visit-contact|h2|visit-cta-title section-heading|More Than a Coffee. Part of Your Appointment.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "visit-cta-title section-heading"
+    },
+    {
+      "key": "visit-contact|h2|visit-cta-title section-heading|More Than a Coffee. Part of Your Appointment.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "visit-cta-title section-heading"
+    },
+    {
+      "key": "visit-contact|h2|visit-cta-title section-heading|More Than a Coffee. Part of Your Appointment.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "visit-cta-title section-heading"
+    },
+    {
+      "key": "visit-contact|desc|visit-hero-desc|Paris Beans is located inside HAIR RAP BY YOYO, ",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "visit-hero-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-hero-desc|Paris Beans is located inside HAIR RAP BY YOYO, ",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "visit-hero-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-hero-desc|Paris Beans is located inside HAIR RAP BY YOYO, ",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "visit-hero-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-hero-desc|Paris Beans is located inside HAIR RAP BY YOYO, ",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": "visit-hero-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-hero-desc|Paris Beans is located inside HAIR RAP BY YOYO, ",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": "visit-hero-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-hero-desc|Paris Beans is located inside HAIR RAP BY YOYO, ",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": "visit-hero-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-hero-desc|Paris Beans is located inside HAIR RAP BY YOYO, ",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": "visit-hero-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-cta-desc|Whether you arrive early, take a break during yo",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": "visit-cta-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-cta-desc|Whether you arrive early, take a break during yo",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": "visit-cta-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-cta-desc|Whether you arrive early, take a break during yo",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": "visit-cta-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-cta-desc|Whether you arrive early, take a break during yo",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": "visit-cta-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-cta-desc|Whether you arrive early, take a break during yo",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "visit-cta-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-cta-desc|Whether you arrive early, take a break during yo",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "visit-cta-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-cta-desc|Whether you arrive early, take a break during yo",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "visit-cta-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-cta-desc|Whether you arrive early, take a break during yo",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": "visit-cta-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-cta-desc|Whether you arrive early, take a break during yo",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": "visit-cta-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-cta-desc|Whether you arrive early, take a break during yo",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": "visit-cta-desc"
+    },
+    {
+      "key": "visit-contact|desc|visit-cta-desc|Whether you arrive early, take a break during yo",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": "visit-cta-desc"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow visit-hero-eyebrow|—Visit ParisBeans",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow visit-hero-eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow visit-hero-eyebrow|—Visit ParisBeans",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow visit-hero-eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow visit-hero-eyebrow|—Visit ParisBeans",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow visit-hero-eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow visit-hero-eyebrow|—Visit ParisBeans",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow visit-hero-eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow visit-hero-eyebrow|—Visit ParisBeans",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow visit-hero-eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow visit-hero-eyebrow|—Visit ParisBeans",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow visit-hero-eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow visit-hero-eyebrow|—Visit ParisBeans",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow visit-hero-eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow|— The Paris Beans Experience",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow|— The Paris Beans Experience",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow|— The Paris Beans Experience",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow|— The Paris Beans Experience",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow|— The Paris Beans Experience",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow|— The Paris Beans Experience",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "visit-contact|eyebrow|eyebrow|— The Paris Beans Experience",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow"
+    },
+    {
+      "key": "privacy-policy|h1|legal-title|Your Privacy, Respected.",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 37.475,
+      "fsNow": 37.79,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "privacy-policy|h1|legal-title|Your Privacy, Respected.",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 37.79,
+      "fsNow": 38.63,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "privacy-policy|h1|legal-title|Your Privacy, Respected.",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 38.63,
+      "fsNow": 40.1,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "privacy-policy|h1|legal-title|Your Privacy, Respected.",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 40.1,
+      "fsNow": 43.04,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "privacy-policy|h1|legal-title|Your Privacy, Respected.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 43.061,
+      "fsNow": 45.224,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "privacy-policy|h1|legal-title|Your Privacy, Respected.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 45.224,
+      "fsNow": 48.5,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "privacy-policy|h1|legal-title|Your Privacy, Respected.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 48.5,
+      "fsNow": 51.083,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "privacy-policy|h1|legal-title|Your Privacy, Respected.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 51.104,
+      "fsNow": 53.456,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "privacy-policy|h1|legal-title|Your Privacy, Respected.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 53.456,
+      "fsNow": 56.48,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "privacy-policy|h1|legal-title|Your Privacy, Respected.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 56.48,
+      "fsNow": 59.84,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "privacy-policy|h1|legal-title|Your Privacy, Respected.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 59.84,
+      "fsNow": 69.899,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "privacy-policy|h1|legal-title|Your Privacy, Respected.",
+      "from": 1920,
+      "to": 2560,
+      "fsPrev": 69.92,
+      "fsNow": 83.36,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Information We Collect",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Information We Collect",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Information We Collect",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Information We Collect",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Information We Collect",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Information We Collect",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Information We Collect",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|How We Use Your Information",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|How We Use Your Information",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|How We Use Your Information",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|How We Use Your Information",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|How We Use Your Information",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|How We Use Your Information",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|How We Use Your Information",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Cookies & Local Storage",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Cookies & Local Storage",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Cookies & Local Storage",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Cookies & Local Storage",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Cookies & Local Storage",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Cookies & Local Storage",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Cookies & Local Storage",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Sharing Your Information",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Sharing Your Information",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Sharing Your Information",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Sharing Your Information",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Sharing Your Information",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Sharing Your Information",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Sharing Your Information",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Data Security",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Data Security",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Data Security",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Data Security",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Data Security",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Data Security",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Data Security",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Your Rights",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Your Rights",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Your Rights",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Your Rights",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Your Rights",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Your Rights",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|h2|legal-h2|Your Rights",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "privacy-policy|desc|legal-lede|At Paris Beans — the café corner inside HAIR RAP",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 17.025,
+      "fsNow": 17.13,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "privacy-policy|desc|legal-lede|At Paris Beans — the café corner inside HAIR RAP",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 17.13,
+      "fsNow": 17.41,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "privacy-policy|desc|legal-lede|At Paris Beans — the café corner inside HAIR RAP",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 17.41,
+      "fsNow": 17.9,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "privacy-policy|desc|legal-lede|At Paris Beans — the café corner inside HAIR RAP",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 17.9,
+      "fsNow": 18.88,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "privacy-policy|desc|legal-lede|At Paris Beans — the café corner inside HAIR RAP",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 18.887,
+      "fsNow": 19.608,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "privacy-policy|desc|legal-lede|At Paris Beans — the café corner inside HAIR RAP",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 19.608,
+      "fsNow": 20.7,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "privacy-policy|desc|legal-lede|At Paris Beans — the café corner inside HAIR RAP",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 20.7,
+      "fsNow": 21.561,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "privacy-policy|desc|legal-lede|At Paris Beans — the café corner inside HAIR RAP",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 21.568,
+      "fsNow": 22.352,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "privacy-policy|desc|legal-lede|At Paris Beans — the café corner inside HAIR RAP",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 22.352,
+      "fsNow": 23.36,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "privacy-policy|desc|legal-lede|At Paris Beans — the café corner inside HAIR RAP",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 23.36,
+      "fsNow": 24.48,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "privacy-policy|desc|legal-lede|At Paris Beans — the café corner inside HAIR RAP",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 24.48,
+      "fsNow": 27.833,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "privacy-policy|desc|legal-lede|At Paris Beans — the café corner inside HAIR RAP",
+      "from": 1920,
+      "to": 2560,
+      "fsPrev": 27.84,
+      "fsNow": 28,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "privacy-policy|desc||We collect only what we need to serve you better",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We collect only what we need to serve you better",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We collect only what we need to serve you better",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We collect only what we need to serve you better",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We collect only what we need to serve you better",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We collect only what we need to serve you better",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We collect only what we need to serve you better",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We collect only what we need to serve you better",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We collect only what we need to serve you better",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We collect only what we need to serve you better",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We collect only what we need to serve you better",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We use your information to respond to your enqui",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We use your information to respond to your enqui",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We use your information to respond to your enqui",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We use your information to respond to your enqui",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We use your information to respond to your enqui",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We use your information to respond to your enqui",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We use your information to respond to your enqui",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We use your information to respond to your enqui",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We use your information to respond to your enqui",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We use your information to respond to your enqui",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We use your information to respond to your enqui",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||Paris Beans uses minimal cookies and local stora",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||Paris Beans uses minimal cookies and local stora",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||Paris Beans uses minimal cookies and local stora",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||Paris Beans uses minimal cookies and local stora",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||Paris Beans uses minimal cookies and local stora",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||Paris Beans uses minimal cookies and local stora",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||Paris Beans uses minimal cookies and local stora",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||Paris Beans uses minimal cookies and local stora",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||Paris Beans uses minimal cookies and local stora",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||Paris Beans uses minimal cookies and local stora",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||Paris Beans uses minimal cookies and local stora",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We only share information with service providers",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We only share information with service providers",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We only share information with service providers",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We only share information with service providers",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We only share information with service providers",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We only share information with service providers",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We only share information with service providers",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We only share information with service providers",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We only share information with service providers",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We only share information with service providers",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We only share information with service providers",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We take reasonable and appropriate measures to p",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We take reasonable and appropriate measures to p",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We take reasonable and appropriate measures to p",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We take reasonable and appropriate measures to p",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We take reasonable and appropriate measures to p",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We take reasonable and appropriate measures to p",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We take reasonable and appropriate measures to p",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We take reasonable and appropriate measures to p",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We take reasonable and appropriate measures to p",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We take reasonable and appropriate measures to p",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||We take reasonable and appropriate measures to p",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||You may request access to the information we hol",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||You may request access to the information we hol",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||You may request access to the information we hol",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||You may request access to the information we hol",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||You may request access to the information we hol",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||You may request access to the information we hol",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||You may request access to the information we hol",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||You may request access to the information we hol",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||You may request access to the information we hol",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||You may request access to the information we hol",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|desc||You may request access to the information we hol",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "privacy-policy|eyebrow|legal-eyebrow|— Privacy Policy",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "privacy-policy|eyebrow|legal-eyebrow|— Privacy Policy",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "privacy-policy|eyebrow|legal-eyebrow|— Privacy Policy",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "privacy-policy|eyebrow|legal-eyebrow|— Privacy Policy",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "privacy-policy|eyebrow|legal-eyebrow|— Privacy Policy",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "privacy-policy|eyebrow|legal-eyebrow|— Privacy Policy",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "privacy-policy|eyebrow|legal-eyebrow|— Privacy Policy",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "terms-and-conditions|h1|legal-title|The Fine Print, Made Friendly.",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 37.475,
+      "fsNow": 37.79,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "terms-and-conditions|h1|legal-title|The Fine Print, Made Friendly.",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 37.79,
+      "fsNow": 38.63,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "terms-and-conditions|h1|legal-title|The Fine Print, Made Friendly.",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 38.63,
+      "fsNow": 40.1,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "terms-and-conditions|h1|legal-title|The Fine Print, Made Friendly.",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 40.1,
+      "fsNow": 43.04,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "terms-and-conditions|h1|legal-title|The Fine Print, Made Friendly.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 43.061,
+      "fsNow": 45.224,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "terms-and-conditions|h1|legal-title|The Fine Print, Made Friendly.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 45.224,
+      "fsNow": 48.5,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "terms-and-conditions|h1|legal-title|The Fine Print, Made Friendly.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 48.5,
+      "fsNow": 51.083,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "terms-and-conditions|h1|legal-title|The Fine Print, Made Friendly.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 51.104,
+      "fsNow": 53.456,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "terms-and-conditions|h1|legal-title|The Fine Print, Made Friendly.",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 53.456,
+      "fsNow": 56.48,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "terms-and-conditions|h1|legal-title|The Fine Print, Made Friendly.",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 56.48,
+      "fsNow": 59.84,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "terms-and-conditions|h1|legal-title|The Fine Print, Made Friendly.",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 59.84,
+      "fsNow": 69.899,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "terms-and-conditions|h1|legal-title|The Fine Print, Made Friendly.",
+      "from": 1920,
+      "to": 2560,
+      "fsPrev": 69.92,
+      "fsNow": 83.36,
+      "type": "h1",
+      "cls": "legal-title"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Acceptance of Terms",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Acceptance of Terms",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Acceptance of Terms",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Acceptance of Terms",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Acceptance of Terms",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Acceptance of Terms",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Acceptance of Terms",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Our Services",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Our Services",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Our Services",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Our Services",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Our Services",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Our Services",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Our Services",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Ordering & Payment",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Ordering & Payment",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Ordering & Payment",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Ordering & Payment",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Ordering & Payment",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Ordering & Payment",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Ordering & Payment",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Allergies & Dietary Needs",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Allergies & Dietary Needs",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Allergies & Dietary Needs",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Allergies & Dietary Needs",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Allergies & Dietary Needs",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Allergies & Dietary Needs",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Allergies & Dietary Needs",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Café & Salon Etiquette",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Café & Salon Etiquette",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Café & Salon Etiquette",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Café & Salon Etiquette",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Café & Salon Etiquette",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Café & Salon Etiquette",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Café & Salon Etiquette",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Gift Cards & Promotions",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Gift Cards & Promotions",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Gift Cards & Promotions",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Gift Cards & Promotions",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Gift Cards & Promotions",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Gift Cards & Promotions",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Gift Cards & Promotions",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Liability",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Liability",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Liability",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Liability",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Liability",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Liability",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Liability",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Intellectual Property",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Intellectual Property",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Intellectual Property",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Intellectual Property",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Intellectual Property",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Intellectual Property",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Intellectual Property",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Changes to These Terms",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 24,
+      "fsNow": 37.772,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Changes to These Terms",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 37.772,
+      "fsNow": 40.19,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Changes to These Terms",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 40.19,
+      "fsNow": 42.097,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Changes to These Terms",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 42.112,
+      "fsNow": 43.848,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Changes to These Terms",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 43.848,
+      "fsNow": 46.08,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Changes to These Terms",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 46.08,
+      "fsNow": 48.56,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|h2|legal-h2|Changes to These Terms",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 48.56,
+      "fsNow": 55.985,
+      "type": "h2",
+      "cls": "legal-h2"
+    },
+    {
+      "key": "terms-and-conditions|desc|legal-lede|These terms outline the simple ground rules for ",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 17.025,
+      "fsNow": 17.13,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "terms-and-conditions|desc|legal-lede|These terms outline the simple ground rules for ",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 17.13,
+      "fsNow": 17.41,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "terms-and-conditions|desc|legal-lede|These terms outline the simple ground rules for ",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 17.41,
+      "fsNow": 17.9,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "terms-and-conditions|desc|legal-lede|These terms outline the simple ground rules for ",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 17.9,
+      "fsNow": 18.88,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "terms-and-conditions|desc|legal-lede|These terms outline the simple ground rules for ",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 18.887,
+      "fsNow": 19.608,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "terms-and-conditions|desc|legal-lede|These terms outline the simple ground rules for ",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 19.608,
+      "fsNow": 20.7,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "terms-and-conditions|desc|legal-lede|These terms outline the simple ground rules for ",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 20.7,
+      "fsNow": 21.561,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "terms-and-conditions|desc|legal-lede|These terms outline the simple ground rules for ",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 21.568,
+      "fsNow": 22.352,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "terms-and-conditions|desc|legal-lede|These terms outline the simple ground rules for ",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 22.352,
+      "fsNow": 23.36,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "terms-and-conditions|desc|legal-lede|These terms outline the simple ground rules for ",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 23.36,
+      "fsNow": 24.48,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "terms-and-conditions|desc|legal-lede|These terms outline the simple ground rules for ",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 24.48,
+      "fsNow": 27.833,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "terms-and-conditions|desc|legal-lede|These terms outline the simple ground rules for ",
+      "from": 1920,
+      "to": 2560,
+      "fsPrev": 27.84,
+      "fsNow": 28,
+      "type": "desc",
+      "cls": "legal-lede"
+    },
+    {
+      "key": "terms-and-conditions|desc||By accessing the Paris Beans website or visiting",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||By accessing the Paris Beans website or visiting",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||By accessing the Paris Beans website or visiting",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||By accessing the Paris Beans website or visiting",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||By accessing the Paris Beans website or visiting",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||By accessing the Paris Beans website or visiting",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||By accessing the Paris Beans website or visiting",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||By accessing the Paris Beans website or visiting",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||By accessing the Paris Beans website or visiting",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||By accessing the Paris Beans website or visiting",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||By accessing the Paris Beans website or visiting",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Paris Beans offers a curated café experience — s",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Paris Beans offers a curated café experience — s",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Paris Beans offers a curated café experience — s",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Paris Beans offers a curated café experience — s",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Paris Beans offers a curated café experience — s",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Paris Beans offers a curated café experience — s",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Paris Beans offers a curated café experience — s",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Paris Beans offers a curated café experience — s",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Paris Beans offers a curated café experience — s",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Paris Beans offers a curated café experience — s",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Paris Beans offers a curated café experience — s",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All prices are listed in Indian Rupees (₹) and i",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All prices are listed in Indian Rupees (₹) and i",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All prices are listed in Indian Rupees (₹) and i",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All prices are listed in Indian Rupees (₹) and i",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All prices are listed in Indian Rupees (₹) and i",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All prices are listed in Indian Rupees (₹) and i",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All prices are listed in Indian Rupees (₹) and i",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All prices are listed in Indian Rupees (₹) and i",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All prices are listed in Indian Rupees (₹) and i",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All prices are listed in Indian Rupees (₹) and i",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All prices are listed in Indian Rupees (₹) and i",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Please tell our team about any allergies or diet",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Please tell our team about any allergies or diet",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Please tell our team about any allergies or diet",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Please tell our team about any allergies or diet",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Please tell our team about any allergies or diet",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Please tell our team about any allergies or diet",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Please tell our team about any allergies or diet",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Please tell our team about any allergies or diet",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Please tell our team about any allergies or diet",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Please tell our team about any allergies or diet",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Please tell our team about any allergies or diet",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We want every visit to feel calming and special ",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We want every visit to feel calming and special ",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We want every visit to feel calming and special ",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We want every visit to feel calming and special ",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We want every visit to feel calming and special ",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We want every visit to feel calming and special ",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We want every visit to feel calming and special ",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We want every visit to feel calming and special ",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We want every visit to feel calming and special ",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We want every visit to feel calming and special ",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We want every visit to feel calming and special ",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Gift cards and promotional offers are valid for ",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Gift cards and promotional offers are valid for ",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Gift cards and promotional offers are valid for ",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Gift cards and promotional offers are valid for ",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Gift cards and promotional offers are valid for ",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Gift cards and promotional offers are valid for ",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Gift cards and promotional offers are valid for ",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Gift cards and promotional offers are valid for ",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Gift cards and promotional offers are valid for ",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Gift cards and promotional offers are valid for ",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||Gift cards and promotional offers are valid for ",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||To the fullest extent permitted by law, Paris Be",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||To the fullest extent permitted by law, Paris Be",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||To the fullest extent permitted by law, Paris Be",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||To the fullest extent permitted by law, Paris Be",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||To the fullest extent permitted by law, Paris Be",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||To the fullest extent permitted by law, Paris Be",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||To the fullest extent permitted by law, Paris Be",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||To the fullest extent permitted by law, Paris Be",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||To the fullest extent permitted by law, Paris Be",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||To the fullest extent permitted by law, Paris Be",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||To the fullest extent permitted by law, Paris Be",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All content on this site — including the Paris B",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All content on this site — including the Paris B",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All content on this site — including the Paris B",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All content on this site — including the Paris B",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All content on this site — including the Paris B",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All content on this site — including the Paris B",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All content on this site — including the Paris B",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All content on this site — including the Paris B",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All content on this site — including the Paris B",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All content on this site — including the Paris B",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||All content on this site — including the Paris B",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We may update these Terms & Conditions from time",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We may update these Terms & Conditions from time",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We may update these Terms & Conditions from time",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We may update these Terms & Conditions from time",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We may update these Terms & Conditions from time",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We may update these Terms & Conditions from time",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We may update these Terms & Conditions from time",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We may update these Terms & Conditions from time",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We may update these Terms & Conditions from time",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We may update these Terms & Conditions from time",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|desc||We may update these Terms & Conditions from time",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": ""
+    },
+    {
+      "key": "terms-and-conditions|eyebrow|legal-eyebrow|— Terms & Conditions",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "terms-and-conditions|eyebrow|legal-eyebrow|— Terms & Conditions",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "terms-and-conditions|eyebrow|legal-eyebrow|— Terms & Conditions",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "terms-and-conditions|eyebrow|legal-eyebrow|— Terms & Conditions",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "terms-and-conditions|eyebrow|legal-eyebrow|— Terms & Conditions",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "terms-and-conditions|eyebrow|legal-eyebrow|— Terms & Conditions",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "terms-and-conditions|eyebrow|legal-eyebrow|— Terms & Conditions",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "legal-eyebrow"
+    },
+    {
+      "key": "not-found|h1|nf-title reveal reveal-delay-2 is-visible|This Corner of Paris Doesn't Exist.",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 25.6,
+      "fsNow": 26.04,
+      "type": "h1",
+      "cls": "nf-title reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|h1|nf-title reveal reveal-delay-2 is-visible|This Corner of Paris Doesn't Exist.",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 26.04,
+      "fsNow": 31.5,
+      "type": "h1",
+      "cls": "nf-title reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|h1|nf-title reveal reveal-delay-2 is-visible|This Corner of Paris Doesn't Exist.",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 31.5,
+      "fsNow": 35.805,
+      "type": "h1",
+      "cls": "nf-title reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|h1|nf-title reveal reveal-delay-2 is-visible|This Corner of Paris Doesn't Exist.",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 35.84,
+      "fsNow": 36.8,
+      "type": "h1",
+      "cls": "nf-title reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|desc|lead nf-desc reveal reveal-delay-2 is-visible|The page you're looking for has moved on, or nev",
+      "from": 375,
+      "to": 390,
+      "fsPrev": 16.015,
+      "fsNow": 16.054,
+      "type": "desc",
+      "cls": "lead nf-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|desc|lead nf-desc reveal reveal-delay-2 is-visible|The page you're looking for has moved on, or nev",
+      "from": 390,
+      "to": 430,
+      "fsPrev": 16.054,
+      "fsNow": 16.158,
+      "type": "desc",
+      "cls": "lead nf-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|desc|lead nf-desc reveal reveal-delay-2 is-visible|The page you're looking for has moved on, or nev",
+      "from": 430,
+      "to": 500,
+      "fsPrev": 16.158,
+      "fsNow": 16.34,
+      "type": "desc",
+      "cls": "lead nf-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|desc|lead nf-desc reveal reveal-delay-2 is-visible|The page you're looking for has moved on, or nev",
+      "from": 500,
+      "to": 640,
+      "fsPrev": 16.34,
+      "fsNow": 16.704,
+      "type": "desc",
+      "cls": "lead nf-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|desc|lead nf-desc reveal reveal-delay-2 is-visible|The page you're looking for has moved on, or nev",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 16.707,
+      "fsNow": 16.974,
+      "type": "desc",
+      "cls": "lead nf-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|desc|lead nf-desc reveal reveal-delay-2 is-visible|The page you're looking for has moved on, or nev",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 16.974,
+      "fsNow": 17.38,
+      "type": "desc",
+      "cls": "lead nf-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|desc|lead nf-desc reveal reveal-delay-2 is-visible|The page you're looking for has moved on, or nev",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 17.38,
+      "fsNow": 17.7,
+      "type": "desc",
+      "cls": "lead nf-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|desc|lead nf-desc reveal reveal-delay-2 is-visible|The page you're looking for has moved on, or nev",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 17.702,
+      "fsNow": 17.994,
+      "type": "desc",
+      "cls": "lead nf-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|desc|lead nf-desc reveal reveal-delay-2 is-visible|The page you're looking for has moved on, or nev",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 17.994,
+      "fsNow": 18.368,
+      "type": "desc",
+      "cls": "lead nf-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|desc|lead nf-desc reveal reveal-delay-2 is-visible|The page you're looking for has moved on, or nev",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 18.368,
+      "fsNow": 18.784,
+      "type": "desc",
+      "cls": "lead nf-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|desc|lead nf-desc reveal reveal-delay-2 is-visible|The page you're looking for has moved on, or nev",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 18.784,
+      "fsNow": 20,
+      "type": "desc",
+      "cls": "lead nf-desc reveal reveal-delay-2 is-visible"
+    },
+    {
+      "key": "not-found|eyebrow|eyebrow nf-eyebrow reveal is-visible|— Page Not Found",
+      "from": 641,
+      "to": 744,
+      "fsPrev": 10,
+      "fsNow": 12.487,
+      "type": "eyebrow",
+      "cls": "eyebrow nf-eyebrow reveal is-visible"
+    },
+    {
+      "key": "not-found|eyebrow|eyebrow nf-eyebrow reveal is-visible|— Page Not Found",
+      "from": 744,
+      "to": 900,
+      "fsPrev": 12.487,
+      "fsNow": 12.69,
+      "type": "eyebrow",
+      "cls": "eyebrow nf-eyebrow reveal is-visible"
+    },
+    {
+      "key": "not-found|eyebrow|eyebrow nf-eyebrow reveal is-visible|— Page Not Found",
+      "from": 900,
+      "to": 1023,
+      "fsPrev": 12.69,
+      "fsNow": 12.85,
+      "type": "eyebrow",
+      "cls": "eyebrow nf-eyebrow reveal is-visible"
+    },
+    {
+      "key": "not-found|eyebrow|eyebrow nf-eyebrow reveal is-visible|— Page Not Found",
+      "from": 1024,
+      "to": 1136,
+      "fsPrev": 12.851,
+      "fsNow": 12.997,
+      "type": "eyebrow",
+      "cls": "eyebrow nf-eyebrow reveal is-visible"
+    },
+    {
+      "key": "not-found|eyebrow|eyebrow nf-eyebrow reveal is-visible|— Page Not Found",
+      "from": 1136,
+      "to": 1280,
+      "fsPrev": 12.997,
+      "fsNow": 13.184,
+      "type": "eyebrow",
+      "cls": "eyebrow nf-eyebrow reveal is-visible"
+    },
+    {
+      "key": "not-found|eyebrow|eyebrow nf-eyebrow reveal is-visible|— Page Not Found",
+      "from": 1280,
+      "to": 1440,
+      "fsPrev": 13.184,
+      "fsNow": 13.392,
+      "type": "eyebrow",
+      "cls": "eyebrow nf-eyebrow reveal is-visible"
+    },
+    {
+      "key": "not-found|eyebrow|eyebrow nf-eyebrow reveal is-visible|— Page Not Found",
+      "from": 1440,
+      "to": 1919,
+      "fsPrev": 13.392,
+      "fsNow": 14,
+      "type": "eyebrow",
+      "cls": "eyebrow nf-eyebrow reveal is-visible"
+    }
+  ],
   "shots": [
     "home-640.png",
     "home-641.png",

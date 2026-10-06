@@ -14,14 +14,50 @@
         "right": 390
       }
     ],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.hero-eyebrow",
+        "fs": 11,
+        "text": "- Paris Beans - HAIR RAP BY YOYO"
+      },
+      {
+        "sel": "span.experience-dash",
+        "fs": 0,
+        "text": "—"
+      },
+      {
+        "sel": "span.btn-arrow",
+        "fs": 0,
+        "text": "→"
+      },
+      {
+        "sel": "p.eyebrow.reveal",
+        "fs": 10,
+        "text": "— From the Café"
+      },
+      {
+        "sel": "p.eyebrow",
+        "fs": 10,
+        "text": "— The ParisBeans Mood"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -30,8 +66,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -51,14 +87,50 @@
         "right": 406
       }
     ],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.hero-eyebrow",
+        "fs": 11,
+        "text": "- Paris Beans - HAIR RAP BY YOYO"
+      },
+      {
+        "sel": "span.experience-dash",
+        "fs": 0,
+        "text": "—"
+      },
+      {
+        "sel": "span.btn-arrow",
+        "fs": 0,
+        "text": "→"
+      },
+      {
+        "sel": "p.eyebrow.reveal",
+        "fs": 10,
+        "text": "— From the Café"
+      },
+      {
+        "sel": "p.eyebrow",
+        "fs": 10,
+        "text": "— The ParisBeans Mood"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -67,8 +139,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -88,14 +160,50 @@
         "right": 447
       }
     ],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.hero-eyebrow",
+        "fs": 11,
+        "text": "- Paris Beans - HAIR RAP BY YOYO"
+      },
+      {
+        "sel": "span.experience-dash",
+        "fs": 0,
+        "text": "—"
+      },
+      {
+        "sel": "span.btn-arrow",
+        "fs": 0,
+        "text": "→"
+      },
+      {
+        "sel": "p.eyebrow.reveal",
+        "fs": 10,
+        "text": "— From the Café"
+      },
+      {
+        "sel": "p.eyebrow",
+        "fs": 10,
+        "text": "— The ParisBeans Mood"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -104,8 +212,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -125,14 +233,40 @@
         "right": 520
       }
     ],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.hero-eyebrow",
+        "fs": 11,
+        "text": "- Paris Beans - HAIR RAP BY YOYO"
+      },
+      {
+        "sel": "p.eyebrow.reveal",
+        "fs": 10,
+        "text": "— From the Café"
+      },
+      {
+        "sel": "p.eyebrow",
+        "fs": 10,
+        "text": "— The ParisBeans Mood"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -141,8 +275,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -162,14 +296,40 @@
         "right": 666
       }
     ],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.hero-eyebrow",
+        "fs": 11,
+        "text": "- Paris Beans - HAIR RAP BY YOYO"
+      },
+      {
+        "sel": "p.eyebrow.reveal",
+        "fs": 10,
+        "text": "— From the Café"
+      },
+      {
+        "sel": "p.eyebrow",
+        "fs": 10,
+        "text": "— The ParisBeans Mood"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -178,8 +338,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -195,8 +355,8 @@
     "overflowEls": [
       {
         "sel": "img.home-menu-deco.home-menu-deco--br",
-        "left": 452,
-        "right": 663
+        "left": 346,
+        "right": 667
       },
       {
         "sel": "figure.menu-item.reveal",
@@ -219,34 +379,50 @@
         "right": 923
       }
     ],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.hero-eyebrow",
+        "fs": 11,
+        "text": "- Paris Beans - HAIR RAP BY YOYO"
+      },
+      {
+        "sel": "p.eyebrow.reveal",
+        "fs": 10,
+        "text": "— From the Café"
+      },
+      {
+        "sel": "p.eyebrow",
+        "fs": 10,
+        "text": "— The ParisBeans Mood"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
-        "top": 12
-      },
-      "nav": {
         "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 68,
+        "top": 10
       },
+      "nav": null,
       "cta": {
-        "left": 456,
-        "right": 617,
-        "top": 14
+        "left": 0,
+        "right": 0,
+        "top": 0
       },
-      "logoGap": 16,
-      "ctaGap": 43,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": -68,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -288,32 +464,22 @@
     ],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 559,
-        "right": 720,
+        "left": 501,
+        "right": 662,
         "top": 14
       },
-      "logoGap": 16,
-      "ctaGap": 146,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 428,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -355,32 +521,22 @@
     ],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 426,
-        "right": 474,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 715,
-        "right": 876,
+        "left": 657,
+        "right": 818,
         "top": 14
       },
-      "logoGap": 77,
-      "ctaGap": 241,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 584,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -392,23 +548,8 @@
     "hScroll": false,
     "docScrollW": 1023,
     "innerW": 1023,
-    "overflowCount": 8,
+    "overflowCount": 5,
     "overflowEls": [
-      {
-        "sel": "img",
-        "left": -10,
-        "right": 1027
-      },
-      {
-        "sel": "img",
-        "left": -10,
-        "right": 1027
-      },
-      {
-        "sel": "img",
-        "left": -10,
-        "right": 1027
-      },
       {
         "sel": "img.home-menu-deco.home-menu-deco--br",
         "left": 721,
@@ -437,32 +578,22 @@
     ],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 487,
-        "right": 536,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 838,
-        "right": 999,
+        "left": 780,
+        "right": 941,
         "top": 14
       },
-      "logoGap": 139,
-      "ctaGap": 302,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 707,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -474,42 +605,52 @@
     "hScroll": false,
     "docScrollW": 1024,
     "innerW": 1024,
-    "overflowCount": 1,
+    "overflowCount": 5,
     "overflowEls": [
       {
         "sel": "img.home-menu-deco.home-menu-deco--br",
-        "left": 844,
-        "right": 1111
+        "left": 722,
+        "right": 1060
+      },
+      {
+        "sel": "figure.menu-item.reveal",
+        "left": 963,
+        "right": 1386
+      },
+      {
+        "sel": "div.menu-thumb",
+        "left": 963,
+        "right": 1386
+      },
+      {
+        "sel": "img",
+        "left": 963,
+        "right": 1386
+      },
+      {
+        "sel": "figcaption.menu-caption",
+        "left": 963,
+        "right": 1386
       }
     ],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 498,
-        "right": 562,
-        "top": 8
-      },
-      "nav": {
         "left": 80,
-        "right": 466,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 128,
+        "top": 12
       },
+      "nav": null,
       "cta": {
-        "left": 783,
-        "right": 944,
-        "top": 18
+        "left": 725,
+        "right": 886,
+        "top": 14
       },
-      "logoGap": 32,
-      "ctaGap": 221,
-      "rowSpread": 10,
+      "logoGap": null,
+      "ctaGap": 596,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -542,11 +683,11 @@
         "left": 80,
         "right": 472,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -589,11 +730,11 @@
         "left": 80,
         "right": 480,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -636,11 +777,11 @@
         "left": 80,
         "right": 489,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -683,11 +824,11 @@
         "left": 320,
         "right": 750,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -730,11 +871,11 @@
         "left": 320,
         "right": 751,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -777,11 +918,11 @@
         "left": 640,
         "right": 1071,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -805,14 +946,45 @@
     "innerW": 375,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.ostory-eyebrow.reveal",
+        "fs": 10,
+        "text": "OUR STORY"
+      },
+      {
+        "sel": "p.eyebrow.ostory-eyebrow",
+        "fs": 10,
+        "text": "— From Paris to HAIR RAP BY YOYO"
+      },
+      {
+        "sel": "textpath",
+        "fs": 11,
+        "text": "Where Every Salon Visit Finds Its Parisi"
+      },
+      {
+        "sel": "p.eyebrow.ostory-eyebrow",
+        "fs": 10,
+        "text": "THE PARISBEANS EXPERIENCE"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -821,8 +993,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -836,14 +1008,45 @@
     "innerW": 390,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.ostory-eyebrow.reveal",
+        "fs": 10,
+        "text": "OUR STORY"
+      },
+      {
+        "sel": "p.eyebrow.ostory-eyebrow",
+        "fs": 10,
+        "text": "— From Paris to HAIR RAP BY YOYO"
+      },
+      {
+        "sel": "textpath",
+        "fs": 11,
+        "text": "Where Every Salon Visit Finds Its Parisi"
+      },
+      {
+        "sel": "p.eyebrow.ostory-eyebrow",
+        "fs": 10,
+        "text": "THE PARISBEANS EXPERIENCE"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -852,8 +1055,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -867,14 +1070,45 @@
     "innerW": 430,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.ostory-eyebrow.reveal",
+        "fs": 10,
+        "text": "OUR STORY"
+      },
+      {
+        "sel": "p.eyebrow.ostory-eyebrow",
+        "fs": 10,
+        "text": "— From Paris to HAIR RAP BY YOYO"
+      },
+      {
+        "sel": "textpath",
+        "fs": 11,
+        "text": "Where Every Salon Visit Finds Its Parisi"
+      },
+      {
+        "sel": "p.eyebrow.ostory-eyebrow",
+        "fs": 10,
+        "text": "THE PARISBEANS EXPERIENCE"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -883,8 +1117,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -898,14 +1132,45 @@
     "innerW": 500,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.ostory-eyebrow.reveal",
+        "fs": 10,
+        "text": "OUR STORY"
+      },
+      {
+        "sel": "p.eyebrow.ostory-eyebrow",
+        "fs": 10,
+        "text": "— From Paris to HAIR RAP BY YOYO"
+      },
+      {
+        "sel": "textpath",
+        "fs": 11,
+        "text": "Where Every Salon Visit Finds Its Parisi"
+      },
+      {
+        "sel": "p.eyebrow.ostory-eyebrow",
+        "fs": 10,
+        "text": "THE PARISBEANS EXPERIENCE"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -914,8 +1179,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -929,14 +1194,40 @@
     "innerW": 640,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.ostory-eyebrow.reveal",
+        "fs": 10,
+        "text": "OUR STORY"
+      },
+      {
+        "sel": "p.eyebrow.ostory-eyebrow",
+        "fs": 10,
+        "text": "— From Paris to HAIR RAP BY YOYO"
+      },
+      {
+        "sel": "p.eyebrow.ostory-eyebrow",
+        "fs": 10,
+        "text": "THE PARISBEANS EXPERIENCE"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -945,8 +1236,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -960,34 +1251,50 @@
     "innerW": 641,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.ostory-eyebrow.reveal",
+        "fs": 10,
+        "text": "OUR STORY"
+      },
+      {
+        "sel": "p.eyebrow.ostory-eyebrow",
+        "fs": 10,
+        "text": "— From Paris to HAIR RAP BY YOYO"
+      },
+      {
+        "sel": "p.eyebrow.ostory-eyebrow",
+        "fs": 10,
+        "text": "THE PARISBEANS EXPERIENCE"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
-        "top": 12
-      },
-      "nav": {
         "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 68,
+        "top": 10
       },
+      "nav": null,
       "cta": {
-        "left": 456,
-        "right": 617,
-        "top": 14
+        "left": 0,
+        "right": 0,
+        "top": 0
       },
-      "logoGap": 16,
-      "ctaGap": 43,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": -68,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1003,32 +1310,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 559,
-        "right": 720,
+        "left": 501,
+        "right": 662,
         "top": 14
       },
-      "logoGap": 16,
-      "ctaGap": 146,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 428,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1044,32 +1341,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 426,
-        "right": 474,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 715,
-        "right": 876,
+        "left": 657,
+        "right": 818,
         "top": 14
       },
-      "logoGap": 77,
-      "ctaGap": 241,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 584,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1085,32 +1372,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 487,
-        "right": 536,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 838,
-        "right": 999,
+        "left": 780,
+        "right": 941,
         "top": 14
       },
-      "logoGap": 139,
-      "ctaGap": 302,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 707,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1126,32 +1403,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 498,
-        "right": 562,
-        "top": 8
-      },
-      "nav": {
         "left": 80,
-        "right": 466,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 128,
+        "top": 12
       },
+      "nav": null,
       "cta": {
-        "left": 783,
-        "right": 944,
-        "top": 18
+        "left": 725,
+        "right": 886,
+        "top": 14
       },
-      "logoGap": 32,
-      "ctaGap": 221,
-      "rowSpread": 10,
+      "logoGap": null,
+      "ctaGap": 596,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1178,11 +1445,11 @@
         "left": 80,
         "right": 472,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -1219,11 +1486,11 @@
         "left": 80,
         "right": 480,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -1260,11 +1527,11 @@
         "left": 80,
         "right": 489,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -1301,11 +1568,11 @@
         "left": 320,
         "right": 750,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -1342,11 +1609,11 @@
         "left": 320,
         "right": 751,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -1383,11 +1650,11 @@
         "left": 640,
         "right": 1071,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -1437,6 +1704,16 @@
         "sel": "span.menu-hero-dash",
         "fs": 0,
         "text": "—"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
       }
     ],
     "header": {
@@ -1444,8 +1721,8 @@
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -1454,8 +1731,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1495,6 +1772,16 @@
         "sel": "span.menu-hero-dash",
         "fs": 0,
         "text": "—"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
       }
     ],
     "header": {
@@ -1502,8 +1789,8 @@
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -1512,8 +1799,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1553,6 +1840,16 @@
         "sel": "span.menu-hero-dash",
         "fs": 0,
         "text": "—"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
       }
     ],
     "header": {
@@ -1560,8 +1857,8 @@
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -1570,8 +1867,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1611,6 +1908,16 @@
         "sel": "span.menu-hero-dash",
         "fs": 0,
         "text": "—"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
       }
     ],
     "header": {
@@ -1618,8 +1925,8 @@
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -1628,8 +1935,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1669,6 +1976,16 @@
         "sel": "span.menu-hero-dash",
         "fs": 0,
         "text": "—"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
       }
     ],
     "header": {
@@ -1676,8 +1993,8 @@
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -1686,8 +2003,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1727,35 +2044,35 @@
         "sel": "span.menu-hero-dash",
         "fs": 0,
         "text": "—"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
       }
     ],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
-        "top": 12
-      },
-      "nav": {
         "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 68,
+        "top": 10
       },
+      "nav": null,
       "cta": {
-        "left": 456,
-        "right": 617,
-        "top": 14
+        "left": 0,
+        "right": 0,
+        "top": 0
       },
-      "logoGap": 16,
-      "ctaGap": 43,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": -68,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1798,32 +2115,22 @@
       }
     ],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 559,
-        "right": 720,
+        "left": 501,
+        "right": 662,
         "top": 14
       },
-      "logoGap": 16,
-      "ctaGap": 146,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 428,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1866,32 +2173,22 @@
       }
     ],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 426,
-        "right": 474,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 715,
-        "right": 876,
+        "left": 657,
+        "right": 818,
         "top": 14
       },
-      "logoGap": 77,
-      "ctaGap": 241,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 584,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1934,32 +2231,22 @@
       }
     ],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 487,
-        "right": 536,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 838,
-        "right": 999,
+        "left": 780,
+        "right": 941,
         "top": 14
       },
-      "logoGap": 139,
-      "ctaGap": 302,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 707,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -1975,32 +2262,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 498,
-        "right": 562,
-        "top": 8
-      },
-      "nav": {
         "left": 80,
-        "right": 466,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 128,
+        "top": 12
       },
+      "nav": null,
       "cta": {
-        "left": 783,
-        "right": 944,
-        "top": 18
+        "left": 725,
+        "right": 886,
+        "top": 14
       },
-      "logoGap": 32,
-      "ctaGap": 221,
-      "rowSpread": 10,
+      "logoGap": null,
+      "ctaGap": 596,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -2027,11 +2304,11 @@
         "left": 80,
         "right": 472,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -2057,7 +2334,7 @@
     "overflowEls": [
       {
         "sel": "div.menu-glow",
-        "left": 705,
+        "left": 704,
         "right": 1285
       }
     ],
@@ -2074,11 +2351,11 @@
         "left": 80,
         "right": 480,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -2104,8 +2381,8 @@
     "overflowEls": [
       {
         "sel": "div.menu-glow",
-        "left": 793,
-        "right": 1457
+        "left": 798,
+        "right": 1452
       }
     ],
     "small": [],
@@ -2121,11 +2398,11 @@
         "left": 80,
         "right": 489,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -2162,11 +2439,11 @@
         "left": 320,
         "right": 750,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -2203,11 +2480,11 @@
         "left": 320,
         "right": 751,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -2244,11 +2521,11 @@
         "left": 640,
         "right": 1071,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -2274,33 +2551,69 @@
     "overflowEls": [
       {
         "sel": "div.gallery-track",
-        "left": 1,
-        "right": 4348
+        "left": -62,
+        "right": 4684
       },
       {
         "sel": "div.gallery-set",
-        "left": 1,
-        "right": 2174
+        "left": -62,
+        "right": 2311
       },
       {
         "sel": "figure.gallery-image.image-2",
-        "left": 311,
-        "right": 604
+        "left": 277,
+        "right": 551
       },
       {
         "sel": "img",
-        "left": 311,
-        "right": 604
+        "left": 277,
+        "right": 551
       }
     ],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.eyebrow.gal-hero-eyebrow",
+        "fs": 10,
+        "text": "PARISIAN ATMOSPHERE"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— PARISIAN ATMOSPHERE"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Paris Wall Art"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Coffee & Food"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Salon + Café"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -2309,8 +2622,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -2326,33 +2639,69 @@
     "overflowEls": [
       {
         "sel": "div.gallery-track",
-        "left": 16,
-        "right": 4527
+        "left": -114,
+        "right": 4632
       },
       {
         "sel": "div.gallery-set",
-        "left": 16,
-        "right": 2272
+        "left": -114,
+        "right": 2259
       },
       {
         "sel": "figure.gallery-image.image-2",
-        "left": 339,
-        "right": 643
+        "left": 225,
+        "right": 499
       },
       {
         "sel": "img",
-        "left": 339,
-        "right": 643
+        "left": 225,
+        "right": 499
       }
     ],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.eyebrow.gal-hero-eyebrow",
+        "fs": 10,
+        "text": "PARISIAN ATMOSPHERE"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— PARISIAN ATMOSPHERE"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Paris Wall Art"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Coffee & Food"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Salon + Café"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -2361,8 +2710,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -2378,33 +2727,69 @@
     "overflowEls": [
       {
         "sel": "div.gallery-track",
-        "left": 18,
-        "right": 4966
+        "left": -51,
+        "right": 4695
       },
       {
         "sel": "div.gallery-set",
-        "left": 18,
-        "right": 2492
+        "left": -51,
+        "right": 2322
       },
       {
         "sel": "figure.gallery-image.image-2",
-        "left": 372,
-        "right": 707
+        "left": 288,
+        "right": 562
       },
       {
         "sel": "img",
-        "left": 372,
-        "right": 707
+        "left": 288,
+        "right": 562
       }
     ],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.eyebrow.gal-hero-eyebrow",
+        "fs": 10,
+        "text": "PARISIAN ATMOSPHERE"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— PARISIAN ATMOSPHERE"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Paris Wall Art"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Coffee & Food"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Salon + Café"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -2413,8 +2798,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -2430,33 +2815,69 @@
     "overflowEls": [
       {
         "sel": "div.gallery-track",
-        "left": 23,
-        "right": 5735
+        "left": 21,
+        "right": 5733
       },
       {
         "sel": "div.gallery-set",
-        "left": 23,
-        "right": 2879
+        "left": 21,
+        "right": 2877
       },
       {
         "sel": "figure.gallery-image.image-2",
-        "left": 431,
-        "right": 821
+        "left": 429,
+        "right": 819
       },
       {
         "sel": "img",
-        "left": 431,
-        "right": 821
+        "left": 429,
+        "right": 819
       }
     ],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.eyebrow.gal-hero-eyebrow",
+        "fs": 10,
+        "text": "PARISIAN ATMOSPHERE"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— PARISIAN ATMOSPHERE"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Paris Wall Art"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Coffee & Food"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Salon + Café"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -2465,8 +2886,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -2482,33 +2903,69 @@
     "overflowEls": [
       {
         "sel": "div.gallery-track",
-        "left": 26,
-        "right": 7267
+        "left": 28,
+        "right": 7268
       },
       {
         "sel": "div.gallery-set",
-        "left": 26,
-        "right": 3646
+        "left": 28,
+        "right": 3648
       },
       {
         "sel": "figure.gallery-image.image-2",
-        "left": 543,
-        "right": 1042
+        "left": 545,
+        "right": 1044
       },
       {
         "sel": "img",
-        "left": 543,
-        "right": 1042
+        "left": 545,
+        "right": 1044
       }
     ],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.eyebrow.gal-hero-eyebrow",
+        "fs": 10,
+        "text": "PARISIAN ATMOSPHERE"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— PARISIAN ATMOSPHERE"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Paris Wall Art"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Coffee & Food"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Salon + Café"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -2517,8 +2974,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -2553,34 +3010,60 @@
         "right": 1046
       }
     ],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.eyebrow.gal-hero-eyebrow",
+        "fs": 10,
+        "text": "PARISIAN ATMOSPHERE"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— PARISIAN ATMOSPHERE"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Paris Wall Art"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Coffee & Food"
+      },
+      {
+        "sel": "span.eyebrow.gal-section-eyebrow",
+        "fs": 10,
+        "text": "— Salon + Café"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
-        "top": 12
-      },
-      "nav": {
         "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 68,
+        "top": 10
       },
+      "nav": null,
       "cta": {
-        "left": 456,
-        "right": 617,
-        "top": 14
+        "left": 0,
+        "right": 0,
+        "top": 0
       },
-      "logoGap": 16,
-      "ctaGap": 43,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": -68,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -2617,32 +3100,22 @@
     ],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 559,
-        "right": 720,
+        "left": 501,
+        "right": 662,
         "top": 14
       },
-      "logoGap": 16,
-      "ctaGap": 146,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 428,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -2654,57 +3127,37 @@
     "hScroll": false,
     "docScrollW": 900,
     "innerW": 900,
-    "overflowCount": 4,
+    "overflowCount": 2,
     "overflowEls": [
       {
         "sel": "div.gallery-track",
-        "left": 37,
-        "right": 10117
+        "left": -23,
+        "right": 5651
       },
       {
         "sel": "div.gallery-set",
-        "left": 37,
-        "right": 5077
-      },
-      {
-        "sel": "figure.gallery-image.image-2",
-        "left": 757,
-        "right": 1459
-      },
-      {
-        "sel": "img",
-        "left": 757,
-        "right": 1459
+        "left": -23,
+        "right": 2814
       }
     ],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 426,
-        "right": 474,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 715,
-        "right": 876,
+        "left": 657,
+        "right": 818,
         "top": 14
       },
-      "logoGap": 77,
-      "ctaGap": 241,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 584,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -2716,57 +3169,37 @@
     "hScroll": false,
     "docScrollW": 1023,
     "innerW": 1023,
-    "overflowCount": 4,
+    "overflowCount": 2,
     "overflowEls": [
       {
         "sel": "div.gallery-track",
-        "left": 43,
-        "right": 11466
+        "left": -25,
+        "right": 6424
       },
       {
         "sel": "div.gallery-set",
-        "left": 43,
-        "right": 5754
-      },
-      {
-        "sel": "figure.gallery-image.image-2",
-        "left": 858,
-        "right": 1656
-      },
-      {
-        "sel": "img",
-        "left": 858,
-        "right": 1656
+        "left": -25,
+        "right": 3200
       }
     ],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 487,
-        "right": 536,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 838,
-        "right": 999,
+        "left": 780,
+        "right": 941,
         "top": 14
       },
-      "logoGap": 139,
-      "ctaGap": 302,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 707,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -2778,62 +3211,37 @@
     "hScroll": false,
     "docScrollW": 1024,
     "innerW": 1024,
-    "overflowCount": 5,
+    "overflowCount": 2,
     "overflowEls": [
       {
         "sel": "div.gallery-track",
-        "left": -8,
-        "right": 1865
+        "left": -26,
+        "right": 6429
       },
       {
-        "sel": "div.gallery-set.gallery-set--loop",
-        "left": 928,
-        "right": 1865
-      },
-      {
-        "sel": "figure.gallery-image.image-1",
-        "left": 928,
-        "right": 1068
-      },
-      {
-        "sel": "img",
-        "left": 928,
-        "right": 1068
-      },
-      {
-        "sel": "em",
-        "left": 641,
-        "right": 1092
+        "sel": "div.gallery-set",
+        "left": -26,
+        "right": 3202
       }
     ],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 498,
-        "right": 562,
-        "top": 8
-      },
-      "nav": {
         "left": 80,
-        "right": 466,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 128,
+        "top": 12
       },
+      "nav": null,
       "cta": {
-        "left": 783,
-        "right": 944,
-        "top": 18
+        "left": 725,
+        "right": 886,
+        "top": 14
       },
-      "logoGap": 32,
-      "ctaGap": 221,
-      "rowSpread": 10,
+      "logoGap": null,
+      "ctaGap": 596,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -2849,23 +3257,23 @@
     "overflowEls": [
       {
         "sel": "div.gallery-track",
-        "left": -10,
-        "right": 2069
+        "left": -14,
+        "right": 2064
       },
       {
         "sel": "div.gallery-set.gallery-set--loop",
-        "left": 1030,
-        "right": 2069
+        "left": 1025,
+        "right": 2064
       },
       {
         "sel": "figure.gallery-image.image-1",
-        "left": 1030,
-        "right": 1185
+        "left": 1025,
+        "right": 1180
       },
       {
         "sel": "img",
-        "left": 1030,
-        "right": 1185
+        "left": 1025,
+        "right": 1180
       }
     ],
     "small": [],
@@ -2881,11 +3289,11 @@
         "left": 80,
         "right": 472,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -2912,21 +3320,21 @@
       {
         "sel": "div.gallery-track",
         "left": -11,
-        "right": 2331
+        "right": 2332
       },
       {
         "sel": "div.gallery-set.gallery-set--loop",
-        "left": 1160,
-        "right": 2331
+        "left": 1161,
+        "right": 2332
       },
       {
         "sel": "figure.gallery-image.image-1",
-        "left": 1160,
+        "left": 1161,
         "right": 1335
       },
       {
         "sel": "img",
-        "left": 1160,
+        "left": 1161,
         "right": 1335
       }
     ],
@@ -2943,11 +3351,11 @@
         "left": 80,
         "right": 480,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -3005,11 +3413,11 @@
         "left": 80,
         "right": 489,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -3067,11 +3475,11 @@
         "left": 320,
         "right": 750,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -3097,23 +3505,23 @@
     "overflowEls": [
       {
         "sel": "div.gallery-track",
-        "left": 87,
-        "right": 3127
+        "left": 86,
+        "right": 3126
       },
       {
         "sel": "div.gallery-set.gallery-set--loop",
-        "left": 1607,
-        "right": 3127
+        "left": 1606,
+        "right": 3126
       },
       {
         "sel": "figure.gallery-image.image-2",
-        "left": 1847,
-        "right": 2091
+        "left": 1846,
+        "right": 2090
       },
       {
         "sel": "img",
-        "left": 1847,
-        "right": 2091
+        "left": 1846,
+        "right": 2090
       }
     ],
     "small": [],
@@ -3129,11 +3537,11 @@
         "left": 320,
         "right": 751,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -3159,33 +3567,33 @@
     "overflowEls": [
       {
         "sel": "div.gallery-track",
-        "left": 407,
-        "right": 3447
+        "left": 403,
+        "right": 3443
       },
       {
         "sel": "div.gallery-set.gallery-set--loop",
-        "left": 1927,
-        "right": 3447
+        "left": 1923,
+        "right": 3443
       },
       {
         "sel": "figure.gallery-image.image-3",
-        "left": 2425,
-        "right": 2575
+        "left": 2421,
+        "right": 2572
       },
       {
         "sel": "img",
-        "left": 2425,
-        "right": 2575
+        "left": 2421,
+        "right": 2572
       },
       {
         "sel": "figure.gallery-image.image-4",
-        "left": 2530,
-        "right": 2786
+        "left": 2527,
+        "right": 2782
       },
       {
         "sel": "img",
-        "left": 2530,
-        "right": 2786
+        "left": 2527,
+        "right": 2782
       }
     ],
     "small": [],
@@ -3201,11 +3609,11 @@
         "left": 640,
         "right": 1071,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -3234,6 +3642,21 @@
         "sel": "span.visit-hero-dash",
         "fs": 0,
         "text": "—"
+      },
+      {
+        "sel": "span.eyebrow",
+        "fs": 10,
+        "text": "— The Paris Beans Experience"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
       }
     ],
     "header": {
@@ -3241,8 +3664,8 @@
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -3251,8 +3674,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3271,6 +3694,21 @@
         "sel": "span.visit-hero-dash",
         "fs": 0,
         "text": "—"
+      },
+      {
+        "sel": "span.eyebrow",
+        "fs": 10,
+        "text": "— The Paris Beans Experience"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
       }
     ],
     "header": {
@@ -3278,8 +3716,8 @@
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -3288,8 +3726,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3308,6 +3746,21 @@
         "sel": "span.visit-hero-dash",
         "fs": 0,
         "text": "—"
+      },
+      {
+        "sel": "span.eyebrow",
+        "fs": 10,
+        "text": "— The Paris Beans Experience"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
       }
     ],
     "header": {
@@ -3315,8 +3768,8 @@
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -3325,8 +3778,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3345,6 +3798,21 @@
         "sel": "span.visit-hero-dash",
         "fs": 0,
         "text": "—"
+      },
+      {
+        "sel": "span.eyebrow",
+        "fs": 10,
+        "text": "— The Paris Beans Experience"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
       }
     ],
     "header": {
@@ -3352,8 +3820,8 @@
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -3362,8 +3830,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3382,6 +3850,21 @@
         "sel": "span.visit-hero-dash",
         "fs": 0,
         "text": "—"
+      },
+      {
+        "sel": "span.eyebrow",
+        "fs": 10,
+        "text": "— The Paris Beans Experience"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
       }
     ],
     "header": {
@@ -3389,8 +3872,8 @@
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -3399,8 +3882,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3412,42 +3895,52 @@
     "hScroll": false,
     "docScrollW": 641,
     "innerW": 641,
-    "overflowCount": 1,
-    "overflowEls": [
+    "overflowCount": 0,
+    "overflowEls": [],
+    "small": [
       {
-        "sel": "div.visit-hero-content",
-        "left": 48,
-        "right": 710
+        "sel": "span.eyebrow.visit-hero-eyebrow",
+        "fs": 10,
+        "text": "Visit ParisBeans"
+      },
+      {
+        "sel": "span.visit-hero-dash",
+        "fs": 10,
+        "text": "—"
+      },
+      {
+        "sel": "span.eyebrow",
+        "fs": 10,
+        "text": "— The Paris Beans Experience"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
       }
     ],
-    "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
-        "top": 12
-      },
-      "nav": {
         "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 68,
+        "top": 10
       },
+      "nav": null,
       "cta": {
-        "left": 456,
-        "right": 617,
-        "top": 14
+        "left": 0,
+        "right": 0,
+        "top": 0
       },
-      "logoGap": 16,
-      "ctaGap": 43,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": -68,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3463,32 +3956,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 559,
-        "right": 720,
+        "left": 501,
+        "right": 662,
         "top": 14
       },
-      "logoGap": 16,
-      "ctaGap": 146,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 428,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3504,32 +3987,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 426,
-        "right": 474,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 715,
-        "right": 876,
+        "left": 657,
+        "right": 818,
         "top": 14
       },
-      "logoGap": 77,
-      "ctaGap": 241,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 584,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3545,32 +4018,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 487,
-        "right": 536,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 838,
-        "right": 999,
+        "left": 780,
+        "right": 941,
         "top": 14
       },
-      "logoGap": 139,
-      "ctaGap": 302,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 707,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3586,32 +4049,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 498,
-        "right": 562,
-        "top": 8
-      },
-      "nav": {
         "left": 80,
-        "right": 466,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 128,
+        "top": 12
       },
+      "nav": null,
       "cta": {
-        "left": 783,
-        "right": 944,
-        "top": 18
+        "left": 725,
+        "right": 886,
+        "top": 14
       },
-      "logoGap": 32,
-      "ctaGap": 221,
-      "rowSpread": 10,
+      "logoGap": null,
+      "ctaGap": 596,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3638,11 +4091,11 @@
         "left": 80,
         "right": 472,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -3679,11 +4132,11 @@
         "left": 80,
         "right": 480,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -3720,11 +4173,11 @@
         "left": 80,
         "right": 489,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -3761,11 +4214,11 @@
         "left": 320,
         "right": 750,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -3802,11 +4255,11 @@
         "left": 320,
         "right": 751,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -3843,11 +4296,11 @@
         "left": 640,
         "right": 1071,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -3871,14 +4324,35 @@
     "innerW": 375,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.legal-toc-label",
+        "fs": 10,
+        "text": "On this page"
+      },
+      {
+        "sel": "span.legal-eyebrow",
+        "fs": 10,
+        "text": "— Privacy Policy"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -3887,8 +4361,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3902,14 +4376,35 @@
     "innerW": 390,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.legal-toc-label",
+        "fs": 10,
+        "text": "On this page"
+      },
+      {
+        "sel": "span.legal-eyebrow",
+        "fs": 10,
+        "text": "— Privacy Policy"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -3918,8 +4413,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3933,14 +4428,35 @@
     "innerW": 430,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.legal-toc-label",
+        "fs": 10,
+        "text": "On this page"
+      },
+      {
+        "sel": "span.legal-eyebrow",
+        "fs": 10,
+        "text": "— Privacy Policy"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -3949,8 +4465,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3964,14 +4480,35 @@
     "innerW": 500,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.legal-toc-label",
+        "fs": 10,
+        "text": "On this page"
+      },
+      {
+        "sel": "span.legal-eyebrow",
+        "fs": 10,
+        "text": "— Privacy Policy"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -3980,8 +4517,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -3995,14 +4532,35 @@
     "innerW": 640,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.legal-toc-label",
+        "fs": 10,
+        "text": "On this page"
+      },
+      {
+        "sel": "span.legal-eyebrow",
+        "fs": 10,
+        "text": "— Privacy Policy"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -4011,8 +4569,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4026,34 +4584,45 @@
     "innerW": 641,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.legal-toc-label",
+        "fs": 10,
+        "text": "On this page"
+      },
+      {
+        "sel": "span.legal-eyebrow",
+        "fs": 10,
+        "text": "— Privacy Policy"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
-        "top": 12
-      },
-      "nav": {
         "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 68,
+        "top": 10
       },
+      "nav": null,
       "cta": {
-        "left": 456,
-        "right": 617,
-        "top": 14
+        "left": 0,
+        "right": 0,
+        "top": 0
       },
-      "logoGap": 16,
-      "ctaGap": 43,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": -68,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4069,32 +4638,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 559,
-        "right": 720,
+        "left": 501,
+        "right": 662,
         "top": 14
       },
-      "logoGap": 16,
-      "ctaGap": 146,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 428,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4110,32 +4669,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 426,
-        "right": 474,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 715,
-        "right": 876,
+        "left": 657,
+        "right": 818,
         "top": 14
       },
-      "logoGap": 77,
-      "ctaGap": 241,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 584,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4151,32 +4700,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 487,
-        "right": 536,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 838,
-        "right": 999,
+        "left": 780,
+        "right": 941,
         "top": 14
       },
-      "logoGap": 139,
-      "ctaGap": 302,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 707,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4192,32 +4731,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 498,
-        "right": 562,
-        "top": 8
-      },
-      "nav": {
         "left": 80,
-        "right": 466,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 128,
+        "top": 12
       },
+      "nav": null,
       "cta": {
-        "left": 783,
-        "right": 944,
-        "top": 18
+        "left": 725,
+        "right": 886,
+        "top": 14
       },
-      "logoGap": 32,
-      "ctaGap": 221,
-      "rowSpread": 10,
+      "logoGap": null,
+      "ctaGap": 596,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4244,11 +4773,11 @@
         "left": 80,
         "right": 472,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -4285,11 +4814,11 @@
         "left": 80,
         "right": 480,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -4326,11 +4855,11 @@
         "left": 80,
         "right": 489,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -4367,11 +4896,11 @@
         "left": 320,
         "right": 750,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -4408,11 +4937,11 @@
         "left": 320,
         "right": 751,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -4449,11 +4978,11 @@
         "left": 640,
         "right": 1071,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -4477,14 +5006,35 @@
     "innerW": 375,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.legal-toc-label",
+        "fs": 10,
+        "text": "On this page"
+      },
+      {
+        "sel": "span.legal-eyebrow",
+        "fs": 10,
+        "text": "— Terms & Conditions"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -4493,8 +5043,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4508,14 +5058,35 @@
     "innerW": 390,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.legal-toc-label",
+        "fs": 10,
+        "text": "On this page"
+      },
+      {
+        "sel": "span.legal-eyebrow",
+        "fs": 10,
+        "text": "— Terms & Conditions"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -4524,8 +5095,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4539,14 +5110,35 @@
     "innerW": 430,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.legal-toc-label",
+        "fs": 10,
+        "text": "On this page"
+      },
+      {
+        "sel": "span.legal-eyebrow",
+        "fs": 10,
+        "text": "— Terms & Conditions"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -4555,8 +5147,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4570,14 +5162,35 @@
     "innerW": 500,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.legal-toc-label",
+        "fs": 10,
+        "text": "On this page"
+      },
+      {
+        "sel": "span.legal-eyebrow",
+        "fs": 10,
+        "text": "— Terms & Conditions"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -4586,8 +5199,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4601,14 +5214,35 @@
     "innerW": 640,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.legal-toc-label",
+        "fs": 10,
+        "text": "On this page"
+      },
+      {
+        "sel": "span.legal-eyebrow",
+        "fs": 10,
+        "text": "— Terms & Conditions"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -4617,8 +5251,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4632,34 +5266,45 @@
     "innerW": 641,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "span.legal-toc-label",
+        "fs": 10,
+        "text": "On this page"
+      },
+      {
+        "sel": "span.legal-eyebrow",
+        "fs": 10,
+        "text": "— Terms & Conditions"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
-        "top": 12
-      },
-      "nav": {
         "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 68,
+        "top": 10
       },
+      "nav": null,
       "cta": {
-        "left": 456,
-        "right": 617,
-        "top": 14
+        "left": 0,
+        "right": 0,
+        "top": 0
       },
-      "logoGap": 16,
-      "ctaGap": 43,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": -68,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4675,32 +5320,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 559,
-        "right": 720,
+        "left": 501,
+        "right": 662,
         "top": 14
       },
-      "logoGap": 16,
-      "ctaGap": 146,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 428,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4716,32 +5351,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 426,
-        "right": 474,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 715,
-        "right": 876,
+        "left": 657,
+        "right": 818,
         "top": 14
       },
-      "logoGap": 77,
-      "ctaGap": 241,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 584,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4757,32 +5382,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 487,
-        "right": 536,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 838,
-        "right": 999,
+        "left": 780,
+        "right": 941,
         "top": 14
       },
-      "logoGap": 139,
-      "ctaGap": 302,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 707,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4798,32 +5413,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 498,
-        "right": 562,
-        "top": 8
-      },
-      "nav": {
         "left": 80,
-        "right": 466,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 128,
+        "top": 12
       },
+      "nav": null,
       "cta": {
-        "left": 783,
-        "right": 944,
-        "top": 18
+        "left": 725,
+        "right": 886,
+        "top": 14
       },
-      "logoGap": 32,
-      "ctaGap": 221,
-      "rowSpread": 10,
+      "logoGap": null,
+      "ctaGap": 596,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -4850,11 +5455,11 @@
         "left": 80,
         "right": 472,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -4891,11 +5496,11 @@
         "left": 80,
         "right": 480,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -4932,11 +5537,11 @@
         "left": 80,
         "right": 489,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -4973,11 +5578,11 @@
         "left": 320,
         "right": 750,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -5014,11 +5619,11 @@
         "left": 320,
         "right": 751,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -5055,11 +5660,11 @@
         "left": 640,
         "right": 1071,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -5083,14 +5688,30 @@
     "innerW": 375,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.nf-eyebrow.reveal",
+        "fs": 10,
+        "text": "— Page Not Found"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -5099,8 +5720,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -5114,14 +5735,30 @@
     "innerW": 390,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.nf-eyebrow.reveal",
+        "fs": 10,
+        "text": "— Page Not Found"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -5130,8 +5767,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -5145,14 +5782,30 @@
     "innerW": 430,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.nf-eyebrow.reveal",
+        "fs": 10,
+        "text": "— Page Not Found"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -5161,8 +5814,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -5176,14 +5829,30 @@
     "innerW": 500,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.nf-eyebrow.reveal",
+        "fs": 10,
+        "text": "— Page Not Found"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -5192,8 +5861,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -5207,14 +5876,30 @@
     "innerW": 640,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.nf-eyebrow.reveal",
+        "fs": 10,
+        "text": "— Page Not Found"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
       "toggleVisible": true,
       "navCount": 0,
       "logo": {
         "left": 16,
-        "right": 70,
-        "top": 5
+        "right": 60,
+        "top": 10
       },
       "nav": null,
       "cta": {
@@ -5223,8 +5908,8 @@
         "top": 0
       },
       "logoGap": null,
-      "ctaGap": -70,
-      "rowSpread": 5,
+      "ctaGap": -60,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -5238,34 +5923,40 @@
     "innerW": 641,
     "overflowCount": 0,
     "overflowEls": [],
-    "small": [],
+    "small": [
+      {
+        "sel": "p.eyebrow.nf-eyebrow.reveal",
+        "fs": 10,
+        "text": "— Page Not Found"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Explore"
+      },
+      {
+        "sel": "h3.footer-heading",
+        "fs": 10,
+        "text": "Visit & Contact"
+      }
+    ],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
-        "top": 12
-      },
-      "nav": {
         "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 68,
+        "top": 10
       },
+      "nav": null,
       "cta": {
-        "left": 456,
-        "right": 617,
-        "top": 14
+        "left": 0,
+        "right": 0,
+        "top": 0
       },
-      "logoGap": 16,
-      "ctaGap": 43,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": -68,
+      "rowSpread": 10,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -5281,32 +5972,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 364,
-        "right": 413,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 559,
-        "right": 720,
+        "left": 501,
+        "right": 662,
         "top": 14
       },
-      "logoGap": 16,
-      "ctaGap": 146,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 428,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -5322,32 +6003,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 426,
-        "right": 474,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 715,
-        "right": 876,
+        "left": 657,
+        "right": 818,
         "top": 14
       },
-      "logoGap": 77,
-      "ctaGap": 241,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 584,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -5363,32 +6034,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 487,
-        "right": 536,
+        "left": 24,
+        "right": 72,
         "top": 12
       },
-      "nav": {
-        "left": 24,
-        "right": 348,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
-      },
+      "nav": null,
       "cta": {
-        "left": 838,
-        "right": 999,
+        "left": 780,
+        "right": 941,
         "top": 14
       },
-      "logoGap": 139,
-      "ctaGap": 302,
-      "rowSpread": 6,
+      "logoGap": null,
+      "ctaGap": 707,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -5404,32 +6065,22 @@
     "overflowEls": [],
     "small": [],
     "header": {
-      "toggleVisible": false,
-      "navCount": 5,
+      "toggleVisible": true,
+      "navCount": 0,
       "logo": {
-        "left": 498,
-        "right": 562,
-        "top": 8
-      },
-      "nav": {
         "left": 80,
-        "right": 466,
-        "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
-        ]
+        "right": 128,
+        "top": 12
       },
+      "nav": null,
       "cta": {
-        "left": 783,
-        "right": 944,
-        "top": 18
+        "left": 725,
+        "right": 886,
+        "top": 14
       },
-      "logoGap": 32,
-      "ctaGap": 221,
-      "rowSpread": 10,
+      "logoGap": null,
+      "ctaGap": 596,
+      "rowSpread": 2,
       "ctaPastViewport": false,
       "navPastViewport": false
     }
@@ -5456,11 +6107,11 @@
         "left": 80,
         "right": 472,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -5497,11 +6148,11 @@
         "left": 80,
         "right": 480,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -5538,11 +6189,11 @@
         "left": 80,
         "right": 489,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -5579,11 +6230,11 @@
         "left": 320,
         "right": 750,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -5620,11 +6271,11 @@
         "left": 320,
         "right": 751,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {
@@ -5661,11 +6312,11 @@
         "left": 640,
         "right": 1071,
         "tops": [
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          17,
+          17,
+          17,
+          17
         ]
       },
       "cta": {

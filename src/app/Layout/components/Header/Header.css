@@ -115,7 +115,7 @@
 .header-logo .logo-img {
   /* Phone: sized to sit inside the 64px bar with 10px of air above and
      below. Grows with the bar at each tier. */
-  height: 44px;
+  height: 54px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -399,7 +399,7 @@
 
 .pb-menu-label {
   font-family: var(--font-serif);
-  font-size: 24px;
+  font-size: 18px;
   font-weight: var(--fw-medium);
   line-height: 1.2;
   letter-spacing: -0.01em;
