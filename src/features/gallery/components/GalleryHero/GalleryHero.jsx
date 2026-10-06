@@ -86,7 +86,7 @@ export default function GalleryHero() {
             <span className="gal-hero-dash" aria-hidden="true" />
             PARISIAN ATMOSPHERE
           </span>
-          <h1 className="gal-hero-title">Moments Worth Slowing Down For.</h1>
+          <h1 className="gal-hero-title">A Little Paris, Created for Your Salon Day.</h1>
           <p className="gal-hero-desc lead">
             A little time to pause, enjoy your coffee, and take in the Paris-inspired
             atmosphere at HAIR RAP BY YOYO.
