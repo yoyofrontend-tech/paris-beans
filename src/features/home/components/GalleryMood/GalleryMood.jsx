@@ -106,6 +106,7 @@ export default function GalleryMood() {
           <h2 className="gallery-title">
             A Corner of <em>Paris,</em> Inside
             <br className="gallery-break" />
+            {' '}
             <em>HAIR RAP BY YOYO.</em>
           </h2>
           <p className="lead gallery-desc">
