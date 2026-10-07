@@ -42,7 +42,7 @@ import decoCupCroissant from './story/deco-cup-croissant.svg'
 // hashed or optimised by Vite. See the exclusion list in vite.config.js.
 const storyImg1 = '/story/img1.png'
 const storyImgPhone = '/story/img_phone.png'
-const tabletStory = '/story/Frame 48096464 (1).png'
+const tabletStory = '/story/tablet-story.png'
 import photo from './story/photo.svg'
 import rectangle69 from './story/Rectangle 69.svg'
 import rectangle71 from './story/Rectangle 71.svg'

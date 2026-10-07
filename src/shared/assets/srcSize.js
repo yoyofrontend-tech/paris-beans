@@ -26,7 +26,7 @@ const srcSizeMap = {
   // story
   'img1.png': [1935, 939],
   'img_phone.png': [390, 411],
-  'Frame 48096464 (1).png': [744, 605],
+  'tablet-story.png': [744, 605],
   'photo.svg': [627, 624],
   'frame-48096320.svg': [1312, 735],
   'Rectangle 69.svg': [675, 605],

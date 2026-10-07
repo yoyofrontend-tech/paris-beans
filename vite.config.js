@@ -108,7 +108,7 @@ export default defineConfig({
       exclude: [
         /story\/img1\.png$/,
         /story\/img_phone\.png$/,
-        /story\/Frame 48096464 \(1\)\.png$/,
+        /story\/tablet-story\.png$/,
       ],
     }),
   ],
