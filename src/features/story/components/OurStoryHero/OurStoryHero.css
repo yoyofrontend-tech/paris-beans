@@ -218,8 +218,15 @@
 
    nowrap is what keeps the break this <br> asks for: a nowrap line can still
    wrap inside itself, so without it the tablet title lands on three or four
-   lines at the narrow end of the band. */
-@media (min-width: 641px) {
+   lines at the narrow end of the band.
+
+   The band has to stop at 1023px. Both of these are tablet-only by name — a
+   measure of 640px and a forced break — and while the upper bound read 1099px
+   they could not reach the tier below. Open-ended at `min-width: 641px` they
+   did: the cap and the <br> landed on laptop and desktop too, and held "A
+   Little Paris, Created for Your Salon Day." on two lines at every width from
+   1024px up, where the heading is meant to read as one. */
+@media (min-width: 641px) and (max-width: 1023px) {
   .ostory-title {
     white-space: nowrap;
     max-width: min(640px, 100%);
@@ -260,7 +267,13 @@
   }
 
   .ostory-title {
-    font-size: var(--fs-h1);
+    /* The tier's own ramp, not --fs-h1. The string has to hold one line in the
+       container's own column, and --fs-h1 does not: it inks 992.4px at the 1024
+       edge against 864px available, and 1312.4px at 1920 against 1280px. This
+       ramp inks 788px at 1024 (8.8% clear) and 1077px at 1920 (15.9% clear),
+       so the heading sits on one line across the whole tier with room to spare
+       for a wider fallback face. */
+    font-size: clamp(40px, 3.9vw, 56px);
     line-height: 1.1;
   }
 
@@ -279,7 +292,7 @@
   }
 
   .ostory-title {
-    font-size: var(--fs-h1);
+    font-size: 56px;
   }
 
   .ostory-desc {
