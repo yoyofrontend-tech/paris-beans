@@ -72,7 +72,6 @@ export const galleryHeroImages = [
 
 export const heroImages = {
   salonInterior,
-  frame48096466,
 }
 
 export const menuImages = {
