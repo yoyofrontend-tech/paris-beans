@@ -83,7 +83,7 @@
   gap: 1rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   /* Header collapses to 66px at ≤1024px (Header.css), so the page must
      reserve the matching viewport offset or the block sits 12px low. */
   .nf-page {

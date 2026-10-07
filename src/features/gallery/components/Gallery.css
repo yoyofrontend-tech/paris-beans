@@ -11,7 +11,7 @@
 }
 
 .gal-hero-copy {
-  max-width: min(100%, 1100px);
+  max-width: min(100%, 1024px);
   text-align: left;
 }
 
@@ -240,7 +240,9 @@
 
 .gal-section-title {
   font-style: italic;
-  font-size: var(--fs-section);
+  /* 28px (--fs-section-phone) on the phone, up to 640px; the shared
+     --fs-section ramp takes over from 641px. */
+  font-size: var(--fs-section-phone);
   margin: 1rem 0 1.2rem;
   max-width: 640px;
 }
@@ -257,17 +259,17 @@
 }
 
 /* ---------- Desktop: every heading and description on one line ----------
-   Laptop and up — the scale's desktop tier, min-width 1100px — holds each
+   Laptop and up — the scale's desktop tier, min-width 1024px — holds each
    heading and each description on a single line. Three things have to give for
    that, and none of them is optional:
 
    1. The measure caps come off. `.gal-section-head` is capped at 720px,
       `.gal-section-title` at 640px, both descriptions at 560px and
-      `.gal-hero-copy` at min(100%, 1100px) — every one of them narrower than the
+      `.gal-hero-copy` at min(100%, 1024px) — every one of them narrower than the
       string it has to hold, so all four section headings and all five
       descriptions wrapped to two lines at every desktop width. The hero title
       was the other direction: `nowrap` was already on it from 1200px but the
-      copy block was capped at 1180px from 1800px up, and the title inks 1191.6px
+      copy block was capped at 1180px from 1024px up, and the title inks 1191.6px
       there, so it overflowed its own box instead of wrapping.
 
    2. `white-space: nowrap`, so nothing re-breaks even if a string is edited
@@ -276,14 +278,14 @@
 
    3. The descriptions take a slightly smaller ramp. The longest of them — the
       "Paris-inspired details…" paragraph, 126 characters — inks 1003.4px at the
-      1100px edge, where the container's inner width is 1012px: 8.6px of slack,
+      1024px edge, where the container's inner width is 1012px: 8.6px of slack,
       under 1%, which is too thin to hang a hard nowrap on. The ramp below pulls
       that edge to 16.7px (914px of ink, 9.7% clear) and climbs back to 18.6px
       by 1920px, where the same string inks 1020px inside 1776px.
 
    The headings need no size change. The widest, "A Corner of Paris, Inside HAIR
-   RAP BY YOYO.", inks 926px at 1100px against 1012px available, and both
-   heading ramps grow more slowly than the container does, so 1100px is the
+   RAP BY YOYO.", inks 926px at 1024px against 1012px available, and both
+   heading ramps grow more slowly than the container does, so 1024px is the
    tightest width in the band and every step above it is clearer than the last.
 
    This block sits after the base rules above on purpose: they carry the same
@@ -296,7 +298,7 @@
    1100-1920px. Tablet landscape (1024-1099px) keeps wrapping: at 1024px the
    longest description inks 1003px against a 942px container, so a single line
    there is not available at any readable size. */
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
   .gal-hero-copy,
   .gal-section-head {
     max-width: none;
@@ -312,15 +314,15 @@
 
   .gal-hero-desc,
   .gal-section-desc {
-    font-size: clamp(16px, 0.25vw + 0.87rem, 18.6px);
+    font-size: var(--fs-text);
   }
 }
 
 /* ============================================================
-   LAPTOP — the hero header text block, 1136px and up
+   LAPTOP — the hero header text block, 1024px and up
    ============================================================
    The label, the h1 and the subtext, and nothing else: the collage keeps its own
-   geometry, the four image sections keep the 1100px block above, and phone and
+   geometry, the four image sections keep the 1024px block above, and phone and
    tablet are untouched. Every value here is restated rather than inherited,
    because the base rules are phone rules — a 10px label, a 0.32em track, an
    860px description cap — and none of them survives this frame.
@@ -341,7 +343,7 @@
    Verified across 1136/1200/1280/1366/1440/1600/1920/2560 — both strings stay on
    one line at every width, the tightest being the subtext at 1136 (940px of ink
    in a 1010px column). */
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   /* No gutter rule and no measure cap here any more. This block used to override
      the shared container's padding with its own 5.55vw and then hard-code
      1280px on the copy to hold the measure — the same 80px the container already
@@ -368,7 +370,7 @@
     align-items: center;
     gap: 4px;
     margin: 0;
-    font-size: 18px;
+    font-size: var(--fs-eyebrow);
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0.02em;
@@ -385,7 +387,7 @@
   }
 
   .gal-hero-title {
-    font-size: clamp(40px, 3.9vw, 56px);
+    font-size: var(--fs-h1);
     line-height: 1.1;
     /* margin-block: 0 is the frame's, so both distances are stated here and
        nowhere else: 16px down from the label, 28px down to the subtext. The
@@ -397,7 +399,7 @@
   }
 
   .gal-hero-desc {
-    font-size: clamp(16px, 1.4vw, 20px);
+    font-size: var(--fs-text);
     line-height: 1.4;
     margin: 0;
     max-width: none;
@@ -430,15 +432,15 @@
   }
 
   .gal-hero-eyebrow {
-    font-size: 18px;
+    font-size: var(--fs-eyebrow);
   }
 
   .gal-hero-title {
-    font-size: 56px;
+    font-size: var(--fs-h1);
   }
 
   .gal-hero-desc {
-    font-size: 20px;
+    font-size: var(--fs-text);
   }
 }
 
@@ -546,13 +548,13 @@
 }
 
 /* ── Hero composition: large desktop ─────────────────────── */
-@media (min-width: 1800px) {
+@media (min-width: 1024px) {
   .gal-hero-collage {
     max-width: min(1720px, 100vw);
   }
 
-  /* The copy block is no longer capped: from 1100px up it carries the hero
-     title and description on one line, and at the 1800px edge the title inks
+  /* The copy block is no longer capped: from 1024px up it carries the hero
+     title and description on one line, and at the 1024px edge the title inks
      1191.6px — wider than the 1180px this used to be capped at, so the cap
      pushed the nowrap title past its own box. The container's inner width is
      1656px here, so the block can simply run to it. */
@@ -685,7 +687,7 @@
    to stop at 1024px inclusive, so the collage ran at 38vw up to 1024 and then
    dropped to 17.5vw at 1025 — the frame halved as the viewport grew one pixel,
    which is the opposite of a breakpoint. */
-@media (min-width: 768px) and (max-width: 1099px) {
+@media (min-width: 641px) {
   .gal-hero-collage {
     /* Bigger base unit again (was 280–320px). Raising it scales every frame's
        width, height, offset and overlap by the same factor, so the stagger and
@@ -755,7 +757,7 @@
    overlap, no corner pairs. The track still drifts on `galMarquee`; what
    changes is the per-frame geometry, which is why this block rewrites `--w`,
    `--o` and the two overlap pairs instead of touching a single scale factor. */
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   /* No inset token and no container override: --gutter is 16px through this whole
      band, which is what the copy's left edge used to be restated as. The
      collage below does not share it — its frames are centred on the screen,
@@ -997,7 +999,7 @@
       trailing gap, so the last card of a set and the first card of the next
       are spaced exactly like every other pair. A `gap` on the set cannot do
       this, because it puts no gap at all across the seam. */
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .gal-hero {
     /* Empty space under the collage, per Figma. */
     padding-bottom: 130px;
@@ -1012,7 +1014,7 @@
   .gal-hero-title {
     /* --fs-h1 already floors at 2rem = 32px here; the line-height and the
        exact brown are the two values that needed stating. */
-    font-size: 32px;
+    font-size: var(--fs-h1-phone);
     line-height: 1.2;
     color: #3b2118;
     max-width: none;
@@ -1020,7 +1022,7 @@
 
   .gal-hero-desc {
     /* --fs-text floors at 0.98rem = 15.68px; Figma asks for 15px. */
-    font-size: 15px;
+    font-size: var(--fs-text);
     line-height: 1.5;
     color: var(--color-muted);
     max-width: 350px;

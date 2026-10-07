@@ -16,7 +16,7 @@
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: var(--fw-bold);
-  /* --fs-h1-phone is a flat 32px across the phone band; from 744px it is
+  /* --fs-h1-phone is a flat 32px across the phone band; from 641px it is
      --fs-h1's own ramp. --fs-h1 floors at 36px here, which overtook the page's
      own origin and CTA headings (both on --fs-section-phone) and left the hero
      reading as a different page. A local token rather than a retuned --fs-h1,
@@ -112,7 +112,7 @@
 /* ============================================================
    RESPONSIVE
    ============================================================ */
-@media (max-width: 1180px) {
+@media (max-width: 1023px) {
   .ostory-title,
   .ostory-desc {
     white-space: normal;
@@ -130,13 +130,13 @@
   height: clamp(360px, 40vw, 500px);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1023px) {
   .ostory-gallery {
     height: clamp(300px, 40vw, 360px);
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   /* No measure cap on the title. It used to carry `max-width: 350px` here, a
      phone measure, across a band that runs 115px to 367px wider than the phone
      it was sized on: at 500px the h1 was 40.1px on 350px inside a 455px column,
@@ -184,7 +184,7 @@
 
    The bands no longer overlap, so this no longer depends on source order to
    beat the 640px and 767px blocks — it starts where they stop. */
-@media (min-width: 768px) and (max-width: 1099px) {
+@media (min-width: 641px) {
   /* The hero box becomes a column flex box across both tablet tiers. It is a
      plain block everywhere else, so this needs restating rather than inheriting.
      Moved here from StoryPage.css, which used to own it and won the tie only by
@@ -210,7 +210,7 @@
 /* Tablet: the heading's measure, and the line break.
 
    Only layout. The size is not restated: the title takes --fs-h1-phone, which
-   is --fs-h1 from 744px up, and the label stays on --fs-eyebrow, which is the
+   is --fs-h1 from 641px up, and the label stays on --fs-eyebrow, which is the
    same pair /gallery's hero reads, so the two pages cannot drift apart in this
    band. The measure has to be stated here because above 599px the shell is wider
    than 640px and the cap is what holds the line length; below it the base 100%
@@ -219,7 +219,7 @@
    nowrap is what keeps the break this <br> asks for: a nowrap line can still
    wrap inside itself, so without it the tablet title lands on three or four
    lines at the narrow end of the band. */
-@media (min-width: 600px) and (max-width: 1099px) {
+@media (min-width: 641px) {
   .ostory-title {
     white-space: nowrap;
     max-width: min(640px, 100%);
@@ -231,10 +231,10 @@
 }
 
 /* ============================================================
-   LAPTOP AND DESKTOP — 1136px and up
+   LAPTOP AND DESKTOP — 1024px and up
    ============================================================
    The hero block at the same three numbers /gallery's hero uses at this tier,
-   which is what makes the two pages' headers read as one system above 1136px:
+   which is what makes the two pages' headers read as one system above 1024px:
    the label 18px regular on 0.02em tracking, the h1 on its own 3.9vw ramp to a
    56px cap, the description 1.4vw to 20px on 1.4.
 
@@ -245,12 +245,12 @@
    --fs-h1, which is 52.7px at the 1136 edge and 69.9px at 1920 — 13.9px wider
    than the gallery hero's 56px cap at 1920, which is the difference this tier
    closes. */
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   /* Scoped to the hero's own label. A bare `.ostory-eyebrow` here would restate
      all three labels on the page, and the gallery's tier is hero-only too: its
      four section labels stay on the global --fs-eyebrow at this width. */
   .ostory-hero .ostory-eyebrow {
-    font-size: 18px;
+    font-size: var(--fs-eyebrow);
     /* The gallery hero label is 400 on 0.02em at this size; the global
        --fw-medium / --tracking-eyebrow pair would be 500 on 0.32em, which is
        5.76px a gap. */
@@ -260,12 +260,12 @@
   }
 
   .ostory-title {
-    font-size: clamp(40px, 3.9vw, 56px);
+    font-size: var(--fs-h1);
     line-height: 1.1;
   }
 
   .ostory-desc {
-    font-size: clamp(16px, 1.4vw, 20px);
+    font-size: var(--fs-text);
     line-height: 1.4;
   }
 }
@@ -275,15 +275,15 @@
    as literals, which is what keeps this tier independent of the ramps above. */
 @media (min-width: 1920px) {
   .ostory-hero .ostory-eyebrow {
-    font-size: 18px;
+    font-size: var(--fs-eyebrow);
   }
 
   .ostory-title {
-    font-size: 56px;
+    font-size: var(--fs-h1);
   }
 
   .ostory-desc {
-    font-size: 20px;
+    font-size: var(--fs-text);
   }
 }
 

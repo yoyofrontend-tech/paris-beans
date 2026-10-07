@@ -1,4 +1,4 @@
-﻿.footer {
+.footer {
   position: relative;
   overflow: hidden;
   background-color: var(--color-footer);
@@ -75,10 +75,10 @@
    Footer â€” mobile-first, three tiers
 
      PHONE   base          375â€“743   one column, stacked, 48/20, gap 16
-     TABLET  744px+        744â€“1135  brand across the top, Explore and
+     TABLET  641px+        744â€“1135  brand across the top, Explore and
                                          Visit & Contact in 2 columns,
                                          bottom row below. 72/32
-     LAPTOP  1136px+       1136+     3 columns, bottom row brand left
+     LAPTOP  1024px+       1136+     3 columns, bottom row brand left
                                          and copyright right. 96/80
      DESKTOP 1920px+                 identical to LAPTOP by spec
 
@@ -553,11 +553,11 @@ a.contact-body:focus-visible,
    Below 1024px this row hands the FAB a lane in the other axis instead; that
    rule is at the end of this file. */
 
-/* TABLET — 744px to 1135px.
+/* TABLET — 641px to 1135px.
    Brand (logo, description, social) spans the full width on top; Explore
    and Visit & Contact sit side by side underneath; the bottom row spans
    below both. */
-@media (min-width: 744px) {
+@media (min-width: 641px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 40px 32px;
@@ -573,7 +573,7 @@ a.contact-body:focus-visible,
   }
 
   .footer-bottom-inner {
-    /* Two rows of two, not one wrapping row: at 744px the four items are
+    /* Two rows of two, not one wrapping row: at 641px the four items are
        ~700px of content against 680px of track, so flex-wrap split them
        over three lines and left the back-to-top stranded on its own.
        Explicit columns keep brand over copyright and tagline over the
@@ -608,11 +608,11 @@ a.contact-body:focus-visible,
   }
 }
 
-/* LAPTOP — 1136px and up.
+/* LAPTOP — 1024px and up.
    Three columns: brand | Explore | Visit & Contact. The bottom row becomes
    a four-track grid so the brand line lands hard left and the copyright
    lands hard right, with the tagline centred in the slack between them. */
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   .footer-grid {
     grid-template-columns: 1.4fr 0.8fr 1.1fr;
     gap: 80px;
@@ -667,8 +667,8 @@ a.contact-body:focus-visible,
    own. Below that the gutter is 16-24px: no inset can hold the button outside
    the column, so it floats over the corner of the column and the bottom bar
    reserves vertical space for it instead. The lane is the button's own
-   geometry — its 58px height plus the clamp() bottom inset it uses — plus 8px
-   of air, so the last line of text clears the button's top edge by 8px.
+   geometry — its 58px height plus the clamp() bottom inset it uses — plus 4px
+   of air, so the last line of text clears the button's top edge by 4px.
 
    Measured before adding it, at 1024px the tagline sat 20px above the button
    and "Back to top" sat beside it with 10px of horizontal clearance; on the
@@ -680,7 +680,7 @@ a.contact-body:focus-visible,
    tier's `padding-block` would otherwise win the block-end edge. */
 @media (max-width: 1023px) {
   .footer-bottom {
-    padding-bottom: calc(58px + clamp(18px, 2.4vw, 30px) + 8px);
+    padding-bottom: calc(58px + clamp(12px, 1.6vw, 20px) + 4px);
   }
 }
 
@@ -705,4 +705,5 @@ a.contact-body:focus-visible,
     transform: scaleX(1);
   }
 }
+
 

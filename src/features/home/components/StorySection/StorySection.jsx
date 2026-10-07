@@ -28,13 +28,6 @@ export default function StorySection() {
 
   return (
     <section id="story" className="section story" ref={ref}>
-      {/* Cup + croissant line art, desktop and laptop only. */}
-      <img
-        className="home-story-deco"
-        src={storyImages.decoCupCroissant}
-        alt=""
-        aria-hidden="true"
-      />
       <div className="story-grid container">
         {/* Left — text */}
         <div className="story-copy">
@@ -52,6 +45,14 @@ export default function StorySection() {
             HAIR RAP BY YOYO.
           </p>
           <div className="story-cta reveal reveal-delay-3">
+            {/* Cup + croissant line art, desktop and tablet only. Anchored to the
+                button row so its steam always sits just above the button. */}
+            <img
+              className="home-story-deco"
+              src={storyImages.decoCupCroissant}
+              alt=""
+              aria-hidden="true"
+            />
             <Button href="/story" variant="primary" arrow>
               Read Our Story
             </Button>

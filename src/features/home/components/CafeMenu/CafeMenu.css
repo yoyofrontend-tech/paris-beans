@@ -8,8 +8,8 @@
      PHONE   base (no query)  375–743   copy on top, then the swipe strip —
                                       two cards at a time, snap-scrolled,
                                       "View the Menu" under it, 48px pad
-     TABLET  744px+           744–1135  same two-at-a-time swipe strip, 72px pad
-     LAPTOP  1136px+          1136–1919 text column left (~30%), cards become the
+     TABLET  641px+           744–1135  same two-at-a-time swipe strip, 72px pad
+     LAPTOP  1024px+          1136–1919 text column left (~30%), cards become the
                                       4 x 2 grid showing all 8, pin returns,
                                       hover affordances return, 96px pad
      DESKTOP 1920px+          1920+     same 4 x 2 grid, 120px pad
@@ -83,7 +83,7 @@
 .cafe-title {
   margin: 0 0 1.6rem;
   font-style: italic;
-  /* 28px on the phone, the shared ramp from 744px up. */
+  /* 28px on the phone, the shared ramp from 641px up. */
   font-size: var(--fs-section-phone);
   line-height: var(--lh-heading);
   letter-spacing: var(--tracking-tight);
@@ -120,7 +120,7 @@
 /* PHONE + TABLET: the previous swipe strip. `.menu-grid` is the scroller and
    `.cafe-slider-track` is the flex row inside it, so the swipe is the browser's
    native scroll-snap — no drag handler, no translate, no per-width maths.
-   LAPTOP turns both back into plain grid pieces (see the 1136px tier). */
+   LAPTOP turns both back into plain grid pieces (see the 1024px tier). */
 .menu-grid {
   overflow-x: auto;
   overflow-y: hidden;
@@ -231,7 +231,7 @@
   }
 }
 
-/* The sheen and the simultaneous premium zoom are declared in the 1136px tier
+/* The sheen and the simultaneous premium zoom are declared in the 1024px tier
    with the rest of the pointer affordances: the strip is a touch surface, so
    the base tier leaves them off (see the "no hover" block above). */
 
@@ -297,7 +297,7 @@
 }
 
 /* ---------- TABLET ---------- */
-@media (min-width: 744px) {
+@media (min-width: 641px) {
   .cafe {
     padding-block: 72px;
 
@@ -316,7 +316,7 @@
 }
 
 /* ---------- LAPTOP ---------- */
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   .cafe {
     padding-block: 96px;
 

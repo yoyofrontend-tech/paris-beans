@@ -1,4 +1,4 @@
-﻿.site-header {
+.site-header {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -21,11 +21,11 @@
 
      PHONE   base          375–743   logo left, hamburger right,
                                            links live in the toggle menu
-     TABLET  744px+        744–1135  same two-track bar as the phone, on the
+     TABLET  641px+        744–1135  same two-track bar as the phone, on the
                                            taller 72px bar with a larger logo;
                                            "Book Appointment" returns beside
                                            the menu button
-     LAPTOP  1136px+       1136+     links left, logo centred,
+     LAPTOP  1024px+       1136+     links left, logo centred,
                                            "Book Appointment" right
      DESKTOP 1920px+                 identical to LAPTOP by spec
 
@@ -35,7 +35,7 @@
    The tablet tier is the phone's arrangement on a taller bar: the logo sits at
    the left inset, the menu button at the right edge, and the nav links live in
    the drawer that button opens. The bar only becomes a three-track centred grid
-   from 1136px, where there is genuinely room for the links beside a centred
+   from 1024px, where there is genuinely room for the links beside a centred
    logo; at that width the nav gets half the bar minus the logo, which is why
    the laptop links sit a step below the body size.
    ============================================================ */
@@ -620,11 +620,11 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
    Responsive — the three tiers, in scale order
    ========================================================================== */
 
-/* TABLET — 744px to 1135px.
+/* TABLET — 641px to 1135px.
    The phone's two-track bar on the taller 72px bar: logo at the left inset,
    then the booking CTA and the menu button at the right edge, larger logo. The
    nav links move into the drawer, which the menu button opens. */
-@media (min-width: 744px) {
+@media (min-width: 641px) {
   .header-inner {
     grid-template-columns: auto 1fr;
     height: var(--header-h);
@@ -651,7 +651,7 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
 
   /* The booking CTA comes back on the bar at this tier, ahead of the menu
      button. It is off on the phone, where the drawer carries it, and the shared
-     `.btn--small` drops its min-height from 744px, so the 44px target floor is
+     `.btn--small` drops its min-height from 641px, so the 44px target floor is
      restored here. */
   .header-cta {
     display: inline-flex;
@@ -665,7 +665,7 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
 
   /* The phone's near-full-width panel. The base rule caps the drawer at 400px,
      which on a phone is beaten by its own 94vw and so never applies — from
-     744px up it would, leaving a 400px side panel on a screen up to 1135px wide.
+     641px up it would, leaving a 400px side panel on a screen up to 1135px wide.
      This tier carries all the navigation now that the links are off the bar, so
      the panel takes the same 94vw the phone gets. */
   .pb-menu-drawer {
@@ -673,13 +673,13 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
   }
 }
 
-/* LAPTOP — 1136px and up.
+/* LAPTOP — 1024px and up.
    The three-track centred layout returns here, on the taller 80px bar. The
    logo is sized to sit inside the bar with 8px of air above and below, the same
    16px inset the phone and tablet tiers use, instead of overhanging it. The nav
    links, the header CTA and the hidden menu button are all restated here because
    the tablet tier above now turns them off. */
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   .header-inner {
     grid-template-columns: 1fr auto 1fr;
     height: var(--header-h);
@@ -779,4 +779,5 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
     padding: 0.6rem 0.85rem;
   }
 }
+
 

@@ -11,9 +11,9 @@ export default function OurStoryImageRow() {
             the browser lays out. */}
         <source
           srcSet={storyImages.phoneStoryPage}
-          media="(max-width: 767px)"
+          media="(max-width: 640px)"
         />
-        {/* The tablet source covers both tablet tiers. It used to stop at 1023px
+        {/* The tablet source covers the tablet tier. It used to stop at 1023px
             while the CSS tablet band ran to 1024px, so at exactly 1024px the
             tablet layout was active while the 1935x939 desktop source was
             served. Because the three sources have unrelated aspect ratios
@@ -23,7 +23,7 @@ export default function OurStoryImageRow() {
             band makes the height scale smoothly instead. */}
         <source
           srcSet={storyImages.tabletStory}
-          media="(min-width: 768px) and (max-width: 1099px)"
+          media="(min-width: 641px)"
         />
         <img
           src={storyImages.img}

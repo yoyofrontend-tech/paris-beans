@@ -27,7 +27,7 @@
 
 .story-title {
   font-style: italic;
-  /* 28px on the phone, the shared ramp from 744px up. */
+  /* 28px on the phone, the shared ramp from 641px up. */
   font-size: var(--fs-section-phone);
   margin: 1rem 0 1.2rem;
   max-width: 640px;
@@ -244,7 +244,7 @@
    rhythm and the 20px side inset are the section's own, declared here since the
    shared Home phone tokens that used to carry them no longer exist.
    ============================================================ */
-@media (max-width: 1135px) {
+@media (max-width: 1023px) {
   .story {
     padding-block: clamp(42px, 9vw, 64px);
   }
@@ -267,7 +267,7 @@
      heading and 16px below it. */
   .story-copy > .pb-story-eyebrow {
     order: 1;
-    font-size: 0.75rem;
+    font-size: var(--fs-eyebrow);
     font-weight: var(--fw-regular);
     line-height: 1.4;
     letter-spacing: 0.05em;
@@ -283,7 +283,7 @@
 
   .story-copy > .story-paragraph {
     order: 3;
-    font-size: 1rem;
+    font-size: var(--fs-text);
     line-height: 1.5;
     letter-spacing: 0;
     margin-top: 0;
@@ -311,7 +311,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .story-media {
     --frame-off-x: 16px;
     --frame-off-y: 16px;
@@ -352,7 +352,7 @@
 /* ============================================================
    Desktop / laptop — matches Figma frame 1920x1030.
    Every value is scaled off that frame (factor = viewport / 1920). It starts at
-   1136px, the laptop tier, so the tablet above keeps the stacked layout all the
+   1024px, the laptop tier, so the tablet above keeps the stacked layout all the
    way up to it — this block used to start at 1024px, which put the two-column
    frame on tablets.
    ============================================================ */
@@ -360,7 +360,7 @@
   display: none;
 }
 
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   .story {
     overflow: hidden;
     padding: 5.6vw 0 0;
@@ -380,13 +380,14 @@
     align-items: flex-start;
   }
 
-  /* Reserve the band the cup + croissant art occupies. At 1920 the frame
-     already has this room, so the section stays exactly 1030px tall; below
-     1920 the taller Experience-matched copy needs the space added. */
+  /* Reserve the band the cup + croissant art occupies below the button. The
+     art is a fixed 322px wide (~215px tall) and anchored to the button row, so
+     the band no longer needs the old vw scale — a fixed 230px clears the art's
+     bottom with a little slack at every width above the laptop tier. */
   .story-copy {
     margin-top: 1.9vw;
     padding-right: 0;
-    padding-bottom: 23vw;
+    padding-bottom: 230px;
     max-width: none;
     z-index: 1;
   }
@@ -497,7 +498,7 @@
     background: rgba(59, 37, 24, 0.75);
   }
 
-  /* Gold outline — bottom layer of the stack, solid #c7a45a */
+  /* Thin orange outline frame — bottom layer of the stack, solid #c7a45a */
   .story-media::after {
     left: 8.1%;
     top: 9.1%;
@@ -509,22 +510,46 @@
     background: none;
     z-index: 0;
   }
+}
 
-  /* The cup + croissant sits in the empty area below the CTA, to the left of
-     the photo stack, anchored to the section rather than to the copy block so
-     it can never be pushed into the description or button by taller copy. */
+/* ============================================================
+   Laptop and desktop — the cup + croissant line art, 1136px and up.
+   Anchored to the button row: its steam sits ~8px above the top of the
+   "Read Our Story" button, and its left edge is 238px in from the content
+   container's left edge (the button row starts at that edge, so 238px here is
+   238px from the container). It runs to the right of the button and passes
+   behind the photo stack (z-index lower than .story-media / .story-copy).
+   Below 1136px the art stays hidden (base rule). */
+.story-cta {
+  position: relative;
+}
+
+@media (min-width: 1136px) {
   .home-story-deco {
     display: block;
     position: absolute;
-    left: 20.2%;
-    bottom: 6.8%;
-    /* 25.4vw, expressed as a share of the grid box instead: the art has to shrink
-       with the column it sits beside, or it grows with the screen while the photo
-       stack it points at stops growing. */
-    width: 27.7%;
+    top: -8px;
+    left: 238px;
+    width: 322px;
     height: auto;
     pointer-events: none;
     user-select: none;
     z-index: 0;
   }
 }
+
+/* 1920+ — the Figma frame places the art larger and slightly below the button,
+    nudged inboard of the image column; the copy's reserved band is trimmed so
+    the section does not overhang. Nothing else in the section changes. */
+@media (min-width: 1920px) {
+  .story-copy {
+    padding-bottom: 90px;
+  }
+
+  .home-story-deco {
+    top: 4px;
+    left: 250px;
+    width: 488px;
+  }
+}
+

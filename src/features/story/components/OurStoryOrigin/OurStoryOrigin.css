@@ -27,7 +27,7 @@
 
 .ostory-origin-title {
   font-style: italic;
-  /* 28px on the phone, the shared --fs-section ramp from 744px up. */
+  /* 28px on the phone, the shared --fs-section ramp from 641px up. */
   font-size: var(--fs-section-phone);
   margin: 1rem auto 1.2rem;
   max-width: 640px;
@@ -51,7 +51,7 @@
   display: none;
 }
 
-@media (min-width: 600px) and (max-width: 1099px) {
+@media (min-width: 641px) {
   .ostory-br-tablet {
     display: block;
   }
@@ -129,7 +129,7 @@
   z-index: 0;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 640px) {
   /* ── 1. Side padding: exactly 16px ───────────────────────────
      Nothing to set. The inset is the container's `--gutter`, which is 16px on
      every phone width. This block used to subtract a fixed 32px from the shell to
@@ -315,7 +315,7 @@
   fill: #c7a45a;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 641px) {
   .pb-story-ring__text {
     font-size: 15px;
   }
@@ -330,7 +330,7 @@
 /* ============================================================
    RESPONSIVE
    ============================================================ */
-@media (max-width: 1099px) {
+@media (max-width: 1023px) {
   .ostory-origin-grid {
     grid-template-columns: 1fr;
     /* A single-column stack does not need the two-column gutter: at 7vw this
@@ -350,7 +350,7 @@
    heading comment below relies on ~12px of slack that only exists once the
    title has a full 640px to sit in, so between 641 and 689 the deliberately
    two-line heading silently became three. It now starts at 600px, which is
-   where the phone tier below ends: 744px — the width of the Figma frame the
+   where the phone tier below ends: 641px — the width of the Figma frame the
    decorations were cut from — belongs to this tier, not the phone's.
 
    Sized against the collapsed column rather than the viewport. The base
@@ -361,7 +361,7 @@
    vw floor that would overflow a narrower screen. It has to be centred too: an
    explicitly sized flex item is placed at the start of its area, not centred,
    so without that the whole dead space would simply move to the right. */
-@media (min-width: 600px) and (max-width: 1099px) {
+@media (min-width: 641px) {
   /* The two-column grid becomes a column flex box across both tablet tiers.
      Moved here from StoryPage.css, which used to own it and won the tie only by
      being imported last.
@@ -561,7 +561,7 @@
    - the brown #3b2518, measured against this section's cream ground. It is the
      one thing here the gallery does not share: that page's headings are
      --color-espresso. */
-@media (min-width: 600px) and (max-width: 1099px) {
+@media (min-width: 641px) {
   .ostory-origin-title,
   .ostory-origin-title em {
     line-height: 1.1;
@@ -575,9 +575,9 @@
    the 1136 edge, 17.52px at 1440 and 18.6px from 1792 up, against --fs-text's
    17.99 / 18.78 / 20. Stated here rather than left to the base rule because the
    base is --fs-text, which is the phone and tablet value on both pages. */
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   .ostory-origin-text {
-    font-size: clamp(16px, 0.25vw + 0.87rem, 18.6px);
+    font-size: var(--fs-text);
   }
 }
 
@@ -603,7 +603,7 @@
    - The h2 keeps its own 640px measure, but inside a full-bleed wrapper it has
      to centre itself again: the shared `> *` rule zeroes its auto inline
      margins for the flex-item case, and it is no longer one. */
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 641px) {
   .ostory-origin {
     overflow-x: hidden;
   }
@@ -660,7 +660,7 @@
 
   /* The photo: 588px, centred — `calc(100% - 156px)` against the frame, which
      the negative margins above have already stretched to the full screen width.
-     156 is 78 a side, which at 744px gives the 588px the Figma frame shows, and
+     156 is 78 a side, which at 641px gives the 588px the Figma frame shows, and
      the measure keeps the same proportion of the screen as the phone's
      `calc(100% - 88px)` below. The width goes on the emblem, not the photo, for
      the reason given in the phone band: a percentage width on a flex item
@@ -703,7 +703,7 @@
     display: block;
   }
 
-  /* ── Type at 744px, from the frame ───────────────────────────
+  /* ── Type at 641px, from the frame ───────────────────────────
      600px is where this tier starts, so 744 is its reference width and what is
      left here is measured at it: the full-bleed measure that gives the heading's
      forced lines room, this tier's 26px leading and the brown the frame was drawn
@@ -880,7 +880,7 @@
    photo's lower-left corner and pulled up so its bottom edge is the photo's
    bottom edge, which is the only placement at this width that shows the art and
    leaves every line of text clear. */
-@media (min-width: 1024px) and (max-width: 1099px) {
+@media (min-width: 1024px) {
   .ostory-emblem-frame {
     width: min(100%, 640px);
   }
@@ -893,13 +893,13 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
   .ostory-emblem-frame {
     width: clamp(300px, 32vw, 580px);
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 640px) {
   .ostory-origin-grid {
     gap: 0;
   }
@@ -969,7 +969,7 @@
    wins on source order against this file's own `display: block` above, the two
    selectors having the same weight.
    ============================================================ */
-@media (max-width: 599px) {
+@media (max-width: 640px) {
   .pb-story-deco--top {
     display: none;
   }

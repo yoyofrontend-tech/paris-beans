@@ -6,7 +6,7 @@
      base (no query) ..... PHONE, 375–640
      min-width: 641px .... TABLET, 641–1023
      min-width: 1024px ... LAPTOP and up, the old desktop baseline verbatim
-     min-width: 1100px / 1600px ... untouched
+     min-width: 1024px ... merged into the laptop block
 
    There is no max-width query left in this file. The old 1100 / 900 / 767 /
    768–1023 / 640 / 560 / 480 blocks each re-stated the same rules at a
@@ -121,7 +121,7 @@
   align-items: center;
   gap: 6px;
   margin: 0 0 12px;
-  font-size: 12px;
+  font-size: var(--fs-eyebrow);
   font-weight: 400;
   letter-spacing: 0.03em;
   color: rgba(245, 235, 221, 0.9);
@@ -142,7 +142,7 @@
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: var(--fw-bold);
-  font-size: 28px;
+  font-size: var(--fs-h1-phone);
   line-height: 1.15;
   letter-spacing: 0;
   color: #faf3e8;
@@ -161,7 +161,7 @@
 .menu-hero-desc {
   margin: 0;
   max-width: 100%;
-  font-size: 14px;
+  font-size: var(--fs-text);
   line-height: 1.5;
   font-weight: 400;
   color: rgba(250, 243, 232, 0.92);
@@ -416,7 +416,7 @@
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: var(--fw-bold);
-  font-size: 28px;
+  font-size: var(--fs-section-phone);
   line-height: 1.15;
   letter-spacing: var(--tracking-tight);
   /* Greedy fill, not the inherited balance: balance would split the heading
@@ -559,7 +559,7 @@
 
 .menu-item-desc {
   margin-top: 4px;
-  font-size: 13px;
+  font-size: var(--fs-text);
   line-height: 1.4;
   color: var(--color-muted);
   max-width: none;
@@ -792,12 +792,12 @@
 
 .menu-cafe-eyebrow {
   margin-bottom: 12px;
-  font-size: 12px;
+  font-size: var(--fs-eyebrow);
 }
 
 .menu-cafe-title {
   font-style: italic;
-  font-size: 28px;
+  font-size: var(--fs-section-phone);
   line-height: 1.15;
   margin: 0 0 16px;
   max-width: 100%;
@@ -810,7 +810,7 @@
 
 .menu-cafe-desc {
   max-width: 100%;
-  font-size: 15px;
+  font-size: var(--fs-text);
   line-height: 1.5;
   color: var(--color-muted);
   margin-bottom: 28px;
@@ -936,12 +936,12 @@
 }
 
 .menu-cta .eyebrow {
-  font-size: 12px;
+  font-size: var(--fs-eyebrow);
 }
 
 .menu-cta-title {
   font-style: italic;
-  font-size: 24px;
+  font-size: var(--fs-section-phone);
   line-height: 1.15;
   margin: 12px auto 14px;
   max-width: 100%;
@@ -957,7 +957,7 @@
      line. Capping just under that keeps it on two across the phone band. */
   max-width: 400px;
   margin: 0 auto 24px;
-  font-size: 13px;
+  font-size: var(--fs-text);
   line-height: 1.5;
   color: var(--color-muted);
 }
@@ -976,7 +976,7 @@
 /* ============================================================
    TABLET — 641px and up to 1023px
    The single tablet step. Everything above is the phone; this block only
-   restates what the 744px frame changes.
+   restates what the 641px frame changes.
    ============================================================ */
 @media (min-width: 641px) {
   /* ── Hero ── */
@@ -995,20 +995,20 @@
   }
 
   .menu-hero-eyebrow {
-    font-size: 14px;
+    font-size: var(--fs-eyebrow);
   }
 
   .menu-hero-title {
-    font-size: 44px;
+    font-size: var(--fs-h1);
     line-height: 1.1;
-    /* 520px holds the heading to THREE lines at 744. The string inks 1082px
+    /* 520px holds the heading to THREE lines at 641. The string inks 1082px
        at 44px, so an uncapped measure goes to two lines the moment the card
        passes ~700px. */
     max-width: 520px;
   }
 
   .menu-hero-desc {
-    font-size: 18px;
+    font-size: var(--fs-text);
   }
 
   /* ── Category row ── */
@@ -1044,7 +1044,7 @@
   }
 
   .menu-special-title {
-    font-size: 44px;
+    font-size: var(--fs-section);
     line-height: 1.1;
     margin-bottom: 28px;
     /* Tablet wants heading + pill on ONE line, so the phone 340px measure cap
@@ -1066,7 +1066,7 @@
   }
 
   .menu-item-desc {
-    font-size: 15px;
+    font-size: var(--fs-text);
   }
 
   .menu-special-ghost {
@@ -1089,17 +1089,17 @@
 
   .menu-cafe-eyebrow {
     margin-bottom: 16px;
-    font-size: 14px;
+    font-size: var(--fs-eyebrow);
   }
 
   .menu-cafe-title {
-    font-size: 44px;
+    font-size: var(--fs-section);
     line-height: 1.1;
     margin-bottom: 20px;
   }
 
   .menu-cafe-desc {
-    font-size: 18px;
+    font-size: var(--fs-text);
     margin-bottom: 36px;
   }
 
@@ -1122,16 +1122,16 @@
   }
 
   .menu-cta .eyebrow {
-    font-size: 13px;
+    font-size: var(--fs-eyebrow);
   }
 
   .menu-cta-title {
-    font-size: 32px;
+    font-size: var(--fs-section-phone);
     margin: 14px auto 16px;
   }
 
   .menu-cta-desc {
-    font-size: 14px;
+    font-size: var(--fs-text);
     margin-bottom: 28px;
     /* Tablet wants the paragraph on one line, so release the phone 400px cap
        that keeps it on two. */
@@ -1495,17 +1495,10 @@
   }
 }
 
-/* Untouched desktop queries, exactly as they were. */
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
   .menu-cafe-desc {
     white-space: nowrap;
     max-width: none;
-  }
-}
-
-@media (min-width: 1600px) {
-  .menu-cta-desc {
-    max-width: 800px;
   }
 }
 

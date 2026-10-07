@@ -302,7 +302,7 @@ html[data-preloader] body {
 }
 
 /* ---------- Tablet portrait + landscape ---------- */
-@media (min-width: 768px) and (max-width: 1099px) {
+@media (min-width: 641px) {
   .preloader-emblem {
     width: 150px;
     height: 150px;
@@ -319,7 +319,7 @@ html[data-preloader] body {
 }
 
 /* ---------- Phone ---------- */
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .preloader-emblem {
     width: 128px;
     height: 128px;
@@ -419,3 +419,4 @@ html[data-preloader] body {
     transform: none;
   }
 }
+

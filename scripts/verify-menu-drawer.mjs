@@ -1,5 +1,5 @@
 // Verifies the mobile menu drawer: renders it at 390x844 and 360x640 and
-// checks the spec (hairline rows, 28px index column, 24px serif labels, 56px
+// checks the spec (hairline rows, 28px index column, 18px serif labels, 56px
 // row height, cream contact block, 52px CTA, three 40px social buttons), then
 // exercises the behaviour contract: open/close triggers, Escape, backdrop
 // click, link click, focus trap, focus restoration, and the reduced-motion
@@ -224,7 +224,7 @@ for (const [w, h] of [[390, 844], [360, 640]]) {
   check(p.rowH === '56px', `row min-height 56px (got ${p.rowH})`)
   check(/1px solid rgba\(43, 27, 18, 0\.1\)/.test(p.rowBorder), `hairline divider, no box (border: ${p.rowBorder}, bg ${p.rowBg}, radius ${p.rowRadius})`)
   check(p.rowBg === 'rgba(0, 0, 0, 0)' && (p.rowRadius === '0px' || !p.rowRadius), `row is transparent/unrounded (bg ${p.rowBg}, radius ${p.rowRadius})`)
-  check(p.labelSize === '24px', `label 24px (got ${p.labelSize})`)
+  check(p.labelSize === '18px', `label 18px (got ${p.labelSize})`)
   check(/Fraunces/.test(p.labelFamily || ''), `label is serif (${p.labelFamily})`)
   check(p.indexW === '28px', `index column 28px (got ${p.indexW})`)
   check(p.indexSize === '12px' && p.indexSpacing === '1.8px', `index 12px / 0.15em (got ${p.indexSize} / ${p.indexSpacing})`)

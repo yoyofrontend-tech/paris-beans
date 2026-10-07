@@ -1,21 +1,21 @@
-/* ============================================================
-   Visit & Contact — Page body styles
+﻿/* ============================================================
+   Visit & Contact â€” Page body styles
    ============================================================ */
 
 /* The page's own field is the cream the rest of the site sits on, not white.
    It used to inherit white from `main` and paint a white band above the hero
    card and a white margin down each side of it, while the contact band below was
-   cream — three colours on one edge. One background for the whole page; the
+   cream â€” three colours on one edge. One background for the whole page; the
    sections that need a different one (the striped CTA) carry their own. */
 .visit-page {
   background-color: var(--color-bg);
 }
 
-/* ── Hero (boxed banner — same structure as Menu hero) ────── */
+/* â”€â”€ Hero (boxed banner â€” same structure as Menu hero) â”€â”€â”€â”€â”€â”€ */
 /* The card is inset by the shared container, like the Menu hero: the wrapper
    carries `.container` and the card fills it, so the card is the page's 1280px
    column and its own padding is the inset for the copy. It used to be
-   `width: min(1920px, 93.5vw)` with a second container inside it — 1795px of
+   `width: min(1920px, 93.5vw)` with a second container inside it â€” 1795px of
    card with the copy a further 80px in from that. */
 .visit-hero-wrap {
   margin-block: clamp(2.75rem, 5vw, 3.5rem) 0;
@@ -123,12 +123,12 @@
 }
 
 /* The hero title is 32 characters of Fraunces italic, and it does not fit on
-   one line inside the 72% copy column at any width in the desktop range — at
+   one line inside the 72% copy column at any width in the desktop range â€” at
    1100px it needs ~702px against 677px available, at 1280px ~817px against
    788px. `nowrap` therefore only ever clipped the tail against the hero's
    `overflow: hidden`. It is held back to 1100px and the copy cap is released
    alongside it, which is the same pairing `.visit-cta-title` already uses. */
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
   .visit-hero-copy {
     max-width: none;
   }
@@ -174,7 +174,7 @@
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ── Contact + Location grid ──────────────────────────────── */
+/* â”€â”€ Contact + Location grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 /* The band is full-bleed and the grid inside it is the shared container, so the
    band's own inset is gone: it used to carry `padding-inline: var(--gutter)` and
    the grid carried a second cap on top, which is why the two cards came to
@@ -202,13 +202,13 @@
   margin-bottom: clamp(1.5rem, 2vw, 2.25rem);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .visit-card-title {
     font-size: clamp(1.75rem, 6vw, 2.4rem);
   }
 }
 
-/* ── Form ─────────────────────────────────────────────────── */
+/* â”€â”€ Form â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .visit-form {
   display: flex;
   flex-direction: column;
@@ -337,7 +337,7 @@
   color: var(--color-coffee);
 }
 
-/* ── Info card ────────────────────────────────────────────── */
+/* â”€â”€ Info card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .visit-info-card {
   display: flex;
   flex-direction: column;
@@ -369,7 +369,7 @@
   display: block;
 }
 
-/* Full-map tap target — only active on touch devices so the whole
+/* Full-map tap target â€” only active on touch devices so the whole
    map opens in Google Maps instead of being swallowed by the iframe */
 .visit-map-open {
   position: absolute;
@@ -512,7 +512,7 @@
   box-shadow: 0 12px 24px -12px rgba(169, 110, 63, 0.6);
 }
 
-/* ── CTA ──────────────────────────────────────────────────── */
+/* â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .visit-cta {
   position: relative;
   overflow: hidden;
@@ -537,7 +537,7 @@
    `max-width: 720px` is gone with it. The cap was written for the block before
    it was a container: at 1280 it put the whole CTA in a 720px box centred on the
    page, so its left edge was x=360 where the header, the hero card and the form
-   card all sat at x=80 — the widest gap between two edges on the site. The
+   card all sat at x=80 â€” the widest gap between two edges on the site. The
    container's own cap is the cap. */
 .visit-cta-content {
   position: relative;
@@ -548,7 +548,9 @@
 .visit-cta-title {
   margin: 1rem auto 1.2rem;
   font-style: italic;
-  font-size: var(--fs-section);
+  /* 28px (--fs-section-phone) on the phone, up to 640px; the shared
+     --fs-section ramp takes over from 641px. */
+  font-size: var(--fs-section-phone);
 }
 
 .visit-cta-title em {
@@ -560,13 +562,13 @@
   color: var(--color-muted);
   font-size: var(--fs-text);
   line-height: var(--lh-text);
-  max-width: 560px;
+  max-width: 640px;
   margin: 0 auto 2rem;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
   /* `max-width: none` on this block is gone as well. It removed the container's
-     cap outright, so the CTA ran the full viewport minus its own gutter — 1760px
+     cap outright, so the CTA ran the full viewport minus its own gutter â€” 1760px
      at 1920, starting at x=80 where the header and every other section start at
      320. A container that a later rule can un-cap is not a container. */
   .visit-cta-title {
@@ -574,9 +576,9 @@
   }
 }
 
-@media (min-width: 1600px) {
-  /* The 1600px cap on this block is gone. It overrode the container's own cap —
-     same specificity, later file — so from 1600 up the CTA ran 160px wider than
+@media (min-width: 1920px) {
+  /* The 1600px cap on this block is gone. It overrode the container's own cap â€”
+     same specificity, later file â€” so from 1600 up the CTA ran 160px wider than
      every other page edge (at 1920 it started at x=160 where everything else
      started at 320). The container is the cap. */
 
@@ -585,18 +587,18 @@
   }
 }
 
-/* ── Phone: 767px and below ───────────────────────────────────
+/* â”€â”€ Phone: 767px and below â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    The grid had no phone tier at all. Its base rule is `1fr 1fr`
-   and the first block that collapses it is the 768–1023px band
+   and the first block that collapses it is the 768â€“1023px band
    below, so every width from 320 to 767 ran the form card and the
    info card side by side. That put the form's fields in a 123px
    column at 390px and pushed the info card 30px past the right
    edge; at 320px the document ran 449px wide against a 320px
    viewport. body sets `overflow-x: hidden`, so there was no
-   scrollbar to signal it — the right column was simply clipped
+   scrollbar to signal it â€” the right column was simply clipped
    off-screen and unreachable. Both tablet tiers below already
    collapse to a single column; this is the missing third one. */
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .visit-contact-grid {
     grid-template-columns: 1fr;
     gap: clamp(1.5rem, 5vw, 2rem);
@@ -609,15 +611,15 @@
   }
 }
 
-/* ── Tablet portrait: 768–1023px ──────────────────────────────
+/* â”€â”€ Tablet portrait: 768â€“1023px â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    The contact grid used to collapse at `max-width: 1024px`, which inverted the
    layout: at 1024px it was one column capped at 720px, and at 1025px it became
-   two columns — so the available content *grew* by 223px while the per-card
+   two columns â€” so the available content *grew* by 223px while the per-card
    measure *shrank* by 41% (648px to 384px) on a one-pixel change. Both tablet
    tiers now keep the card and the map stacked, with a cap that grows with the
    viewport, and the side-by-side grid only returns at 1100px where there is
    genuinely room for it. */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 641px) {
   .visit-contact-grid {
     grid-template-columns: 1fr;
     max-width: 680px;
@@ -641,10 +643,10 @@
   }
 }
 
-/* ── Tablet landscape: 1024–1099px ────────────────────────────
+/* â”€â”€ Tablet landscape: 1024â€“1099px â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    Same stacked treatment, one step wider, so crossing 1024 grows the measure
    instead of halving it. */
-@media (min-width: 1024px) and (max-width: 1099px) {
+@media (min-width: 1024px) {
   .visit-contact-grid {
     grid-template-columns: 1fr;
     max-width: 720px;
@@ -660,12 +662,12 @@
   }
 }
 
-/* ── Narrow desktop, 900–1099px ───────────────────────────────
-   `max-width: 900px` used to leave 901–999px holding the desktop
+/* â”€â”€ Narrow desktop, 900â€“1099px â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   `max-width: 1023px` used to leave 901â€“999px holding the desktop
    `min-height` (219px) while the title wrapped to two lines needing ~187px, so
    the banner silently grew past the proportion the 900px block exists to set.
    The nowrap below used to start at 1000px, in the middle of that dead zone. */
-@media (min-width: 900px) and (max-width: 1099px) {
+@media (min-width: 1024px) {
   .visit-hero {
     min-height: 240px;
     padding-top: 48px;
@@ -673,7 +675,7 @@
   }
 }
 
-/* Both sides now — the card no longer carries its own outer margin, so the gap
+/* Both sides now â€” the card no longer carries its own outer margin, so the gap
    under the header and the gap above the contact band come off one wrapper. */
 @media (max-width: 1100px) {
   .visit-hero-wrap {
@@ -681,7 +683,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1023px) {
   .visit-hero {
     min-height: 200px;
     padding-top: 44px;
@@ -689,7 +691,7 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 640px) {
   .visit-hero {
     min-height: 190px;
     padding-top: 32px;
@@ -732,7 +734,7 @@
   }
 }
 
-/* Touch devices — the embedded map iframe would otherwise capture
+/* Touch devices â€” the embedded map iframe would otherwise capture
    taps/swipes, making this whole section feel unclickable. Disable
    iframe interaction so the page scrolls normally and the tap target
    (Google Maps card + full-map overlay) stays responsive. Also bump
@@ -775,10 +777,10 @@
 }
 
 /* ============================================================
-   PHONE — 640px and below
+   PHONE â€” 640px and below
    The Figma phone frame for the hero card: a 277px rounded card inset 16px from
    each edge, the label and heading at the top, the paragraph pinned to the
-   bottom, and the café interior legible through a light even wash.
+   bottom, and the cafÃ© interior legible through a light even wash.
 
    It is one self-contained block rather than a set of edits to the older
    max-width bands above, because those bands overlap this range (560, 900,
@@ -807,7 +809,7 @@
     display: none;
   }
 
-  /* Centre the café interior so the arched logo, the shelves and the counter
+  /* Centre the cafÃ© interior so the arched logo, the shelves and the counter
      are all in frame. */
   .visit-hero-img {
     object-position: center;
@@ -846,7 +848,7 @@
     align-items: center;
     gap: 6px;
     margin-bottom: 16px;
-    font-size: 14px;
+    font-size: 12px;
     /* Cream, regular, barely tracked. The shared label is gold 500 at 0.32em,
        which read as a banner rather than a caption over the photo. */
     font-weight: var(--fw-regular);
@@ -868,7 +870,7 @@
   }
 
   .visit-hero-title {
-    font-size: 28px;
+    font-size: 32px;
     line-height: 1.25;
     letter-spacing: 0;
     color: #faf3e8;
@@ -879,7 +881,7 @@
   }
 
   .visit-hero-desc {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.45;
     font-weight: var(--fw-regular);
     color: rgba(255, 255, 255, 0.92);
@@ -889,7 +891,7 @@
   }
 }
 
-/* Touch devices — the embedded map iframe would otherwise capture
+/* Touch devices â€” the embedded map iframe would otherwise capture
    taps/swipes, making this whole section feel unclickable. Disable
    iframe interaction so the page scrolls normally and the tap target
    (Google Maps card + full-map overlay) stays responsive. */
@@ -898,3 +900,4 @@
     transition-duration: 0.001ms;
   }
 }
+

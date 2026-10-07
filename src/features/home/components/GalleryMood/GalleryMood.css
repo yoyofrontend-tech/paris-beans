@@ -11,10 +11,10 @@
      PHONE   base (no query)  375–743   centre card at 48vw with one peeking
                                       image on each side, the mid ring parked,
                                       48px section pad        -> 3 visible
-     TABLET  744px+           744–1135  tighter arc, the mid ring comes in,
+     TABLET  641px+           744–1135  tighter arc, the mid ring comes in,
                                       the far ring still parked, 72px pad
                                                                 -> 5 visible
-     LAPTOP  1136px+          1136–1919 full arc: mid ring in, far ring in too,
+     LAPTOP  1024px+          1136–1919 full arc: mid ring in, far ring in too,
                                       96px pad                -> 7 visible
      DESKTOP 1920px+          1920+     same arc, 120px pad    -> 7 visible
 
@@ -42,7 +42,7 @@
 .gallery-title {
   margin: 1rem auto 1.2rem;
   font-style: italic;
-  /* 28px on the phone, the shared ramp from 744px up. */
+  /* 28px on the phone, the shared ramp from 641px up. */
   font-size: var(--fs-section-phone);
 }
 
@@ -321,7 +321,7 @@
 }
 
 /* ---------- TABLET: tighter arc, the mid ring comes in ---------- */
-@media (min-width: 744px) {
+@media (min-width: 641px) {
   .gallery {
     --gallery-visible: 5;
     padding-block: 72px;
@@ -371,7 +371,7 @@
 }
 
 /* ---------- LAPTOP: the full arc, far ring included ---------- */
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   .gallery {
     --gallery-visible: 7;
     padding-block: 96px;
@@ -386,7 +386,7 @@
   .gallery-stage {
     --side-x: clamp(170px, 17vw, 310px);
     --mid-x: clamp(300px, 30vw, 540px);
-    /* 38vw, not 40vw: this tier starts at 1136px rather than the old 1100px,
+    /* 38vw, not 40vw: this tier starts at 1024px rather than the old 1100px,
        and the stage is min(1920px, 96vw) wide, so 40vw would push the outer
        far card's edge past the stage and clip it. */
     --far-x: clamp(420px, 38vw, 700px);

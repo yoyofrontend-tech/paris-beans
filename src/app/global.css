@@ -7,9 +7,9 @@
    CSS has no variables for media queries, so the scale is defined
    here and every component stylesheet must follow it verbatim.
 
-     PHONE    base, no query          375px â€“ 743px
-     TABLET   min-width: 744px        744px â€“ 1135px
-     LAPTOP   min-width: 1136px       1136px â€“ 1919px
+     PHONE    base, no query          375px – 640px
+     TABLET   min-width: 641px        641px – 1023px
+     LAPTOP   min-width: 1024px       1024px – 1919px
      DESKTOP  min-width: 1920px       1920px and up
 
    Rules of the scale:
@@ -20,10 +20,10 @@
       extra edge at 500, 600, 767, 768, 992, 1024 or anything else.
       One exception, and only for the two width tokens: --gutter and
       --container step on 641px and 1024px (see "Responsive tokens").
-      A layout edge is still 744 / 1136 / 1920 and nothing else.
+      A layout edge is still 641 / 1024 / 1920 and nothing else.
    3. Because every band is `min-width`, there is no dead zone and no
       double-apply: a width belongs to the highest tier it reaches.
-   4. To change layout only at 744 / 1136 / 1920, never write a
+   4. To change layout only at 641 / 1024 / 1920, never write a
       `max-width` to undo something. Override the same property in the
       next `min-width` tier instead.
    5. HORIZONTAL WIDTH IS NOT A COMPONENT DECISION. No stylesheet may set
@@ -213,7 +213,7 @@
    --gutter and --container run on 641px and 1024px, because the measure those
    two produce (full-bleed, then 24px insets, then an 80px inset) is a property
    of the container rather than of any component's layout. A component that
-   reflows still reflows on 744 / 1136 / 1920. Nothing else may use 641 or
+   reflows still reflows on 641 / 1024 / 1920. Nothing else may use 641 or
    1024. */
 
 /* WIDTH band 1 — tablet side insets. */
@@ -224,7 +224,7 @@
 }
 
 /* LAYOUT band 1 — tablet. Type ramp and bar height only. */
-@media (min-width: 744px) {
+@media (min-width: 641px) {
   :root {
     --fs-eyebrow: clamp(0.75rem, 0.13vw + 0.72rem, 0.875rem);
     --fs-section: clamp(2rem, 1.55vw + 1.64rem, 3.5rem);
@@ -244,7 +244,7 @@
 }
 
 /* LAYOUT band 2 — laptop. Bar height only. */
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   :root {
     --header-h: 80px;
   }
@@ -347,7 +347,7 @@ button {
   padding-block: 56px;
 }
 
-@media (min-width: 744px) {
+@media (min-width: 641px) {
   .section {
     padding-block: var(--section-pad-tablet);
   }
@@ -357,7 +357,7 @@ button {
   }
 }
 
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   .section {
     padding-block: var(--section-pad-desktop);
   }
@@ -467,7 +467,7 @@ p, li, dd, figcaption {
   touch-action: manipulation;
 }
 
-@media (min-width: 744px) {
+@media (min-width: 641px) {
   .btn--small {
     min-height: 0;
   }
@@ -699,3 +699,6 @@ input[type='radio']:checked::after {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
+
+
+

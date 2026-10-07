@@ -36,7 +36,7 @@
    container, so justify-content replaces it. align-items is flex-start rather
    than stretch so the picture is never stretched to a cross size it does not ask
    for. */
-@media (min-width: 768px) and (max-width: 1099px) {
+@media (min-width: 641px) {
   .ostory-story-img {
     display: flex;
     flex-direction: row;
