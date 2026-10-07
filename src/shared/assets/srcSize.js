@@ -24,7 +24,7 @@ const srcSizeMap = {
   'tab2.png': [2000, 2000],
   'tab3.png': [2000, 2000],
   // story
-  'img1.png': [1935, 939],
+  'img1.avif': [1440, 876],
   'img_phone.png': [390, 411],
   'tablet-story.png': [744, 605],
   'photo.svg': [627, 624],

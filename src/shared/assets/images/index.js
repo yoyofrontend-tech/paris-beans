@@ -15,7 +15,6 @@ import photoRectangle5 from './gallery_hero/Photo rectangle (5)_hq.jpg'
 import photoRectangle6 from './gallery_hero/Photo rectangle (6)_hq.jpg'
 
 import salonInterior from './hero/salon-interior.svg'
-import frame48096466 from './hero/Frame 48096466.png'
 
 import aglioOlio from './menu/aglio-olio.svg'
 import blushSunset from './menu/blush-sunset.svg'
@@ -40,7 +39,7 @@ import decoBeans from './story/deco-beans.svg'
 import decoCupCroissant from './story/deco-cup-croissant.svg'
 // The next three are served from public/ rather than imported, so they are not
 // hashed or optimised by Vite. See the exclusion list in vite.config.js.
-const storyImg1 = '/story/img1.png'
+const storyImg1 = '/story/img1.avif'
 const storyImgPhone = '/story/img_phone.png'
 const tabletStory = '/story/tablet-story.png'
 import photo from './story/photo.svg'

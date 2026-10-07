@@ -106,7 +106,7 @@ export default defineConfig({
       cache: true,
       cacheLocation: 'node_modules/.cache/vite-plugin-image-optimizer',
       exclude: [
-        /story\/img1\.png$/,
+        /story\/img1\.avif$/,
         /story\/img_phone\.png$/,
         /story\/tablet-story\.png$/,
       ],
