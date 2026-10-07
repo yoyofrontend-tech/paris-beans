@@ -662,6 +662,27 @@
   }
 }
 
+/* ── Laptop/desktop: 1100px and up — the previous two-column design. The
+   refactor's stacked tiers (641px and 1024px above) never end, so the base
+   `1fr 1fr` grid was left dead. Restore it from 1100px where there is
+   genuinely room, with the old card heading size. The grid keeps the shared
+   .container cap so its outer edges line up with the hero card above. Phones
+   and tablets keep the stacked tiers. */
+@media (min-width: 1100px) {
+  .visit-contact-grid.container {
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(1.75rem, 3vw, 2.75rem);
+    /* The tablet tier caps this grid at 720px; drop that cap here and let
+       the shared .container width rule again apply, so the grid's outer
+       edges line up with the hero card. */
+    max-width: calc(var(--container) + 2 * var(--gutter));
+  }
+
+  .visit-card-title {
+    font-size: var(--fs-display);
+  }
+}
+
 /* â”€â”€ Narrow desktop, 900â€“1099px â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    `max-width: 1023px` used to leave 901â€“999px holding the desktop
    `min-height` (219px) while the title wrapped to two lines needing ~187px, so
