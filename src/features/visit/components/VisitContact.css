@@ -13,7 +13,7 @@
 
 /* â”€â”€ Hero (boxed banner â€” same structure as Menu hero) â”€â”€â”€â”€â”€â”€ */
 /* The card is inset by the shared container, like the Menu hero: the wrapper
-   carries `.container` and the card fills it, so the card is the page's 1280px
+   carries `.container` and the card fills it, so the card is the page's container
    column and its own padding is the inset for the copy. It used to be
    `width: min(1920px, 93.5vw)` with a second container inside it â€” 1795px of
    card with the copy a further 80px in from that. */
@@ -34,13 +34,6 @@
      come from a container inside the card; with that gone the padding has to
      live here or the copy sits flush against the card's edge. */
   padding: 50px var(--gutter);
-}
-
-/* From 1024px the gutter is the frame's 80px. */
-@media (min-width: 1024px) {
-  .visit-hero {
-    padding-inline: 80px;
-  }
 }
 
 .visit-hero-media {
@@ -178,7 +171,9 @@
 /* The band is full-bleed and the grid inside it is the shared container, so the
    band's own inset is gone: it used to carry `padding-inline: var(--gutter)` and
    the grid carried a second cap on top, which is why the two cards came to
-   1745px between them rather than sharing the page's 1280px. */
+   1745px between them rather than sharing the page's container. The grid keeps
+   the container's max-width formula so the two stay identical however --gutter
+   and --container step. */
 .visit-contact {
   background-color: var(--color-bg);
 }

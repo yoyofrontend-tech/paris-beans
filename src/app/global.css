@@ -130,13 +130,15 @@
   --tracking-tagline: 0.06em;
 
   /* Spacing
-     --container is the shared content column: 1280px of content, centred, with
-     the gutters carried outside it. The container's own box is that column plus
-     one gutter either side, so the two never disagree about where the edge is.
-     --gutter is the shared side inset and steps with the width band: phone 16px,
-     tablet 24px, and 80px from 1024px. Header.css, every page section and every
-     card wrapper read these two tokens, so the page edges and the header edges
-     cannot drift apart. */
+     --container is the shared content column: 1280px of content at phone-up,
+     widened to 2008px from 1024px, centred, with the gutters carried outside
+     it. The container's own box is that column plus one gutter either side,
+     so the two never disagree about where the edge is.
+     --gutter is the shared side inset and steps with the width band: phone
+     16px, tablet 24px, then clamp(40px, 5vw, 96px) from 1024px (80px at a
+     1600px viewport, matching the Figma desktop frame). Header.css, every
+     page section and every card wrapper read these two tokens, so the page
+     edges and the header edges cannot drift apart. */
   --container: 1280px;
   --section-pad-desktop: 110px;
   --section-pad-tablet: 84px;
@@ -235,25 +237,47 @@
   }
 }
 
-/* WIDTH band 2 — the 80px inset, and from here the container is a fixed
-   1280px column with 1440px of box. */
+/* WIDTH band 2 — laptop. The gutter and container now grow with the viewport
+   so the page fills wide screens instead of pinning a 1280px column in the
+   middle. The gutter is clamped to match the Figma desktop frame (1920×1030,
+   80px side inset): it is 80px at 1600px viewport, then keeps growing to
+   96px. The container is the content column: --container + one gutter either
+   side is the box, capped at 2008px + 192px = 2200px. Nothing above 2200px
+   ever gets roomier. */
 @media (min-width: 1024px) {
   :root {
-    --gutter: 80px;
+    --container: 2008px;
+    --gutter: clamp(40px, 5vw, 96px);
   }
 }
 
-/* LAYOUT band 2 — laptop. Bar height only. */
+/* LAYOUT band 2 — laptop. Bar height, and the type ramp now that the column
+   is wider: each heading reproduces its tablet value at exactly 1024px (no
+   jump at the breakpoint) but keeps growing with vw, so headings, the hero
+   and the section titles read at the right scale across 1440–1920px instead
+   of capping out mid-screen. The clamp maxima cap them again at the
+   ultra-wide end, where the container itself is capped.
+   --fs-h1: 1024→51px, 1920→74px, 2560→90px (cap 92px)
+   --fs-section: 1024→42px, 1920→72px (cap 72px)
+   --fs-h3: 1024→31px, 1920→40px (cap 48px)
+   --fs-lead: 1024→22px, 1920→30px (cap 30px)
+   --fs-display: 1024→35px, 1920→53px (cap 60px) */
 @media (min-width: 1024px) {
   :root {
     --header-h: 80px;
+
+    --fs-section: clamp(2rem, 3.35vw + 0.48rem, 4.5rem);
+    --fs-h1: clamp(2.25rem, 2.5vw + 1.6rem, 5.75rem);
+    --fs-h3: clamp(1.5rem, 1.04vw + 1.26rem, 3rem);
+    --fs-lead: clamp(1.0625rem, 0.83vw + 0.82rem, 1.875rem);
+    --fs-display: clamp(2.4rem, 2vw + 0.9rem, 3.75rem);
   }
 }
 
-/* DESKTOP tier â€” 1920px and up. Identical to LAPTOP by spec (same 1440px
-   centred container, same 80px gutters, same 80px header), so nothing is
-   overridden here. The block is kept empty on purpose as the anchor for
-   any future 1920-only delta. */
+/* DESKTOP tier â€” 1920px and up. Width and type are already handled by the
+   1024px clamp ramps (1920px: 2008px content column, 96px gutters, 74px h1 /
+   72px section), so nothing is overridden here. The block is kept empty on
+   purpose as the anchor for any future 1920-only delta. */
 
 /* ---------- Reset ---------- */
 *,
@@ -322,13 +346,14 @@ button {
 /* Container â€” the single horizontal measure for the whole site.
    Phone: full width, 16px side padding.
    641px+: 24px side padding.
-   1024px+: capped, centred, 80px side padding.
+   1024px+: capped, centred, responsive side padding
+   (clamp(40px, 5vw, 96px)).
 
    The cap is the content column plus one gutter either side, so the CONTENT
-   is exactly --container (1280px) wide on any viewport from 1440px up and the
-   box is centred in what is left over. Stating it this way is what keeps the
-   left and right edges identical everywhere: nothing measures the viewport,
-   everything measures the gutter. */
+   is exactly --container wide on any viewport from (container + 2×gutter) up
+   and the box is centred in what is left over. Stating it this way is what
+   keeps the left and right edges identical everywhere: nothing measures the
+   viewport, everything measures the gutter. */
 .container {
   width: 100%;
   max-width: calc(var(--container) + 2 * var(--gutter));

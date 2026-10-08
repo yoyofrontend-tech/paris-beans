@@ -414,7 +414,9 @@
   }
 
   .story-paragraph {
-    max-width: 560px;
+    /* ~54ch at 20px, so it reads wider than the old 560px cap now that the
+       copy column grows with the container. */
+    max-width: 680px;
     margin: 0 0 2.2rem;
     color: var(--color-muted);
     font-size: var(--fs-text);

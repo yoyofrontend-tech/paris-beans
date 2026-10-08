@@ -818,7 +818,7 @@
 
    The frame is the anchor. It is `display: contents` everywhere else, so at this
    tier it is the first box it owns, and it is given the width the photo has at
-   this tier: `clamp(300px, 32vw, 580px)` from 1100px, and the 640px cap the
+   this tier: `clamp(300px, 32vw, 640px)` from 1100px, and the 640px cap the
    768–1099px band applies below that. The same expression as the photo's, so the
    two boxes are the same box by measurement rather than by coincidence — which
    is the whole point, since every offset below is a percentage of it. The photo
@@ -894,8 +894,30 @@
 }
 
 @media (min-width: 1100px) {
+  /* The 44% copy share held the heading at the old 56px cap, but --fs-section
+     now grows past it: at 1440px the heading needs ~610px and 44% of the
+     (wider) column is 570 — the longest line would wrap to a fourth line. 47%
+     holds it at every width up to the 72px cap, and the photo column stays
+     comfortably larger than the emblem's 640px cap. */
+  .ostory-origin-grid {
+    grid-template-columns: minmax(0, 47%) 1fr;
+  }
+
+  /* The 600/640px caps on the copy were sized for the old column. The copy now
+     fills its share, so the heading has the width it needs at every size; the
+     paragraphs keep a 600px measure below. */
+  .ostory-origin-copy {
+    max-width: none;
+  }
+
+  .ostory-origin-text {
+    /* ~64ch at --fs-text, up from 540px, so the run reads wider now that the
+       column has room for it. */
+    max-width: 600px;
+  }
+
   .ostory-emblem-frame {
-    width: clamp(300px, 32vw, 580px);
+    width: clamp(300px, 32vw, 640px);
   }
 }
 

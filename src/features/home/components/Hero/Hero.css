@@ -279,10 +279,13 @@
   }
 
   .hero-title {
-    font-size: 56px;
+    /* 56px at the 1136px laptop breakpoint, 80px at 1920px, capped at 80px.
+       The 10em measure holds "Appointment, With A" — the longest line — at
+       every size, so the title keeps its three lines instead of growing
+       taller. */
+    font-size: clamp(2.75rem, 3.2vw + 1.15rem, 5rem);
     line-height: 1.1;
-    /* "Appointment, With A" is the longest line; 560px holds it at 56px. */
-    max-width: 560px;
+    max-width: 10em;
   }
 
   .hero-desc {
@@ -293,11 +296,6 @@
 
 /* ---------- DESKTOP ---------- */
 @media (min-width: 1920px) {
-  .hero-title {
-    font-size: 64px;
-    max-width: 620px;
-  }
-
   .hero-desc {
     max-width: 680px;
   }

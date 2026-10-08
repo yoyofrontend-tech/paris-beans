@@ -725,7 +725,7 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
 }
 
 /* DESKTOP — 1920px and up. Identical to LAPTOP by spec (same container,
-   same 80px gutters, same 80px bar), so nothing is overridden. The container
+   same gutters, same 80px bar), so nothing is overridden. The container
    centres itself from --container and --gutter, which need no query here. */
 
 /* Reduced motion: framer-motion already drops the slide and the stagger

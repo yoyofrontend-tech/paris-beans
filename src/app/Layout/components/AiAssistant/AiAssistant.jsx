@@ -233,6 +233,11 @@ export default function AiAssistant() {
     inputRef.current?.focus()
   }
 
+  // The quick topics stay on offer for the whole conversation; only the ones
+  // already asked are hidden, so tapping one never clears the rest.
+  const askedLabels = new Set(messages.filter((m) => m.role === 'user').map((m) => m.content))
+  const openSuggestions = SUGGESTIONS.filter((s) => !askedLabels.has(s.label))
+
   return (
     <div
       className={`ai-widget${mounted ? ' is-visible' : ''}${open ? ' is-open' : ''}`}
@@ -310,9 +315,9 @@ export default function AiAssistant() {
           )}
         </div>
 
-        {messages.length <= 1 && !busy && (
+        {!busy && openSuggestions.length > 0 && (
           <div className="ai-suggest">
-            {SUGGESTIONS.map((s) => (
+            {openSuggestions.map((s) => (
               <button type="button" key={s.label} onClick={() => askLocal(s)}>
                 {s.label}
               </button>
@@ -367,16 +372,7 @@ export default function AiAssistant() {
             <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" />
           </svg>
         ) : (
-          <svg className="ai-float-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path
-              d="M12 3l1.8 4.6L18 9.4l-4.2 1.8L12 15.8l-1.8-4.6L6 9.4l4.2-1.8L12 3z"
-              stroke="currentColor" strokeWidth="1.9" strokeLinejoin="round"
-            />
-            <path
-              d="M18.5 14.5l.9 2.3 2.3.9-2.3.9-.9 2.3-.9-2.3-2.3-.9 2.3-.9.9-2.3z"
-              stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round"
-            />
-          </svg>
+          <img src="/images/coffee-icon.svg" alt="" className="ai-float-icon ai-float-icon--img" aria-hidden="true" />
         )}
       </button>
     </div>

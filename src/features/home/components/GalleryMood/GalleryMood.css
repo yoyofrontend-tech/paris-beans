@@ -34,9 +34,13 @@
 /* ---------- Editorial header block: one clean line on the wider tiers ---------- */
 /* .section-header--center caps the block at 720px, which is what forced the
    heading and lead to wrap. Widen it here (scoped to this section) instead of
-   touching the shared global helper. */
+   touching the shared global helper. The cap is the container's own content
+   measure (--container + gutters is handled by the container itself, so 100% is
+   that measure): "A Corner of Paris, Inside HAIR RAP BY YOYO." needs ~1267px of
+   ink at --fs-section's 72px cap, which the 1280px stop could not hold once the
+   headings grew. The desc keeps its own centered 620px. */
 .gallery-head {
-  max-width: 1280px;
+  max-width: 100%;
 }
 
 .gallery-title {

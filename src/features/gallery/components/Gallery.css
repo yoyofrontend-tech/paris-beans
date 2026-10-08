@@ -419,10 +419,10 @@
    DESKTOP — 1920px and up
    ============================================================
    The same block at the frame's fixed sizes. The laptop tier's clamps already
-   resolve to these three numbers here — 3.9vw is 74.9px and 1.4vw is 26.9px at
-   1920, both capped — so the sizes below restate rather than change them, which
-   is what makes this tier independent of the laptop tier's ramps. The column
-   stays 1280px, centred, left aligned.
+   resolve to these three numbers here — --fs-h1 is 73.6px and --fs-text is
+   20px at 1920 — so the sizes below restate rather than change them, which is
+   what makes this tier independent of the laptop tier's ramps. The column
+   stays the shared container, centred, left aligned.
 
    Only the top padding moves: the frame opens up a little further here, so the
    label's centre lands on y=151 instead of y=115. */

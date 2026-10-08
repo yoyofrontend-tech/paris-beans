@@ -1157,14 +1157,15 @@
 
   .menu-hero {
     --menu-hero-focal-y: 60%;
-    /* The frame's 100px / 80px. */
+    /* The frame's 100px vertical, and the shared responsive gutter for the
+       sides (80px at a 1600px viewport). */
     min-height: clamp(240px, 26vw, 640px);
     border-radius: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 100px 80px;
+    padding: 100px var(--gutter);
     background-color: var(--color-white);
   }
 

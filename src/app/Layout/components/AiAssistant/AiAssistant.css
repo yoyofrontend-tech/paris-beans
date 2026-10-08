@@ -5,26 +5,15 @@
   position: fixed;
   /* Resting place for the launcher, derived rather than guessed.
 
-     The button is 58px wide, so the room between the screen edge and the
-     container's content edge is --gutter minus 58px, which at the 80px gutter
-     is 22px. Resting at a fixed clamp(18px, 2.4vw, 30px) therefore left the
-     left edge 2-10px INSIDE the content column from 1024px to 1919px — 8px of
-     it at 1440px, right where the footer's copyright line ends. No glyph was
-     actually covered: that line sits 31px above the button's band. But a
-     floating control resting over the column it belongs to is still wrong, and
-     it only stayed clear because the row above happened to be short.
-
-     So the launcher is parked outside the container's right edge wherever there
-     is room for it: 20px from the screen edge at the 80px gutter, which is the
-     most the 22px allows and leaves the button 2px clear, and from 1464px up —
-     where the margin finally grows wider than the button — a constant 14px
-     outside the content column. That is 248px from the screen edge at 1920px
-     and 568px at 2560px, which is what keeps the button in the margin instead
-     of drifting off to the edge of the screen.
-
-     Below 1024px the gutter is 16-24px and cannot hold a 58px button at any
-     inset, so the footer reserves a lane for it in the block axis instead. See
-     Footer.css. */
+     The button is 58px wide. The container now grows with the viewport, so
+     there is only a margin to park in above ~2150px viewports: (100vw −
+     --container) / 2 − 72px leaves the button 14px outside the content
+     column. Below that the margin cannot hold a 58px button, so the same
+     formula goes negative and the max() falls back to a 20px FAB inset —
+     the button then rests over the footer's bottom-right corner, as a
+     floating control should. Below 1024px the gutter is 16-24px and cannot
+     hold a 58px button at any inset, so the footer reserves a lane for it in
+     the block axis instead. See Footer.css. */
   right: max(20px, calc((100vw - var(--container)) / 2 - 72px));
   bottom: clamp(18px, 2.4vw, 30px);
   z-index: var(--z-fixed);
@@ -82,6 +71,12 @@
   position: relative;
   z-index: 1;
   transition: transform 0.35s var(--ease);
+}
+
+.ai-float-icon--img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
 .ai-float:hover .ai-float-icon {
