@@ -264,7 +264,9 @@
    --fs-display: 1024→35px, 1920→53px (cap 60px) */
 @media (min-width: 1024px) {
   :root {
-    --header-h: 80px;
+    /* The bar grows with the viewport so the logo can too:
+       1024→80px, 1920→92px (cap 92px). */
+    --header-h: clamp(80px, 1.34vw + 66px, 92px);
 
     --fs-section: clamp(2rem, 3.35vw + 0.48rem, 4.5rem);
     --fs-h1: clamp(2.25rem, 2.5vw + 1.6rem, 5.75rem);

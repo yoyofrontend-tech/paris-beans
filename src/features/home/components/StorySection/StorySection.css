@@ -515,18 +515,19 @@
 }
 
 /* ============================================================
-   Laptop and desktop — the cup + croissant line art, 1136px and up.
+   Laptop and desktop — the cup + croissant line art, 1024px and up.
    Anchored to the button row: its steam sits ~8px above the top of the
    "Read Our Story" button, and its left edge is 238px in from the content
    container's left edge (the button row starts at that edge, so 238px here is
    238px from the container). It runs to the right of the button and passes
    behind the photo stack (z-index lower than .story-media / .story-copy).
-   Below 1136px the art stays hidden (base rule). */
+   Below 1024px the art stays hidden (base rule); the copy's 230px reserved
+   band in the laptop tier above already clears it. */
 .story-cta {
   position: relative;
 }
 
-@media (min-width: 1136px) {
+@media (min-width: 1024px) {
   .home-story-deco {
     display: block;
     position: absolute;

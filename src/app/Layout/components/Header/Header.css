@@ -674,11 +674,12 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
 }
 
 /* LAPTOP — 1024px and up.
-   The three-track centred layout returns here, on the taller 80px bar. The
-   logo is sized to sit inside the bar with 8px of air above and below, the same
-   16px inset the phone and tablet tiers use, instead of overhanging it. The nav
-   links, the header CTA and the hidden menu button are all restated here because
-   the tablet tier above now turns them off. */
+   The three-track centred layout returns here, on the taller bar. The logo,
+   the nav type and the CTA no longer sit at fixed sizes: each is clamped so it
+   reproduces its 1024px value exactly (no jump at the breakpoint) and keeps
+   growing to the 1920px desktop frame. The nav links, the header CTA and the
+   hidden menu button are all restated here because the tablet tier above now
+   turns them off. */
 @media (min-width: 1024px) {
   .header-inner {
     grid-template-columns: 1fr auto 1fr;
@@ -690,11 +691,13 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
     display: flex;
     grid-column: 1;
     justify-content: flex-start;
-    gap: clamp(0.75rem, 1.4vw, 1.6rem);
+    gap: clamp(0.75rem, 1.4vw, 2rem);
   }
 
+  /* Nav type grows with the viewport so the menu reads on large screens:
+     1024→14.7px (--fs-body-sm), 1920→19.2px (cap 1.2rem). */
   .nav-link {
-    font-size: var(--fs-body-sm);
+    font-size: clamp(0.92rem, 0.5vw + 0.6rem, 1.2rem);
     letter-spacing: 0.02em;
     padding-block: 0.7rem;
     padding-inline: 0.1rem;
@@ -707,16 +710,25 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
     align-self: center;
   }
 
+  /* Logo grows with the taller bar: 1024→64px, 1920→76px (cap 76px),
+     keeping 8px of air above and below at every width. */
   .header-logo .logo-img {
-    height: 64px;
+    height: clamp(64px, 1.34vw + 50px, 76px);
   }
 
   .header-right {
     grid-column: 3;
   }
 
+  /* The booking CTA scales with the rest of the bar instead of staying at
+     the phone-sized .btn--small type:
+     font 1024→13.2px, 1920→16.8px (cap 1.05rem);
+     padding 1024→0.6rem 1.25rem, 1920→0.8rem 1.6rem. */
   .header-cta {
     display: inline-flex;
+    font-size: clamp(0.82rem, 0.41vw + 0.56rem, 1.05rem);
+    padding: clamp(0.6rem, 0.36vw + 0.37rem, 0.8rem)
+      clamp(1.25rem, 0.625vw + 0.85rem, 1.6rem);
   }
 
   .menu-toggle {
@@ -724,9 +736,10 @@ a.pb-menu-meta-row:hover .pb-menu-meta-value {
   }
 }
 
-/* DESKTOP — 1920px and up. Identical to LAPTOP by spec (same container,
-   same gutters, same 80px bar), so nothing is overridden. The container
-   centres itself from --container and --gutter, which need no query here. */
+/* DESKTOP — 1920px and up. Nothing extra to override: the bar height lives in
+   --header-h (global.css) and the logo, nav type and CTA all reach their cap
+   at 1920px via the clamps in the laptop tier above. The container centres
+   itself from --container and --gutter, which need no query here. */
 
 /* Reduced motion: framer-motion already drops the slide and the stagger
    (see useReducedMotion in Header.jsx). This only tames the CSS-side
