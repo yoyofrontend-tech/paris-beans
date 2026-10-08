@@ -23,6 +23,11 @@
 .cafe {
   position: relative;
   padding-block: 48px;
+  /* PHONE only: room at the foot so the bottom-right wave starts below the
+     "View the Menu" button instead of climbing up beside it. The art shows
+     40vw x 430/502 - 6vw = 28.3vw above the section edge, so the button must
+     clear that. TABLET and LAPTOP reset this with their own padding-block. */
+  padding-bottom: calc(28.3vw + 16px);
   background-color: var(--color-white);
   overflow: hidden;
 
@@ -33,7 +38,7 @@
   --deco-tl-w: 45vw;
   --deco-tl-left: -19vw;
   --deco-tl-top: -15vw;
-  --deco-br-w: 50vw;
+  --deco-br-w: 40vw;
   --deco-br-right: -4vw;
   --deco-br-bottom: -6vw;
 }
@@ -291,6 +296,7 @@
 }
 
 .home-menu-deco--br {
+  top: auto;
   width: var(--deco-br-w);
   right: var(--deco-br-right);
   bottom: var(--deco-br-bottom);
