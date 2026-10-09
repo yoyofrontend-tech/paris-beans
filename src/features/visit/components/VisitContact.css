@@ -563,13 +563,12 @@
 
 @media (min-width: 1024px) {
   /* `max-width: none` on this block is gone as well. It removed the container's
-     cap outright, so the CTA ran the full viewport minus its own gutter — 1760px
-     at 1920, starting at x=80 where the header and every other section start at
-     320. A container that a later rule can un-cap is not a container. */
+      cap outright, so the CTA ran the full viewport minus its own gutter — 1760px
+      at 1920, starting at x=80 where the header and every other section start at
+      320. A container that a later rule can un-cap is not a container. */
   .visit-cta-title {
     max-width: 900px;
   }
-}
 }
 
 @media (min-width: 1920px) {

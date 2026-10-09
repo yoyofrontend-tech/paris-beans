@@ -1476,7 +1476,8 @@
     font-size: var(--fs-section);
     line-height: var(--lh-heading);
     margin: 1rem auto 1.2rem;
-    max-width: 640px;
+    max-width: none;
+    white-space: nowrap;
   }
 
   .menu-cta-desc {
