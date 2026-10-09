@@ -1,7 +1,9 @@
 .story {
   background-color: var(--color-white);
   position: relative;
-  padding: 70px 0 80px;
+  /* The block padding this line used to declare (70px 0 80px) was dead at
+     every width: the stacked tier below clamps its own, the laptop tier sets
+     `5.6vw 0 0`, and the shared .section rule is overridden by both. Gone. */
 }
 
 /* The section is full-bleed white and the grid inside it is the shared
@@ -22,7 +24,7 @@
 .story-copy {
   position: relative;
   z-index: 10;
-  padding-right: 25px;
+  padding-right: var(--space-6);
 }
 
 .story-title {
@@ -240,13 +242,16 @@
 
    It stacks the copy and the photo stack, flattens .story-copy so its children
    become flex items, and reorders them — label, heading, description, photo,
-   then the button last, which is where the phone puts it. The 42-64px vertical
+   then the button last, which is where the phone puts it. The 48-64px vertical
    rhythm and the 20px side inset are the section's own, declared here since the
    shared Home phone tokens that used to carry them no longer exist.
    ============================================================ */
 @media (max-width: 1023px) {
   .story {
-    padding-block: clamp(42px, 9vw, 64px);
+    /* 48px, the shared phone rhythm (--space-section-y). The clamp only steps
+       up from there: 9vw passes 48px at 533px and reaches the 64px cap at
+       711px, so nothing above the phone tier moves. */
+    padding-block: clamp(48px, 9vw, 64px);
   }
 
   .story-grid {
@@ -292,13 +297,13 @@
   .story-media {
     order: 4;
     width: 100%;
-    margin-top: 55px;
+    margin-top: var(--space-section-y);
   }
 
   /* Button moves after the image on mobile */
   .story-copy > .story-cta {
     order: 5;
-    margin-top: 38px;
+    margin-top: var(--space-stack-cta);
   }
 }
 
@@ -317,6 +322,23 @@
     --frame-off-y: 16px;
     --back-off-x: 9px;
     --back-off-y: 11px;
+  }
+}
+
+/* TABLET: the phone's stack moved onto the shared 8 / 16 / 24 / 32 scale in
+   the spacing audit, so the pre-audit numbers are pinned here for the stacked
+   layout above the phone. The laptop tier re-overrides all three of them. */
+@media (min-width: 641px) {
+  .story-copy {
+    padding-right: 25px;
+  }
+
+  .story-media {
+    margin-top: 55px;
+  }
+
+  .story-copy > .story-cta {
+    margin-top: 38px;
   }
 }
 
@@ -424,6 +446,12 @@
   }
 
   .story-copy > .story-cta {
+    margin-top: 0;
+  }
+
+  /* The stacked layout above is two-column from here, so the phone/tablet
+     offsets the stacked tier sets are retired, not carried. */
+  .story-media {
     margin-top: 0;
   }
 

@@ -145,6 +145,39 @@
   --section-pad-mobile: 64px;
   --gutter: 16px;
 
+  /* Spacing scale — the phone rhythm every Home section repeats.
+     --space-section-y is the block padding a section carries on the phone
+     (48px, one value for hero, appointment band, benefits, café, mood and
+     footer; it is deliberately NOT --section-pad-mobile, which is the shared
+     .section default and still reads on /gallery).
+
+     The four stack tokens are the same column every section builds:
+       stack-sm  eyebrow    → heading     8px
+       stack-md  heading    → description 16px
+       stack-lg  description→ content     24px
+       stack-cta content    → button      32px
+     A section that stacks all four therefore lands on 8 / 16 / 24 / 32 and
+     its total breath stays on the 8-12-16-24-32-48-64 scale.
+
+     Two values are geometry rather than rhythm and are named so they cannot
+     be mistaken for it: the café's bottom-right wave carve-out, and the lane
+     the footer reserves under the floating coffee button. */
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  --space-section-y: var(--space-12);
+  --space-stack-sm: var(--space-2);
+  --space-stack-md: var(--space-4);
+  --space-stack-lg: var(--space-6);
+  --space-stack-cta: var(--space-8);
+
+  --space-cafe-art-br: calc(28.3vw + 16px);
+  --space-fab-lane: calc(58px + clamp(12px, 1.6vw, 20px) + 4px);
+
   /* Header height â€” the phone tier. Mirrored by anything that offsets itself
      from the sticky header (scroll-margin-top, sticky tops, 100svh
      calculations) and stepped by the "Responsive tokens" block below. */
@@ -273,6 +306,13 @@
     --fs-h3: clamp(1.5rem, 1.04vw + 1.26rem, 3rem);
     --fs-lead: clamp(1.0625rem, 0.83vw + 0.82rem, 1.875rem);
     --fs-display: clamp(2.4rem, 2vw + 0.9rem, 3.75rem);
+
+    /* Button labels scale with the viewport so they don't read small
+       against the larger type ramp on wide screens:
+       --fs-btn: 1024→15.6px, 1440→17px, 1920→18.4px (cap 18.4px)
+       --fs-btn-sm: 1024→13.9px, 1920→16px (cap 16px) */
+    --fs-btn: clamp(0.92rem, 0.35vw + 0.75rem, 1.15rem);
+    --fs-btn-sm: clamp(0.82rem, 0.3vw + 0.68rem, 1rem);
   }
 }
 

@@ -22,12 +22,14 @@
 
 .cafe {
   position: relative;
-  padding-block: 48px;
+  padding-block: var(--space-section-y);
   /* PHONE only: room at the foot so the bottom-right wave starts below the
      "View the Menu" button instead of climbing up beside it. The art shows
      40vw x 430/502 - 6vw = 28.3vw above the section edge, so the button must
-     clear that. TABLET and LAPTOP reset this with their own padding-block. */
-  padding-bottom: calc(28.3vw + 16px);
+     clear that. This is geometry, not rhythm — it is named as its own token so
+     the 48px rhythm stays readable in the rule above. TABLET and LAPTOP reset
+     this with their own padding-block. */
+  padding-bottom: var(--space-cafe-art-br);
   background-color: var(--color-white);
   overflow: hidden;
 
@@ -81,12 +83,12 @@
 }
 
 .cafe-copy .eyebrow {
-  margin-bottom: 1.1rem;
+  margin-bottom: var(--space-stack-sm);
   color: #c7a45a;
 }
 
 .cafe-title {
-  margin: 0 0 1.6rem;
+  margin: 0 0 var(--space-stack-md);
   font-style: italic;
   /* 28px on the phone, the shared ramp from 641px up. */
   font-size: var(--fs-section-phone);
@@ -101,7 +103,7 @@
 
 .cafe-paragraph {
   max-width: 440px;
-  margin: 0 0 2.4rem;
+  margin: 0 0 var(--space-stack-lg);
   font-size: var(--fs-text);
   line-height: var(--lh-text);
 }
@@ -318,6 +320,20 @@
 
   .cafe-grid {
     row-gap: 32px;
+  }
+
+  /* The phone's stack moved onto the shared 8 / 16 / 24 scale in the spacing
+     audit; tablet keeps the pre-audit measure until its own pass. */
+  .cafe-copy .eyebrow {
+    margin-bottom: 1.1rem;
+  }
+
+  .cafe-title {
+    margin-bottom: 1.6rem;
+  }
+
+  .cafe-paragraph {
+    margin-bottom: 2.4rem;
   }
 }
 

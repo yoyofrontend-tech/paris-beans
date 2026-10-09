@@ -74,7 +74,7 @@
   display: flex;
   align-items: center;
   /* Phone section rhythm; steps to 72px / 96px in the tiers below. */
-  padding-block: 48px;
+  padding-block: var(--space-section-y);
 }
 
 /* No padding-inline rule here on purpose: this element also carries
@@ -90,7 +90,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 8px;
+  margin-bottom: var(--space-stack-sm);
 }
 
 .hero-eyebrow-dot {
@@ -176,7 +176,7 @@
   height: 2px;
   background: var(--color-coffee-light);
   opacity: 0.7;
-  margin-bottom: 1.4rem;
+  margin-bottom: var(--space-stack-lg);
   border-radius: 1px;
 }
 
@@ -186,7 +186,7 @@
   /* 14px at 375 rising to 16px by the end of the phone band. */
   font-size: clamp(0.875rem, 0.35vw + 0.835rem, 1rem);
   line-height: var(--lh-text);
-  margin-bottom: 24px;
+  margin-bottom: var(--space-stack-lg);
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -195,7 +195,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 12px;
+  gap: var(--space-3);
 }
 
 .hero-actions .btn {
@@ -247,6 +247,9 @@
 
   .hero-divider {
     width: 40px;
+    /* The phone's stack moved onto the 8 / 16 / 24 / 32 scale in the spacing
+       audit; the tiers above keep the pre-audit measure. */
+    margin-bottom: 1.4rem;
   }
 
   .hero-desc {

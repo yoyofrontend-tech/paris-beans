@@ -29,7 +29,14 @@
   font-style: italic;
   /* 28px on the phone, the shared --fs-section ramp from 744px up. */
   font-size: var(--fs-section-phone);
-  margin: 1rem auto 1.2rem;
+  /* Inline margins are 0, not auto: with `max-width: 640px` against a copy
+     column that passes 640px from about 1600px up, auto centred the heading
+     while the eyebrow and the paragraphs stayed on the column's left edge —
+     an 86px indent at 1920 and 152px at 2560. Below that width the column is
+     narrower than the cap, so auto margins resolved to 0 and nothing moved.
+     Every tier that re-centres this title (tablet, phone) already states its
+     own `margin-inline`. */
+  margin: 1rem 0 1.2rem;
   max-width: 640px;
 }
 

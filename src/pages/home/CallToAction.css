@@ -144,8 +144,10 @@
     /* Block padding only. This used to be `40px 24px` with the container's own
        gutter cancelled below it, which made the section the page's width owner on
        small phones — the one place on the site where the edge came from
-       something other than the container. */
-    padding-block: 40px;
+       something other than the container. The band now takes the shared phone
+       rhythm from the base tier (--space-section-y, 48px); the 326px floor and
+       the centred column absorb the difference, so the band and its content
+       land where the frame has them. */
   }
 
   /* One 84px tile: 56px of pale blue-grey, then 28px of white. Anchored at the
@@ -203,7 +205,7 @@
        line here: the copy inks 497px at 22px, which is wider than the band at
        every width in this query, so nowrap only clipped it. */
     white-space: normal;
-    margin: 14px auto 10px;
+    margin: var(--space-stack-sm) auto var(--space-stack-md);
   }
 
   .experience-desc {
@@ -214,7 +216,7 @@
     font-weight: 400;
     color: #8a7f76;
     max-width: 460px;
-    margin: 0 auto 20px;
+    margin: 0 auto var(--space-stack-lg);
   }
 
   /* The button is content-sized here, like every other tier, so the pill hugs

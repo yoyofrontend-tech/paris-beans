@@ -26,7 +26,7 @@
 
 .gallery {
   --gallery-visible: 3;
-  padding-block: 48px;
+  padding-block: var(--space-section-y);
   background-color: var(--color-bg);
   overflow: clip;
 }
@@ -40,7 +40,7 @@
 }
 
 .gallery-title {
-  margin: 1rem auto 1.2rem;
+  margin: var(--space-stack-sm) auto var(--space-stack-md);
   font-style: italic;
   /* 28px on the phone, the shared ramp from 641px up. */
   font-size: var(--fs-section-phone);
@@ -60,7 +60,7 @@
 
 /* ---------- Carousel stage ---------- */
 .gallery-stage {
-  margin-top: clamp(1.4rem, 3vw, 2.4rem);
+  margin-top: clamp(var(--space-stack-lg), 3vw, 2.4rem);
   touch-action: pan-y;
   /* Arc geometry per positional state */
   --side-x: 22vw;
@@ -251,8 +251,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.2rem;
-  margin-top: clamp(1.4rem, 2.4vw, 2rem);
+  gap: var(--space-6);
+  margin-top: clamp(var(--space-stack-lg), 2.4vw, 2rem);
   text-align: center;
 }
 
@@ -313,7 +313,7 @@
 
 .gallery-cta {
   text-align: center;
-  margin-top: 1.8rem;
+  margin-top: var(--space-stack-cta);
 }
 
 .gallery-cta .btn {
@@ -325,6 +325,26 @@
   .gallery {
     --gallery-visible: 5;
     padding-block: 72px;
+  }
+
+  /* The phone's stack moved onto the shared 8 / 16 / 24 / 32 scale in the
+     spacing audit; tablet and above keep the pre-audit measure until their
+     own pass. */
+  .gallery-title {
+    margin: 1rem auto 1.2rem;
+  }
+
+  .gallery-stage {
+    margin-top: clamp(1.4rem, 3vw, 2.4rem);
+  }
+
+  .gallery-meta {
+    gap: 1.2rem;
+    margin-top: clamp(1.4rem, 2.4vw, 2rem);
+  }
+
+  .gallery-cta {
+    margin-top: 1.8rem;
   }
 
   .gallery-stage {
