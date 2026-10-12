@@ -14,12 +14,12 @@ export default function VisitContactPage() {
         eyebrow="— The Paris Beans Experience"
         title={
           <>
-            More Than a Coffee. <em>Part of Your Appointment.</em>
+            Make Your Next Visit a Little More Parisian.
           </>
         }
-        description="Whether you arrive early, take a break during your service, or simply want to enjoy the atmosphere, ParisBeans adds a warm café moment to your HAIR RAP BY YOYO experience."
+        description="Book your HAIR RAP BY YOYO appointment and enjoy your complimentary coffee at ParisBeans."
         href="#visit-contact"
-        label="Reserve Your Spot"
+        label="Book Your Salon Appointment"
       />
     </>
   )
