@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Vercel CLI local project link / build output
+.vercel
+
 # Environment variables
 .env
 .env.*
