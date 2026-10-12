@@ -562,23 +562,15 @@
 }
 
 @media (min-width: 1024px) {
-  /* `max-width: none` on this block is gone as well. It removed the container's
-      cap outright, so the CTA ran the full viewport minus its own gutter — 1760px
-      at 1920, starting at x=80 where the header and every other section start at
-      320. A container that a later rule can un-cap is not a container. */
-  .visit-cta-title {
-    max-width: 900px;
-  }
-}
-
-@media (min-width: 1920px) {
-  /* The 1600px cap on this block is gone. It overrode the container's own cap â€”
-     same specificity, later file â€” so from 1600 up the CTA ran 160px wider than
-     every other page edge (at 1920 it started at x=160 where everything else
-     started at 320). The container is the cap. */
-
+  /* The 900px cap on the title and the 640px cap on the description both forced
+     a two-line rag on laptop and desktop. Each line already fits the container's
+     content column at every width from 1024 up (title 856→1396px, description
+     777→878px against a 922→1728px column), so the caps are gone and `nowrap`
+     holds each to a single line. The container remains the cap. */
+  .visit-cta-title,
   .visit-cta-desc {
-    max-width: 760px;
+    max-width: none;
+    text-wrap: nowrap;
   }
 }
 
@@ -654,6 +646,15 @@
 
   .visit-hero-copy {
     max-width: 80%;
+  }
+
+  /* Hold the description to two balanced lines on laptop and desktop. Its 520px
+     cap wrapped it to three once --fs-text peaked at 20px (1600px up); the wider
+     600px measure keeps it at two, with the break landing after "bringing a"
+     and `balance` keeping the two lines even instead of hyphenating "Paris-". */
+  .visit-hero-desc {
+    max-width: 600px;
+    text-wrap: balance;
   }
 }
 
