@@ -169,9 +169,9 @@ export const contact = {
     days: 'Monday – Sunday',
   },
   social: {
-    instagram: 'https://instagram.com/parisbeans',
+    instagram: 'https://www.instagram.com/parisbeanscoffee/',
     youtube: 'https://www.youtube.com/@parisbeans',
-    facebook: 'https://www.facebook.com/parisbeans',
+    facebook: 'https://www.facebook.com/ParisBeansCoffee/',
   },
   mapLink: 'https://maps.app.goo.gl/GRAojmhWejJByVhY6',
   mapBbox: '72.50, 22.90, 72.65, 23.10',
