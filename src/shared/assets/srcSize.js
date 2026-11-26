@@ -27,6 +27,11 @@ const srcSizeMap = {
   'soft-drinks.webp': [960, 960],
   'thick-shakes.webp': [960, 960],
   'flavor-add-ons.webp': [960, 960],
+  'house-hot-beverages.webp': [960, 960],
+  'house-cold-iced-beverages.webp': [960, 960],
+  'house-cold-beverages.webp': [960, 960],
+  'house-iced-coffee.webp': [960, 960],
+  'house-milkshakes.webp': [960, 960],
   // story
   'Desktop.svg': [1935, 939],
   'phone.svg': [390, 411],

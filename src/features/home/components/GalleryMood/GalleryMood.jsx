@@ -1,9 +1,18 @@
 import { useEffect, useRef, useState } from 'react'
 import { useReveal } from '@shared/hooks/useReveal'
 import { useCarousel } from '@shared/hooks/useCarousel'
-import { gallery, galleryImages, galleryDims } from '@shared/models/siteData'
 import Button from '@shared/components/Button'
 import './GalleryMood.css'
+
+const reels = [
+  { src: '/videos/Video-13993.mp4', label: 'Coffee and café moments at Paris Beans' },
+  { src: '/videos/Video-23260.mp4', label: 'Café service during a salon visit' },
+  { src: '/videos/Video-56815.mp4', label: 'Refreshments in the salon' },
+  { src: '/videos/Video-10176.mp4', label: 'Guests enjoying the café' },
+  { src: '/videos/Video-67258.mp4', label: 'Behind the scenes at HAIR RAP BY YOYO' },
+  { src: '/videos/Video-56962.mp4', label: 'A visit to HAIR RAP BY YOYO' },
+  { src: '/videos/Video-25492.mp4', label: 'Inside the salon' },
+]
 
 // How deep the coverflow arc goes per tier. The same ladder lives in
 // GalleryMood.css as --gallery-visible (3 / 5 / 7), one per media query. CSS
@@ -23,15 +32,66 @@ const visibleForWidth = (width) => {
   return 3
 }
 
+function ReelVideo({ src, shown, playing }) {
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (playing) video.play().catch(() => {})
+    else video.pause()
+  }, [playing])
+
+  return (
+    <video
+      ref={videoRef}
+      src={src}
+      autoPlay={playing}
+      muted
+      loop
+      playsInline
+      disablePictureInPicture
+      preload={shown ? 'metadata' : 'none'}
+      aria-hidden="true"
+    />
+  )
+}
+
 export default function GalleryMood() {
   const ref = useRef(null)
   const stageRef = useRef(null)
   const dragRef = useRef({ x: 0, dragging: false, moved: false })
   const [visible, setVisible] = useState(3)
+  const [playback, setPlayback] = useState({ entered: false, active: false })
   useReveal(ref, { selector: '.reveal', threshold: 0.08 })
-  const carousel = useCarousel({ itemCount: gallery.length, interval: 4500 })
+  const carousel = useCarousel({ itemCount: reels.length, interval: 4500, autoPlay: playback.active })
 
-  const n = gallery.length
+  const n = reels.length
+
+  useEffect(() => {
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    let inView = typeof IntersectionObserver === 'undefined'
+    const sync = () => {
+      setPlayback((previous) => ({
+        entered: previous.entered || inView,
+        active: inView && !document.hidden && !motion.matches,
+      }))
+    }
+    const observer = inView ? null : new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting
+      sync()
+    })
+
+    observer?.observe(stageRef.current)
+    document.addEventListener('visibilitychange', sync)
+    motion.addEventListener('change', sync)
+    sync()
+
+    return () => {
+      observer?.disconnect()
+      document.removeEventListener('visibilitychange', sync)
+      motion.removeEventListener('change', sync)
+    }
+  }, [])
 
   // Read --gallery-visible from the stylesheet instead of duplicating the
   // breakpoints in JS, and keep it in step on resize.
@@ -116,13 +176,13 @@ export default function GalleryMood() {
         </div>
       </div>
 
-      {/* Auto carousel — Polaroid slides travel an arc through the centre */}
+      {/* Reels travel the same arc through the centre. */}
       <div
         className="gallery-stage reveal reveal-delay-1"
         ref={stageRef}
         role="group"
         aria-roledescription="carousel"
-        aria-label="Gallery slideshow — use the left and right arrow keys to move"
+        aria-label="Gallery reels — use the left and right arrow keys to move"
         tabIndex={0}
         onKeyDown={(e) => {
           if (e.key === 'ArrowLeft') {
@@ -147,15 +207,17 @@ export default function GalleryMood() {
         onPointerCancel={onPointerUp}
       >
         <div className="carousel">
-          {gallery.map((img, i) => {
+          {reels.map((reel, i) => {
             const state = stateClass(offset(i))
-            const dims = galleryDims[img.key]
+            const shown = !state.startsWith('hidden-')
             return (
               <button
-                key={img.key}
+                key={reel.src}
                 type="button"
                 className={`carousel-item ${state}`}
-                aria-label={img.alt}
+                aria-label={reel.label}
+                tabIndex={shown ? 0 : -1}
+                aria-hidden={!shown}
                 onClick={() => {
                   if (dragRef.current.moved) {
                     dragRef.current.moved = false
@@ -166,15 +228,7 @@ export default function GalleryMood() {
               >
                 <div className="polaroid">
                   <div className="polaroid-photo">
-                    <img
-                      src={galleryImages[img.key]}
-                      alt=""
-                      aria-hidden="true"
-                      width={dims.width}
-                      height={dims.height}
-                      loading="lazy"
-                      draggable={false}
-                    />
+                    <ReelVideo src={playback.entered ? reel.src : undefined} shown={shown} playing={shown && playback.active} />
                   </div>
                 </div>
               </button>
@@ -186,18 +240,18 @@ export default function GalleryMood() {
       <div className="gallery-meta container reveal reveal-delay-2">
         <p
           className="gallery-caption"
-          key={gallery[carousel.active].key}
+          key={reels[carousel.active].src}
           aria-live="polite"
         >
-          {gallery[carousel.active].alt}
+          {reels[carousel.active].label}
         </p>
-        <div className="gallery-dots" role="group" aria-label="Gallery slideshow">
-          {gallery.map((img, i) => (
+        <div className="gallery-dots" role="group" aria-label="Choose a gallery reel">
+          {reels.map((reel, i) => (
             <button
-              key={img.key}
+              key={reel.src}
               type="button"
               className={`gallery-dot${i === carousel.active ? ' is-active' : ''}`}
-              aria-label={`Go to slide: ${img.alt}`}
+              aria-label={`Go to reel: ${reel.label}`}
               aria-current={i === carousel.active}
               onClick={() => {
                 carousel.setActive(i)

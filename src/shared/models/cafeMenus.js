@@ -1,7 +1,6 @@
 import { menuImages } from '../assets/images'
 
 const hotCoffee = { image: menuImages.tab1, imageAlt: 'Coffee with leaf-shaped latte art' }
-const coldCoffee = { image: menuImages.tab2, imageAlt: 'A chilled blended coffee' }
 const refresher = { image: menuImages.tab3, imageAlt: 'A chilled lemon mint drink' }
 
 export const cafeMenus = [
@@ -12,7 +11,8 @@ export const cafeMenus = [
       {
         id: 'stylist-hot',
         label: 'Hot Beverages',
-        ...hotCoffee,
+        image: menuImages.houseHotBeverages,
+        imageAlt: 'Cappuccino with leaf-shaped latte art in a cream porcelain cup',
         items: [
           { name: 'Espresso (32 ml)', price: '₹249', desc: 'A bold, concentrated shot of pure espresso with a rich crema.' },
           { name: 'Classic Americano', price: '₹249', desc: 'Smooth double shot of espresso diluted with hot water for a crisp, clean taste.' },
@@ -26,7 +26,8 @@ export const cafeMenus = [
       {
         id: 'stylist-cold-iced',
         label: 'Cold Iced Beverages',
-        ...coldCoffee,
+        image: menuImages.houseColdIcedBeverages,
+        imageAlt: 'Iced Spanish latte with espresso swirling into milk',
         items: [
           { name: 'Iced Americano', price: '₹249', desc: 'Bold espresso poured over chilled water and ice for a crisp, refreshing pick-me-up.' },
           { name: 'Salted Caramel Cappuccino', price: '₹359', desc: 'Classic cappuccino elevated with sea-salted caramel syrup.' },
@@ -36,7 +37,8 @@ export const cafeMenus = [
       {
         id: 'stylist-cold',
         label: 'Cold Beverages',
-        ...coldCoffee,
+        image: menuImages.houseColdBeverages,
+        imageAlt: 'Frothy blended coffee in a faceted café glass',
         items: [
           { name: 'Classic Cold Blend', price: '₹359', desc: 'Signature iced coffee whipped to a light, smooth, frothy texture.' },
           { name: 'Oreo Cold Blend', price: '₹389', desc: 'Decadent cold coffee spun with crunchy Oreo cookie crumbles.' },
@@ -48,7 +50,8 @@ export const cafeMenus = [
       {
         id: 'stylist-iced-coffee',
         label: 'Iced Coffee',
-        ...coldCoffee,
+        image: menuImages.houseIcedCoffee,
+        imageAlt: 'Layered strawberry iced latte with milk, espresso, and ice',
         items: [
           { name: 'Strawberry Iced Latte', price: '₹369', desc: 'Fresh strawberry puree layered beneath chilled espresso and milk.' },
           { name: 'Litchi Iced Coffee', price: '₹349', desc: 'Exotic sweet litchi syrup combined with chilled cold brew espresso.' },
@@ -62,8 +65,8 @@ export const cafeMenus = [
       {
         id: 'stylist-milkshakes',
         label: 'Milkshakes',
-        image: menuImages.tab2,
-        imageAlt: 'Caramel shake topped with whipped cream',
+        image: menuImages.houseMilkshakes,
+        imageAlt: 'Vanilla milkshake with whipped cream in a footed glass',
         items: [
           { name: 'Vanilla Milk Shake', price: '₹349', desc: 'Classic rich Madagascar vanilla bean blended into a thick milk shake.' },
           { name: 'Chocolate Milk Shake', price: '₹399', desc: 'Decadent Belgian cocoa powder spun into a creamy thick shake.' },

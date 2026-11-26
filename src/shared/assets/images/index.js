@@ -36,6 +36,11 @@ import vipFood from './menu/vip-food.webp'
 import softDrinks from './menu/soft-drinks.webp'
 import thickShakes from './menu/thick-shakes.webp'
 import flavorAddOns from './menu/flavor-add-ons.webp'
+import houseHotBeverages from './menu/house-hot-beverages.webp'
+import houseColdIcedBeverages from './menu/house-cold-iced-beverages.webp'
+import houseColdBeverages from './menu/house-cold-beverages.webp'
+import houseIcedCoffee from './menu/house-iced-coffee.webp'
+import houseMilkshakes from './menu/house-milkshakes.webp'
 
 import storyFrame48096320 from './story/frame-48096320.svg'
 /* Phone-tier section decorations, cut out of mobile_menu.svg: pale art with no
@@ -92,6 +97,11 @@ export const menuImages = {
   softDrinks,
   thickShakes,
   flavorAddOns,
+  houseHotBeverages,
+  houseColdIcedBeverages,
+  houseColdBeverages,
+  houseIcedCoffee,
+  houseMilkshakes,
   'virgin-mojito': virginMojito,
 }
 
