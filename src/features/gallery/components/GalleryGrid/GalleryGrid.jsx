@@ -92,6 +92,7 @@ export default function GalleryGrid({
                     width={photo.width}
                     height={photo.height}
                     loading="lazy"
+                    decoding="async"
                     draggable={false}
                   />
                 </figure>
