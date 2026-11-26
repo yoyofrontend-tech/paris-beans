@@ -3,9 +3,8 @@
 // CSS still controls the rendered size.
 //
 // Keys are the file names as authored on disk, which is what
-// `shared/assets/images/index.js` binds each export to. Keep the two in sync:
-// three entries are served from `public/` and so are referenced by their public
-// path rather than an import.
+// `shared/assets/images/index.js` binds each export to. The Our Story artwork
+// uses public URLs, while bundled assets use imported URLs.
 const srcSizeMap = {
   // hero
   'salon-interior.svg': [1920, 1280],
@@ -23,10 +22,14 @@ const srcSizeMap = {
   'tab1.png': [736, 736],
   'tab2.png': [2000, 2000],
   'tab3.png': [2000, 2000],
+  'stylist-food.webp': [960, 960],
+  'vip-food.webp': [960, 960],
+  'soft-drinks.webp': [960, 960],
+  'thick-shakes.webp': [960, 960],
+  'flavor-add-ons.webp': [960, 960],
   // story
-  'img1.avif': [1440, 876],
-  'img_phone.png': [390, 411],
-  'tablet-story.png': [744, 605],
+  'Desktop.svg': [1935, 939],
+  'phone.svg': [390, 411],
   'photo.svg': [627, 624],
   'frame-48096320.svg': [1312, 735],
   'Rectangle 69.svg': [675, 605],

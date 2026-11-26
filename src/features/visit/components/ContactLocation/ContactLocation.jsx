@@ -53,15 +53,19 @@ export default function ContactLocation() {
               <textarea name="message" placeholder="Message" rows="4" required enterKeyHint="send" />
             </label>
 
-            <label className="visit-checkbox">
-              <input type="checkbox" name="newsletter" value="yes" />
-              <span className="visit-checkbox-box" aria-hidden="true" />
-              <span>I would like to receive the newsletter.</span>
-            </label>
+            <div className="visit-form-art" aria-hidden="true" />
 
-            <Button as="button" type="submit" variant="primary" arrow className="visit-submit-btn" disabled={status === 'sending'}>
-              {status === 'sending' ? 'Sending…' : 'Submit'}
-            </Button>
+            <div className="visit-form-actions">
+              <label className="visit-checkbox">
+                <input type="checkbox" name="newsletter" value="yes" />
+                <span className="visit-checkbox-box" aria-hidden="true" />
+                <span>I would like to receive the newsletter.</span>
+              </label>
+
+              <Button as="button" type="submit" variant="primary" arrow className="visit-submit-btn" disabled={status === 'sending'}>
+                {status === 'sending' ? 'Sending…' : 'Submit'}
+              </Button>
+            </div>
 
             {status === 'sent' && (
               <p className="visit-status visit-status--success" role="status">

@@ -28,5 +28,5 @@ export const storyPageData = {
     },
   ],
   originPhoto: storyImages.photo,
-  storyImage: storyImages.img,
+  storyImage: storyImages.desktopStoryPage,
 }

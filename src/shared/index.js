@@ -22,10 +22,6 @@ export {
 export { srcSize } from './assets/srcSize'
 export {
   menuItems,
-  hotCoffeeMenu,
-  coldFrappeMenu,
-  refresherMenu,
-  menuCategories,
   cafeCardTitles,
   gallery,
   galleryDims,

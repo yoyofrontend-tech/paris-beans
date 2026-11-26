@@ -31,17 +31,17 @@ import tab1 from './menu/tab1.png'
 import tab2 from './menu/tab2.png'
 import tab3 from './menu/tab3.png'
 import virginMojito from './menu/virgin-mojito.svg'
+import stylistFood from './menu/stylist-food.webp'
+import vipFood from './menu/vip-food.webp'
+import softDrinks from './menu/soft-drinks.webp'
+import thickShakes from './menu/thick-shakes.webp'
+import flavorAddOns from './menu/flavor-add-ons.webp'
 
 import storyFrame48096320 from './story/frame-48096320.svg'
 /* Phone-tier section decorations, cut out of mobile_menu.svg: pale art with no
    ground of its own, so they can sit over the section colour at any size. */
 import decoBeans from './story/deco-beans.svg'
 import decoCupCroissant from './story/deco-cup-croissant.svg'
-// The next three are served from public/ rather than imported, so they are not
-// hashed or optimised by Vite. See the exclusion list in vite.config.js.
-const storyImg1 = '/story/img1.avif'
-const storyImgPhone = '/story/img_phone.png'
-const tabletStory = '/story/tablet-story.png'
 import photo from './story/photo.svg'
 import rectangle69 from './story/Rectangle 69.svg'
 import rectangle71 from './story/Rectangle 71.svg'
@@ -87,6 +87,11 @@ export const menuImages = {
   tab1,
   tab2,
   tab3,
+  stylistFood,
+  vipFood,
+  softDrinks,
+  thickShakes,
+  flavorAddOns,
   'virgin-mojito': virginMojito,
 }
 
@@ -103,10 +108,9 @@ export const storyImages = {
   frame48096320: storyFrame48096320,
   decoBeans,
   decoCupCroissant,
-  img: storyImg1,
-  phoneStoryPage: storyImgPhone,
+  desktopStoryPage: '/images/Desktop.svg',
+  phoneStoryPage: '/images/phone.svg',
   photo,
-  tabletStory,
   rectangle69,
   rectangle71,
   rectangle72,

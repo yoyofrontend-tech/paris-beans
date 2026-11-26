@@ -252,6 +252,15 @@
   box-shadow: 0 0 0 3px rgba(193, 138, 91, 0.18);
 }
 
+.visit-form-art {
+  display: none;
+}
+
+.visit-form-actions {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Checkbox */
 .visit-checkbox {
   display: flex;
@@ -303,7 +312,6 @@
 
 .visit-submit-btn {
   align-self: flex-start;
-  margin-top: auto;
 }
 
 .visit-status {
@@ -676,6 +684,45 @@
 
   .visit-card-title {
     font-size: var(--fs-display);
+  }
+
+  .visit-form-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .visit-form-art {
+    display: block;
+    align-self: center;
+    width: min(100%, 602px);
+    aspect-ratio: 602 / 171;
+    margin-block: auto;
+    background: url('/images/vector.svg') center / contain no-repeat;
+  }
+
+  .visit-form-actions {
+    padding-top: var(--space-6);
+  }
+
+  .visit-checkbox {
+    gap: var(--space-2);
+    padding: 0 0 var(--space-6);
+    font-size: var(--fs-body-sm);
+  }
+
+  .visit-checkbox-box {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+  }
+
+  .visit-submit-btn {
+    min-height: 44px;
+    padding: 0.55rem 1.1rem;
+  }
+
+  .visit-submit-btn .btn-arrow {
+    display: none;
   }
 }
 

@@ -1,18 +1,24 @@
 import { useState } from 'react'
-import { menuCategories } from '@shared/models/siteData'
+import { cafeMenus } from '@shared/models/cafeMenus'
 import CallToAction from '@shared/components/CallToAction'
-import { MenuHero, MenuCategories, MenuSpecialty, MenuCafe } from '@features/menu'
+import { MenuHero, MenuCategories, MenuSpecialty } from '@features/menu'
 
 export default function MenuPage() {
-  const [activeId, setActiveId] = useState(menuCategories[0].id)
-  const category = menuCategories.find((c) => c.id === activeId) ?? menuCategories[0]
+  const [menu, setMenu] = useState(cafeMenus[0])
+  const [activeId, setActiveId] = useState(menu.categories[0].id)
+  const category = menu.categories.find((item) => item.id === activeId) ?? menu.categories[0]
+
+  function selectMenu(nextMenu) {
+    if (nextMenu.id === menu.id) return
+    setMenu(nextMenu)
+    setActiveId(nextMenu.categories[0].id)
+  }
 
   return (
     <>
       <MenuHero />
-      <MenuCategories activeId={activeId} onSelect={setActiveId} />
+      <MenuCategories menu={menu} activeId={category.id} onMenuSelect={selectMenu} onSelect={setActiveId} />
       <MenuSpecialty category={category} />
-      <MenuCafe />
       <CallToAction
         baseClass="menu-cta"
         threshold={0.08}

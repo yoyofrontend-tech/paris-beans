@@ -16,62 +16,6 @@ export const menuItems = [
   { title: 'Blush Sunset', image: menuImages['blush-sunset'], price: '₹269' },
 ]
 
-export const hotCoffeeMenu = [
-  { name: 'Espresso (36 ml)', price: '₹229', desc: 'A bold and intense coffee shot with rich crema.' },
-  { name: 'Classic Americano', price: '₹269', desc: 'A bold and smooth espresso diluted with hot water for a rich, black coffee experience.' },
-  { name: 'Latte', price: '₹329', desc: 'Smooth espresso blended with steamed milk for a creamy and comforting experience.' },
-  { name: 'Flat White', price: '₹329', desc: 'A smooth and velvety espresso with fine microfoam.' },
-  { name: 'Classic Cappuccino', price: '₹329', desc: 'A rich and foamy espresso-based delight with a perfect balance of milk and coffee.' },
-  { name: 'Mocha', price: '₹369', desc: 'A luscious fusion of espresso, chocolate, and steamed milk for a sweet, bold treat.' },
-  { name: 'Spanish Latte', price: '₹369', desc: 'A creamy and slightly sweet espresso-based delight with a hint of condensed milk.' },
-  { name: 'Biscoff Latte', price: '₹379', desc: 'A velvety latte infused with the caramelized goodness of Biscoff.' },
-]
-
-export const coldFrappeMenu = [
-  { name: 'Classic Cold Frappe', price: '₹379', desc: 'A chilled and creamy blended coffee for a refreshing caffeine boost.' },
-  { name: 'Mocha Freeze', price: '₹409', desc: 'A frozen delight of espresso, chocolate, and milk blended to perfection.' },
-  { name: 'Caramel Frappe', price: '₹409', desc: 'A chilled, blended coffee layered with silky caramel and a cloud of cream.' },
-  { name: 'Biscoff Frappe', price: '₹429', desc: 'A creamy blended coffee swirled with the caramelized, spiced crunch of Biscoff.' },
-]
-
-export const refresherMenu = [
-  { name: 'Lemon Mint Elixir (Iced Tea)', price: '₹229', desc: 'A cooling blend of lemon and mint infused in iced tea.' },
-  { name: 'Virgin Mojito', price: '₹269', desc: 'A zesty, minty, and refreshing non-alcoholic mojito.' },
-  { name: 'Orange Juice', price: '₹329', desc: 'Zesty, refreshing, and packed with vitamin C.' },
-  { name: 'Mixed Fruit Juice', price: '₹329', desc: 'A vibrant fusion of assorted fruits for a flavorful boost.' },
-  { name: 'Guava Juice', price: '₹369', desc: 'Sweet, tropical, and rich in antioxidants.' },
-]
-
-export const menuCategories = [
-  {
-    id: 'hot-coffees',
-    label: 'Hot Coffees',
-    heading: 'Specialty Hot Coffees',
-    size: '(240 ml)',
-    image: menuImages.tab1,
-    imageAlt: 'Espresso being poured into a cup',
-    items: hotCoffeeMenu,
-  },
-  {
-    id: 'cold-frappe',
-    label: 'Cold Frappe',
-    heading: 'Cold Frappe',
-    size: '(350 ml)',
-    image: menuImages.tab2,
-    imageAlt: 'Iced frappe coffee',
-    items: coldFrappeMenu,
-  },
-  {
-    id: 'refresher',
-    label: 'Refresher',
-    heading: 'Refresher',
-    size: '',
-    image: menuImages.tab3,
-    imageAlt: 'Lemon mint refresher',
-    items: refresherMenu,
-  },
-]
-
 export const cafeCardTitles = [
   'Hummus',
   'Virgin Mojito',

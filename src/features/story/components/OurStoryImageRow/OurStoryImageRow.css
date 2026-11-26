@@ -1,24 +1,10 @@
-/* ============================================================
-   STORY IMAGE ROW — full-width image between sections
-   ============================================================ */
-.ostory-story-img {
-  display: grid;
-  justify-items: center;
-  padding-block: clamp(0rem, 0vw, 1.25rem);
+.ostory-story-artwork {
+  background: url('/images/background.svg') center / cover no-repeat;
 }
 
-/* The <picture> wrapper carries the width, not the <img>. As a centred grid
-   item (and a centred flex item in the tablet band) <picture> shrink-wraps to
-   its content, so a percentage width on the <img> resolved against the
-   image's own intrinsic width and never reached the section. Phone and tablet
-   sources are narrower than their viewports, so the row sat at 390px and
-   744px wide with up to 188px of dead space either side. Only the desktop
-   source (1935px) happened to exceed its viewport, which is why the
-   full-bleed read as working on desktop. Giving <picture> the full measure
-   and the <img> 100% of it lets each source fill the row. */
-.ostory-story-img picture {
+.ostory-story-img {
   display: block;
-  width: min(1920px, 100%);
+  width: min(100%, 640px);
   margin-inline: auto;
 }
 
@@ -28,19 +14,8 @@
   height: auto;
 }
 
-/* The row keeps its centred horizontal framing across both tablet tiers instead
-   of becoming a column flex box. Moved here from StoryPage.css, which used to
-   own it and won the tie only by being imported last.
-
-   justify-items: center above is the grid spelling and does nothing on a flex
-   container, so justify-content replaces it. align-items is flex-start rather
-   than stretch so the picture is never stretched to a cross size it does not ask
-   for. */
-@media (min-width: 641px) {
+@media (min-width: 1024px) {
   .ostory-story-img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    width: min(calc(100% - 2 * var(--gutter)), 1935px);
   }
 }

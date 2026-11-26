@@ -58,7 +58,7 @@
   margin-bottom: 1rem;
 }
 
-/* ---------- Layered editorial image composition ---------- */
+/* ---------- Story photo stack ---------- */
 .story-media {
   position: relative;
   z-index: 5;
@@ -67,88 +67,48 @@
 
   --frame-off-x: clamp(30px, 4.2vw, 60px);
   --frame-off-y: clamp(30px, 4.2vw, 60px);
-  --back-off-x: clamp(18px, 2.5vw, 36px);
-  --back-off-y: clamp(20px, 2.9vw, 42px);
   --main-w: calc(100% - var(--frame-off-x) - 10px);
+  --card-step-x: calc(var(--frame-off-x) / 3);
+  --card-step-y: calc(var(--frame-off-y) / 3);
 }
 
 .story-image-stack {
   position: relative;
   z-index: 2;
-  width: 100%;
-  will-change: transform;
-  animation: pbCompositionFloat 9s ease-in-out infinite;
-}
-
-/* FRONT / MAIN IMAGE — sits in the foreground, top-left of the stack */
-.story-image-main {
-  position: relative;
-  z-index: 4;
   width: var(--main-w);
   aspect-ratio: 675 / 605;
-  border-radius: 8px;
-  overflow: hidden;
-  background: var(--color-espresso-dark);
-  box-shadow: 0 14px 34px rgba(45, 26, 16, 0.18);
-  transition:
-    transform 1s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 1s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: transform;
+
+  --middle-card-position: translate(var(--card-step-x), var(--card-step-y));
+  --back-card-position: translate(calc(2 * var(--card-step-x)), calc(2 * var(--card-step-y)));
 }
 
-/* BACK #3 — furthest card, cascades most out of the bottom-right corner */
-.story-image-back--far {
-  top: calc(var(--back-off-y) * 1.7);
-  left: calc(var(--back-off-x) * 1.7);
-  z-index: 1;
-  box-shadow: 0 4px 12px rgba(45, 26, 16, 0.08);
-}
-
-/* BACK #2 — deepest dark card, peeks out bottom-right with a thin sliver */
-.story-image-back--alt {
-  top: calc(var(--back-off-y) * 0.5);
-  left: calc(var(--back-off-x) * 0.5);
-  z-index: 2;
-  box-shadow: 0 6px 16px rgba(45, 26, 16, 0.1);
-}
-
-/* BACK #1 / DARK-BROWN IMAGE CARD — offset right & down, partly hidden */
-.story-image-back {
-  position: absolute;
-  top: var(--back-off-y);
-  left: var(--back-off-x);
-  z-index: 3;
-  width: var(--main-w);
-  aspect-ratio: 675 / 605;
-  border-radius: 8px;
-  overflow: hidden;
-  background: var(--color-espresso-dark);
-  box-shadow: 0 10px 24px rgba(45, 26, 16, 0.14);
-  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: transform;
-}
-
-.story-image-back img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-/* Warm brown wash so the back card reads as dark/brown and secondary */
-.story-image-back::after {
-  content: '';
+.story-image-card {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(67, 39, 25, 0.42),
-    rgba(53, 29, 19, 0.66)
-  );
-  pointer-events: none;
+  z-index: 3;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  background: var(--color-espresso-dark);
+  box-shadow: 0 14px 34px rgba(45, 26, 16, 0.18);
 }
 
-/* THIN ORANGE OUTLINE FRAME — furthest back, peeks out bottom-right */
+.story-image-card:nth-child(2) {
+  z-index: 2;
+  transform: var(--middle-card-position);
+  filter: brightness(0.75);
+  --card-delay: -3.2s;
+}
+
+.story-image-card:nth-child(3) {
+  z-index: 1;
+  transform: var(--back-card-position);
+  filter: brightness(0.9);
+  --card-delay: -1.6s;
+}
+
 .story-media::after {
   content: '';
   position: absolute;
@@ -159,76 +119,51 @@
   aspect-ratio: 675 / 605;
   border: 1px solid var(--color-gold);
   border-radius: 8px;
-  background: transparent;
   pointer-events: none;
-  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Cycling slideshow layers inside the main frame */
-.story-image-card {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: opacity 1.2s var(--ease);
-  will-change: opacity;
-}
-
-.story-image-card.is-active {
-  opacity: 1;
-}
-
-.story-image-card img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  transform: scale(1.02);
-  transition: transform 6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-/* Slow editorial zoom that completes during each 6s slide */
-.story-image-card.is-active img {
-  transform: scale(1.1);
-}
-
-/* ---------- Hover — pause the float and separate the layers ---------- */
-.story-media:hover .story-image-stack {
-  animation-play-state: paused;
-}
-
-.story-media:hover .story-image-main {
-  transform: translate3d(-10px, -14px, 0) scale(1.012);
-  box-shadow: 0 24px 52px rgba(45, 26, 16, 0.22);
-}
-
-.story-media:hover .story-image-back {
-  transform: translate3d(8px, 10px, 0);
-}
-
-.story-media:hover .story-image-back--far {
-  transform: translate3d(12px, 15px, 0);
-}
-
-.story-media:hover .story-image-back--alt {
-  transform: translate3d(4px, 5px, 0);
-}
-
-.story-media:hover::after {
-  transform: translate3d(10px, 12px, 0);
-}
-
-.story-media:hover .story-image-card.is-active img {
-  transform: scale(1.11);
-}
-
-@keyframes pbCompositionFloat {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
+@media (prefers-reduced-motion: no-preference) {
+  .story-image-card {
+    animation:
+      pbStoryCardCycle 4.8s ease-in-out var(--card-delay, 0s) infinite,
+      pbStoryCardOrder 4.8s step-end var(--card-delay, 0s) infinite;
+    animation-play-state: paused;
   }
-  50% {
-    transform: translate3d(0, -8px, 0);
+
+  .story-media.is-visible .story-image-card {
+    animation-play-state: running;
   }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .story-media.is-visible:hover .story-image-card {
+    animation-play-state: paused;
+  }
+}
+
+/* Each slot holds for about a second, then the cards move to the next slot. */
+@keyframes pbStoryCardCycle {
+  0%, 26.667%, 100% {
+    transform: translate(0, 0);
+    filter: brightness(1);
+  }
+
+  33.333%, 60% {
+    transform: var(--back-card-position);
+    filter: brightness(0.9);
+  }
+
+  66.667%, 93.333% {
+    transform: var(--middle-card-position);
+    filter: brightness(0.75);
+  }
+}
+
+/* Change the stacking order halfway through each move. */
+@keyframes pbStoryCardOrder {
+  0%, 96.667%, 100% { z-index: 3; }
+  30% { z-index: 1; }
+  63.333% { z-index: 2; }
 }
 
 /* ============================================================
@@ -309,19 +244,8 @@
 
 @media (max-width: 640px) {
   .story-media {
-    --frame-off-x: 22px;
-    --frame-off-y: 22px;
-    --back-off-x: 13px;
-    --back-off-y: 15px;
-  }
-}
-
-@media (max-width: 640px) {
-  .story-media {
     --frame-off-x: 16px;
     --frame-off-y: 16px;
-    --back-off-x: 9px;
-    --back-off-y: 11px;
   }
 }
 
@@ -339,35 +263,6 @@
 
   .story-copy > .story-cta {
     margin-top: 38px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .story-image-stack {
-    animation: none;
-  }
-
-  .story-image-card {
-    transition: none;
-  }
-
-  .story-image-card.is-active {
-    opacity: 1;
-  }
-
-  .story-image-card:not(.is-active) {
-    opacity: 0;
-  }
-
-  .story-image-card.is-active img {
-    transition: none;
-    transform: none;
-  }
-
-  .story-image-main,
-  .story-image-back,
-  .story-media::after {
-    transition: none;
   }
 }
 
@@ -467,65 +362,30 @@
     font-size: var(--fs-btn);
   }
 
-  /* Right column — photo stack sized off the frame's 885x804. The width is the
-     grid column's own (it is a grid item, so 100% is that column); the stack's
-     internals were already percentages of this box. */
+  /* The photo stack keeps the same proportions as the desktop composition. */
   .story-media {
     position: relative;
     z-index: 1;
     width: 100%;
     aspect-ratio: 885 / 804;
     padding: 0;
+
+    --card-step-x: 2.96%;
+    --card-step-y: 3.34%;
   }
 
   .story-image-stack {
     position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    animation: none;
-  }
-
-  .story-media .story-image-main,
-  .story-media .story-image-back {
-    position: absolute;
+    top: 0;
+    left: 0;
     width: 91.2%;
     height: 89.9%;
     aspect-ratio: auto;
+  }
+
+  .story-image-card {
     border-radius: 12px;
     box-shadow: none;
-  }
-
-  .story-media .story-image-main {
-    left: 0;
-    top: 0;
-    z-index: 3;
-  }
-
-  .story-media .story-image-back--alt {
-    left: 2.7%;
-    top: 3%;
-    z-index: 2;
-  }
-
-  .story-media .story-image-back--far {
-    left: 5.4%;
-    top: 6%;
-    z-index: 1;
-  }
-
-  /* The frame has exactly three photo layers: main, card 2, card 3. The extra
-     mid card from the old composition is hidden here. */
-  .story-media .story-image-back:not(.story-image-back--far):not(.story-image-back--alt) {
-    display: none;
-  }
-
-  .story-image-back--far::after {
-    background: rgba(176, 128, 84, 0.35);
-  }
-
-  .story-image-back--alt::after {
-    background: rgba(59, 37, 24, 0.75);
   }
 
   /* Thin orange outline frame — bottom layer of the stack, solid #c7a45a */

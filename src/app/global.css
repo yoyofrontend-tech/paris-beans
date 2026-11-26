@@ -159,9 +159,7 @@
      A section that stacks all four therefore lands on 8 / 16 / 24 / 32 and
      its total breath stays on the 8-12-16-24-32-48-64 scale.
 
-     Two values are geometry rather than rhythm and are named so they cannot
-     be mistaken for it: the café's bottom-right wave carve-out, and the lane
-     the footer reserves under the floating coffee button. */
+     The café's bottom-right wave carve-out has its own geometry token. */
   --space-2: 8px;
   --space-3: 12px;
   --space-4: 16px;
@@ -176,7 +174,6 @@
   --space-stack-cta: var(--space-8);
 
   --space-cafe-art-br: calc(28.3vw + 16px);
-  --space-fab-lane: calc(58px + clamp(12px, 1.6vw, 20px) + 4px);
 
   /* Header height â€” the phone tier. Mirrored by anything that offsets itself
      from the sticky header (scroll-margin-top, sticky tops, 100svh

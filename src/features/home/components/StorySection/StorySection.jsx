@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react'
+import { useRef } from 'react'
 import { useReveal } from '@shared/hooks/useReveal'
 import { srcSize } from '@shared/assets/srcSize'
 import Button from '@shared/components/Button'
@@ -6,25 +6,14 @@ import { storyImages } from '@shared/assets/images'
 import './StorySection.css'
 
 const storySlides = [
-  storyImages.rectangle71,
-  storyImages.rectangle69,
-  storyImages.rectangle72,
+  { src: storyImages.rectangle72, alt: 'The Paris Beans café counter' },
+  { src: storyImages.rectangle71, alt: 'A guest raising a glass at the café counter' },
+  { src: storyImages.rectangle69, alt: 'A cocktail garnished with lemon' },
 ]
 
 export default function StorySection() {
   const ref = useRef(null)
-  const [active, setActive] = useState(0)
-  const [paused, setPaused] = useState(false)
   useReveal(ref)
-
-  // Slideshow loop: the story images appear one by one, over and over
-  useEffect(() => {
-    if (paused || typeof window === 'undefined') return
-    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (prefersReduced) return
-    const t = setInterval(() => setActive((p) => (p + 1) % storySlides.length), 6000)
-    return () => clearInterval(t)
-  }, [paused, active])
 
   return (
     <section id="story" className="section story" ref={ref}>
@@ -59,57 +48,15 @@ export default function StorySection() {
           </div>
         </div>
 
-        {/* Right — layered editorial image with cycling main photo */}
         <div
           className="story-media reveal reveal-delay-1"
+          role="group"
           aria-label="Paris Beans story gallery"
-          onMouseEnter={() => setPaused(true)}
-          onMouseLeave={() => setPaused(false)}
         >
           <div className="story-image-stack">
-            {/* Back — three cards that cycle through the story images */}
-            <div className="story-image-back story-image-back--far" aria-hidden="true">
-              {storySlides.map((src, i) => (
-                <div
-                  key={src}
-                  className={`story-image-card${i === active ? ' is-active' : ''}`}
-                >
-                  <img src={src} alt="" {...srcSize(src)} />
-                </div>
-              ))}
-            </div>
-            <div className="story-image-back story-image-back--alt" aria-hidden="true">
-              {storySlides.map((src, i) => (
-                <div
-                  key={src}
-                  className={`story-image-card${i === active ? ' is-active' : ''}`}
-                >
-                  <img src={src} alt="" {...srcSize(src)} />
-                </div>
-              ))}
-            </div>
-            <div className="story-image-back" aria-hidden="true">
-              {storySlides.map((src, i) => (
-                <div
-                  key={src}
-                  className={`story-image-card${i === active ? ' is-active' : ''}`}
-                >
-                  <img src={src} alt="" {...srcSize(src)} />
-                </div>
-              ))}
-            </div>
-
-            {/* Front — main image, cycles through the story images */}
-            <div className="story-image-main">
-              {storySlides.map((src, i) => (
-                <div
-                  key={src}
-                  className={`story-image-card${i === active ? ' is-active' : ''}`}
-                >
-                  <img src={src} alt="Paris Beans salon" {...srcSize(src)} />
-                </div>
-              ))}
-            </div>
+            {storySlides.map(({ src, alt }) => (
+              <img key={src} className="story-image-card" src={src} alt={alt} {...srcSize(src)} />
+            ))}
           </div>
         </div>
       </div>

@@ -92,9 +92,8 @@ export function routeJsonLd(route) {
         description:
           'From comforting coffee to simple caf\u00e9 favourites, discover the offerings available at ParisBeans inside HAIR RAP BY YOYO.',
         hasMenuSection: [
-          { '@type': 'MenuSection', name: 'Coffee' },
-          { '@type': 'MenuSection', name: 'Breakfast & Light Bites' },
-          { '@type': 'MenuSection', name: 'Little Indulgences' },
+          { '@type': 'MenuSection', name: 'The House Selection' },
+          { '@type': 'MenuSection', name: 'The Reserve Selection' },
         ],
         mainEntityOfPage: 'https://parisbeans.com/menu',
       }

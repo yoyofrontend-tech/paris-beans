@@ -11,7 +11,7 @@ export default function MenuSpecialty({ category }) {
   useParallaxTilt(stageRef)
 
   return (
-    <section className="menu-special" ref={ref}>
+    <section className="menu-special" id="menu-category-panel" aria-labelledby="menu-category-heading" ref={ref}>
       <div className="container menu-special-grid">
         <div className="menu-special-list reveal">
           <div className="menu-special-ghost" aria-hidden="true">
@@ -21,8 +21,8 @@ export default function MenuSpecialty({ category }) {
           {/* keyed on the category: a tab switch remounts these, so the heading
               swap and the row stagger replay instead of hard-swapping. Keys
               must be unique among siblings, hence the prefixes. */}
-          <h2 className="menu-special-title" key={`title-${category.id}`}>
-            {category.heading} {category.size && <span className="menu-special-size">{category.size}</span>}
+          <h2 className="menu-special-title" id="menu-category-heading" key={`title-${category.id}`}>
+            {category.label}
           </h2>
 
           <ul className="menu-list" key={`list-${category.id}`}>
@@ -30,8 +30,12 @@ export default function MenuSpecialty({ category }) {
               <li className="menu-row" key={item.name} style={{ '--i': i }}>
                 <div className="menu-row-top">
                   <span className="menu-item-name">{item.name}</span>
-                  <span className="menu-item-leader" aria-hidden="true" />
-                  <span className="menu-item-price">{item.price}</span>
+                  {item.price && (
+                    <>
+                      <span className="menu-item-leader" aria-hidden="true" />
+                      <span className="menu-item-price">{item.price}</span>
+                    </>
+                  )}
                 </div>
                 <p className="menu-item-desc">{item.desc}</p>
               </li>

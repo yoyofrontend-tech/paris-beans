@@ -237,8 +237,8 @@ html[data-preloader='exiting'] .hero {
   transform: none;
 }
 
-/* Scroll lock by attribute, not an inline body style, so the preloader cannot
-   clobber a lock held by the mobile nav or the AI assistant. */
+/* The preloader uses an attribute so its scroll lock can coexist with the
+   mobile navigation's lock. */
 html[data-preloader],
 html[data-preloader] body {
   overflow: hidden;
