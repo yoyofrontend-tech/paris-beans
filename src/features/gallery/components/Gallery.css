@@ -74,11 +74,9 @@
   height: auto;
   margin: clamp(2.2rem, 4.5vw, 3.4rem) auto 0;
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
 }
 
-/* Seamless right→left loop: two identical sets, track translated -50% */
+/* The track travels one set per cycle. Additional copies fill wide screens. */
 .gallery-track {
   display: flex;
   width: max-content;
@@ -91,7 +89,7 @@
 /* Slow luxurious drift — linear keeps the loop perfectly seamless */
 @keyframes galMarquee {
   from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(-50%, 0, 0); }
+  to { transform: translate3d(calc(-100% / var(--gallery-set-count, 2)), 0, 0); }
 }
 
 .gallery-set {
@@ -451,7 +449,7 @@
      transform inert on the desktop grid. */
   --gal-slide-step: 0px;
   display: grid;
-  gap: clamp(12px, 1.6vw, 20px);
+  gap: clamp(12px, 1.65vw, 32px);
   margin-top: clamp(2rem, 4vw, 3.5rem);
 }
 
@@ -492,35 +490,25 @@
   transform: scale(1.045);
 }
 
-/* Section grid layouts */
-.gal-grid--atmosphere {
-  grid-template-columns: 1fr 1fr 1.35fr;
+/* Each desktop mosaic uses four equal columns and two rows. */
+.gal-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 2 / 1;
 }
 
 .gal-grid--atmosphere .gal-tile--a { grid-column: 1; grid-row: 1; }
 .gal-grid--atmosphere .gal-tile--b { grid-column: 2; grid-row: 1; }
-.gal-grid--atmosphere .gal-tile--feature { grid-column: 3; grid-row: 1 / span 2; }
-.gal-grid--atmosphere .gal-tile--wide { grid-column: 1 / span 2; grid-row: 2; }
-
-.gal-grid--wall {
-  grid-template-columns: 1fr 1fr 1.5fr;
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-  aspect-ratio: 16 / 10;
-}
+.gal-grid--atmosphere .gal-tile--feature { grid-column: 3 / span 2; grid-row: 1; }
+.gal-grid--atmosphere .gal-tile--c { grid-column: 1; grid-row: 2; }
+.gal-grid--atmosphere .gal-tile--wide { grid-column: 2 / span 2; grid-row: 2; }
+.gal-grid--atmosphere .gal-tile--d { grid-column: 4; grid-row: 2; }
 
 .gal-grid--wall .gal-tile--a { grid-column: 1; grid-row: 1; }
 .gal-grid--wall .gal-tile--b { grid-column: 2; grid-row: 1; }
 .gal-grid--wall .gal-tile--c { grid-column: 1; grid-row: 2; }
 .gal-grid--wall .gal-tile--d { grid-column: 2; grid-row: 2; }
-.gal-grid--wall .gal-tile--feature { grid-column: 3; grid-row: 1 / span 2; }
-
-.gal-grid--food {
-  grid-template-columns: 1fr 1.15fr 1.15fr 1fr;
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-  aspect-ratio: 16 / 9;
-}
+.gal-grid--wall .gal-tile--feature { grid-column: 3 / span 2; grid-row: 1 / span 2; }
 
 .gal-grid--food .gal-tile--a { grid-column: 1; grid-row: 1; }
 .gal-grid--food .gal-tile--b { grid-column: 4; grid-row: 1; }
@@ -530,34 +518,19 @@
 .gal-grid--food .gal-tile--g { grid-column: 4; grid-row: 2; }
 .gal-grid--food .gal-tile--feature { grid-column: 2 / span 2; grid-row: 1; }
 
-.gal-grid--salon {
-  grid-template-columns: 1fr 1.7fr 1fr;
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-  aspect-ratio: 16 / 10;
+.gal-grid--food :is(.gal-tile--b, .gal-tile--c, .gal-tile--e) img {
+  object-position: center bottom;
 }
 
 .gal-grid--salon .gal-tile--a { grid-column: 1; grid-row: 1; }
 .gal-grid--salon .gal-tile--b { grid-column: 1; grid-row: 2; }
-.gal-grid--salon .gal-tile--c { grid-column: 3; grid-row: 1; }
-.gal-grid--salon .gal-tile--d { grid-column: 3; grid-row: 2; }
-.gal-grid--salon .gal-tile--feature { grid-column: 2; grid-row: 1 / span 2; }
+.gal-grid--salon .gal-tile--c { grid-column: 4; grid-row: 1; }
+.gal-grid--salon .gal-tile--d { grid-column: 4; grid-row: 2; }
+.gal-grid--salon .gal-tile--feature { grid-column: 2 / span 2; grid-row: 1 / span 2; }
 
 /* Saloon bookend — last section returns to the warm cream ground */
 .gal-section--bookend {
   background-color: var(--color-bg);
-}
-
-/* ── Hero composition: large desktop ─────────────────────── */
-@media (min-width: 1024px) {
-  .gal-hero-collage {
-    max-width: min(1720px, 100vw);
-  }
-
-  /* The copy block is no longer capped: from 1024px up it carries the hero
-     title and description on one line, and at the 1024px edge the title inks
-     1191.6px — wider than the 1180px this used to be capped at, so the cap
-     pushed the nowrap title past its own box. The container's inner width is
-     1656px here, so the block can simply run to it. */
 }
 
 /* ── Tablet portrait: 768–1023px ────────────────────────────────
@@ -594,6 +567,8 @@
 
   .gal-grid--atmosphere .gal-tile--a { grid-column: 1; grid-row: 3; }
   .gal-grid--atmosphere .gal-tile--b { grid-column: 2; grid-row: 3; }
+  .gal-grid--atmosphere .gal-tile--c { grid-column: 1; grid-row: 4; }
+  .gal-grid--atmosphere .gal-tile--d { grid-column: 2; grid-row: 4; }
 
   .gal-grid--wall .gal-tile--a { grid-column: 1; grid-row: 2; }
   .gal-grid--wall .gal-tile--b { grid-column: 2; grid-row: 2; }
@@ -629,54 +604,8 @@
   }
 }
 
-/* ── Tablet landscape: 1024–1099px ──────────────────────────────
-   There is room for three columns again, but the container ratio is still the
-   wrong tool: at 1024px the atmosphere grid's feature column came out 275px
-   against a 530px grid height. Same fix as portrait, one column wider. */
+/* Tablet landscape keeps the section spacing and uses the four-column grid. */
 @media (min-width: 1024px) and (max-width: 1099px) {
-  .gal-grid {
-    grid-template-columns: 1fr 1fr 1.2fr;
-    grid-template-rows: none;
-    aspect-ratio: auto;
-    row-gap: clamp(14px, 1.8vw, 20px);
-  }
-
-  .gal-grid--atmosphere .gal-tile--feature,
-  .gal-grid--wall .gal-tile--feature,
-  .gal-grid--food .gal-tile--feature,
-  .gal-grid--salon .gal-tile--feature {
-    grid-column: 1 / span 2;
-    grid-row: 1;
-    aspect-ratio: 16 / 9;
-  }
-
-  .gal-grid--atmosphere .gal-tile--a { grid-column: 3; grid-row: 1; }
-  .gal-grid--atmosphere .gal-tile--b { grid-column: 1; grid-row: 2; }
-  .gal-grid--atmosphere .gal-tile--wide { grid-column: 2 / span 2; grid-row: 2; }
-
-  .gal-grid--wall .gal-tile--a { grid-column: 3; grid-row: 1; }
-  .gal-grid--wall .gal-tile--b { grid-column: 1; grid-row: 2; }
-  .gal-grid--wall .gal-tile--c { grid-column: 2; grid-row: 2; }
-  .gal-grid--wall .gal-tile--d { grid-column: 3; grid-row: 2; }
-
-  /* Seven tiles, so the feature takes two of the three columns and the six
-     others pair off below it. */
-  .gal-grid--food .gal-tile--a { grid-column: 3; grid-row: 1; }
-  .gal-grid--food .gal-tile--b { grid-column: 1; grid-row: 2; }
-  .gal-grid--food .gal-tile--c { grid-column: 2; grid-row: 2; }
-  .gal-grid--food .gal-tile--d { grid-column: 3; grid-row: 2; }
-  .gal-grid--food .gal-tile--e { grid-column: 1; grid-row: 3; }
-  .gal-grid--food .gal-tile--g { grid-column: 2; grid-row: 3; }
-
-  .gal-grid--salon .gal-tile--a { grid-column: 3; grid-row: 1; }
-  .gal-grid--salon .gal-tile--b { grid-column: 1; grid-row: 2; }
-  .gal-grid--salon .gal-tile--c { grid-column: 2; grid-row: 2; }
-  .gal-grid--salon .gal-tile--d { grid-column: 3; grid-row: 2; }
-
-  .gal-grid .gal-tile:not(.gal-tile--feature):not(.gal-tile--wide) {
-    aspect-ratio: 4 / 5;
-  }
-
   .gal-section {
     padding-block: var(--section-pad-tablet);
   }
@@ -704,30 +633,6 @@
        i.e. ~190px of it is cut off. */
     --gal-gap: clamp(96px, 18vw, 190px);
     margin-top: clamp(2.6rem, 6vw, 3.6rem);
-    /* Hard-cut edges. The base 4%/96% mask fades frames out across the outer
-       ~30px, and a fade at the boundary reads as a gap between the frame and
-       the browser edge — the opposite of the Figma frame, where a frame at the
-       edge is sliced by it. Dropping the mask lets `overflow: hidden` do the
-       clipping, so frames reach the very edge and stop there. */
-    -webkit-mask-image: none;
-    mask-image: none;
-    /* Locked full-bleed, centred on its own containing block. A bare `width:
-       100vw` is only flush when the containing block is exactly as wide as the
-       viewport and no scrollbar is present; add a scrollbar or any inherited
-       inline padding to the section and the row is inset by half the
-       difference, opening a gutter at one or both edges. The classic break-out
-       instead takes the viewport width, offsets itself by half the containing
-       block and pulls that offset back with a translate, so the box overhangs
-       symmetrically and `.gal-hero`'s `overflow: clip` slices it flush at both
-       edges whatever the scrollbar does.
-       Order matters here: `margin-inline` and `margin-left` are the same
-       property in a horizontal writing mode and cascade together, so the
-       logical reset has to come first or it would win and cancel the 50%. */
-    width: 100vw;
-    margin-inline: 0;
-    margin-left: 50%;
-    padding-inline: 0;
-    transform: translateX(-50%);
   }
 
   /* The tablet composition is re-proportioned, not rescaled: frame 2 becomes
@@ -813,13 +718,6 @@
        holds its proportion at every phone size. */
     --gal-drop: 0.09;
     margin-top: clamp(48px, 12vw, 64px);
-    /* Hard-cut edges, as on tablet: the 4%/96% edge mask fades the outermost
-       frame out across the last ~15px, and a fade at the boundary reads as a
-       gap between the frame and the browser edge. Dropping the mask leaves
-       `overflow: hidden` to do the clipping, so a frame at the edge is sliced
-       by it. */
-    -webkit-mask-image: none;
-    mask-image: none;
   }
 
   /* Every frame is the same size, so the row is a flat run of identical cards
@@ -946,14 +844,14 @@
       transform 0.3s var(--ease);
   }
 
-  /* Expand the touch/click target beyond the small visual dot */
+  /* Extend the tap area without covering the neighboring dots. */
   .gal-dot::before {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 34px;
+    width: 14px;
     height: 34px;
   }
 
@@ -986,8 +884,8 @@
    drift); this block replaces it wholesale for the narrowest tier.
 
    The drift itself carries over: the row is the same `galMarquee` track the
-   tablet tier runs, so `overflow` stays `hidden` and the second `.gallery-set`
-   stays on screen to give the -50% translation the duplicate it lands on. What
+   tablet tier runs, so `overflow` stays `hidden` while repeated sets fill the
+   viewport beyond the end of the first set. What
    changes is the card geometry and the horizontal rhythm:
 
    1. Cards are a fixed size, cropped by `object-fit: cover`, rather than sized
@@ -1037,16 +935,10 @@
     padding-left: 0;
     /* Space between the paragraph and the top of the row, per Figma. */
     margin-top: 170px;
-    /* Hard-cut edges, as on tablet: the 4%/96% edge mask would fade the
-       outermost card out across its last ~15px, and a fade at the boundary
-       reads as a gap rather than as a card sliced by the screen edge. */
-    -webkit-mask-image: none;
-    mask-image: none;
   }
 
   .gallery-track {
-    /* No gap between the two sets: the -50% translation has to land exactly on
-       the start of the second set or the loop visibly jumps by this much. */
+    /* The spacing between sets is included in each frame's trailing margin. */
     gap: 0;
     /* One set is seven 274px cards plus seven 65px margins = 2373px, so the
        34s the 767px block sets would take 4.8s to cross a single card. 18s

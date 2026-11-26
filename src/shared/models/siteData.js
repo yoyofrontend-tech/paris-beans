@@ -52,8 +52,16 @@ export const galleryAlt = (key) => {
   return item ? item.alt : key
 }
 
-// Gallery page content. Ordered `images` drive each section's grid layout
-// (position is derived from index in the section component).
+const sectionPhoto = (key, alt, width, height) => ({
+  key,
+  // Vite decodes public URLs with decodeURI, which leaves encoded & and + intact.
+  src: encodeURI(`/gallery section images/${key}.svg`),
+  alt,
+  width,
+  height,
+})
+
+// Gallery photos are ordered left to right, then top to bottom in each section.
 export const gallerySections = [
   {
     id: 'atmosphere',
@@ -61,7 +69,14 @@ export const gallerySections = [
     title: 'Moments Worth Slowing Down For.',
     description:
       'A little time to pause, enjoy your coffee, and take in the Paris-inspired atmosphere at HAIR RAP BY YOYO.',
-    images: ['g1', 'g4', 'g5', 'g7'],
+    images: [
+      sectionPhoto('PARISIAN ATMOSPHERE 6', 'A guest enjoying a drink beside the salon window', 276, 420),
+      sectionPhoto('PARISIAN ATMOSPHERE 5', 'A server offering drinks to a seated guest', 266, 420),
+      sectionPhoto('PARISIAN ATMOSPHERE 4', 'A guest tasting pasta at the café counter', 624, 420),
+      sectionPhoto('PARISIAN ATMOSPHERE 1', 'A barista preparing a drink at the counter', 280, 420),
+      sectionPhoto('PARISIAN ATMOSPHERE 3', 'Two bowls of pasta and a plate of nachos', 630, 420),
+      sectionPhoto('PARISIAN ATMOSPHERE 2', 'Two colorful layered drinks on the counter', 370, 420),
+    ],
   },
   {
     id: 'wall-art',
@@ -69,14 +84,28 @@ export const gallerySections = [
     title: 'A Little Corner of Paris.',
     description:
       'Paris-inspired artwork brings the feeling of a Parisian street into the heart of HAIR RAP BY YOYO.',
-    images: ['g4', 'g1', 'g7', 'g2', 'g6'],
+    images: [
+      sectionPhoto('Paris Wall Art 2', 'The café counter with stools under a chandelier', 416, 276),
+      sectionPhoto('Paris Wall Art 3', 'The café counter beside a view of the Arc de Triomphe', 416, 276),
+      sectionPhoto('Paris Wall Art 4', 'The illuminated Paris Beans sign above the café counter', 580, 872),
+      sectionPhoto('Paris Wall Art 5', 'An espresso machine beneath the Paris-inspired display', 280, 420),
+      sectionPhoto('Paris Wall Art 1', 'Decorated café cups and miniature Eiffel Towers', 404, 420),
+    ],
   },
   {
     id: 'coffee-food',
     eyebrow: '— COFFEE & FOOD',
     title: 'Made for the Moment.',
     description: 'Simple café pleasures designed to complement your salon experience.',
-    images: ['g2', 'g3', 'g6', 'g1', 'g4', 'g7', 'g5'],
+    images: [
+      sectionPhoto('Coffee & Food 2', 'Two amber and ruby layered drinks on a tray', 280, 420),
+      sectionPhoto('Coffee & Food 3', 'Two lime and mint drinks in tall glasses', 630, 420),
+      sectionPhoto('Coffee & Food 4', 'A bowl of nachos with olives and cheese', 280, 420),
+      sectionPhoto('Coffee & Food 5', 'Pasta served in a floral bowl', 280, 420),
+      sectionPhoto('Coffee & Food 6', 'A pale green drink with a curled garnish', 280, 420),
+      sectionPhoto('Coffee & Food 1', 'A drink in a coupe glass garnished with lemon', 280, 420),
+      sectionPhoto('Coffee & Food 7', 'A blue and red layered drink over ice', 280, 420),
+    ],
   },
   {
     id: 'salon-cafe',
@@ -84,7 +113,13 @@ export const gallerySections = [
     title: 'Where Beauty Meets Café Culture.',
     description:
       'A salon appointment, a coffee, and an atmosphere designed to make your time feel special.',
-    images: ['g2', 'g6', 'g5', 'g1', 'g4'],
+    images: [
+      sectionPhoto('Salon + Café 1', 'A guest sipping from a café cup in a salon chair', 295, 420),
+      sectionPhoto('Salon + Café 3', 'A young guest enjoying a milkshake', 580, 872),
+      sectionPhoto('Salon + Café 4', 'A seated guest in blue enjoying a drink', 416, 276),
+      sectionPhoto('Salon + Café 2', 'A server bringing refreshments to a salon guest', 295, 420),
+      sectionPhoto('Salon + Café 5', 'A young guest taking a sip during a haircut', 295, 420),
+    ],
   },
 ]
 

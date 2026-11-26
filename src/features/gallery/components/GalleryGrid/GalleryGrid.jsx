@@ -1,7 +1,6 @@
 import { useRef } from 'react'
 import { useReveal } from '@shared/hooks/useReveal'
 import { useCarousel } from '@shared/hooks/useCarousel'
-import { galleryImages, galleryAlt, galleryDims } from '@shared/models/siteData'
 import '../Gallery.css'
 
 export default function GalleryGrid({
@@ -83,16 +82,15 @@ export default function GalleryGrid({
               transform: `translateX(calc(var(--gal-slide-step) * -${carousel.active}))`,
             }}
           >
-            {tiles.map(({ tile, image }, i) => {
-              const key = images[image]
-              const dims = galleryDims[key]
+            {tiles.map(({ tile, image }) => {
+              const photo = images[image]
               return (
-                <figure className={`gal-tile ${tile}`} key={i}>
+                <figure className={`gal-tile ${tile}`} key={photo.key}>
                   <img
-                    src={galleryImages[key]}
-                    alt={galleryAlt(key)}
-                    width={dims.width}
-                    height={dims.height}
+                    src={photo.src}
+                    alt={photo.alt}
+                    width={photo.width}
+                    height={photo.height}
                     loading="lazy"
                     draggable={false}
                   />

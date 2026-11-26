@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 import { useReveal } from '@shared/hooks/useReveal'
 import { galleryHeroImages } from '@shared/assets/images'
 import '../Gallery.css'
@@ -73,10 +73,28 @@ function renderSet(isPrimary) {
 
 export default function GalleryHero() {
   const ref = useRef(null)
+  const collageRef = useRef(null)
+  const firstSetRef = useRef(null)
+  const [setCount, setSetCount] = useState(2)
   // Only the copy is scroll-revealed. The collage frames deliberately carry no
   // `.reveal` class — see the entrance note in Gallery.css for why a
   // scroll-triggered transition cannot reach them.
   useReveal(ref, { threshold: 0.08 })
+
+  useLayoutEffect(() => {
+    const collage = collageRef.current
+    const firstSet = firstSetRef.current
+    const measure = () => {
+      const setWidth = firstSet.getBoundingClientRect().width
+      if (setWidth > 0) setSetCount(Math.max(2, Math.ceil(collage.clientWidth / setWidth) + 1))
+    }
+
+    measure()
+    const observer = new ResizeObserver(measure)
+    observer.observe(collage)
+    observer.observe(firstSet)
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <section className="gal-hero" ref={ref}>
@@ -94,13 +112,14 @@ export default function GalleryHero() {
         </div>
       </div>
 
-      <div className="gal-hero-collage" role="region" aria-label="Gallery">
-        <div className="gallery-track">
-          <div className="gallery-set">{renderSet(true)}</div>
-          {/* Second copy of the set: what makes the marquee loop seamlessly. */}
-          <div className="gallery-set gallery-set--loop" aria-hidden="true">
-            {renderSet(false)}
-          </div>
+      <div className="gal-hero-collage" ref={collageRef} role="region" aria-label="Gallery">
+        <div className="gallery-track" style={{ '--gallery-set-count': setCount }}>
+          <div className="gallery-set" ref={firstSetRef}>{renderSet(true)}</div>
+          {Array.from({ length: setCount - 1 }, (_, index) => (
+            <div className="gallery-set gallery-set--loop" key={index} aria-hidden="true">
+              {renderSet(false)}
+            </div>
+          ))}
         </div>
       </div>
     </section>

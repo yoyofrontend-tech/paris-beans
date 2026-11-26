@@ -17,7 +17,9 @@ const sections = [
       { tile: 'gal-tile--a', image: 0 },
       { tile: 'gal-tile--b', image: 1 },
       { tile: 'gal-tile--feature', image: 2 },
-      { tile: 'gal-tile--wide', image: 3 },
+      { tile: 'gal-tile--c', image: 3 },
+      { tile: 'gal-tile--wide', image: 4 },
+      { tile: 'gal-tile--d', image: 5 },
     ],
   },
   {
@@ -34,9 +36,9 @@ const sections = [
     tiles: [
       { tile: 'gal-tile--a', image: 0 },
       { tile: 'gal-tile--b', image: 1 },
+      { tile: 'gal-tile--feature', image: 2 },
       { tile: 'gal-tile--c', image: 3 },
       { tile: 'gal-tile--d', image: 4 },
-      { tile: 'gal-tile--feature', image: 2 },
     ],
   },
   {
@@ -51,12 +53,12 @@ const sections = [
     description: 'Simple café pleasures designed to complement your salon experience.',
     tiles: [
       { tile: 'gal-tile--a', image: 0 },
+      { tile: 'gal-tile--feature', image: 1 },
       { tile: 'gal-tile--b', image: 2 },
       { tile: 'gal-tile--c', image: 3 },
       { tile: 'gal-tile--d', image: 4 },
       { tile: 'gal-tile--e', image: 5 },
       { tile: 'gal-tile--g', image: 6 },
-      { tile: 'gal-tile--feature', image: 1 },
     ],
   },
   {
@@ -73,10 +75,10 @@ const sections = [
       'A salon appointment, a coffee, and an atmosphere designed to make your time feel special.',
     tiles: [
       { tile: 'gal-tile--a', image: 0 },
-      { tile: 'gal-tile--b', image: 1 },
-      { tile: 'gal-tile--c', image: 3 },
+      { tile: 'gal-tile--feature', image: 1 },
+      { tile: 'gal-tile--c', image: 2 },
+      { tile: 'gal-tile--b', image: 3 },
       { tile: 'gal-tile--d', image: 4 },
-      { tile: 'gal-tile--feature', image: 2 },
     ],
   },
 ]
