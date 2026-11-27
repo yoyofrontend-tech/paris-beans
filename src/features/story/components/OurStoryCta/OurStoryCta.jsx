@@ -1,4 +1,5 @@
 import Button from '@shared/components/Button'
+import { appointmentWhatsAppUrl } from '@shared/models/siteData'
 import './OurStoryCta.css'
 
 export default function OurStoryCta() {
@@ -15,7 +16,7 @@ export default function OurStoryCta() {
         <p className="ostory-cta-desc">
           It is a small Parisian ritual built into your HAIR RAP BY YOYO experience.
         </p>
-        <Button href="/visit-contact" variant="primary" arrow className="ostory-cta-btn">
+        <Button href={appointmentWhatsAppUrl} variant="primary" arrow className="ostory-cta-btn">
           Book Your Salon Appointment
         </Button>
       </div>

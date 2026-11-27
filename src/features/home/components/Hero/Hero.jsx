@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { useReveal } from '@shared/hooks/useReveal'
 import Button from '@shared/components/Button'
+import { appointmentWhatsAppUrl } from '@shared/models/siteData'
 import { heroImages } from '@shared/assets/images'
 import './Hero.css'
 
@@ -55,7 +56,7 @@ export default function Hero() {
           </p>
 
           <div className="hero-actions reveal reveal-delay-3">
-            <Button href="/visit-contact" variant="primary" arrow>
+            <Button href={appointmentWhatsAppUrl} variant="primary" arrow>
               Book Your Salon Appointment
             </Button>
             <Button href="/menu" variant="ghost">

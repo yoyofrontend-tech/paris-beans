@@ -163,7 +163,7 @@ export const contact = {
   country: 'India',
   phone: '+91 90999 38886',
   phoneTel: '+919099938886',
-  email: 'support@parisbeans.com',
+  email: 'hello@hairrapbyyoyo.com',
   hours: {
     allWeek: '10:00 AM – 9:00 PM',
     days: 'Monday – Sunday',
@@ -178,6 +178,9 @@ export const contact = {
   mapCenter: '72.57, 23.02',
   mapZoom: '13',
 }
+
+const appointmentMessage = 'Hi HAIR RAP BY YOYO, I would like to book a salon appointment. Could you please share your available dates and times?'
+export const appointmentWhatsAppUrl = `https://wa.me/${contact.phoneTel.replace(/^\+/, '')}?text=${encodeURIComponent(appointmentMessage)}`
 
 export const cafeCardPrices = {
   'Hummus': '₹199',

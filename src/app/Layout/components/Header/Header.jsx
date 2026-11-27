@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
-import { navLinks, contact } from '@shared/models/siteData'
+import { appointmentWhatsAppUrl, navLinks, contact } from '@shared/models/siteData'
 import { routePathsList } from '@app/router'
 import {
   InstagramIcon,
@@ -131,7 +131,7 @@ export default function Header({ story = false, route }) {
         </a>
 
         <div className="header-right">
-          <Button href={routePathsList.visit} variant="dark" size="small" className="header-cta">
+          <Button href={appointmentWhatsAppUrl} variant="dark" size="small" className="header-cta">
             Book Appointment
           </Button>
           <button
@@ -257,7 +257,7 @@ export default function Header({ story = false, route }) {
               </div>
 
               <a
-                href={routePathsList.visit}
+                href={appointmentWhatsAppUrl}
                 className="btn btn--primary pb-menu-cta"
                 onClick={() => setOpen(false)}
               >

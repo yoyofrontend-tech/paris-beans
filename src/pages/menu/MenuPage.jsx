@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { cafeMenus } from '@shared/models/cafeMenus'
+import { appointmentWhatsAppUrl } from '@shared/models/siteData'
 import CallToAction from '@shared/components/CallToAction'
 import { MenuHero, MenuCategories, MenuSpecialty } from '@features/menu'
 
@@ -29,7 +30,7 @@ export default function MenuPage() {
           </>
         }
         description="It is a small Parisian ritual built into your HAIR RAP BY YOYO experience."
-        href="/visit-contact"
+        href={appointmentWhatsAppUrl}
         label="Book Your Salon Appointment"
       />
     </>

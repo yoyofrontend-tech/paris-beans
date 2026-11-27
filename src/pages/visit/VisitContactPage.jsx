@@ -1,4 +1,5 @@
 import CallToAction from '@shared/components/CallToAction'
+import { appointmentWhatsAppUrl } from '@shared/models/siteData'
 import { VisitHero, ContactLocation } from '@features/visit'
 
 export default function VisitContactPage() {
@@ -18,7 +19,7 @@ export default function VisitContactPage() {
           </>
         }
         description="Book your HAIR RAP BY YOYO appointment and enjoy your complimentary coffee at ParisBeans."
-        href="#visit-contact"
+        href={appointmentWhatsAppUrl}
         label="Book Your Salon Appointment"
       />
     </>
